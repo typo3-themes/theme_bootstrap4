@@ -1,0 +1,14 @@
+lib.footer.logo {
+	main = IMAGE
+	main.file = {$themes.configuration.footer.logo.main.file}
+	main.file.width = {$themes.configuration.footer.logo.main.width}
+	#main.file.height = {$themes.configuration.footer.logo.main.height}
+	main.titleText = {$themes.configuration.footer.logo.main.title}
+	main.altText = {$themes.configuration.footer.logo.main.title}
+	main.stdWrap.typolink {
+		parameter = {$themes.configuration.footer.logo.main.linkUid}
+		parameter.insertData = 1
+		title = {$themes.configuration.footer.logo.main.title}
+		target = {$themes.configuration.footer.logo.main.linkTarget}
+	}
+}

@@ -1,0 +1,48 @@
+<ul id="menuLanguage" class="theme_bootstrap4 nav navbar-nav navbar-right">
+	<f:for each="{menu}" as="entry" iteration="itemIteration">
+		<f:if condition="{entry.active}">
+			<f:then>
+				<li class="{entry.class} active">
+					<a href="#">
+						<f:image src="{flagIconPath}{entry.flag}.{flagIconFileExtension}"
+							title="{entry.label}"
+							alt="{entry.label}"/>
+						<span>{entry.label}</span>
+					</a>
+				</li>
+			</f:then>
+			<f:else>
+
+				<!-- Page translation available?! -->
+				<f:if condition="{entry.hasTranslation}">
+					<f:then>
+						<!-- Translated! -->
+						<li class="{entry.class}">
+							<f:link.page addQueryString="1"
+								additionalParams="{L: entry.L}"
+								title="{entry.label}"
+								argumentsToBeExcludedFromQueryString="{0: 'id'}">
+								<f:image src="{flagIconPath}{entry.flag}.{flagIconFileExtension}"
+									title="{entry.label}"
+									alt="{entry.label}"/>
+								<span>{entry.label}</span>
+							</f:link.page>
+						</li>
+					</f:then>
+					<f:else>
+						<!-- Not translated! -->
+						<li class="{entry.class} noTranslation">
+							<a href="#">
+								<f:image src="{flagIconPath}{entry.flag}.{flagIconFileExtension}"
+										 title="{entry.label}"
+										 alt="{entry.label}"/>
+								<span>{entry.label}</span>
+							</a>
+						</li>
+					</f:else>
+				</f:if>
+		
+			</f:else>
+		</f:if>
+	</f:for>
+</ul>
