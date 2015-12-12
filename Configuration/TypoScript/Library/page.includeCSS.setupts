@@ -1,0 +1,21 @@
+page {
+	includeCSS {
+		theme = EXT:theme_bootstrap4/Resources/Private/Dyncss/import.scss
+		fontawesome = EXT:theme_bootstrap4/Resources/Public/Contrib/font-awesome-4.5.0/css/font-awesome.min.css
+		fontawesome {
+			excludeFromConcatenation = 1
+			disableCompression = 1
+		}
+	}
+}
+
+[globalVar = LIT:1 = {$themes.mode.isProduction}]
+page {
+	includeCSS {
+		fontawesome = //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css
+		fontawesome {
+			external = 1
+		}
+	}
+}
+[global]

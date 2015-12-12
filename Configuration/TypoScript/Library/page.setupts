@@ -1,0 +1,35 @@
+page {
+	
+	# Overwrite themes_gridelements body-tag
+	# in order to add bootstraps scroll spy
+	bodyTagCObject >
+	bodyTagCObject = COA
+	bodyTagCObject {
+		stdWrap.noTrimWrap = |<body |>|
+
+		# Page id das bodytag id
+		10 = TEXT
+		10.value = id="page-{TSFE:id}" 
+		10.insertData = 1
+		10.noTrimWrap = || |
+
+		# body class
+		20 = COA 
+		20 {
+			wrap = class="| language-{$themes.languages.current.isoCodeShort}" data-spy="scroll" data-target="{$themes.configuration.bootstrap.javascript.scrollspy.target}" data-offset="{$themes.configuration.bootstrap.javascript.scrollspy.offset}"
+			# remove last space
+			trim = 1
+
+			# add a Layout Class
+			10 = TEXT
+			10 {
+				intval = 1
+				# append a Space for other Classes
+				data = page:layout
+				noTrimWrap = |page-layout-| |
+			}
+			
+		}
+	}
+	
+}
