@@ -1,0 +1,54 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<!-- theme_bootstrap4: Layouts/Startsite.html [begin] -->
+<div id="layoutStartsite">
+
+	<nav id="menuMain" class="navbar navbar-dark bg-inverse navbar-fixed-top">
+		<div class="container">
+			<div id="logoWrapper" class="navbar-brand">
+				<h1><f:cObject typoscriptObjectPath="lib.header.logo.main" /></h1>
+			</div>
+			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-main">
+				&#9776;
+			</button>
+			<div id="navbar-main" class="collapse navbar-toggleable-xs">
+				<f:cObject typoscriptObjectPath="lib.menu.main" />
+				<div class="menu-language-wrapper pull-right">
+					<theme:widget.languageMenu
+							availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
+							currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
+							defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
+							defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
+							defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
+							/>
+					<f:if condition="{theme:constant(constant: 'themes.languages.available')}">
+						<span>
+							<f:translate key="languageMenu_label" />
+						</span>
+					</f:if>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<section id="areaFeature">
+			<f:cObject typoscriptObjectPath="lib.content.feature" />
+		</section>
+
+		<main id="areaMain">
+			<div id="menuBreadcrumbWrapper">
+				<span class="breadcrumb-label"><f:translate key="breadcrumb_label" /></span>
+				<f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
+			</div>
+			<f:render section="Default" />
+		</main>
+
+		<section id="areaExtended">
+			<f:cObject typoscriptObjectPath="lib.content.extended" />
+		</section>
+
+	</div>
+
+	<f:render partial="Area/Footer" section="Default" arguments="{_all}" />
+</div>
+<!-- theme_bootstrap4: Layouts/Startsite.html [end] -->

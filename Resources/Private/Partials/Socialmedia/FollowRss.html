@@ -1,0 +1,17 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Partials/Socialmedia/FollowRss.html [begin] -->
+		
+		<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useRss')}">
+			<li class="partial-socialmedia-followRss theme_bootstrap4">
+				<a href="{theme:constant(constant:'themes.configuration.socialmedia.rssLink')}"
+				   target="_blank" title="RSS"
+				   class="fa fa-rss"></a>
+			</li>
+		</f:if>
+
+		<!-- theme_bootstrap4: Partials/Socialmedia/FollowRss.html [end] -->
+	</f:section>
+</div>

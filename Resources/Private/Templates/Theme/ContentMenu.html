@@ -1,0 +1,28 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:layout name="Default" />
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Templates/Theme/ContentMenu.html [begin] -->
+
+		<div id="templateContentMenu">
+			<div class="row">
+
+				<!--
+					Pay attention to the responsive behaviour!
+					The menu column will slide to top
+					when it switch into mobile view.  -->
+
+				<!-- Firstly the menu column, because Bootstrap not allows to pull/push xs and col-12 -->
+				<div id="contentMenu" class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-lg-push-10 col-xl-2 col-xl-push-10">
+					<f:render partial="Content/Menu" section="Default" arguments="{_all}" />
+				</div>
+
+				<div id="contentMain" class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-pull-2 col-xl-10 col-xl-pull-2">
+					<f:render partial="Content/Main" section="Default" arguments="{_all}" />
+				</div>
+			</div>
+		</div>
+
+		<!-- theme_bootstrap4: Templates/Theme/ContentMenu.html [end] -->
+	</f:section>
+</div>

@@ -1,0 +1,49 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Partials/Area/Footer.html [begin] -->
+
+		<footer id="areaFooter">
+			<div class="container">
+				<div class="row">
+
+					<div class="menu-special-wrapper col-lg-12">
+						<f:cObject typoscriptObjectPath="lib.menu.special" />
+					</div>
+
+					<div class="col-lg-6">
+						<div id="footerLogo">
+							<f:cObject typoscriptObjectPath="lib.footer.logo.main" />
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="menu-footer-wrapper">
+							<f:cObject typoscriptObjectPath="lib.menu.footer" />
+						</div>
+						<div class="socialmedia-list-wrapper">
+							<f:render partial="Socialmedia/List" section="Default" />
+						</div>
+					</div>
+
+					<div class="footer-line-wrapper col-lg-12">
+						<ul class="footer-line list-inline">
+							<li class="address">
+								<span><f:format.htmlentitiesDecode>{theme:constant(constant: 'themes.configuration.footer.address')}</f:format.htmlentitiesDecode></span>
+							</li>
+							<li>|</li>
+							<li class="email">
+								<f:link.email email="{theme:constant(constant: 'themes.configuration.footer.email')}">{theme:constant(constant: 'themes.configuration.footer.email')}</f:link.email></li>
+							<li>|</li>
+							<f:cObject typoscriptObjectPath="lib.footer.copyright" />
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<!-- theme_bootstrap4: Partials/Area/Footer.html [end] -->
+	</f:section>
+</div>

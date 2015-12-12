@@ -1,0 +1,31 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:layout name="Default" />
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Templates/Theme/ContentSidebarMenu.html [begin] -->
+
+		<div id="templateContentSidebarMenu">
+			<div class="row">
+
+				<!--
+					Pay attention to the responsive behaviour!
+					The menu column will slide to top
+					when it switch into mobile view.  -->
+
+				<!-- Firstly the menu column, because Bootstrap not allows to pull/push xs and col-12 -->
+				<div id="contentMenu" class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-lg-push-10 col-xl-2 col-xl-push-10">
+					<f:render partial="Content/Menu" section="Default" arguments="{_all}" />
+				</div>
+				<div id="contentMain" class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-lg-pull-2 col-xl-7 col-xl-pull-2">
+					<f:render partial="Content/Main" section="Default" arguments="{_all}" />
+				</div>
+				<aside id="contentSidebar" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-lg-pull-2 col-xl-3 col-xl-pull-2">
+					<f:render partial="Content/Sidebar" section="Default" arguments="{_all}" />
+				</aside>
+
+			</div>
+		</div>
+
+		<!-- theme_bootstrap4: Templates/Theme/ContentSidebarMenu.html [end] -->
+	</f:section>
+</div>
