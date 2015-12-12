@@ -1,0 +1,31 @@
+plugin.tx_themes {
+	view {
+		templateRootPaths {
+			300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		}
+		partialRootPaths {
+			300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		}
+	}
+}
+plugin.tx_themes {
+	view {
+		widget {
+			KayStrobach\Themes\ViewHelpers\Widget\LanguageMenuViewHelper {
+				templateRootPath = EXT:theme_bootstrap4/Resources/Private/Templates/
+			}
+		}
+	}
+}
+config.tx_extbase {
+	view {
+		widget {
+			KayStrobach\Themes\ViewHelpers\Widget\LanguageMenuViewHelper {
+				templateRootPath = EXT:theme_bootstrap4/Resources/Private/Templates/
+			}
+		}
+	}
+}

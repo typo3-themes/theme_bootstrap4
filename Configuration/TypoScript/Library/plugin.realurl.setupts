@@ -1,0 +1,3 @@
+config.prefixLocalAnchors = all
+config.tx_realurl_enable = 1
+config.simulateStaticDocuments = 0

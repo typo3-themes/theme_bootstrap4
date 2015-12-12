@@ -1,0 +1,2 @@
+components=jQuery,Button
+script=../Resources/Public/JavaScript/default.js
