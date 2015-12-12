@@ -1,0 +1,8 @@
+
+# #customcategory=font=Theme: Font settings
+
+
+themes.configuration.font.fontFilePath = 
+
+# cat=font,expert//; type=string; label=Font: Icon-Font path
+themes.configuration.font.icon.fontFilePath =

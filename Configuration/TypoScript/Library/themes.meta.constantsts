@@ -1,0 +1,30 @@
+
+# #customcategory=meta=Theme: Meta-Tag settings
+# customsubcategory=meta_default=Default settings
+
+# cat=meta,basic/meta_default/; type=string; label= Default abstract
+themes.configuration.meta.defaults.abstract = TYPO3 Bootstrap4 Theme
+
+# cat=meta,basic/meta_default/; type=string; label= Default keywords
+themes.configuration.meta.defaults.keywords = TYPO3, Theme, Bootstrap
+
+# cat=meta,basic/meta_default/; type=string; label= Default description
+themes.configuration.meta.defaults.description = TYPO3 Bootstrap4 Theme
+
+# cat=meta,basic/meta_default/; type=string; label= Default author
+themes.configuration.meta.defaults.author = TYPO3 Themes-Team
+
+# cat=meta,basic/meta_default/; type=string; label= Default author email
+themes.configuration.meta.defaults.authorEmail = team@typo3-themes.org
+
+# cat=meta,basic//; type=string; label= Copyright
+themes.configuration.meta.copyright = TYPO3 Themes-Team - www.typo3-themes.org
+
+# cat=meta,advanced//; type=string; label= Robots (for example: noindex,nofollow or index,follow)
+themes.configuration.meta.robots = index,follow
+
+# cat=meta,advanced//; type=string; label= Revisit after (for example: 7 days)
+themes.configuration.meta.revisitAfter = 7 days
+
+# cat=meta,basic//; type=string; label= Application name
+themes.configuration.meta.applicationName = Bootstrap-Theme

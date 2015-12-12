@@ -1,0 +1,20 @@
+#############################################
+# Container: Container/Storages constants
+#############################################
+
+# #customcategory=container=Theme: Container settings
+
+# cat=container,advanced//; type=int+; label= Container for frontend user
+themes.configuration.container.frontendUser = 0
+
+# cat=container,advanced//; type=int+; label= Container for news (tt_news, news)
+themes.configuration.container.news = 0
+
+# cat=container,advanced//; type=int+; label= Container for addresses or contacts (tt_address)
+themes.configuration.container.address = 0
+
+# cat=container,advanced//; type=int+; label= Container for newsletter
+themes.configuration.container.newsletter = 0
+
+# cat=container,advanced//; type=int+; label= Container pid for the global content elements
+themes.configuration.container.globalContentElements = 0

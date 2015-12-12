@@ -1,0 +1,50 @@
+#############################################
+# Header: Header constants
+#############################################
+
+# #customcategory=header=Theme: Header settings
+# customsubcategory=header_logo_main=Main Logo of the header
+# customsubcategory=header_logo_special=Special Logo of the header
+
+# cat=header,basic//; type=string; label= Header phonenumber
+themes.configuration.header.phone = +49 1234 56789
+
+# cat=header,basic//; type=string; label= Header E-Mailaddress
+themes.configuration.header.email = demo@typo3-themes.org
+
+
+
+# Logo main
+#############################################
+
+# cat=header,advanced/header_logo_main/; type=string; label= Header-Logo: Path and filename (fileadmin/.../logo.png)
+themes.configuration.header.logo.main.file = EXT:theme_bootstrap4/Resources/Public/Images/logo.png
+
+# cat=header,expert/header_logo_main/; type=int+; label= Header-Logo: Width
+themes.configuration.header.logo.main.width = 40
+
+# cat=header,expert/header_logo_main/; type=int+; label= Header-Logo: Height
+themes.configuration.header.logo.main.height =
+
+
+
+# Logo special
+#############################################
+
+# cat=header,advanced/header_logo_special/; type=string; label= Special-Logo: Path and filename (fileadmin/.../logo.png)
+themes.configuration.header.logo.special.file = EXT:theme_bootstrap4/Resources/Public/Images/logo.png
+
+# cat=header,expert/header_logo_special/; type=int+; label= Special-Logo: Width
+themes.configuration.header.logo.special.width = 40
+
+# cat=header,expert/header_logo_special/; type=int+; label= Special-Logo: Height
+themes.configuration.header.logo.special.height =
+
+# cat=header,advanced/header_logo_special/; type=int+; label= Special-Logo: Link UID
+themes.configuration.header.logo.special.linkUid = {$themes.configuration.pages.startsite}
+
+# cat=header,advanced/header_logo_special/; type=options[_blank,_self]; label= Special-Logo: Link target
+themes.configuration.header.logo.special.linkTarget = _blank
+
+# cat=header,advanced/header_logo_special/; type=string; label= Special-Logo: Title
+themes.configuration.header.logo.special.title = {$themes.configuration.siteName}
