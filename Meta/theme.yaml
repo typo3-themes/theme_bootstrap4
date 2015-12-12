@@ -1,0 +1,107 @@
+# Name and description of the theme (required)
+title            : Minimalistic theme for reference purposes
+version          : 0.0.1
+description      : |
+  This is the description of the theme.
+  With the starting pipe it can contain multiple lines.
+
+  The newlines in this description will be preserved.
+
+parentTheme:
+  name: themes_gridelements
+  version: 0.1.1-1.99.99
+
+# Whether a documentation page is available (optional)
+documentation:+
+  -
+    uri            : http://www.typo3-themes.org
+    title          : TYPO3-Themes.org
+
+# Whether a live demo is available (optional)
+demoLocation:
+  -
+    uri            : http://demo.typo3-themes.org
+    title          : TYPO3-Themes.org Demo
+
+# Keywords (optional)
+keywords:
+  - html5boilerplate
+  - responsive design
+
+# Constants categories which are used for constants in this theme
+constants:
+  availableCategories: [theme,colors,font,meta,pages,container,slider,lightbox]
+
+# Screenshots for the preview gallery (optional, multiple possible)
+screenshots:
+  -
+    file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot.png
+    caption        : Super image 1
+  -
+    file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-01.png
+    caption        : Super image 2
+  -
+    file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-02.png
+    caption        : Super image 2
+  -
+    file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-03.png
+    caption        : Super image 2
+
+
+# Name of the authors (optional, multiple possible)
+authors:
+  -
+    name           : Thomas Deuling
+    email          : typo3@coding.ms
+    company        : coding.ms
+    companyLogo    :
+    companyWebsite : www.coding.ms
+  -
+    name           : Kay Strobach
+    email          : typo3themes@kay-strobach.de
+    company        : Kay Strobach
+    companyLogo    :
+    companyWebsite : www.kay-strobach.de
+  -
+    name           : Jo Hasenau
+    email          : info@cybercraft.de
+    company        : Cybercraft
+    companyLogo    :
+    companyWebsite : www.cybercraft.de
+  -
+    name           : Sebastian Richter
+    email          : info@baschte.de
+    company        : Raphael GmbH
+    companyLogo    :
+    companyWebsite : www.raphael-gmbh.de
+  -
+    name           : Dieter Brüning
+    email          : info@media-bruening.de
+    company        : Media Bruening
+    companyLogo    :
+    companyWebsite : www.media-bruening.de
+
+# Possible license if applicable (optional)
+# Pick on from http://creativecommons.org/choose/
+licenses:
+  -
+    license        : CC
+    licenseUri     : http://creativecommons.org/licenses/by-nc/4.0/
+    # resources is an optional node here
+    resources      :
+      - Images
+      - HTML
+  -
+    license        : whatever
+    licenseUri     :
+    resources      :
+      - Resources/Public/Images/logo.png
+
+# Supported Extensions
+supportedExtensions:
+  news:
+    version        : 1.0.0
+    description    : News-Extension
+  #felogin:
+  #  version        : 6.2.0
+  #  description    : Frontend-User login

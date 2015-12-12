@@ -1,0 +1,6 @@
+options {
+  # Allow the editor to clear the page cache
+  clearCache.pages = 1
+  # Allow the editor to clear all caches
+  clearCache.all = 1
+}

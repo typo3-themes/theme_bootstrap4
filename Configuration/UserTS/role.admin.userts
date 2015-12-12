@@ -1,0 +1,10 @@
+options {
+  # Show page uids in page tree
+  pageTree.showPageIdWithTitle = 1
+  # Adds a clear-cache button for the system-cache
+  clearCache.system = 1
+}
+admPanel {
+  # Caching der externen TS-Files deaktivieren
+  override.tsdebug.forceTemplateParsing = 1
+}
