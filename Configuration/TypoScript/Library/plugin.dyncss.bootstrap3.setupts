@@ -1,0 +1,16 @@
+# error in dyncss
+
+#plugin.tx_dyncss.overrides {
+#
+#	brand-primary = TEXT
+#	brand-primary.value = {$themes.configuration.colors.primary}
+#	brand-secondary = TEXT
+#	brand-secondary.value = {$themes.configuration.colors.secondary}
+#
+#	icon-font-path = TEXT
+#	icon-font-path.value = '{$themes.configuration.font.icon.fontFilePath}'
+#
+#	breadcrumb-divider = TEXT
+#	breadcrumb-divider.value = '{$themes.configuration.menu.breadcrumb.divider}'
+#
+#}

@@ -1,0 +1,60 @@
+# ToDo: Dropdown
+
+lib.menu.main = HMENU
+lib.menu.main {
+	entryLevel = 0
+	includeNotInMenu = 0
+	excludeUidList = {$themes.configuration.menu.main.excludeUidList}
+	wrap = <ul class="nav navbar-nav"> | </ul>
+	1 = TMENU
+	1 {
+		expAll = 1
+		NO = 1
+		NO {
+			ATagParams = class="nav-link"
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.main.prefixFirstLevel}|</li>
+		}
+		ACT < .NO
+		ACT {
+			ATagParams = class="nav-link active"
+			linkWrap = | <span class="sr-only">(current)</span>
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.main.prefixFirstLevel}|</li>
+		}
+		IFSUB < .NO
+		IFSUB {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="nav-item dropdown state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item dropdown state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item dropdown state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.main.prefixFirstLevel}|</li>
+			before = <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			after = </a>
+			doNotLinkIt = {$themes.configuration.menu.main.doNotLinkFirstLevelPagesWithSubPages}
+		}
+		ACTIFSUB < .ACT
+		ACTIFSUB {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="nav-item dropdown state-actifsub active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item dropdown state-actifsub active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.main.prefixFirstLevel}|</li>|*|<li class="nav-item dropdown state-actifsub active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.main.prefixFirstLevel}|</li>
+			before = <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			after = </a>
+			doNotLinkIt = {$themes.configuration.menu.main.doNotLinkFirstLevelPagesWithSubPages}
+		}
+	}
+	2 = TMENU
+	2 {
+		expAll = 0
+		wrap = <ul role="menu" class="dropdown-menu sub"> | </ul>
+		NO = 1
+		NO {
+			ATagParams = class="dropdown-item"
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.main.prefixSecondLevel}|</li>|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.main.prefixSecondLevel}|</li>|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.main.prefixSecondLevel}|</li>
+		}
+		ACT < .NO
+		ACT {
+			ATagParams = class="nav-link active"
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.main.prefixSecondLevel}|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.main.prefixSecondLevel}|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.main.prefixSecondLevel}|</li>
+		}
+	}
+}
+

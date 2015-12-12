@@ -7,8 +7,19 @@
 $brand-primary: #ff8700;
 $brand-secondary: #FFFFFF;
 
+// Breadcrumbs
+$breadcrumb-divider: ">";
+
 // Base URL for images
 $baseurlImage: '/typo3conf/ext/theme_bootstrap4/Resources/Public/Images/';
 
 // Scss-Imports
 @import "Library/bootstrap.scss";
+@import "Library/layout.scss";
+@import "Library/partial.socialmedia.scss";
+
+// Styles for Areas
+@import "Library/Areas/feature.scss";
+
+// Styles for Menus
+@import "Library/Menus/breadcrumb.scss";

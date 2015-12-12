@@ -1,0 +1,16 @@
+#menuBreadcrumbWrapper {
+  .breadcrumb-label {
+    float: left;
+    padding-bottom: $breadcrumb-padding-vertical;
+    padding-top: $breadcrumb-padding-vertical;
+    padding-left: $breadcrumb-padding-horizontal;
+    padding-right: 0;
+  }
+  .prefix {
+    float: left;
+    padding-bottom: $breadcrumb-padding-vertical;
+    padding-top: $breadcrumb-padding-vertical;
+    padding-left: 0;
+    padding-right: $breadcrumb-padding-horizontal/2;
+  }
+}

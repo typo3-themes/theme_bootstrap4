@@ -1,0 +1,37 @@
+.partial-socialmedia-list {
+  .socialmedia-list {
+    li {
+      // general styles
+      a {
+        background-color: #f00;
+        color: #fff;
+        display: block;
+        font-family: FontAwesome;
+        font-size: 24px;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+        width: 40px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    // Twitter style
+    .partial-socialmedia-followTwitter a {
+      background-color: #5ea9dd;
+    }
+    // RSS style
+    .partial-socialmedia-followRss a {
+      background-color: #FF6600;
+    }
+    // Faacebook style
+    .partial-socialmedia-followFacebook a {
+      background-color: #4c69ba;
+    }
+    // Google+ style
+    .partial-socialmedia-followGooglePlus a {
+      background-color: #d34836;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Define all area styles in this directory!
