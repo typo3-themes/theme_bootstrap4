@@ -12,7 +12,7 @@ parentTheme:
   version: 0.1.1-1.99.99
 
 # Whether a documentation page is available (optional)
-documentation:+
+documentation:
   -
     uri            : http://www.typo3-themes.org
     title          : TYPO3-Themes.org
@@ -75,7 +75,7 @@ authors:
     companyLogo    :
     companyWebsite : www.raphael-gmbh.de
   -
-    name           : Dieter Brüning
+    name           : Dieter BrÃ¼ning
     email          : info@media-bruening.de
     company        : Media Bruening
     companyLogo    :
