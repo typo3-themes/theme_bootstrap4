@@ -48,9 +48,12 @@ If you're using Bootstrap's compiled CSS, this the example you'll want to start 
 </div>
 {% endexample %}
 
-The above example creates three equal-width columns on small, medium, large, and extra large devices using our [predefined grid classes](). Those columns are centered in the page with the parent `.container`.
+The above example creates three equal-width columns on small, medium, large, and extra large devices using our [predefined grid classes](#predefined-classes). Those columns are centered in the page with the parent `.container`.
 
 ## Grid options
+
+While Bootstrap uses `em`s or `rem`s for defining most sizes, `px`s are used for grid breakpoints and container widths.
+This is because the viewport width is in pixels and does not change with the [font size](https://drafts.csswg.org/mediaqueries-3/#units).
 
 See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
 
@@ -59,25 +62,25 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
     <thead>
       <tr>
         <th></th>
-        <th>
-          Extra small
-          <small>&lt;34em</small>
+        <th class="text-xs-center">
+          Extra small<br>
+          <small>&lt;544px</small>
         </th>
-        <th>
-          Small
-          <small>&ge;34em</small>
+        <th class="text-xs-center">
+          Small<br>
+          <small>&ge;544px</small>
         </th>
-        <th>
-          Medium
-          <small>&ge;48em</small>
+        <th class="text-xs-center">
+          Medium<br>
+          <small>&ge;768px</small>
         </th>
-        <th>
-          Large
-          <small>&ge;62em</small>
+        <th class="text-xs-center">
+          Large<br>
+          <small>&ge;992px</small>
         </th>
-        <th>
-          Extra large
-          <small>&ge;75em</small>
+        <th class="text-xs-center">
+          Extra large<br>
+          <small>&ge;1200px</small>
         </th>
       </tr>
     </thead>
@@ -90,10 +93,10 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       <tr>
         <th class="text-nowrap" scope="row">Container width</th>
         <td>None (auto)</td>
-        <td>34rem</td>
-        <td>45rem</td>
-        <td>60rem</td>
-        <td>72.25rem</td>
+        <td>576px</td>
+        <td>720px</td>
+        <td>940px</td>
+        <td>1140px</td>
       </tr>
       <tr>
         <th class="text-nowrap" scope="row">Class prefix</th>
@@ -109,7 +112,7 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       </tr>
       <tr>
         <th class="text-nowrap" scope="row">Gutter width</th>
-        <td colspan="5">30px (15px on each side of a column)</td>
+        <td colspan="5">1.875rem / 30px (15px on each side of a column)</td>
       </tr>
       <tr>
         <th class="text-nowrap" scope="row">Nestable</th>
@@ -129,7 +132,7 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
 
 ## Sass mixins
 
-When using Bootstrap's source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our [prebuilt grid classes](#grid-example-basic) use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.
+When using Bootstrap's source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our [predefined grid classes](#predefined-classes) use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.
 
 ### Variables
 
@@ -140,17 +143,18 @@ $grid-breakpoints: (
   // Extra small screen / phone
   xs: 0,
   // Small screen / phone
-  sm: 34em,
+  sm: 544px,
   // Medium screen / tablet
-  md: 48em,
+  md: 768px,
   // Large screen / desktop
-  lg: 62em,
+  lg: 992px,
   // Extra large screen / wide desktop
-  xl: 75em
+  xl: 1200px
 ) !default;
 
+
 $grid-columns:      12;
-$grid-gutter-width: 1.5rem;
+$grid-gutter-width: 1.875rem;
 {% endhighlight %}
 
 ### Mixins
@@ -195,7 +199,7 @@ Mixins are used in conjunction with the grid variables to generate semantic CSS 
 
 You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.
 
-See it in action in <a href="http://jsbin.com/qiqet/3/edit">this rendered example</a>.
+See it in action in <a href="http://jsbin.com/ruxona/edit">this rendered example</a>.
 
 {% highlight scss %}
 .container {
@@ -317,7 +321,7 @@ Build on the previous example by creating even more dynamic and powerful layouts
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
   <!-- Optional: clear the XS cols if their content doesn't match in height -->
-  <div class="clearfix visible-xs-block"></div>
+  <div class="clearfix hidden-sm-up"></div>
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
 </div>
 {% endexample %}
@@ -339,7 +343,7 @@ If more than 12 columns are placed within a single row, each group of extra colu
 
 ### Example: Responsive column resets
 
-With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a `.clearfix` and our [responsive utility classes](#responsive-utilities).
+With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a `.clearfix` and our [responsive utility classes]({{ site.baseurl }}/layout/responsive-utilities/).
 
 <div class="bd-example-row">
 {% example html %}
@@ -348,7 +352,7 @@ With the four tiers of grids available you're bound to run into issues where, at
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
 
   <!-- Add the extra clearfix for only the required viewport -->
-  <div class="clearfix visible-xs-block"></div>
+  <div class="clearfix hidden-sm-up"></div>
 
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
@@ -356,7 +360,7 @@ With the four tiers of grids available you're bound to run into issues where, at
 {% endexample %}
 </div>
 
-In addition to column clearing at responsive breakpoints, you may need to **reset offsets, pushes, or pulls**. See this in action in [the grid example](../examples/grid/).
+In addition to column clearing at responsive breakpoints, you may need to **reset offsets, pushes, or pulls**. See this in action in [the grid example]({{ site.baseurl }}/examples/grid/).
 
 <div class="bd-example-row">
 {% example html %}

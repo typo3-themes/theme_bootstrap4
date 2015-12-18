@@ -6,6 +6,7 @@ _site
 .ruby-version
 .bundle
 vendor/cache
+vendor/bundle
 
 # Numerous always-ignore extensions
 *.diff
@@ -46,6 +47,9 @@ scss-lint-report.xml
 
 # grunt-contrib-sass cache
 .sass-cache
+
+# Jekyll metadata
+docs/.jekyll-metadata
 
 # Folders to ignore
 bower_components

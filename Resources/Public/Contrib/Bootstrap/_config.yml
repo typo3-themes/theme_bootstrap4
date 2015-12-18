@@ -20,22 +20,25 @@ exclude:          [assets/scss/]
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 # Custom vars
-current_version:  4.0.0-alpha
+current_version:  4.0.0-alpha.2
 repo:             https://github.com/twbs/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
 slack:            https://bootstrap-slack.herokuapp.com
 
 download:
-  source:         https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.zip
-  dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha/bootstrap-4.0.0-alpha-dist.zip
+  source:         https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.2.zip
+  dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha.2/bootstrap-4.0.0-alpha.2-dist.zip
 
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com
 themes:           http://themes.getbootstrap.com
 
 cdn:
-  css:            https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
-  css_theme:      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css
-  js:             https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
+  # See https://www.srihash.org for info on how to generate the hashes
+  css:            https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css
+  css_hash:       "sha384-XXXXXXXX"
+  js:             https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js
+  js_hash:        "sha384-XXXXXXXX"
+  jquery:         https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js

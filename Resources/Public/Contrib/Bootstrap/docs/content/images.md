@@ -13,20 +13,20 @@ Opt your images into responsive behavior (so they never become larger than their
 
 ## Responsive images
 
-Images in Bootstrap are made responsive with `.img-responsive`. `max-width: 100%;` and `height: auto;` are applied to the image so that it scales with the parent element.
+Images in Bootstrap are made responsive with `.img-fluid`. `max-width: 100%;` and `height: auto;` are applied to the image so that it scales with the parent element.
 
 <div class="bd-example">
-  <img data-src="holder.js/100%x250" class="img-responsive" alt="Generic responsive image">
+  <img data-src="holder.js/100px250" class="img-fluid" alt="Generic responsive image">
 </div>
 
 {% highlight html %}
-<img src="..." class="img-responsive" alt="Responsive image">
+<img src="..." class="img-fluid" alt="Responsive image">
 {% endhighlight %}
 
 {% callout warning %}
 #### SVG images and IE 9-10
 
-In Internet Explorer 9-10, SVG images with `.img-responsive` are disproportionately sized. To fix this, add `width: 100% \9;` where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.
+In Internet Explorer 9-10, SVG images with `.img-fluid` are disproportionately sized. To fix this, add `width: 100% \9;` where necessary. This fix improperly sizes other image formats, so Bootstrap doesn't apply it automatically.
 {% endcallout %}
 
 ## Image shapes
@@ -47,16 +47,16 @@ Add classes to an `<img>` element to easily style images in any project.
 
 ## Aligning images
 
-Align images with the [helper float classes](/components/helpers) or [text alignment classes](/components/helpers). A simple centering class can also be used for `block` level images.
+Align images with the [helper float classes]({{ site.baseurl }}/components/utilities/#floats) or [text alignment classes]({{ site.baseurl }}/components/utilities/#text-alignment). A simple centering class can also be used for `block` level images.
 
 <div class="bd-example bd-example-images">
-  <img data-src="holder.js/200x200" class="img-rounded pull-left" alt="A generic square placeholder image with rounded corners">
-  <img data-src="holder.js/200x200" class="img-rounded pull-right" alt="A generic square placeholder image with rounded corners">
+  <img data-src="holder.js/200x200" class="img-rounded pull-xs-left" alt="A generic square placeholder image with rounded corners">
+  <img data-src="holder.js/200x200" class="img-rounded pull-xs-right" alt="A generic square placeholder image with rounded corners">
 </div>
 
 {% highlight html %}
-<img src="..." class="img-rounded pull-left" alt="...">
-<img src="..." class="img-rounded pull-right" alt="...">
+<img src="..." class="img-rounded pull-xs-left" alt="...">
+<img src="..." class="img-rounded pull-xs-right" alt="...">
 {% endhighlight %}
 
 <div class="bd-example bd-example-images">
@@ -68,13 +68,13 @@ Align images with the [helper float classes](/components/helpers) or [text align
 {% endhighlight %}
 
 <div class="bd-example bd-example-images">
-  <div class="text-center">
+  <div class="text-xs-center">
     <img data-src="holder.js/200x200" class="img-rounded" alt="A generic square placeholder image with rounded corners">
   </div>
 </div>
 
 {% highlight html %}
-<div class="text-center">
+<div class="text-xs-center">
   <img src="..." class="img-rounded" alt="...">
 </div>
 {% endhighlight %}

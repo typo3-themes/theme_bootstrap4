@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Srollspy
+title: Scrollspy
 group: components
 ---
 
@@ -19,14 +19,14 @@ The ScrollSpy plugin is for automatically updating nav targets based on scroll p
     <ul class="nav nav-pills">
       <li class="nav-item"><a class="nav-link" href="#fat">@fat</a></li>
       <li class="nav-item"><a class="nav-link" href="#mdo">@mdo</a></li>
-      <li class="nav-item">
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <ul class="dropdown-menu">
-          <li><a href="#one">one</a></li>
-          <li><a href="#two">two</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#three">three</a></li>
-        </ul>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#one">one</a>
+          <a class="dropdown-item" href="#two">two</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#three">three</a>
+        </div>
       </li>
     </ul>
   </nav>
@@ -51,7 +51,7 @@ The ScrollSpy plugin is for automatically updating nav targets based on scroll p
 
 ### Requires Bootstrap nav
 
-Scrollspy currently requires the use of a [Bootstrap nav component](/components/nav/) for proper highlighting of active links.
+Scrollspy currently requires the use of a [Bootstrap nav component]({{ site.baseurl }}/components/navs/) for proper highlighting of active links.
 
 ### Requires relative positioning
 
@@ -96,12 +96,12 @@ Navbar links must have resolvable id targets. For example, a `<a href="#home">ho
 {% callout info %}
 #### Non-`:visible` target elements ignored
 
-Target elements that are not [`:visible` according to jQuery](http://api.jquery.com/visible-selector/) will be ignored and their corresponding nav items will never be highlighted.
+Target elements that are not [`:visible` according to jQuery](https://api.jquery.com/visible-selector/) will be ignored and their corresponding nav items will never be highlighted.
 {% endcallout %}
 
 ### Methods
 
-#### .scrollspy('refresh')
+#### `.scrollspy('refresh')`
 
 When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:
 
@@ -121,9 +121,9 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
     <thead>
      <tr>
        <th style="width: 100px;">Name</th>
-       <th style="width: 100px;">type</th>
-       <th style="width: 50px;">default</th>
-       <th>description</th>
+       <th style="width: 100px;">Type</th>
+       <th style="width: 50px;">Default</th>
+       <th>Description</th>
      </tr>
     </thead>
     <tbody>

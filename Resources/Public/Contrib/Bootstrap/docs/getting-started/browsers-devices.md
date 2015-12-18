@@ -13,7 +13,7 @@ Bootstrap supports a wide variety of modern browsers and devices, and some older
 
 ## Supported browsers
 
-Bootstrap supports the **latest, stable releases** of all major browsers and platforms. On Windows, **we support Internet Explorer 9-11**. More specific support information is provided below.
+Bootstrap supports the **latest, stable releases** of all major browsers and platforms. On Windows, **we support Internet Explorer 9-11 / Microsoft Edge**. More specific support information is provided below.
 
 ### Mobile devices
 
@@ -64,6 +64,7 @@ Similarly, the latest versions of most desktop browsers are supported.
         <th>Chrome</th>
         <th>Firefox</th>
         <th>Internet Explorer</th>
+        <th>Microsoft Edge</th>
         <th>Opera</th>
         <th>Safari</th>
       </tr>
@@ -74,11 +75,13 @@ Similarly, the latest versions of most desktop browsers are supported.
         <td class="text-success">Supported</td>
         <td class="text-success">Supported</td>
         <td class="text-muted">N/A</td>
+        <td class="text-muted">N/A</td>
         <td class="text-success">Supported</td>
         <td class="text-success">Supported</td>
       </tr>
       <tr>
         <th scope="row">Windows</th>
+        <td class="text-success">Supported</td>
         <td class="text-success">Supported</td>
         <td class="text-success">Supported</td>
         <td class="text-success">Supported</td>
@@ -89,9 +92,11 @@ Similarly, the latest versions of most desktop browsers are supported.
   </table>
 </div>
 
+For Firefox, in addition to the latest normal stable release, we also support the latest [Extended Support Release (ESR)](https://www.mozilla.org/en-US/firefox/organizations/faq/) version of Firefox.
+
 Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 8 and below, though they are not officially supported.
 
-For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs](../browser-bugs/).
+For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs]({{ site.baseurl }}/browser-bugs/).
 
 ## Internet Explorer 9
 
@@ -107,23 +112,27 @@ Internet Explorer 9 is also supported, however, please be aware that some CSS3 p
     </thead>
     <tbody>
       <tr>
-        <th scope="row"><code>border-radius</code></th>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"><code>border-radius</code></a></th>
         <td class="text-success">Supported</td>
       </tr>
       <tr>
-        <th scope="row"><code>box-shadow</code></th>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"><code>box-shadow</code></a></th>
         <td class="text-success">Supported</td>
       </tr>
       <tr>
-        <th scope="row"><code>transform</code></th>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"><code>transform</code></a></th>
         <td class="text-success">Supported, with <code>-ms</code> prefix</td>
       </tr>
       <tr>
-        <th scope="row"><code>transition</code></th>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"><code>transition</code></a></th>
         <td class="text-danger">Not supported</td>
       </tr>
       <tr>
-        <th scope="row"><code>placeholder</code></th>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#attr-placeholder"><code>placeholder</code></a></th>
+        <td class="text-danger">Not supported</td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Flexbox</a></th>
         <td class="text-danger">Not supported</td>
       </tr>
     </tbody>
@@ -138,7 +147,7 @@ As of v4, Bootstrap no longer supports IE8. **If you require IE8 support, we rec
 
 Alternatively, you may add some third party JavaScript to backfill support for IE8 to Bootstrap 4. You'll need the following:
 
-* [The HTML5 shiv](http://en.wikipedia.org/wiki/HTML5_Shiv)
+* [The HTML5 shiv](https://en.wikipedia.org/wiki/HTML5_Shiv)
 * [Respond.js](https://github.com/scottjehl/Respond)
 * [Rem unit polyfill](https://github.com/chuckcarpenter/REM-unit-polyfill)
 
@@ -172,7 +181,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       '@-ms-viewport{width:auto!important}'
     )
   )
-  document.querySelector('head').appendChild(msViewportStyle)
+  document.head.appendChild(msViewportStyle)
 }
 {% endhighlight %}
 
@@ -201,7 +210,7 @@ Page zooming inevitably presents rendering artifacts in some components, both in
 ## Sticky `:hover`/`:focus` on mobile
 Even though real hovering isn't possible on most touchscreens, most mobile browsers emulate hovering support and make `:hover` "sticky". In other words, `:hover` styles start applying after tapping an element and only stop applying after the user taps some other element. On mobile-first sites, this behavior is normally undesirable.
 
-Bootstrap includes a workaround for this, although it is disabled by default. By setting `$use-hover-media-query` to `true` when compiling from Sass, Bootstrap will use [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) to disable `:hover` styles in browsers that emulate hovering, thus preventing sticky `:hover` styles. There are some caveats to this workaround; see the shim's documentation for details.
+Bootstrap includes a workaround for this, although it is disabled by default. By setting `$enable-hover-media-query` to `true` when compiling from Sass, Bootstrap will use [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) to disable `:hover` styles in browsers that emulate hovering, thus preventing sticky `:hover` styles. There are some caveats to this workaround; see the shim's documentation for details.
 
 ## Printing
 
@@ -209,7 +218,7 @@ Even in some modern browsers, printing can be quirky.
 
 In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. [See #12078 for some details.](https://github.com/twbs/bootstrap/issues/12078) Suggested workarounds:
 
-Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:</p>
+Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:
 
 {% highlight css %}
 @media print {

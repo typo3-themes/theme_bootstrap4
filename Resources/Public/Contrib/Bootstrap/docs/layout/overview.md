@@ -9,7 +9,7 @@ Bootstrap includes several components and options for laying out your project, i
 
 ## Containers
 
-Containers are the most basic layout element in Bootstrap and are **required when using our grid system**. Choose from a responsive, fixed-width container (meaning it's `max-width` changes at each breakpoint) or fluid-width (meaning it's `100%` wide all the time).
+Containers are the most basic layout element in Bootstrap and are **required when using our grid system**. Choose from a responsive, fixed-width container (meaning its `max-width` changes at each breakpoint) or fluid-width (meaning it's `100%` wide all the time).
 
 While containers *can* be nested, most layouts do not require a nested container.
 
@@ -51,7 +51,7 @@ Since Bootstrap is developed to be mobile first, we use a handful of [media quer
 Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.
 
 {% highlight scss %}
-// Extra small devices (portrait phones, less than ???px)
+// Extra small devices (portrait phones, less than 34em)
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 34em and up)

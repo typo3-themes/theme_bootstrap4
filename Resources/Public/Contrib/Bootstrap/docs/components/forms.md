@@ -13,7 +13,7 @@ Bootstrap provides several form control styles, layout options, and custom compo
 
 ## Form controls
 
-Bootstrap's form controls expand on [our Rebooted form styles](/components/reboot/#forms) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices. The example form below demonstrates common HTML form elements that receive updated styles from Bootstrap with additional classes.
+Bootstrap's form controls expand on [our Rebooted form styles]({{ site.baseurl }}/content/reboot/#forms) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices. The example form below demonstrates common HTML form elements that receive updated styles from Bootstrap with additional classes.
 
 Remember, since Bootstrap utilizes the HTML5 doctype, **all inputs must have a `type` attribute**.
 
@@ -169,7 +169,7 @@ Since Bootstrap applies `display: block` and `width: 100%` to almost all our for
 
 ### Form groups
 
-The `.form-group` class is the easiest way to add some structure to forms. It's only purpose is to provide `margin-bottom` around a label and control pairing. As a bonus, since it's a class you can use it with `<fieldset>`s, `<div>`s, or nearly any other element.
+The `.form-group` class is the easiest way to add some structure to forms. Its only purpose is to provide `margin-bottom` around a label and control pairing. As a bonus, since it's a class you can use it with `<fieldset>`s, `<div>`s, or nearly any other element.
 
 {% example html %}
 <form>
@@ -186,7 +186,7 @@ The `.form-group` class is the easiest way to add some structure to forms. It's 
 
 ### Inline forms
 
-Use the `.inline-form` class to to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms behave differently:
+Use the `.form-inline` class to to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms behave differently:
 
 - Controls are `display: inline-block` to provide alignment control via `vertical-align` and `margin`.
 - Controls receive `width: auto` to override the Bootstrap default `width: 100%`.
@@ -396,15 +396,15 @@ Should you have no text within the `<label>`, the input is positioned as you'd e
 When you need to place plain text next to a form label within a form, use the `.form-control-static` class on a `<p>`.
 
 {% example html %}
-<form class="form-horizontal">
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Email</label>
+<form>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Email</label>
     <div class="col-sm-10">
       <p class="form-control-static">email@example.com</p>
     </div>
   </div>
-  <div class="form-group">
-    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 form-control-label">Password</label>
     <div class="col-sm-10">
       <input type="password" class="form-control" id="inputPassword" placeholder="Password">
     </div>
@@ -462,7 +462,7 @@ Add the `disabled` attribute to a `<fieldset>` to disable all the controls withi
 {% callout warning %}
 #### Caveat about link functionality of `<a>`
 
-By default, browsers will treat all native form controls (`<input>`, `<select>` and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes `<a ... class="btn btn-*">` elements, these will only be given a style of `pointer-events: none`. As noted in the section about [disabled state for buttons](#buttons-disabled) (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.
+By default, browsers will treat all native form controls (`<input>`, `<select>` and `<button>` elements) inside a `<fieldset disabled>` as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes `<a ... class="btn btn-*">` elements, these will only be given a style of `pointer-events: none`. As noted in the section about [disabled state for buttons](../buttons/#disabled-state) (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.
 {% endcallout %}
 
 {% callout danger %}
@@ -473,7 +473,7 @@ While Bootstrap will apply these styles in all browsers, Internet Explorer 11 an
 
 ## Readonly inputs
 
-Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.<
+Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
 
 {% example html %}
 <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
@@ -484,9 +484,9 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 Set heights using classes like `.form-control-lg`, and set widths using grid column classes like `.col-lg-*`.
 
 {% example html %}
-<input class="form-control form-control-lg" type="text" placeholder=".input-lg">
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
 <input class="form-control" type="text" placeholder="Default input">
-<input class="form-control form-control-sm" type="text" placeholder=".input-sm">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
 {% endexample %}
 
 {% example html %}
@@ -535,7 +535,7 @@ Block help text—for below inputs or for longer lines of help text—can be eas
 
 ## Validation
 
-Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add `.has-warning`, `.has-error`, or `.has-success` to the parent element. Any `.control-label`, `.form-control`, and `.text-help` within that element will receive the validation styles.
+Bootstrap includes validation styles for danger, warning, and success states on form controls. To use, add `.has-warning`, `.has-danger`, or `.has-success` to the parent element. Any `.form-control-label`, `.form-control`, and `.text-help` within that element will receive the validation styles.
 
 {% comment %}
 {% callout warning %}
@@ -549,47 +549,41 @@ Ensure that an alternative indication of state is also provided. For instance, y
 
 {% example html %}
 <div class="form-group has-success">
-  <label class="control-label" for="inputSuccess1">Input with success</label>
+  <label class="form-control-label" for="inputSuccess1">Input with success</label>
   <input type="text" class="form-control form-control-success" id="inputSuccess1">
 </div>
 <div class="form-group has-warning">
-  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <label class="form-control-label" for="inputWarning1">Input with warning</label>
   <input type="text" class="form-control form-control-warning" id="inputWarning1">
 </div>
-<div class="form-group has-error">
-  <label class="control-label" for="inputError1">Input with error</label>
-  <input type="text" class="form-control form-control-error" id="inputError1">
+<div class="form-group has-danger">
+  <label class="form-control-label" for="inputDanger1">Input with danger</label>
+  <input type="text" class="form-control form-control-danger" id="inputDanger1">
 </div>
 
-<div class="has-success">
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" id="checkboxSuccess" value="option1">
-      Checkbox with success
-    </label>
-  </div>
+<div class="checkbox has-success">
+  <label>
+    <input type="checkbox" id="checkboxSuccess" value="option1">
+    Checkbox with success
+  </label>
 </div>
-<div class="has-warning">
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" id="checkboxWarning" value="option1">
-      Checkbox with warning
-    </label>
-  </div>
+<div class="checkbox has-warning">
+  <label>
+    <input type="checkbox" id="checkboxWarning" value="option1">
+    Checkbox with warning
+  </label>
 </div>
-<div class="has-error">
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" id="checkboxError" value="option1">
-      Checkbox with error
-    </label>
-  </div>
+<div class="checkbox has-danger">
+  <label>
+    <input type="checkbox" id="checkboxDanger" value="option1">
+    Checkbox with danger
+  </label>
 </div>
 {% endexample %}
 
 ## Custom forms
 
-For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They're built on top of semantic and accessible markup, so they're solid replacements any default form control.
+For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They're built on top of semantic and accessible markup, so they're solid replacements for any default form control.
 
 ### Checkboxes and radios
 
@@ -603,7 +597,7 @@ We hide the default `<input>` with `opacity` and use the `.c-indicator` to build
 
 With the sibling selector (`~`), we use the `:checked` state to trigger a makeshift checked state on the custom control.
 
-In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](http://useiconic.com/open). This provides us the best control for styling and positioning across browsers and devices.
+In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](https://useiconic.com/open). This provides us the best control for styling and positioning across browsers and devices.
 
 #### Checkboxes
 
@@ -667,7 +661,7 @@ Custom checkboxes and radios are inline to start. Add a parent with class `.c-in
 
 ### Select menu
 
-Custom `<select>` menus need only a custom class, `.c-selecct` to trigger the custom styles.
+Custom `<select>` menus need only a custom class, `.c-select` to trigger the custom styles.
 
 {% example html %}
 <select class="c-select">

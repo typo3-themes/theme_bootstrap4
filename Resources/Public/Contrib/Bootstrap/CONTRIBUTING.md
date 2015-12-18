@@ -19,14 +19,15 @@ and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.  Stack
-  Overflow ([`twitter-bootstrap-3`](https://stackoverflow.com/questions/tagged/twitter-bootstrap-3) tag), [Slack](https://bootstrap-slack.herokuapp.com/) or [IRC](README.md#community) are better places to get help.
+  Overflow ([`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4) tag), [Slack](https://bootstrap-slack.herokuapp.com/) or [IRC](README.md#community) are better places to get help.
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
 
 * Please **do not** open issues or pull requests regarding the code in
   [`Normalize`](https://github.com/necolas/normalize.css) (open them in
-  their respective repositories).
+  its repository).
+* Please **do not** open issues regarding the official themes offered on <http://themes.getbootstrap.com/>. Instead, please email any questions or feedback regarding those themes to `themes AT getbootstrap DOT com`.
 
 
 ## Issues and labels
@@ -35,7 +36,7 @@ Our bug tracker utilizes several labels to help organize and identify issues. He
 
 - `browser bug` - Issues that are reported to us, but actually are the result of a browser-specific bug. These are diagnosed with reduced test cases and result in an issue opened on that browser's own bug tracker.
 - `confirmed` - Issues that have been confirmed with a reduced test case and identify a bug in Bootstrap.
-- `css` - Issues stemming from our compiled CSS or source Less files.
+- `css` - Issues stemming from our compiled CSS or source Sass files.
 - `docs` - Issues for improving or updating our documentation.
 - `examples` - Issues involving the example templates included in our docs.
 - `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified. New features require a minor version bump (e.g., `v3.0.0` to `v3.1.0`).
@@ -66,7 +67,7 @@ Guidelines for bug reports:
 
 3. **Isolate the problem** &mdash; ideally create a [reduced test
    case](https://css-tricks.com/reduced-test-cases/) and a live example.
-   [This JS Bin](http://jsbin.com/lefey/1/edit?html,output) is a helpful template.
+   [This JS Bin](http://jsbin.com/qusafa/edit?html,output) is a helpful template.
 
 
 A good bug report shouldn't leave others needing to chase you up for more
@@ -104,7 +105,7 @@ When feasible, we aim to report such upstream bugs to the relevant browser vendo
 | Mozilla       | Firefox                      | Gecko            | https://bugzilla.mozilla.org/enter_bug.cgi                                            | "Core" is normally the right product option to choose.   |
 | Apple         | Safari                       | WebKit           | https://bugs.webkit.org/enter_bug.cgi?product=WebKit <br> https://bugreport.apple.com | In Apple's bug reporter, choose "Safari" as the product. |
 | Google, Opera | Chrome, Chromium, Opera v15+ | Blink            | https://code.google.com/p/chromium/issues/list                                        | Click the "New issue" button.                            |
-| Microsoft     | Internet Explorer            | Trident          | https://connect.microsoft.com/IE/feedback/LoadSubmitFeedbackForm                      |                                                          |
+| Microsoft     | Internet Explorer / Edge     | Trident/EdgeHTML | https://connect.microsoft.com/IE/feedback/LoadSubmitFeedbackForm                      |                                                          |
 
 ### Issues bots
 
@@ -134,9 +135,9 @@ Please adhere to the [coding guidelines](#code-guidelines) used throughout the
 project (indentation, accurate comments, etc.) and any other requirements
 (such as test coverage).
 
-**Do not edit `bootstrap.css`, `bootstrap-theme.css`, or `bootstrap.js`
+**Do not edit `bootstrap.css`, or `bootstrap.js`
 directly!** Those files are automatically generated. You should edit the
-source files in [`/bootstrap/less/`](https://github.com/twbs/bootstrap/tree/master/less)
+source files in [`/bootstrap/scss/`](https://github.com/twbs/bootstrap/tree/master/scss)
 and/or [`/bootstrap/js/`](https://github.com/twbs/bootstrap/tree/master/js) instead.
 
 Similarly, when contributing to Bootstrap's documentation, you should edit the

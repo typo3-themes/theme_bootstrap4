@@ -6,7 +6,7 @@ group: getting-started
 
 **Bootstrap v{{ site.current_version}}** is available for download in several ways, including some of your favorite package managers. Choose from the options below to snag just what you need.
 
-<div class="row m-t-md">
+<div class="row m-t-2">
   <div class="col-sm-6">
 {% markdown %}
 ### Compiled
@@ -21,7 +21,7 @@ Download just the compiled and minified CSS and JavaScript. Doesn't include any 
   <div class="col-sm-6">
 {% markdown %}
 ### Source files
-Download everything: source Sass, JavaScript, and documentation files. **Requires a Sass compiler, [Autoprefixer](https://github.com/postcss/autoprefixer), and [some setup](../compiling).**
+Download everything: source Sass, JavaScript, and documentation files. **Requires a Sass compiler, [Autoprefixer](https://github.com/postcss/autoprefixer), and [some setup]({{ site.baseurl }}/getting-started/build-tools/#tooling-setup).**
 
 <a href="{{ site.download.source }}" class="btn btn-bs btn-outline" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download source');">Download source</a>
 {% endmarkdown %}
@@ -40,25 +40,25 @@ Pull in Bootstrap's **source files** into nearly any project with some of the mo
 
 Install and manage Bootstrap's Sass and JavaScript using [Bower](http://bower.io).
 
-{% highlight bash %}$ bower install bootstrap{% endhighlight %}
+{% highlight bash %}$ bower install bootstrap#v{{ site.current_version }}{% endhighlight %}
 
 ### npm
 
 Install Bootstrap in your Node powered apps with [the npm package](https://www.npmjs.org/package/bootstrap):
 
-{% highlight bash %}$ npm install bootstrap{% endhighlight %}
+{% highlight bash %}$ npm install bootstrap@{{ site.current_version }}{% endhighlight %}
 
 `require('bootstrap')` will load all of Bootstrap's jQuery plugins onto the jQuery object. The `bootstrap` module itself does not export anything. You can manually load Bootstrap's jQuery plugins individually by loading the `/js/*.js` files under the package's top-level directory.
 
 Bootstrap's `package.json` contains some additional metadata under the following keys:
 
-- `less` - path to Bootstrap's main [Less](http://lesscss.org) source file
+- `sass` - path to Bootstrap's main [Sass](http://sass-lang.com/) source file
 - `style` - path to Bootstrap's non-minified CSS that's been precompiled using the default settings (no customization)
 
 ### Meteor
 
 {% highlight bash %}
-$ meteor add twbs:bootstrap
+$ meteor add twbs:bootstrap@={{ site.current_version }}
 {% endhighlight %}
 
 ### Composer
@@ -69,6 +69,16 @@ You can also install and manage Bootstrap's Sass and JavaScript using [Composer]
 $ composer require twbs/bootstrap
 {% endhighlight %}
 
+### NuGet
+
+If you develop in .NET, you can also install and manage Bootstrap's [CSS](https://www.nuget.org/packages/bootstrap/) or [Sass](https://www.nuget.org/packages/bootstrap.sass/) and JavaScript using [NuGet](https://www.nuget.org):
+
+{% highlight powershell %}
+PM> Install-Package bootstrap -Pre
+PM> Install-Package bootstrap.sass -Pre
+{% endhighlight %}
+
+The `-Pre` is required until Bootstrap v4 has a stable release.
 
 ## Custom builds
 
@@ -91,3 +101,4 @@ Need only a part of Bootstrap's CSS or JS? Use one of the custom builds to snag 
     <a class="btn btn-bs btn-outline" href="#">Download</a>
   </div>
 </div>
+

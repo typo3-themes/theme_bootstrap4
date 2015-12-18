@@ -1,4 +1,4 @@
-# Source: http://stackoverflow.com/questions/19169849/how-to-get-markdown-processed-content-in-jekyll-tag-plugin
+# Source: https://stackoverflow.com/questions/19169849/how-to-get-markdown-processed-content-in-jekyll-tag-plugin
 
 module Jekyll
   module Tags
@@ -17,7 +17,7 @@ module Jekyll
 
       def render(context)
         site = context.registers[:site]
-        converter = site.getConverterImpl(::Jekyll::Converters::Markdown)
+        converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
         output = converter.convert(super(context))
         "<div class=\"bd-callout bd-callout-#{@type}\">#{output}</div>"
       end

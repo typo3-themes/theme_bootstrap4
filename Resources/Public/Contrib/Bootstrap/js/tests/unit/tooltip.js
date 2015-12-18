@@ -25,6 +25,18 @@ $(function () {
     assert.strictEqual($.fn.tooltip, undefined, 'tooltip was set back to undefined (org value)')
   })
 
+  QUnit.test('should throw explicit error on undefined method', function (assert) {
+    assert.expect(1)
+    var $el = $('<div/>')
+    $el.bootstrapTooltip()
+    try {
+      $el.bootstrapTooltip('noMethod')
+    }
+    catch (err) {
+      assert.strictEqual(err.message, 'No method named "noMethod"')
+    }
+  })
+
   QUnit.test('should return jquery collection containing the element', function (assert) {
     assert.expect(2)
     var $el = $('<div/>')
@@ -118,6 +130,35 @@ $(function () {
     $tooltip.bootstrapTooltip('hide')
     assert.strictEqual($tooltip.data('bs.tooltip').tip.parentNode, null, 'tooltip removed')
   })
+
+  QUnit.test('should allow DOMElement title (html: false)', function (assert) {
+    assert.expect(3)
+    var title = document.createTextNode('<3 writing tests')
+    var $tooltip = $('<a href="#" rel="tooltip"/>')
+      .appendTo('#qunit-fixture')
+      .bootstrapTooltip({ title: title })
+
+    $tooltip.bootstrapTooltip('show')
+
+    assert.notEqual($('.tooltip').length, 0, 'tooltip inserted')
+    assert.strictEqual($('.tooltip').text(), '<3 writing tests', 'title inserted')
+    assert.ok(!$.contains($('.tooltip').get(0), title), 'title node copied, not moved')
+  })
+
+  QUnit.test('should allow DOMElement title (html: true)', function (assert) {
+    assert.expect(3)
+    var title = document.createTextNode('<3 writing tests')
+    var $tooltip = $('<a href="#" rel="tooltip"/>')
+      .appendTo('#qunit-fixture')
+      .bootstrapTooltip({ html: true, title: title })
+
+    $tooltip.bootstrapTooltip('show')
+
+    assert.notEqual($('.tooltip').length, 0, 'tooltip inserted')
+    assert.strictEqual($('.tooltip').text(), '<3 writing tests', 'title inserted')
+    assert.ok($.contains($('.tooltip').get(0), title), 'title node moved, not copied')
+  })
+
 
   QUnit.test('should respect custom classes', function (assert) {
     assert.expect(2)

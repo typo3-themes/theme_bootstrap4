@@ -11,7 +11,7 @@ Modals are streamlined, but flexible, dialog prompts with the minimum required f
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-**Due to how HTML5 defines its semantics, the `autofocus` HTML attribute has no effect in Bootstrap modals.** To achieve the same effect, use some custom JavaScript:
+**Due to how HTML5 defines its semantics, [the `autofocus` HTML attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus) has no effect in Bootstrap modals.** To achieve the same effect, use some custom JavaScript:
 
 {% highlight js %}
 $('#myModal').on('shown.bs.modal', function () {
@@ -34,12 +34,12 @@ Always try to place a modal's HTML code in a top-level position in your document
 {% callout warning %}
 #### Mobile device caveats
 
-There are some caveats regarding using modals on mobile devices. [See our browser support docs](../getting-started/#support-fixed-position-keyboards) for details.
+There are some caveats regarding using modals on mobile devices. [See our browser support docs]({{ site.baseurl }}/getting-started/browsers-devices/#modals-navbars-and-virtual-keyboards) for details.
 {% endcallout %}
 
 ### Static example
 
-A rendered modal with header, body, and set of actions in the footer.</p>
+A rendered modal with header, body, and set of actions in the footer.
 
 <div class="bd-example bd-example-modal">
   <div class="modal">
@@ -48,7 +48,6 @@ A rendered modal with header, body, and set of actions in the footer.</p>
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
           </button>
           <h4 class="modal-title">Modal title</h4>
         </div>
@@ -71,7 +70,6 @@ A rendered modal with header, body, and set of actions in the footer.</p>
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title">Modal title</h4>
       </div>
@@ -98,7 +96,6 @@ Toggle a modal via JavaScript by clicking the button below. It will slide down a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
@@ -153,7 +150,6 @@ Toggle a modal via JavaScript by clicking the button below. It will slide down a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
@@ -172,7 +168,7 @@ Toggle a modal via JavaScript by clicking the button below. It will slide down a
 {% callout warning %}
 #### Make modals accessible
 
-Be sure to add `role="dialog"` and `aria-labelledby="..."``, referencing the modal title, to `.modal`, and `role="document"` to the `.modal-dialog` itself.
+Be sure to add `role="dialog"` and `aria-labelledby="..."`, referencing the modal title, to `.modal`, and `role="document"` to the `.modal-dialog` itself.
 
 Additionally, you may give a description of your modal dialog with `aria-describedby` on `.modal`.
 {% endcallout %}
@@ -180,7 +176,7 @@ Additionally, you may give a description of your modal dialog with `aria-describ
 {% callout info %}
 #### Embedding YouTube videos
 
-Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. [See this helpful Stack Overflow post](http://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal) for more information.
+Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. [See this helpful Stack Overflow post](https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal) for more information.
 {% endcallout %}
 
 ## Optional sizes
@@ -223,7 +219,6 @@ Modals have two optional sizes, available via modifier classes to be placed on a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
       </div>
@@ -241,7 +236,6 @@ Modals have two optional sizes, available via modifier classes to be placed on a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
       </div>
@@ -264,7 +258,7 @@ For modals that simply appear rather than fade in to view, remove the `.fade` cl
 
 ## Using the grid system
 
-To take advantage of the Bootstrap grid system within a modal, just nest `.container-fluid within the `.modal-body` and then use the normal grid system classes within this container.
+To take advantage of the Bootstrap grid system within a modal, just nest `.container-fluid` within the `.modal-body` and then use the normal grid system classes within this container.
 
 {% example html %}
 <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
@@ -275,26 +269,28 @@ To take advantage of the Bootstrap grid system within a modal, just nest `.conta
         <h4 class="modal-title" id="gridModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        <div class="row">
-          <div class="col-md-4">.col-md-4</div>
-          <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-          <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-9">
-            Level 1: .col-sm-9
-            <div class="row">
-              <div class="col-xs-8 col-sm-6">
-                Level 2: .col-xs-8 .col-sm-6
-              </div>
-              <div class="col-xs-4 col-sm-6">
-                Level 2: .col-xs-4 .col-sm-6
+        <div class="container-fluid bd-example-row">
+          <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+            <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9">
+              Level 1: .col-sm-9
+              <div class="row">
+                <div class="col-xs-8 col-sm-6">
+                  Level 2: .col-xs-8 .col-sm-6
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                  Level 2: .col-xs-4 .col-sm-6
+                </div>
               </div>
             </div>
           </div>
@@ -316,7 +312,7 @@ To take advantage of the Bootstrap grid system within a modal, just nest `.conta
 
 ## Varying modal content based on trigger button
 
-Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use `event.relatedTarget` and [HTML `data-*` attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) (possibly [via jQuery](http://api.jquery.com/data/)) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on `relatedTarget`.
+Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use `event.relatedTarget` and [HTML `data-*` attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes) (possibly [via jQuery](https://api.jquery.com/data/)) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on `relatedTarget`.
 
 {% example html %}
 <div class="bd-example">
@@ -329,18 +325,17 @@ Have a bunch of buttons that all trigger the same modal, just with slightly diff
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
           </button>
           <h4 class="modal-title" id="exampleModalLabel">New message</h4>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="recipient-name" class="control-label">Recipient:</label>
+              <label for="recipient-name" class="form-control-label">Recipient:</label>
               <input type="text" class="form-control" id="recipient-name">
             </div>
             <div class="form-group">
-              <label for="message-text" class="control-label">Message:</label>
+              <label for="message-text" class="form-control-label">Message:</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
           </form>
@@ -398,9 +393,9 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
     <thead>
      <tr>
        <th style="width: 100px;">Name</th>
-       <th style="width: 50px;">type</th>
-       <th style="width: 50px;">default</th>
-       <th>description</th>
+       <th style="width: 50px;">Type</th>
+       <th style="width: 50px;">Default</th>
+       <th>Description</th>
      </tr>
     </thead>
     <tbody>
@@ -428,7 +423,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 ### Methods
 
-#### .modal(options)
+#### `.modal(options)`
 
 Activates your content as a modal. Accepts an optional options `object`.
 
@@ -438,19 +433,19 @@ $('#myModal').modal({
 })
 {% endhighlight %}
 
-#### .modal('toggle')
+#### `.modal('toggle')`
 
 Manually toggles a modal. **Returns to the caller before the modal has actually been shown or hidden** (i.e. before the `shown.bs.modal` or `hidden.bs.modal` event occurs).
 
 {% highlight js %}$('#myModal').modal('toggle'){% endhighlight %}
 
-#### .modal('show')
+#### `.modal('show')`
 
 Manually opens a modal. **Returns to the caller before the modal has actually been shown** (i.e. before the `shown.bs.modal` event occurs).
 
 {% highlight js %}$('#myModal').modal('show'){% endhighlight %}
 
-#### .modal('hide')
+#### `.modal('hide')`
 
 Manually hides a modal. **Returns to the caller before the modal has actually been hidden** (i.e. before the `hidden.bs.modal` event occurs).
 
