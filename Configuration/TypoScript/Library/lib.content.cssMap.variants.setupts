@@ -1,0 +1,38 @@
+#ToDo: check all variants / check documentation for removed and new classes
+
+lib.content.cssMap.variants {
+
+	# Variants available for each element
+	alert-success = alert alert-success
+	alert-info = alert alert-info
+	alert-warning = alert alert-warning
+	alert-danger = alert alert-danger
+	wide-screen = jumbotron
+
+	framed-default = well
+	framed-small = well well-sm
+	framed-large = well well-lg
+
+	# Variants only for header content elements
+	page-header = page-header
+
+	navigation-pills-color1 = nav-pills-color1
+	navigation-pills-color2 = nav-pills-color2
+	navigation-pills-color3 = nav-pills-color3
+	navigation-pills-color4 = nav-pills-color4
+	navigation-pills-color5 = nav-pills-color5
+	navigation-pills-color6 = nav-pills-color6
+
+	buttons {
+		button-default = btn btn-default
+		button-primary = btn btn-primary
+		button-success = btn btn-success
+		button-info = btn btn-info
+		button-warning = btn btn-warning
+		button-danger = btn btn-danger
+		button-large = btn btn-lg
+		button-small = btn btn-sm
+		button-extra-small = btn btn-xs
+		button-block = btn btn-block
+	}
+}

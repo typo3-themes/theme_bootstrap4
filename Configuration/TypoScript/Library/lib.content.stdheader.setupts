@@ -1,0 +1,13 @@
+#ToDo: Do we need this is FluidStyledContent
+
+lib.stdheader.10.setCurrent.prepend = TEXT
+lib.stdheader.10.setCurrent.prepend {
+	fieldRequired = tx_themes_icon
+	field = tx_themes_icon
+	stdWrap.postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
+	stdWrap.postUserFunc {
+		iconMapping =< lib.icons.cssMap
+	}
+	required = 1
+	noTrimWrap = |<i class="|" aria-hidden="true"></i> |
+}

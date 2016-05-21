@@ -1,0 +1,8 @@
+# cat=container; type=int+; label= Container for news (tt_news, news). Default is theme rootpage.
+themes.configuration.container.news = {$themes.templatePageId}
+
+# cat=pages; type=int+; label= News list page
+themes.configuration.pages.newsList = 89
+
+# cat=pages; type=int+; label= News detail page
+themes.configuration.pages.newsDetails = 90

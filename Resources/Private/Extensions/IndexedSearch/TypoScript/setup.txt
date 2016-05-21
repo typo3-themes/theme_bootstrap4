@@ -1,0 +1,23 @@
+
+# activate indexed search
+page.config.index_enable = 1
+
+config.index_enable = 1
+config.index_externals = 1
+config.index_metatags = 1
+
+# Set the current language
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = {$themes.languages.current.uid}
+
+# Plugin configuration
+plugin.tx_indexedsearch {
+
+	# Normal/Marker based
+	#############################
+	templateFile =  EXT:theme_bootstrap4/Resources/Private/Extensions/IndexedSearch/Templates/Template.html
+	result_link_target = _self
+	show {
+		rules = 0
+		advancedSearchLink = 0
+	}
+}

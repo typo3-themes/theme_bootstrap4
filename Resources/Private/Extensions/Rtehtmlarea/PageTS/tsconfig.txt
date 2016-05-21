@@ -1,0 +1,319 @@
+# ToDo: Language Keys
+
+RTE.classes {
+	# ToDo: Remove not used default styles don't work
+	align-left >
+	align-center >
+	align-right >
+
+	# Bootrap4 -> Content -> Typography -> Headings
+	h1 {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h1_label
+	}
+
+	h2 {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h2_label
+	}
+	h3 {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h3_label
+	}
+	h4 {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h4_label
+	}
+	h5 {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h5_label
+	}
+	h6 {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h6_label
+	}
+
+	# Bootrap4 -> Content -> Typography -> Display headings
+	display-1 {
+		name = LLL Display 1
+	}
+	display-2 {
+		name = LLL Display 2
+	}
+	display-3 {
+		name = LLL Display 3
+	}
+	display-4 {
+		name = LLL Display 4
+	}
+
+	# Bootrap4 -> Content -> Typography -> Lead
+	lead {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.lead_label
+	}
+
+	# Bootrap4 -> Components -> Utility classes  -> Text alignment
+	# text-justify = align-justify
+	text-nowrap {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-nowrap_label
+	}
+	text-xs-left {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifyleft
+		value = text-align: left;
+	}
+	text-xs-center {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifycenter
+		value = text-align: center;
+	}
+	text-xs-right {
+		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifyright
+		value = text-align: right;
+	}
+	text-sm-left {
+		name = LLL Left (sm or wider)
+	}
+	text-sm-center {
+		name = LLL Center (sm or wider)
+	}
+	text-sm-right {
+		name = LLL Right (sm or wider)
+	}
+	text-md-left {
+		name = LLL Left (md or wider)
+	}
+	text-md-center {
+		name = LLL Center (md or wider)
+	}
+	text-md-right {
+		name = LLL Right (md or wider)
+	}
+	text-lg-left {
+		name = LLL Left (lg or wider)
+	}
+	text-lg-center {
+		name = LLL Center (lg or wider)
+	}
+	text-lg-right {
+		name = LLL Right (lg or wider)
+	}
+	text-xl-left {
+		name = LLL Left (xl or wider)
+	}
+	text-xl-center {
+		name = LLL Center (xl or wider)
+	}
+	text-xl-right {
+		name = LLL Right (xl or wider)
+	}
+	# Bootrap4 -> Components -> Utility classes  -> Text transform
+	text-lowercase {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lowercase_label
+		value = text-transform: lowercase;
+	}
+	text-uppercase {
+	    name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-uppercase_label
+	    value = text-transform: uppercase;
+	}
+	text-capitalize {
+	    name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-capitalize_label
+	    value = text-transform: capitalize;
+	}
+    # Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds
+	text-muted {
+	    name = LLL Text muted
+	    value = color: #818a91
+	}
+	text-primary {
+	    name = LLL Text primary
+	    value = color: #0275d8
+	}
+	text-secondary {
+	    # ToDo: gibt es die in Bootstrap?
+	    name = LLL Text secondary
+	    value = color: orange
+	}
+	text-success {
+	    name = LLL Text success
+	    value = color: #5cb85c
+	}
+	text-info {
+	    name = LLL Text info
+	    value = color: #5bc0de
+	}
+	text-warning {
+	    name = LLL Text warning
+	    value = color: #f0ad4e
+	}
+	text-danger {
+	    name = LLL Text danger
+	    value = color: #d9534f
+	}
+	bg-primary {
+	    name = LLL Background primary
+	    value = padding: 0.5rem; color: #ffffff; background-color: #0275d8
+	}
+	bg-secondary {
+	    # ToDo: gibt es die in Bootstrap?
+	    name = LLL Background secondary
+	    value = padding: 0.5rem; color: #ffffff; background-color: orange
+	}
+	bg-success {
+	    name = LLL Background success
+	    value = padding: 0.5rem; color: #ffffff; background-color: #5cb85c
+	}
+	bg-info {
+	    name = LLL Background info
+	    value = padding: 0.5rem; color: #ffffff; background-color: #5bc0de
+	}
+	bg-warning {
+	    name = LLL Background warning
+	    value = padding: 0.5rem; color: #ffffff; background-color: #f0ad4e
+	}
+	bg-danger {
+	    name = LLL Background danger
+	    value = padding: 0.5rem; color: #ffffff; background-color: #d9534f
+	}
+	bg-inverse {
+	    name = LLL Background inverse
+	    value = padding: 0.5rem; color: #eceeef; background-color: #373a3c
+	}
+
+
+
+
+
+
+	# ToDo: Chek the following classes!
+
+	small {
+	name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.small_label
+	}
+
+	### Alignment classes
+
+	### Abbreviations
+	initialism {
+	name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.abbr-initialism_label
+	}
+	### Blockquotes
+	blockquote-reverse {
+	name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.blockquote-reverse_label
+	}
+}
+
+
+
+RTE.default {
+
+# BE Style File
+# ToDo: Currently it is not possible to use .scss files for the backend.
+	contentCSS {
+		default = typo3/sysext/rtehtmlarea/Resources/Public/Css/ContentCss/Default.css
+		#theme_bootstrap4 = typo3conf/ext/theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Dyncss/backend.scss
+		theme_bootstrap4 = typo3conf/ext/theme_bootstrap4/Resources/Public/Extensions/Rtehtmlarea/Stylesheets/backend.css
+		theme_bootstrap4-additional-label = typo3conf/ext/theme_bootstrap4/Resources/Public/Extensions/Rtehtmlarea/Stylesheets/additional-label.css
+	}
+
+	# Show buttons
+	## wildcard is *
+	## To display some buttons, such as small font, the option "Additional inline elements" hav to be activated in the extension configuration.
+	#### ToDo: maybe in a new file
+	showButtons := addToList(acronym, user, small, big, deletedtext, showmicrodata, editelement)
+	#showButtons = *
+
+	# list allowed classes (must also be defined in the css-file)
+	proc.allowedClasses := addToList(h1, h2, h3, h4, h5, h6)
+	proc.allowedClasses := addToList(display-1, display-2, display-3, display-4)
+	proc.allowedClasses := addToList(lead)
+	proc.allowedClasses := addToList(text-nowrap)
+	proc.allowedClasses := addToList(text-xs-left, text-xs-center, text-xs-right)
+	proc.allowedClasses := addToList(text-sm-left, text-sm-center, text-sm-right)
+	proc.allowedClasses := addToList(text-md-left, text-md-center, text-md-right)
+	proc.allowedClasses := addToList(text-lg-left, text-lg-center, text-lg-right)
+	proc.allowedClasses := addToList(text-xl-left, text-xl-center, text-xl-right)
+	proc.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
+	proc.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+	proc.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
+	proc.allowedClasses := addToList(small, initialism, blockquote-reverse) #
+
+	buttons {
+		# A class name to be assigned to the blocks whenever the item is applied to selected text.
+		blockstyle.tags {
+				# Blockstyle like div or p
+				div.allowedClasses := addToList(h1, h2, h3, h4, h5, h6)
+				div.allowedClasses := addToList(display-1, display-2, display-3, display-4)
+				div.allowedClasses := addToList(lead)
+				div.allowedClasses := addToList(text-nowrap)
+				div.allowedClasses := addToList(text-xs-left, text-xs-center, text-xs-right)
+				div.allowedClasses := addToList(text-sm-left, text-sm-center, text-sm-right)
+				div.allowedClasses := addToList(text-md-left, text-md-center, text-md-right)
+				div.allowedClasses := addToList(text-lg-left, text-lg-center, text-lg-right)
+				div.allowedClasses := addToList(text-xl-left, text-xl-center, text-xl-right)
+				div.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
+				div.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+				div.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
+				div.allowedClasses := addToList(small)  #
+				# allowed classes for table-tag
+				table.allowedClasses := addToList()
+				# allowed classes for blockquote-tag
+				blockquote.allowedClasses := addToList(blockquote-reverse)  #
+		}
+		# for the textstyle
+		textstyle.tags {
+			# allowed classes for span-tag
+			span.allowedClasses := addToList(h1, h2, h3, h4, h5, h6)
+			span.allowedClasses := addToList(display-1, display-2, display-3, display-4)
+			span.allowedClasses := addToList(lead)
+			span.allowedClasses := addToList(text-nowrap)
+			span.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
+			span.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+			span.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
+			span.allowedClasses := addToList(small) #
+			# allowed classes for acronym-tag
+			acronym.allowedClasses := addToList(initialism)
+		}
+		# allowed classes for links (a-tag)
+		link.properties.class {
+		    allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+        }
+		# override: Hide infrequently used block types in the block formatting selector
+		formatblock.removeItems >
+	}
+
+
+
+
+	# User Elements (displayed with button user)
+	userElements {
+	10 = Blockquote
+	10 {
+	10 = Width naming a source
+	10.description = Example
+	10.mode = wrap
+	10.content = <blockquote><p>|</p><footer>Someone famous in <cite title="Source Title">Source Title</cite></footer></blockquote>
+	20 = Alternate displays
+	20.description = width naming a source
+	20.mode = wrap
+	20.content = <blockquote class="blockquote-reverse"><p>|</p><footer>Someone famous in <cite title="Source Title">Source Title</cite></footer></blockquote>
+	}
+	20 = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.category-mark_label
+	20 {
+	10 = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.name-mark_label
+	10.description = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.description-mark_label
+	10.mode = wrap
+	10.content = <mark>|</mark>
+	}
+	90 = Eigene Sondertags
+	90 {
+	1 = Sondertag
+	1.description = Der ausgewählte Text wird umschlossen von <sondertag></sondertag>
+	1.mode = wrap
+	1.content = <sondertag>|</sondertag>
+	}
+	}
+
+	# To allow the new tags
+	proc.allowTags := addToList(mark, sondertag)
+	proc.allowTagsOutside := addToList(mark, sondertag)
+	proc.entryHTMLparser_db.allowTags := addToList(mark, sondertag)
+
+}
+
+# Diese Zeile übernimmt die geänderte RTE-Konfiguration für den Editor, wenn dieser im Frontend verwendet wird.
+RTE.default.FE < RTE.default
+
+#Info: Eine Abkürzung (acronym) muss erste in der Listenansicht im Beckend eingebunden werden, bevor der Button im RTE sichtbar wird.

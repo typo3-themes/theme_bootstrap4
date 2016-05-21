@@ -1,0 +1,15 @@
+#ToDo: check all variants / check documentation for removed and new classes
+
+lib.content.cssMap.variants.singleColumnHeaderFooter {
+	panel-default = panel panel-default
+
+	panel-heading = panel-heading
+	panel-body = panel-body
+	panel-footer = panel-footer
+
+	panel-primary = panel panel-primary
+	panel-success = panel panel-success
+	panel-info = panel panel-info
+	panel-warning = panel panel-warning
+	panel-danger = panel panel-danger
+}

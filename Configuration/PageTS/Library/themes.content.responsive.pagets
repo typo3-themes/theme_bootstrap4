@@ -1,0 +1,124 @@
+themes {
+	content {
+		# Responsive content element settings
+		responsive {
+			default {
+				extralarge {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extralarge
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						# hidden-up = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.hidden
+						hidden-up = Hidden up
+						hidden-down = Hidden down
+					}
+				}
+				large {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.large
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						hidden-up = Hidden up
+                        hidden-down = Hidden down
+					}
+				}
+				medium {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.medium
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						hidden-up = Hidden up
+                        hidden-down = Hidden down
+					}
+				}
+				small {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.small
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						hidden-up = Hidden up
+                        hidden-down = Hidden down
+					}
+				}
+				extrasmall {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extrasmall
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						hidden-up = Hidden up
+                        hidden-down = Hidden down
+					}
+				}
+			}
+
+			#ToDo: Check / integrate equal height
+
+			# Special settings for GridElements
+			# Used by ctype gridelements_pi1
+			# Will be merged with default
+			gridelements_pi1 {
+				extralarge {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extralarge
+					rowSettings {
+						equalHeight = equal height
+					}
+					columnSettings {
+						offset = Offset
+						pull = Pull
+						push = Push
+						width = Width
+					}
+				}
+				large {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.large
+					rowSettings {
+						equalHeight = equal height
+					}
+					columnSettings {
+						offset = Offset
+						pull = Pull
+						push = Push
+						width = Width
+					}
+				}
+				medium {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.medium
+					rowSettings {
+						equalHeight = equal height
+					}
+					columnSettings {
+						offset = Offset
+						pull = Pull
+						push = Push
+						width = Width
+					}
+				}
+				small {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.small
+					rowSettings {
+						equalHeight = equal height
+					}
+					columnSettings {
+						offset = Offset
+						pull = Pull
+						push = Push
+						width = Width
+					}
+				}
+				extrasmall {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extrasmall
+					rowSettings {
+						equalHeight = equal height
+					}
+					columnSettings {
+						offset = Offset
+						pull = Pull
+						push = Push
+						width = Width
+					}
+				}
+			}
+			
+		}
+	}
+}

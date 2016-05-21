@@ -1,0 +1,63 @@
+.ce-textpic {
+	&.ce-intext.ce-nowrap,
+	&.ce-below,
+	&.ce-above {
+		@include make-row();
+	}
+	&.ce-below,
+	&.ce-above {
+		.ce-gallery,
+		.ce-bodytext {
+			@include make-col();
+			@include make-col-span(12);
+		}
+	}
+	&.ce-intext.ce-nowrap {
+		&.ce-right {
+			@include media-breakpoint-up("sm") {
+				.ce-gallery {
+					@include make-col-push(6);
+				}
+				.ce-bodytext {
+					@include make-col-pull(6);
+				}
+			}
+		}
+		.ce-gallery,
+		.ce-bodytext {
+			@include make-col();
+			@include make-col-span(12);
+			@include media-breakpoint-up("sm") {
+				@include make-col-span(6);
+			}
+		}
+	}
+	&.ce-intext:not(.ce-nowrap) {
+		@include clearfix();
+		&.ce-right .ce-media {
+			padding-left: $grid-gutter-width;
+		}
+		&.ce-left .ce-media {
+			padding-right: $grid-gutter-width;
+		}
+	}
+	&.ce-center {
+		.ce-media {
+			> figure,
+			> img {
+				@extend .center-block;
+			}
+
+		}
+	}
+	&.ce-right {
+		.ce-media {
+			@extend .pull-xs-right;
+		}
+	}
+	&.ce-left {
+		.ce-media {
+			@extend .pull-xs-left;
+		}
+	}
+}

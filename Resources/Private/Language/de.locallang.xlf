@@ -26,25 +26,25 @@
 			-->
 
 			<!-- Responsive devices labels -->
-			<trans-unit id="content.responsive.devices.desktop" xml:space="preserve">
+			<trans-unit id="content.responsive.devices.extralarge" xml:space="preserve">
+				<source>Large Desktops</source>
+				<target>Large Desktops</target>
+			</trans-unit>
+			<trans-unit id="content.responsive.devices.large" xml:space="preserve">
 				<source>Desktop</source>
 				<target>Desktop</target>
 			</trans-unit>
-			<trans-unit id="content.responsive.devices.mobile" xml:space="preserve">
-				<source>Mobile</source>
-				<target>Mobile</target>
+			<trans-unit id="content.responsive.devices.medium" xml:space="preserve">
+				<source>Tablett</source>
+				<target>Tablett</target>
 			</trans-unit>
-			<trans-unit id="content.responsive.devices.tablet" xml:space="preserve">
-				<source>Tablet</source>
-				<target>Tablet</target>
+			<trans-unit id="content.responsive.devices.small" xml:space="preserve">
+				<source>Landscape phones</source>
+				<target>Landscape phones</target>
 			</trans-unit>
-			<trans-unit id="content.responsive.devices.large" xml:space="preserve">
-				<source>Large</source>
-				<target>Large</target>
-			</trans-unit>
-			<trans-unit id="content.responsive.devices.extralarge" xml:space="preserve">
-				<source>Extra large</source>
-				<target>Extra large</target>
+			<trans-unit id="content.responsive.devices.extrasmall" xml:space="preserve">
+				<source>Portrait phones</source>
+				<target>Portrait phones</target>
 			</trans-unit>
 
 			<!-- Responsive visibility labels -->

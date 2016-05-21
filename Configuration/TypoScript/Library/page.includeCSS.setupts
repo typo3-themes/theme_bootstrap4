@@ -1,3 +1,5 @@
+#ToDo: Check Fontawesome version
+
 page {
 	includeCSS {
 		theme = EXT:theme_bootstrap4/Resources/Private/Dyncss/import.scss

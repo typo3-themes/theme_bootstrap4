@@ -72,3 +72,14 @@ themes.configuration.socialmedia.useYoutube = 0
 
 # cat=socialmedia,advanced/socialmedia_youtube/; type=string; label= Youtube: Pagelink
 themes.configuration.socialmedia.youtubeLink = https://www.youtube.com/user/typo3/
+
+
+
+# Instagram
+#############################################
+
+# cat=socialmedia,advanced/socialmedia_instagram/; type=options[0,1]; label= Instagram: Activate?!
+themes.configuration.socialmedia.useInstagram = 0
+
+# cat=socialmedia,advanced/socialmedia_instagram/; type=string; label= Instagram: Pagelink
+themes.configuration.socialmedia.instagramLink = https://www.instagram.com/explore/tags/typo3/

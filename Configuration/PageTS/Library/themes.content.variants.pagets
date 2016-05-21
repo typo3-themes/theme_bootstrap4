@@ -1,0 +1,73 @@
+#ToDo: Alerts in select box
+#ToDo: check all variants / check documentation for removed and new classes
+themes {
+	content {
+		# Variants for content elements
+		variants {
+			default {
+				framed {
+					#ToDo: Label in language file
+					#ToDo: Frame is removed - check Documentation for new variants
+					label = LLL Chose frame
+					default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed
+					small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_small
+					large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_large
+				}
+			}
+			# Special variant for Header
+			# Used by ctype header
+			# Will be merged with default
+			header {
+				page-header = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.page_header
+				alert-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_success
+				alert-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_info
+				alert-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_warning
+				alert-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_danger
+			}
+			# ctype: text
+			text {
+				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
+				alert-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_success
+				alert-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_info
+				alert-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_warning
+				alert-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_danger
+			}
+			# ctype: textpic
+			textpic {
+				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
+			}
+			# ctype: image
+			image {
+				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
+			}
+			# ctype: gridelements_pi1
+			gridelements_pi1 {
+				container {
+					wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
+					alert-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_success
+					alert-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_info
+					alert-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_warning
+					alert-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_danger
+				}
+				singleColumnHeaderFooter {
+					panel-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_primary
+					panel-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_success
+					panel-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_info
+					panel-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_warning
+					panel-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_danger
+				}
+			}
+			themes_buttoncontent_pi1 {
+				button-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.primary
+				button-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.success
+				button-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.info
+				button-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.warning
+				button-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.danger
+				button-large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.large
+				button-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.small
+				button-extra-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.extra-small
+				button-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.block
+			}
+		}
+	}
+}

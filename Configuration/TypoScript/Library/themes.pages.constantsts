@@ -5,7 +5,7 @@ themes.page = default
 # #customcategory=pages=Theme: Page settings
 
 # cat=pages,advanced//; type=int+; label= Startsite page uid
-themes.configuration.pages.startsite = 1
+themes.configuration.pages.startsite = 0
 
 # cat=pages,advanced//; type=int+; label= Page for the terms and conditions
 themes.configuration.pages.legal = 0
@@ -24,6 +24,9 @@ themes.configuration.pages.sitemap = 0
 
 # cat=pages,advanced//; type=int+; label= Search page
 themes.configuration.pages.search = 0
+
+# cat=pages,advanced//; type=int+; label= Directions page
+themes.configuration.pages.directions = 0
 
 # cat=pages,advanced//; type=int+; label= Login page
 themes.configuration.pages.login = 0

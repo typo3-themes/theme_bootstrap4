@@ -1,0 +1,53 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+
+env:
+  - TYPO3_BRANCH=master COVERAGE=0
+  - TYPO3_BRANCH=TYPO3_6-2 COVERAGE=0
+
+matrix:
+  exclude:
+    - php: 5.3
+      env: TYPO3_BRANCH=master COVERAGE=0
+    - php: 5.4
+      env: TYPO3_BRANCH=master COVERAGE=0
+
+notifications:
+  email:
+    - typo3@kay-strobach.de
+
+sudo: false
+
+before_script:
+  - composer self-update
+  - cd ..
+  - git clone --single-branch --branch $TYPO3_BRANCH --depth 1 https://github.com/TYPO3/TYPO3.CMS.git typo3_core
+  - mv typo3_core/* .
+  - composer install
+  - mkdir -p uploads typo3temp typo3conf/ext
+  - mv theme_bootstrap4 typo3conf/ext/
+
+script:
+  - >
+    echo;
+    echo "Running unit tests";
+    /bin/bash -c "
+      if [ -d typo3conf/ext/theme_bootstramp/Tests/Unit/ ]; then
+        ./bin/phpunit --colors -c typo3/sysext/core/Build/UnitTests.xml typo3conf/ext/theme_bootstramp/Tests/Unit/
+      fi
+    "
+
+  - >
+    echo;
+    echo "Running php lint";
+    /bin/bash -c "
+        if ! find typo3conf/ext/theme_bootstrap4 -name '*.php' -print0 | xargs -0 -L 1 -P 8 php -l > /tmp/errors 2>&1; then
+            grep -v \"No syntax errors detected in\" /tmp/errors;
+            exit 99;
+        fi
+    "

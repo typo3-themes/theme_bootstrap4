@@ -1,0 +1,28 @@
+lib.content.cssMap.responsive {
+
+	#Extra Large Size Visibility for each element
+	extrasmall-default =
+	extrasmall-hidden-up = hidden-xl-up
+    extrasmall-hidden-down = hidden-xl-down
+
+	#Large Size Visibility for each element
+	large-default =
+	large-hidden-up = hidden-lg-up
+    large-hidden-down = hidden-lg-down
+
+	#Medium Size Visibility for each element
+	medium-default =
+	medium-hidden-up = hidden-md-up
+	medium-hidden-down = hidden-md-down
+
+	#Small Size Visibility for each element
+	small-default =
+	small-hidden-up = hidden-sm-up
+    small-hidden-down = hidden-sm-down
+
+	#Extra Small Size Visibility for each element
+	extrasmall-default =
+	extrasmall-hidden-up = hidden-xs-up
+    extrasmall-hidden-down = hidden-xs-down
+
+}

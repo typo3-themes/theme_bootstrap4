@@ -1,0 +1,17 @@
+#ToDo: Check / integrate equal height
+
+lib.content.cssMap.responsive.row {
+	
+	equalHeight {
+		medium-equalHeight = row row-md-height row-lg-equal-height
+		small-equalHeight = row row-sm-height row-sm-equal-height
+		extrasmall-equalHeight = row row-xs-height row-xs-equal-height
+		large-equalHeight = row row-lg-height row-lg-equal-height
+	}
+	
+	default-row = row
+	medium-equalHeight = container container-md-height
+	small-equalHeight = container container-sm-height
+	extrasmall-equalHeight = container container-xs-height
+	large-equalHeight = container container-lg-height
+}

@@ -1,0 +1,3 @@
+TCEFORM.tt_content.CType.altLabels {
+	bullets = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.bullets
+}

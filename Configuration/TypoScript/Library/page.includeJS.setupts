@@ -1,3 +1,6 @@
+#ToDo: Check versions
+#ToDo: Maybe combine with includeJSFooterlibs and includeJSFooter
+
 # Settings for the development system
 
 page {
@@ -41,7 +44,6 @@ page {
 	page.includeJSLibs.jquery >
 [END]
 
-
 # Settings for the production system
 [globalVar = LIT:1 = {$themes.mode.isProduction}]
 	page {
@@ -50,11 +52,16 @@ page {
 			modernizr {
 				external = 1
 			}
+			jquery = //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js
+			jquery {
+				external = 1
+			}
 		}
 		includeJS {
-			bootstrap = //cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js
+			bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js
 			bootstrap {
 				external = 1
+				integrity = sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7
 			}
 		}
 	}

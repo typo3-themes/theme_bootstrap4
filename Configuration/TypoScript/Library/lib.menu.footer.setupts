@@ -1,3 +1,5 @@
+#ToDo: Check structure and classes have a look at the documentation
+
 lib.menu.footer = HMENU
 lib.menu.footer.special = directory
 lib.menu.footer.special.value = {$themes.configuration.menu.footer.containerPid}

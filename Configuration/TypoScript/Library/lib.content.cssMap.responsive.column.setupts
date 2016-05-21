@@ -1,0 +1,304 @@
+#ToDo: Check / integrate equal height
+
+lib.content.cssMap.responsive.column {
+	
+	equalHeight {
+		medium-equalHeight = col-md-height
+		small-equalHeight = col-sm-height
+		extrasmall-equalHeight = col-xs-height
+		large-equalHeight = col-lg-height
+	}
+	
+	#Medium Size Width
+	medium-width-1 = col-md-1
+	medium-width-2 = col-md-2
+	medium-width-3 = col-md-3
+	medium-width-4 = col-md-4
+	medium-width-5 = col-md-5
+	medium-width-6 = col-md-6
+	medium-width-7 = col-md-7
+	medium-width-8 = col-md-8
+	medium-width-9 = col-md-9
+	medium-width-10 = col-md-10
+	medium-width-11 = col-md-11
+	medium-width-12 = col-md-12
+
+	#Medium Size Offset
+	medium-offset-0 = col-md-offset-0
+	medium-offset-1 = col-md-offset-1
+	medium-offset-2 = col-md-offset-2
+	medium-offset-3 = col-md-offset-3
+	medium-offset-4 = col-md-offset-4
+	medium-offset-5 = col-md-offset-5
+	medium-offset-6 = col-md-offset-6
+	medium-offset-7 = col-md-offset-7
+	medium-offset-8 = col-md-offset-8
+	medium-offset-9 = col-md-offset-9
+	medium-offset-10 = col-md-offset-10
+	medium-offset-11 = col-md-offset-11
+	medium-offset-12 = col-md-offset-12
+
+	#Medium Size Move Left
+	medium-pull-0 = col-md-pull-0
+	medium-pull-1 = col-md-pull-1
+	medium-pull-2 = col-md-pull-2
+	medium-pull-3 = col-md-pull-3
+	medium-pull-4 = col-md-pull-4
+	medium-pull-5 = col-md-pull-5
+	medium-pull-6 = col-md-pull-6
+	medium-pull-7 = col-md-pull-7
+	medium-pull-8 = col-md-pull-8
+	medium-pull-9 = col-md-pull-9
+	medium-pull-10 = col-md-pull-10
+	medium-pull-11 = col-md-pull-11
+	medium-pull-12 = col-md-pull-12
+
+	#Medium Size Move Right
+	medium-push-0 = col-md-push-0
+	medium-push-1 = col-md-push-1
+	medium-push-2 = col-md-push-2
+	medium-push-3 = col-md-push-3
+	medium-push-4 = col-md-push-4
+	medium-push-5 = col-md-push-5
+	medium-push-6 = col-md-push-6
+	medium-push-7 = col-md-push-7
+	medium-push-8 = col-md-push-8
+	medium-push-9 = col-md-push-9
+	medium-push-10 = col-md-push-10
+	medium-push-11 = col-md-push-11
+	medium-push-12 = col-md-push-12
+
+	#Small Size Width
+	small-width-1 = col-sm-1
+	small-width-2 = col-sm-2
+	small-width-3 = col-sm-3
+	small-width-4 = col-sm-4
+	small-width-5 = col-sm-5
+	small-width-6 = col-sm-6
+	small-width-7 = col-sm-7
+	small-width-8 = col-sm-8
+	small-width-9 = col-sm-9
+	small-width-10 = col-sm-10
+	small-width-11 = col-sm-11
+	small-width-12 = col-sm-12
+
+	#Small Size Offset
+	small-offset-0 = col-sm-offset-0
+	small-offset-1 = col-sm-offset-1
+	small-offset-2 = col-sm-offset-2
+	small-offset-3 = col-sm-offset-3
+	small-offset-4 = col-sm-offset-4
+	small-offset-5 = col-sm-offset-5
+	small-offset-6 = col-sm-offset-6
+	small-offset-7 = col-sm-offset-7
+	small-offset-8 = col-sm-offset-8
+	small-offset-9 = col-sm-offset-9
+	small-offset-10 = col-sm-offset-10
+	small-offset-11 = col-sm-offset-11
+	small-offset-12 = col-sm-offset-12
+
+	#Small Size Move Left
+	small-pull-0 = col-sm-pull-0
+	small-pull-1 = col-sm-pull-1
+	small-pull-2 = col-sm-pull-2
+	small-pull-3 = col-sm-pull-3
+	small-pull-4 = col-sm-pull-4
+	small-pull-5 = col-sm-pull-5
+	small-pull-6 = col-sm-pull-6
+	small-pull-7 = col-sm-pull-7
+	small-pull-8 = col-sm-pull-8
+	small-pull-9 = col-sm-pull-9
+	small-pull-10 = col-sm-pull-10
+	small-pull-11 = col-sm-pull-11
+	small-pull-12 = col-sm-pull-12
+
+	#Small Size Move Right
+	small-push-0 = col-sm-push-0
+	small-push-1 = col-sm-push-1
+	small-push-2 = col-sm-push-2
+	small-push-3 = col-sm-push-3
+	small-push-4 = col-sm-push-4
+	small-push-5 = col-sm-push-5
+	small-push-6 = col-sm-push-6
+	small-push-7 = col-sm-push-7
+	small-push-8 = col-sm-push-8
+	small-push-9 = col-sm-push-9
+	small-push-10 = col-sm-push-10
+	small-push-11 = col-sm-push-11
+	small-push-12 = col-sm-push-12
+
+	#Extra Small Size Width
+	extrasmall-width-1 = col-xs-1
+	extrasmall-width-2 = col-xs-2
+	extrasmall-width-3 = col-xs-3
+	extrasmall-width-4 = col-xs-4
+	extrasmall-width-5 = col-xs-5
+	extrasmall-width-6 = col-xs-6
+	extrasmall-width-7 = col-xs-7
+	extrasmall-width-8 = col-xs-8
+	extrasmall-width-9 = col-xs-9
+	extrasmall-width-10 = col-xs-10
+	extrasmall-width-11 = col-xs-11
+	extrasmall-width-12 = col-xs-12
+
+	#Extra Small Offset
+	extrasmall-offset-0 = col-xs-offset-0
+	extrasmall-offset-1 = col-xs-offset-1
+	extrasmall-offset-2 = col-xs-offset-2
+	extrasmall-offset-3 = col-xs-offset-3
+	extrasmall-offset-4 = col-xs-offset-4
+	extrasmall-offset-5 = col-xs-offset-5
+	extrasmall-offset-6 = col-xs-offset-6
+	extrasmall-offset-7 = col-xs-offset-7
+	extrasmall-offset-8 = col-xs-offset-8
+	extrasmall-offset-9 = col-xs-offset-9
+	extrasmall-offset-10 = col-xs-offset-10
+	extrasmall-offset-11 = col-xs-offset-11
+	extrasmall-offset-12 = col-xs-offset-12
+
+	#Extra Small Move Left
+	extrasmall-pull-0 = col-xs-pull-0
+	extrasmall-pull-1 = col-xs-pull-1
+	extrasmall-pull-2 = col-xs-pull-2
+	extrasmall-pull-3 = col-xs-pull-3
+	extrasmall-pull-4 = col-xs-pull-4
+	extrasmall-pull-5 = col-xs-pull-5
+	extrasmall-pull-6 = col-xs-pull-6
+	extrasmall-pull-7 = col-xs-pull-7
+	extrasmall-pull-8 = col-xs-pull-8
+	extrasmall-pull-9 = col-xs-pull-9
+	extrasmall-pull-10 = col-xs-pull-10
+	extrasmall-pull-11 = col-xs-pull-11
+	extrasmall-pull-12 = col-xs-pull-12
+
+	#Extra Small Move Right
+	extrasmall-push-0 = col-xs-push-0
+	extrasmall-push-1 = col-xs-push-1
+	extrasmall-push-2 = col-xs-push-2
+	extrasmall-push-3 = col-xs-push-3
+	extrasmall-push-4 = col-xs-push-4
+	extrasmall-push-5 = col-xs-push-5
+	extrasmall-push-6 = col-xs-push-6
+	extrasmall-push-7 = col-xs-push-7
+	extrasmall-push-8 = col-xs-push-8
+	extrasmall-push-9 = col-xs-push-9
+	extrasmall-push-10 = col-xs-push-10
+	extrasmall-push-11 = col-xs-push-11
+	extrasmall-push-12 = col-xs-push-12
+
+	#Large Size Width
+	large-width-1 = col-lg-1
+	large-width-2 = col-lg-2
+	large-width-3 = col-lg-3
+	large-width-4 = col-lg-4
+	large-width-5 = col-lg-5
+	large-width-6 = col-lg-6
+	large-width-7 = col-lg-7
+	large-width-8 = col-lg-8
+	large-width-9 = col-lg-9
+	large-width-10 = col-lg-10
+	large-width-11 = col-lg-11
+	large-width-12 = col-lg-12
+
+	#Large Size Offset
+	large-offset-0 = col-lg-offset-0
+	large-offset-1 = col-lg-offset-1
+	large-offset-2 = col-lg-offset-2
+	large-offset-3 = col-lg-offset-3
+	large-offset-4 = col-lg-offset-4
+	large-offset-5 = col-lg-offset-5
+	large-offset-6 = col-lg-offset-6
+	large-offset-7 = col-lg-offset-7
+	large-offset-8 = col-lg-offset-8
+	large-offset-9 = col-lg-offset-9
+	large-offset-10 = col-lg-offset-10
+	large-offset-11 = col-lg-offset-11
+	large-offset-12 = col-lg-offset-12
+
+	#Large Size Move Left
+	large-pull-0 = col-lg-pull-0
+	large-pull-1 = col-lg-pull-1
+	large-pull-2 = col-lg-pull-2
+	large-pull-3 = col-lg-pull-3
+	large-pull-4 = col-lg-pull-4
+	large-pull-5 = col-lg-pull-5
+	large-pull-6 = col-lg-pull-6
+	large-pull-7 = col-lg-pull-7
+	large-pull-8 = col-lg-pull-8
+	large-pull-9 = col-lg-pull-9
+	large-pull-10 = col-lg-pull-10
+	large-pull-11 = col-lg-pull-11
+	large-pull-12 = col-lg-pull-12
+
+	#Large Size Move Right
+	large-push-0 = col-lg-push-0
+	large-push-2 = col-lg-push-2
+	large-push-3 = col-lg-push-3
+	large-push-4 = col-lg-push-4
+	large-push-5 = col-lg-push-5
+	large-push-6 = col-lg-push-6
+	large-push-7 = col-lg-push-7
+	large-push-8 = col-lg-push-8
+	large-push-9 = col-lg-push-9
+	large-push-10 = col-lg-push-10
+	large-push-11 = col-lg-push-11
+	large-push-12 = col-lg-push-12
+
+	#extralarge Size Width
+	extralarge-width-1 = col-xl-1
+	extralarge-width-2 = col-xl-2
+	extralarge-width-3 = col-xl-3
+	extralarge-width-4 = col-xl-4
+	extralarge-width-5 = col-xl-5
+	extralarge-width-6 = col-xl-6
+	extralarge-width-7 = col-xl-7
+	extralarge-width-8 = col-xl-8
+	extralarge-width-9 = col-xl-9
+	extralarge-width-10 = col-xl-10
+	extralarge-width-11 = col-xl-11
+	extralarge-width-12 = col-xl-12
+
+	#extralarge Size Offset
+	extralarge-offset-0 = col-xl-offset-0
+	extralarge-offset-1 = col-xl-offset-1
+	extralarge-offset-2 = col-xl-offset-2
+	extralarge-offset-3 = col-xl-offset-3
+	extralarge-offset-4 = col-xl-offset-4
+	extralarge-offset-5 = col-xl-offset-5
+	extralarge-offset-6 = col-xl-offset-6
+	extralarge-offset-7 = col-xl-offset-7
+	extralarge-offset-8 = col-xl-offset-8
+	extralarge-offset-9 = col-xl-offset-9
+	extralarge-offset-10 = col-xl-offset-10
+	extralarge-offset-11 = col-xl-offset-11
+	extralarge-offset-12 = col-xl-offset-12
+
+	#extralarge Size Move Left
+	extralarge-pull-0 = col-xl-pull-0
+	extralarge-pull-1 = col-xl-pull-1
+	extralarge-pull-2 = col-xl-pull-2
+	extralarge-pull-3 = col-xl-pull-3
+	extralarge-pull-4 = col-xl-pull-4
+	extralarge-pull-5 = col-xl-pull-5
+	extralarge-pull-6 = col-xl-pull-6
+	extralarge-pull-7 = col-xl-pull-7
+	extralarge-pull-8 = col-xl-pull-8
+	extralarge-pull-9 = col-xl-pull-9
+	extralarge-pull-10 = col-xl-pull-10
+	extralarge-pull-11 = col-xl-pull-11
+	extralarge-pull-12 = col-xl-pull-12
+
+	#extralarge Size Move Right
+	extralarge-push-0 = col-xl-push-0
+	extralarge-push-2 = col-xl-push-2
+	extralarge-push-3 = col-xl-push-3
+	extralarge-push-4 = col-xl-push-4
+	extralarge-push-5 = col-xl-push-5
+	extralarge-push-6 = col-xl-push-6
+	extralarge-push-7 = col-xl-push-7
+	extralarge-push-8 = col-xl-push-8
+	extralarge-push-9 = col-xl-push-9
+	extralarge-push-10 = col-xl-push-10
+	extralarge-push-11 = col-xl-push-11
+	extralarge-push-12 = col-xl-push-12
+}

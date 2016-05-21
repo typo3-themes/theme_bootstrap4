@@ -1,0 +1,28 @@
+lib.fluidContent {
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Templates/
+		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Partials/
+		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Layouts/
+		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Layouts/
+	}
+}
+
+tt_content {
+	textmedia {
+		dataProcessing {
+			20 {
+				maxGalleryWidth = 1140
+				maxGalleryWidthInText = 1140
+				columnSpacing = 10
+				borderWidth = 2
+				borderPadding = 0
+			}
+		}
+	}
+}

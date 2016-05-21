@@ -1,0 +1,44 @@
+# ToDo: Remove this File and use  Resources/Private/Extensions/Rtehtmlarea/
+# ToDo: implement the new configuration for required classes
+RTE {
+	default	 {
+		buttons {
+			link.properties.class {
+				allowedClasses := addToList(button-default,button-primary,button-success,button-info,button-warning,button-danger,button-large,button-small,button-extra-small,button-block)
+			}
+		}
+	}
+	classes {
+		button-default {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.default
+		}
+		button-primary {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.primary
+		}
+		button-success {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.success
+		}
+		button-info {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.info
+		}
+		button-warning {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.warning
+		}
+		button-danger {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.danger
+		}
+		button-large {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.large
+		}
+		button-small {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.small
+		}
+		button-extra-small {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.extra-small
+		}
+		button-block {
+			name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.block
+		}
+	}
+}
+

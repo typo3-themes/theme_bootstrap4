@@ -1,0 +1,28 @@
+# Modify ParseFunc setup for RTE content (css_styled_content)
+lib.parseFunc_RTE {
+  # Sondertag angeben, damit dieser im Frontend ausgegeben wird
+  allowTags := addToList(mark)
+	externalBlocks {
+    # no override of blockquote atrributs
+    blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
+  }
+  # Eigener Tag oder auch Schnipsel  
+  tags {
+    sondertag = TEXT
+    sondertag {
+      # mit current=1 enthält man den aktuellen Inhalt des Tags
+      current = 1
+      # eigenes wrap, z. B. für Boxen
+      wrap (
+        <div class="box"><div class="top"></div><div class="center">|</div><div class="bottom"></div></div>
+      )
+      # Leerzeilen vor und nach dem Inhalt des Tags entfernen
+      stripNL = 1
+    }
+  } 
+}
+
+# Sondertag hier angeben, damit dieser im Frontend bei allen Texteingabefelder, auch die nicht den RTE benutzen, ausgegeben wird
+lib.parseFunc {
+  allowTags := addToList(mark)
+}

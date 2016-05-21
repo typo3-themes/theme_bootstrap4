@@ -1,0 +1,87 @@
+<xliff version="1.0">
+	<file source-language="en"
+		target-language="de"
+		datatype="plaintext"
+		original="messages"
+		date="2014-04-13T18:20:51Z"
+		product-name="rtehtmlarea">
+		<header/>
+		<body>
+      <!-- Typography - Headings -->
+			<trans-unit id="rte.h1_label" xml:space="preserve">
+				<source>Styling as Heading 1 (inline)</source>
+				<target>Stil wie Überschrift 1 (in Zeile)</target>
+			</trans-unit>
+			<trans-unit id="rte.h2_label" xml:space="preserve">
+				<source>Styling as Heading 2 (inline)</source>
+				<target>Stil wie Überschrift 2 (in Zeile)</target>
+			</trans-unit>
+			<trans-unit id="rte.h3_label" xml:space="preserve">
+				<source>Styling as Heading 3 (inline)</source>
+				<target>Stil wie Überschrift 3 (in Zeile)</target>
+			</trans-unit>
+			<trans-unit id="rte.h4_label" xml:space="preserve">
+				<source>Styling as Heading 4 (inline)</source>
+				<target>Stil wie Überschrift 4 (in Zeile)</target>
+			</trans-unit>
+			<trans-unit id="rte.h5_label" xml:space="preserve">
+				<source>Styling as Heading 5 (inline)</source>
+				<target>Stil wie Überschrift 5 (in Zeile)</target>
+			</trans-unit>
+			<trans-unit id="rte.h6_label" xml:space="preserve">
+				<source>Styling as Heading 6 (inline)</source>
+				<target>Stil wie Überschrift 6 (in Zeile)</target>
+			</trans-unit>
+			<trans-unit id="rte.small_label" xml:space="preserve">
+				<source>Small text</source>
+				<target>kleiner Text</target>
+			</trans-unit>
+			<trans-unit id="rte.lead_label" xml:space="preserve">
+				<source>Lead body copy</source>
+				<target>Einleitung</target>
+			</trans-unit>
+      <!-- Typography - Inline text elements -->
+			<trans-unit id="rte.category-mark_label" xml:space="preserve">
+				<source>Marked text</source>
+				<target>Markierter Text</target>
+			</trans-unit>
+			<trans-unit id="rte.name-mark_label" xml:space="preserve">
+				<source>Marked text</source>
+				<target>Markierter Text</target>
+			</trans-unit>
+			<trans-unit id="rte.description-mark_label" xml:space="preserve">
+				<source>Marked text</source>
+				<target>HTML5 Markierter Text</target>
+			</trans-unit>  
+      <!-- Typography - Alignment classes -->
+			<trans-unit id="rte.text-nowrap_label" xml:space="preserve">
+				<source>No wrap</source>
+				<target>Kein Zeilenumbruch</target>
+			</trans-unit>
+      <!-- Typography - Transformation classes -->
+			<trans-unit id="rte.text-lowercase_label" xml:space="preserve">
+				<source>Lowercased text</source>
+				<target>Text in kleinbuchstaben</target>
+			</trans-unit>
+			<trans-unit id="rte.text-uppercase_label" xml:space="preserve">
+				<source>Uppercased text</source>
+				<target>Text in Großbuchstaben</target>
+			</trans-unit>
+			<trans-unit id="rte.text-capitalize_label" xml:space="preserve">
+				<source>Capitalized text</source>
+				<target>Wortanfang in Großbuchstaben</target>
+			</trans-unit>
+      <!-- Typography - Abbreviations -->
+			<trans-unit id="rte.abbr-initialism_label" xml:space="preserve">
+				<source>Abbreviation for a smaller font-size</source>
+				<target>Abkürzung für eine kleinere Schriftgröße</target>
+			</trans-unit>
+      <!-- Typography - blockquote-reverse -->
+			<trans-unit id="rte.blockquote-reverse_label" xml:space="preserve">
+				<source>Alternate display</source>
+				<target>Alternative Darstellung</target>
+			</trans-unit>
+      
+		</body>
+	</file>
+</xliff>

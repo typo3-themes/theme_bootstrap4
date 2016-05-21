@@ -1,3 +1,5 @@
+#ToDo: Check structure and classes have a look at the documentation
+
 lib.menu.sub = HMENU
 lib.menu.sub.entryLevel = 1
 lib.menu.sub.includeNotInMenu = {$themes.configuration.menu.sub.includeNotInMenu}

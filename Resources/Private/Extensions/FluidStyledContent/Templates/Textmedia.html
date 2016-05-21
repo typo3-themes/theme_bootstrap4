@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	  xmlns:vhs="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	  vhs:schemaLocation="https://fluidtypo3.org/schemas/vhs-master.xsd"
+	  data-namespace-typo3-fluid="true">
+
+<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+	<f:if condition="{gallery.position.noWrap} != 1">
+		<f:render partial="Header" arguments="{_all}" />
+	</f:if>
+
+<!--f:debug>{themes}</f:debug-->
+
+	<div class="ce-textpic ce-{gallery.position.horizontal} ce-{gallery.position.vertical}{f:if(condition: gallery.position.noWrap, then: ' ce-nowrap')}">
+		<f:if condition="{gallery.position.vertical} != 'below'">
+			<f:render partial="MediaGallery" arguments="{_all}" />
+		</f:if>
+
+		<div class="ce-bodytext">
+			<f:if condition="{gallery.position.noWrap}">
+				<f:render partial="Header" arguments="{_all}" />
+			</f:if>
+			<f:format.html>{data.bodytext}</f:format.html>
+		</div>
+
+		<f:if condition="{gallery.position.vertical} == 'below'">
+			<f:render partial="MediaGallery" arguments="{_all}" />
+		</f:if>
+	</div>
+
+	<f:render partial="Footer" arguments="{_all}" />
+</div>
+</html>

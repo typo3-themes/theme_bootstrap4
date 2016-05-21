@@ -1,3 +1,5 @@
+#ToDo: Check structure and classes have a look at the documentation
+
 lib.menu.top = HMENU
 lib.menu.top.special = directory
 lib.menu.top.special.value = {$themes.configuration.menu.top.containerPid}

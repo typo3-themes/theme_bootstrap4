@@ -2118,25 +2118,23 @@
 			</trans-unit>
 
 
-
-
 			<!-- Responsive devices labels -->
-			<trans-unit id="content.responsive.devices.desktop" xml:space="preserve">
-				<source>Desktop</source>
-			</trans-unit>
-			<trans-unit id="content.responsive.devices.mobile" xml:space="preserve">
-				<source>Mobile</source>
-			</trans-unit>
-			<trans-unit id="content.responsive.devices.tablet" xml:space="preserve">
-				<source>Tablet</source>
+			<trans-unit id="content.responsive.devices.extralarge" xml:space="preserve">
+				<source>Large Desktops</source>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.large" xml:space="preserve">
-				<source>Large</source>
+				<source>Desktop</source>
 			</trans-unit>
-			<trans-unit id="content.responsive.devices.extralarge" xml:space="preserve">
-				<source>Extra large</source>
+			<trans-unit id="content.responsive.devices.medium" xml:space="preserve">
+				<source>Tablett</source>
 			</trans-unit>
-			
+			<trans-unit id="content.responsive.devices.small" xml:space="preserve">
+				<source>Landscape phones</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.devices.extrasmall" xml:space="preserve">
+				<source>Portrait phones</source>
+			</trans-unit>
+
 			
 			<!-- Responsive visibility labels -->
 			<trans-unit id="content.responsive.visibility.default" xml:space="preserve">

@@ -1,0 +1,50 @@
+
+# pid for list view
+plugin.tx_news.settings.listPid = {$themes.configuration.pages.newsList}
+
+# pid for single view
+plugin.tx_news.settings.defaultDetailPid = {$themes.configuration.pages.newsDetails}
+
+# pid for news container
+plugin.tx_news.settings.startingpoint = {$themes.configuration.container.news}
+
+# depth of sub container
+plugin.tx_news.settings.recursive = 5
+
+plugin.tx_news {
+	view {
+		templateRootPaths {
+			100 = EXT:news/Resources/Private/Templates/
+			300 = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Templates/
+			500 = {$themes.resourcesPrivatePath}Extensions/News/Templates/
+		}
+		partialRootPaths {
+			100 = EXT:news/Resources/Private/Partials/
+			300 = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Partials/
+			500 = {$themes.resourcesPrivatePath}Extensions/News/Partials/
+		}
+		layoutRootPaths {
+			100 = EXT:news/Resources/Private/Layouts/
+			300 = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Layouts/
+			500 = {$themes.resourcesPrivatePath}Extensions/News/Layouts/
+		}
+	}
+	settings {
+		list {
+			# media configuration
+			media {
+				dummyImage = {$themes.resourcesPublicPath}Extensions/News/Images/no-image.png
+			}
+		}
+	}
+
+	_LOCAL_LANG {
+		default {
+			more-link = more >>
+		}
+		de {
+			more-link = mehr >>
+		}
+	}
+}
+

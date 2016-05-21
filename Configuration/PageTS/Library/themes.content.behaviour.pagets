@@ -1,0 +1,73 @@
+themes {
+	content {
+		# Behaviour for content elements
+		behaviour {
+			default {
+				container {
+					#ToDo: Label in language file
+					label = LLL Chose container
+					container = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container
+					fluid = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container_fluid
+				}
+				screenreader {
+					label = LLL Chose screenreader option
+					only = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_only
+					only-focusable = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_only_focusable
+				}
+				print {
+					#ToDo: Label in language file
+					label = LLL Chose print behaviour
+					hidden = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_hidden
+					visible-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_block
+					visible-inline = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_inline
+					visible-inline-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_inline_block
+				}
+				fade-in = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.fade_in
+			}
+			textmedia {
+				responsive-embed {
+					#ToDo: Label in language file
+					label = LLL Chose responsive video behaviour
+					21by9 = LLL Responsive Video: 21:9
+					16by9 = LLL Responsive Video: 16:9
+					4by3 = LLL Responsive Video: 4:3
+					1by1 = LLL Responsive Video: 1:1
+				}
+			}
+			table {
+				#ToDo: New integrate classes
+				table-responsive = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.table_responsive
+			}
+			gridelements_pi1 {
+				#ToDo Have a look in the Documentation: Navigation, panels are changed
+				#accordion-first-open = Open first accordion panel
+				#navigation-pills = Pills navigation
+				#navigation-tabs = Tabs navigation
+				
+				tabs {
+					navigation-pills = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.navigation_pills
+					navigation-tabs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.navigation_tabs
+				}
+				2ColumnGrid {
+					pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
+				}
+				3ColumnGrid {
+					pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
+				}
+				4ColumnGrid {
+					pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
+				}
+				accordion {
+					accordion-first-open = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.accordion_first_open
+				}
+				carousel {
+					
+				}
+				tabs {
+					
+				}
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap: Partials/Socialmedia/FollowInstagram.html [begin] -->
+		
+		<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useInstagram')}">
+			<li class="partial-socialmedia-followInstagram theme_bootstrap">
+				<a href="{theme:constant(constant:'themes.configuration.socialmedia.instagramLink')}"
+				   target="_blank" title="Instagram"
+				   class="fa fa-instagram"></a>
+			</li>
+		</f:if>
+
+		<!-- theme_bootstrap: Partials/Socialmedia/FollowInstagram.html [end] -->
+	</f:section>
+</div>

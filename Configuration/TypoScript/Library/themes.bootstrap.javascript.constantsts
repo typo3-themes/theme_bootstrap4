@@ -1,0 +1,16 @@
+#ToDo: Check
+
+# customsubcategory=400=ScrollSpy
+# customsubcategory=401=Bootstrap Plugins
+
+themes.configuration.bootstrap.javascript {
+	# cat=bootstrap,expert/400/gray-base; type=string; label=ScrollSpy: target
+	scrollspy.target = body
+	# cat=bootstrap,expert/400/gray-darker; type=int+; label=ScrollSpy: offset
+	scrollspy.offset = 0
+}
+
+themes.configuration.bootstrap.javascript.plugin {
+	# cat=bootstrap,expert/401/gray-darker; type=options[0,1]; label=Paypal Accessibility Plugin
+	accessibility = 0
+}

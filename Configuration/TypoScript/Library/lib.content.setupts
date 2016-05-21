@@ -1,0 +1,35 @@
+#ToDo: check documentation for removed and new classes
+
+lib.bullets < tt_content.bullets.20
+lib.bullets {
+	dataWrap >
+	wrap = <ul class="list-group">|</ul>
+	split.1.wrap = <li class="list-group-item odd">|</li>
+	split.2.wrap = <li class="list-group-item even">|</li>
+}
+
+tt_content.bullets >
+tt_content.bullets = COA
+tt_content.bullets {
+	wrap = <div class="panel panel-default">|</div>
+	10 = TEXT
+	10.field = header
+	10.wrap = <div class="panel-heading"><h3 class="panel-title">|</h3></div>
+	20 = COA
+	20 {
+		wrap = <div class="panel-body">|</div>
+		10 = TEXT
+		10.field = subheader
+		10.required = 1
+		10.wrap = <h4 class="list-group-item-heading">|</h4>
+		20 =< lib.bullets
+	}
+	30 = TEXT
+	30 {
+		field = altText
+		required = 1
+		typolink.parameter.field = header_link
+		typolink.ATagParams = class="btn btn-default btn-block"
+		wrap = <div class="panel-footer">|</div>
+	}
+}

@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+      xmlns:vhs="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      vhs:schemaLocation="https://fluidtypo3.org/schemas/vhs-master.xsd"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{data.header_layout} != 100">
+	<f:if condition="{data.header}">
+		<f:if condition="{data.subheader}">
+			<f:then>
+				<header class="{themes.variants.cssClasses} {themes.behaviour.cssClasses}">
+			</f:then>
+			<f:else>
+				<f:if condition="{data.date}">
+					<header class="{themes.variants.cssClasses} {themes.behaviour.cssClasses}">
+				</f:if>
+			</f:else>
+		</f:if>
+
+		<f:render partial="Header/Header" arguments="{
+			header: data.header,
+			layout: data.header_layout,
+			link: data.header_link,
+			default: settings.defaultHeaderType}" />
+
+		<f:if condition="{data.subheader}">
+			<f:render partial="Header/SubHeader" arguments="{
+				subheader: data.subheader,
+				layout: data.header_layout,
+				default: settings.defaultHeaderType}" />
+		</f:if>
+
+		<f:render partial="Header/Date" arguments="{_all}" />
+
+		<f:if condition="{data.subheader}">
+			<f:then>
+				</header>
+			</f:then>
+			<f:else>
+				<f:if condition="{data.date}">
+					</header>
+				</f:if>
+			</f:else>
+		</f:if>
+	</f:if>
+</f:if>
+</html>

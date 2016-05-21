@@ -11,8 +11,8 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Bootstrap 4 Theme',
-	'description' => 'Theme to use Twitter Bootstrap 4',
+	'title' => 'Bootstrap4 Theme',
+	'description' => 'Theme to use Twitter Bootstrap4',
 	'category' => 'templates',
 	'shy' => 0,
 	'version' => '0.0.1',
@@ -27,16 +27,16 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearcacheonload' => 0,
 	'lockType' => '',
-	'author' => 'Themes-Team (Kay Strobach, Jo Hasenau, Thomas Deuling)',
+	'author' => 'Themes-Team (Kay Strobach, Jo Hasenau, Thomas Deuling, Dieter Bruening)',
 	'author_email' => 'team@typo3-themes.org',
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3'  => '6.2.0-7.6.99',
-			'themes_gridelements' => '0.6.1-0.6.99',
-			'dyncss_scss' => '1.0.0-1.0.99',
+			'typo3'  => '7.6.0-7.6.99',
+			'themes_gridelements' => '7.0.0-7.99.99',
+			'dyncss_scss' => '0.7.1-0.7.99',
 		),
 		'conflicts' => array(
 		),

@@ -9,3 +9,103 @@
 
 # Extensions
 # <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/News/TypoScript/constants.txt">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/TypoScript/constants.txt">
+
+
+# ToDo: Do we need the following configuration here?
+
+# Base configuration
+themes.configuration.siteName = Bootstrap Theme
+
+lib.content.cssMap.responsive.row {
+	default-row = row
+}
+
+lib.content.cssMap.responsive.column {
+	default-column = medium-width-12
+	default-2-column = medium-width-6
+	default-3-column = medium-width-4
+	default-4-column = medium-width-3
+
+	#Medium Size Width
+	medium-width-1 = col-md-1
+	medium-width-2 = col-md-2
+	medium-width-3 = col-md-3
+	medium-width-4 = col-md-4
+	medium-width-5 = col-md-5
+	medium-width-6 = col-md-6
+	medium-width-7 = col-md-7
+	medium-width-8 = col-md-8
+	medium-width-9 = col-md-9
+	medium-width-10 = col-md-10
+	medium-width-11 = col-md-11
+	medium-width-12 = col-md-12
+
+	#Small Size Width
+	small-width-1 = col-sm-1
+	small-width-2 = col-sm-2
+	small-width-3 = col-sm-3
+	small-width-4 = col-sm-4
+	small-width-5 = col-sm-5
+	small-width-6 = col-sm-6
+	small-width-7 = col-sm-7
+	small-width-8 = col-sm-8
+	small-width-9 = col-sm-9
+	small-width-10 = col-sm-10
+	small-width-11 = col-sm-11
+	small-width-12 = col-sm-12
+
+	#Extra Small Size Width
+	extrasmall-width-1 = col-xs-1
+	extrasmall-width-2 = col-xs-2
+	extrasmall-width-3 = col-xs-3
+	extrasmall-width-4 = col-xs-4
+	extrasmall-width-5 = col-xs-5
+	extrasmall-width-6 = col-xs-6
+	extrasmall-width-7 = col-xs-7
+	extrasmall-width-8 = col-xs-8
+	extrasmall-width-9 = col-xs-9
+	extrasmall-width-10 = col-xs-10
+	extrasmall-width-11 = col-xs-11
+	extrasmall-width-12 = col-xs-12
+
+	#Large Size Width
+	large-width-1 = col-lg-1
+	large-width-2 = col-lg-2
+	large-width-3 = col-lg-3
+	large-width-4 = col-lg-4
+	large-width-5 = col-lg-5
+	large-width-6 = col-lg-6
+	large-width-7 = col-lg-7
+	large-width-8 = col-lg-8
+	large-width-9 = col-lg-9
+	large-width-10 = col-lg-10
+	large-width-11 = col-lg-11
+	large-width-12 = col-lg-12
+
+	#Extra Large Size Width
+	extralarge-width-1 = col-xl-1
+	extralarge-width-2 = col-xl-2
+	extralarge-width-3 = col-xl-3
+	extralarge-width-4 = col-xl-4
+	extralarge-width-5 = col-xl-5
+	extralarge-width-6 = col-xl-6
+	extralarge-width-7 = col-xl-7
+	extralarge-width-8 = col-xl-8
+	extralarge-width-9 = col-xl-9
+	extralarge-width-10 = col-xl-10
+	extralarge-width-11 = col-xl-11
+	extralarge-width-12 = col-xl-12
+
+}
+
+lib.content.cssMap.content.panel {
+
+	default-panel = panel-default
+
+	panel-heading = panel-heading
+	panel-title = panel-title
+	panel-body = panel-body
+	panel-footer = panel-footer
+
+}
