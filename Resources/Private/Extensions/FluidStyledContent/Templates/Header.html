@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Default">
+	<header class="header-layout-{data.header_layout}">
+		<f:comment> -- header -- </f:comment>
+		<f:if condition="{data.header}">
+			<f:switch expression="{header_layout}">
+				<f:case value="1">
+					<h1><i class="{themes.icon}"></i><f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink></h1>
+				</f:case>
+				<f:case value="2">
+					<h2><i class="{themes.icon}"></i><f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink></h2>
+				</f:case>
+				<f:case value="3">
+					<h3><i class="{themes.icon}"></i><f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink></h3>
+				</f:case>
+				<f:case value="4">
+					<h4><i class="{themes.icon}"></i><f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink></h4>
+				</f:case>
+				<f:case value="5">
+					<h5><i class="{themes.icon}"></i><f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink></h5>
+				</f:case>
+				<f:case value="6">
+					<h6><i class="{themes.icon}"></i><f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink></h6>
+				</f:case>
+				<f:case value="100">
+					<f:comment> -- do not show header -- </f:comment>
+				</f:case>
+				<f:case default="true">
+					<h2><i class="{themes.icon}"></i><f:link.typolink parameter="{header_link}">{data.header}</f:link.typolink></h2>
+				</f:case>
+			</f:switch>
+		</f:if>
+		<f:comment> -- subheader -- </f:comment>
+		<f:if condition="{data.subheader}">
+			<f:switch expression="{data.header_layout}">
+				<f:case value="1">
+					<h2 class="subheader">{data.subheader}</h2>
+				</f:case>
+				<f:case value="2">
+					<h3 class="subheader">{data.subheader}</h3>
+				</f:case>
+				<f:case value="3">
+					<h4 class="subheader">{data.subheader}</h4>
+				</f:case>
+				<f:case value="4">
+					<h5 class="subheader">{data.subheader}</h5>
+				</f:case>
+				<f:case value="5">
+					<h6 class="subheader">{data.subheader}</h6>
+				</f:case>
+				<f:case default="true">
+					<h3 class="subheader">{data.subheader}</h3>
+				</f:case>
+			</f:switch>
+		</f:if>
+		<f:comment> -- date -- </f:comment>
+		<f:if condition="{data.date}">
+			<p>
+				<time datetime="{data.date -> f:format.date(format: '%Y-%m-%d')}">
+					<f:format.date format="%B %e, %Y">{data.date}</f:format.date>
+				</time>
+			</p>
+		</f:if>
+	</header>
+</f:section>
+</html>

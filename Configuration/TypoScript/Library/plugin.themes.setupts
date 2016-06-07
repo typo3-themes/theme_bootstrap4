@@ -9,10 +9,6 @@ plugin.tx_themes {
 		layoutRootPaths {
 			300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
 		}
-	}
-}
-plugin.tx_themes {
-	view {
 		widget {
 			KayStrobach\Themes\ViewHelpers\Widget\LanguageMenuViewHelper {
 				templateRootPath = EXT:theme_bootstrap4/Resources/Private/Templates/

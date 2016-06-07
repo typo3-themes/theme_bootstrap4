@@ -13,7 +13,7 @@
 
 # Twitter
 # cat=socialmedia,advanced/socialmedia_twitter/; type=options[0,1]; label= Twitter: Activate?!
-themes.configuration.socialmedia.useTwitter = 0
+themes.configuration.socialmedia.useTwitter = 1
 
 # cat=socialmedia,advanced/socialmedia_twitter/; type=string; label= Twitter: Username, without @
 themes.configuration.socialmedia.twitterUsername = TYPO3THEMES
@@ -24,7 +24,7 @@ themes.configuration.socialmedia.twitterUsername = TYPO3THEMES
 #############################################
 
 # cat=socialmedia,advanced/socialmedia_facebook/; type=options[0,1]; label= Facebook: Activate?!
-themes.configuration.socialmedia.useFacebook = 0
+themes.configuration.socialmedia.useFacebook = 1
 
 # cat=socialmedia,advanced/socialmedia_facebook/; type=string; label= Facebook: Pagelink
 themes.configuration.socialmedia.facebookLink = https://www.facebook.com/typo3
@@ -35,7 +35,7 @@ themes.configuration.socialmedia.facebookLink = https://www.facebook.com/typo3
 #############################################
 
 # cat=socialmedia,advanced/socialmedia_rss/; type=options[0,1]; label= RSS: Activate?!
-themes.configuration.socialmedia.useRss = 0
+themes.configuration.socialmedia.useRss = 1
 
 # cat=socialmedia,advanced/socialmedia_rss/; type=string; label= RSS: Feedlink
 themes.configuration.socialmedia.rssLink = /xml-feeds/rss.xml
@@ -46,7 +46,7 @@ themes.configuration.socialmedia.rssLink = /xml-feeds/rss.xml
 #############################################
 
 # cat=socialmedia,advanced/socialmedia_google_plus/; type=options[0,1]; label= Google+: Activate?!
-themes.configuration.socialmedia.useGooglePlus = 0
+themes.configuration.socialmedia.useGooglePlus = 1
 
 # cat=socialmedia,advanced/socialmedia_google_plus/; type=string; label= Google+: Pagelink
 themes.configuration.socialmedia.googlePlusLink = https://plus.google.com/communities/100060687535829230492
@@ -57,7 +57,7 @@ themes.configuration.socialmedia.googlePlusLink = https://plus.google.com/commun
 #############################################
 
 # cat=socialmedia,advanced/socialmedia_xing/; type=options[0,1]; label= XING: Activate?!
-themes.configuration.socialmedia.useXing = 0
+themes.configuration.socialmedia.useXing = 1
 
 # cat=socialmedia,advanced/socialmedia_xing/; type=string; label= XING: Pagelink
 themes.configuration.socialmedia.xingLink = https://www.xing.com/companies/typo3association
@@ -68,7 +68,7 @@ themes.configuration.socialmedia.xingLink = https://www.xing.com/companies/typo3
 #############################################
 
 # cat=socialmedia,advanced/socialmedia_youtube/; type=options[0,1]; label= Youtube: Activate?!
-themes.configuration.socialmedia.useYoutube = 0
+themes.configuration.socialmedia.useYoutube = 1
 
 # cat=socialmedia,advanced/socialmedia_youtube/; type=string; label= Youtube: Pagelink
 themes.configuration.socialmedia.youtubeLink = https://www.youtube.com/user/typo3/
@@ -79,7 +79,7 @@ themes.configuration.socialmedia.youtubeLink = https://www.youtube.com/user/typo
 #############################################
 
 # cat=socialmedia,advanced/socialmedia_instagram/; type=options[0,1]; label= Instagram: Activate?!
-themes.configuration.socialmedia.useInstagram = 0
+themes.configuration.socialmedia.useInstagram = 1
 
 # cat=socialmedia,advanced/socialmedia_instagram/; type=string; label= Instagram: Pagelink
 themes.configuration.socialmedia.instagramLink = https://www.instagram.com/explore/tags/typo3/

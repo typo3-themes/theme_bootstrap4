@@ -1,11 +1,11 @@
-{namespace theme=KayStrobach\Themes\ViewHelpers}
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelper">
 	<f:section name="Default">
 		<!-- theme_bootstrap4: Partials/Socialmedia/FollowTwitter.html [begin] -->
 		
 		<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useTwitter')}">
-			<li class="partial-socialmedia-followTwitter theme_bootstrap4">
+			<li class="partial-socialmedia-followTwitter list-inline-item">
 				<a href="https://twitter.com/intent/user?screen_name={theme:constant(constant:'themes.configuration.socialmedia.twitterUsername')}"
 				   target="_blank" title="Twitter"
 				   class="fa fa-twitter"></a>
