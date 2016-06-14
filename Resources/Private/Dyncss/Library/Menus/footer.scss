@@ -1,0 +1,6 @@
+#menue-footer {
+	ul.nav li + li::before {
+		content: "#{$footer-menu-divider}";
+		margin-right: 1rem;
+	}
+}

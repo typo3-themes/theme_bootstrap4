@@ -39,4 +39,7 @@ plugin.tx_dyncss.overrides {
 	#icon-font-path = TEXT
 	#icon-font-path.value = '{$themes.configuration.font.icon.fontFilePath}'
 
+	footer-menu-divider = TEXT
+	footer-menu-divider.value = {$themes.configuration.menu.footer.divider}
+
 }

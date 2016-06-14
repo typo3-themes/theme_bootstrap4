@@ -105,8 +105,8 @@ themes.configuration.menu.footer.containerPid = 0
 # cat=menu,expert/menu_footer/; type=string; label= Menu footer: CSS classes
 themes.configuration.menu.footer.cssClasses = nav nav-inline
 
-# cat=menu,expert/menu_footer/; type=string; label= Menu footer: Divider (for example: <li class="divider"> &#124; </li>, &#124; is equal to a | pipe)
-themes.configuration.menu.footer.divider = <li class="divider"> &#124; </li>
+# cat=menu,expert/menu_footer/; type=string; label= Menu footer: Divider (for example: a | pipe)
+themes.configuration.menu.footer.divider = |
 
 # cat=menu,advanced/menu_footer/; type=options[0,1]; label= Menu footer: Include also items which are marked as 'include not in menu'
 themes.configuration.menu.footer.includeNotInMenu = 0

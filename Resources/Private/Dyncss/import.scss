@@ -23,6 +23,7 @@ $baseurlImage: '/typo3conf/ext/theme_bootstrap4/Resources/Public/Images/';
 
 // Styles for Menus
 @import "Library/Menus/breadcrumb.scss";
+@import "Library/Menus/footer.scss";
 
 // Styles for Extensions
 @import "../Extensions/FluidStyledContent/Dyncss/import.scss";
