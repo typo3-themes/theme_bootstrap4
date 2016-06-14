@@ -35,7 +35,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'constraints' => array(
 		'depends' => array(
 			'typo3'  => '7.6.0-7.6.99',
-			'themes_gridelements' => '7.0.0-7.99.99',
+			'themes_gridelements' => '7.0.1-7.99.99',
 			'dyncss_scss' => '0.7.1-0.7.99',
 		),
 		'conflicts' => array(

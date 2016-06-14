@@ -148,10 +148,6 @@
 				<source>Responsive table</source>
 				<target>Responsive Tabelle</target>
 			</trans-unit>
-			<trans-unit id="content.behaviour.pricing_table" xml:space="preserve">
-				<source>Pricing table</source>
-				<target>Preisliste</target>
-			</trans-unit>
 
 			<trans-unit id="content.behaviour.navigation_pills" xml:space="preserve">
 				<source>Pills navigation</source>

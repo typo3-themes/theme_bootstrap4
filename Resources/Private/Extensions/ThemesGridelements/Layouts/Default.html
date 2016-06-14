@@ -1,0 +1,35 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	  xmlns:themes="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<themes:variable.set name="useDefault" value="1" />
+
+	<f:if condition="{themes.variants.css.content-background}">
+		<themes:variable.set name="removeVariantCssClass" value="{content-background: themes.variants.css.content-background}" />
+		<themes:variable.set name="variantsCssClasses" value="{vhs:iterator.diff(a: themes.variants.css, b: removeVariantCssClass)}" />
+		<div class="{themes.variants.css.content-background}">
+			<div id="c{data.uid}" class="{vhs:iterator.implode(glue: ' ', content: variantsCssClasses)} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+				<f:render section="content" />
+			</div>
+		</div>
+		<themes:variable.set name="useDefault" value="0" />
+	</f:if>
+		
+	<f:if condition="{themes.variants.css.strip-01}">
+		<themes:variable.set name="removeVariantCssClass" value="{strip-01: themes.variants.css.strip-01}" />
+		<themes:variable.set name="variantsCssClasses" value="{vhs:iterator.diff(a: themes.variants.css, b: removeVariantCssClass)}" />
+		<div class="{themes.variants.css.strip-01}">
+			<div id="c{data.uid}" class="{vhs:iterator.implode(glue: ' ', content: variantsCssClasses)} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+				<f:render section="content" />
+			</div>
+		</div>
+		<themes:variable.set name="useDefault" value="0" />
+	</f:if>
+		
+	<f:if condition="{useDefault}">
+		<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+			<f:render section="content" />
+		</div>
+	</f:if>
+	
+</html>

@@ -49,13 +49,13 @@ themes {
 					navigation-tabs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.navigation_tabs
 				}
 				2ColumnGrid {
-					pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
+					#pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
 				}
 				3ColumnGrid {
-					pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
+					#pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
 				}
 				4ColumnGrid {
-					pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
+					#pricing-table = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.pricing_table
 				}
 				accordion {
 					accordion-first-open = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.accordion_first_open
