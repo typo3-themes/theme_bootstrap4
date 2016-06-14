@@ -1,0 +1,38 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Partials/Area/Top.html [begin] -->
+
+		<div id="area-top">
+			<!--
+			@todo class container // optionally fluid-container!!
+			--> 
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-6">
+						<nav class="menu-top-wrapper">
+							<f:cObject typoscriptObjectPath="lib.menu.footer" />
+						</nav>
+					</div>
+					
+					<div class="col-lg-3">
+						<nav class="menu-language-wrapper pull-right">
+							<theme:widget.languageMenu
+									availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
+									currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
+									defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
+									defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
+									defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
+							/>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- theme_bootstrap4: Partials/Area/Top.html [end] -->
+	</f:section>
+</div>

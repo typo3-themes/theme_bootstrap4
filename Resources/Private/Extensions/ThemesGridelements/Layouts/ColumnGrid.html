@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:debug>{_all}</f:debug>
+
+	<f:if condition="{themes.behaviour.css.container}">
+		<f:then>
+			<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+				<div class="row">
+					<f:render section="content" />
+				</div>
+			</div>
+		</f:then>
+		<f:else>
+			<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses} row">
+				<f:render section="content" />
+			</div>
+		</f:else>
+	</f:if>
+
+</html>

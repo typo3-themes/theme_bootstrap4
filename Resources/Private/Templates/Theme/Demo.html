@@ -1,0 +1,93 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+	<f:layout name="Default" />
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Templates/Theme/Demo.html [begin] -->
+
+		<div id="templateContent">
+			
+			<div id="content-main" class="content-column">
+
+				<f:if condition="{0:templateName} == {0:'ContentStartsite'}">
+					<f:then>
+						<!-- Don't use the H1-Headline, because in 
+						Startsite-Layout the H1 wrapped already the logo -->
+					</f:then>
+					<f:else>
+						<div class="page-header">
+							<h1><f:cObject typoscriptObjectPath="lib.page.title" /></h1>
+						</div>
+					</f:else>
+				</f:if>
+
+				<!--TYPO3SEARCH_begin-->
+
+
+				<theme:variable.set name="headline" value="Lorem ipsum dolor sit amet, adipiscing elit." />
+
+				<theme:variable.set name="colors" value="{
+					primary: 'themes.configuration.colors.primary',
+					secondary: 'themes.configuration.colors.secondary',
+					link: 'themes.configuration.colors.link',
+					text: 'themes.configuration.colors.text',
+					
+					gray: 'themes.configuration.colors.gray',
+					grayDark: 'themes.configuration.colors.grayDark',
+					grayDarker: 'themes.configuration.colors.grayDarker',
+					grayLight: 'themes.configuration.colors.grayLight',
+					grayLighter: 'themes.configuration.colors.grayLighter',
+					
+					success: 'themes.configuration.colors.success',
+					information: 'themes.configuration.colors.information',
+					warning: 'themes.configuration.colors.warning',
+					error: 'themes.configuration.colors.error'
+				
+				}" />
+
+
+				<theme:variable.set name="pages" value="{
+				
+				
+				
+					startsite: 'themes.configuration.pages.startsite',
+					legal: 'themes.configuration.pages.legal',
+					privacy: 'themes.configuration.pages.privacy',
+					imprint: 'themes.configuration.pages.imprint',
+					contact: 'themes.configuration.pages.contact',
+					sitemap: 'themes.configuration.pages.sitemap',
+					search: 'themes.configuration.pages.search',
+					directions: 'themes.configuration.pages.directions',
+					login: 'themes.configuration.pages.login',
+					logout: 'themes.configuration.pages.logout',
+					intro: 'themes.configuration.pages.intro',
+					cookie: 'themes.configuration.pages.cookie',
+					references: 'themes.configuration.pages.references',
+					references: 'themes.configuration.pages.registration'
+				}" />
+
+
+				<f:render partial="Demo/Typography" section="Default" arguments="{_all}" />
+				<f:render partial="Demo/Configuration/Colors" section="Default" arguments="{_all}" />
+				<f:render partial="Demo/Pages" section="Default" arguments="{_all}" />
+
+
+				
+				
+				
+				<!--TYPO3SEARCH_end-->
+
+				<ul class="footline list-inline pull-right">
+					<f:render partial="Elements/TopLink" section="Default" arguments="{_all}" />
+					<li class="divider">|</li>
+					<f:render partial="Elements/PrintLink" section="Default" arguments="{_all}" />
+				</ul>
+
+			</div>
+			
+			
+		</div>
+
+		<!-- theme_bootstrap4: Templates/Theme/Demo.html [end] -->
+	</f:section>
+</div>

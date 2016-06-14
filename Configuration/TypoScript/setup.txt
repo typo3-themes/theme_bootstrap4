@@ -15,5 +15,6 @@
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('fluid_styled_content')]
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/TypoScript/setup.txt">
 [global]
-
-
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('themes_gridelements')]
+	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/TypoScript/setup.txt">
+[global]

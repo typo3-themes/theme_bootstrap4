@@ -1,0 +1,96 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:vhs="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+	<f:layout name="Default" />
+	<f:section name="content">
+
+		<!--f:debug>{_all}</f:debug-->
+		
+		<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
+			<f:then>
+
+				<vhs:variable.set name="carouselWrap" value="false" />
+				<f:if condition="{themes.behaviour.css.wrap} == 'wrap'">
+					<vhs:variable.set name="carouselWrap" value="true" />
+				</f:if>
+				<vhs:variable.set name="carouselPause" value="false" />
+				<f:if condition="{themes.behaviour.css.hover} == 'hover'">
+					<vhs:variable.set name="carouselPause" value="hover" />
+				</f:if>
+				<vhs:variable.set name="carouselHideIndicators" value="" />
+				<f:if condition="{themes.variants.css.carousel-hide-indicators} == 'carousel-hide-indicators'">
+					<vhs:variable.set name="carouselHideIndicators" value="hidden" />
+				</f:if>
+				<vhs:variable.set name="carouselHideArrows" value="" />
+				<f:if condition="{themes.variants.css.carousel-hide-arrows} == 'carousel-hide-arrows'">
+					<vhs:variable.set name="carouselHideArrows" value="hidden" />
+				</f:if>
+
+				<vhs:variable.set name="iconPrevious" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.previous')}" />
+				<vhs:variable.set name="iconNext" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.next')}" />
+				
+				<div id="slider{data.uid}"
+					 class="carousel {themes.behaviour.css.carousel-animation}"
+					 data-interval="{themes.behaviour.css.carousel-interval}" 
+					 data-ride="carousel"
+					 data-pause="{carouselPause}"
+					 data-wrap="{carouselWrap}">
+					<ol class="carousel-indicators {carouselHideIndicators}">
+						<f:for each="{data.tx_gridelements_view_children}" as="indicator" iteration="indicatorIteration">
+
+							<li data-target="#slider{data.uid}" data-slide-to="{indicatorIteration.index}"{f:if(condition:'{indicatorIteration.isFirst}',then:' class="active"')}>
+							<f:if condition="{themes.variants.css.carousel-show-preview} == 'carousel-show-preview'">
+								<f:then>
+
+									<f:for each="{vhs:resource.record.fal(table: 'tt_content', field: 'assets', uid: indicator.uid)}" as="image" iteration="imageIteration">
+										<f:if condition="{imageIteration.isFirst}">
+
+											
+											<f:comment>
+												<v:resource.image identifier="[mixed]" categories="[mixed]" treatIdAsUid="1" treatIdAsReference="1" relative="1" width="NULL" height="NULL" minWidth="NULL" minHeight="NULL" maxWidth="NULL" maxHeight="NULL" class="NULL" dir="NULL" id="NULL" lang="NULL" style="NULL" title="NULL" accesskey="NULL" tabindex="123" onclick="NULL" usemap="NULL" ismap="NULL" alt="NULL" as="NULL">
+													<!-- tag content - may be ignored! -->
+												</v:resource.image>
+											</f:comment>
+											<f:image src="{image.id}" maxWidth="200" maxHeight="75"  treatIdAsReference="0"
+													 title="{image.title}"/>
+											
+											
+										</f:if>
+									</f:for>
+									
+								</f:then>
+								<f:else>
+								</f:else>
+							</f:if>
+							</li>
+							
+						</f:for>
+					</ol>
+					<f:cObject typoscriptObjectPath="lib.containerBackgroundImage" data="{data}" />
+					<div class="carousel-inner" role="listbox">
+						<f:for each="{data.tx_gridelements_view_children}" as="slide" iteration="slideIteration">
+							<div class="item {f:if(condition:'{slideIteration.isFirst}',then:' active')}">
+								<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{slide.uid}')}</f:format.raw>
+							</div>
+						</f:for>
+					</div>
+					<a class="left carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="prev">
+						<span class="{iconPrevious}" aria-hidden="true"></span>
+						<span class="sr-only"><f:translate key="carousel_previous_label" /></span>
+					</a>
+					<a class="right carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="next">
+						<span class="{iconNext}" aria-hidden="true"></span>
+						<span class="sr-only"><f:translate key="carousel_next_label" /></span>
+					</a>
+				</div>
+			</f:then>
+			<f:else>
+				<div class="alert alert-danger" role="alert">
+					<f:translate key="carousel_empty_label" />
+				</div>
+			</f:else>
+		</f:if>
+
+	</f:section>
+</html>

@@ -41,13 +41,13 @@ lib.content.cssMap.behaviour {
 	table-responsive = table-responsive
 
 	2ColumnGrid {
-		pricing-table = pricing
+		#pricing-table = pricing
 	}
 	3ColumnGrid {
-		pricing-table = pricing
+		#pricing-table = pricing
 	}
 	4ColumnGrid {
-		pricing-table = pricing
+		#pricing-table = pricing
 	}
 	accordion {
 		accordion-first-open = accordion-first-open
