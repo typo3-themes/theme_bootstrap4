@@ -5,15 +5,15 @@ lib.gridelements {
 		cObject {
 			templateName = Container
 			templateRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Templates/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Templates/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Templates/
 			}
 			partialRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Partials/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Partials/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Partials/
 			}
 			layoutRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Layouts/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Layouts/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Layouts/
 			}
 			dataProcessing {
@@ -32,15 +32,15 @@ lib.gridelements {
 		cObject {
 			templateName = 2ColumnGrid
 			templateRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Templates/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Templates/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Templates/
 			}
 			partialRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Partials/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Partials/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Partials/
 			}
 			layoutRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Layouts/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Layouts/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Layouts/
 			}
 			dataProcessing {
@@ -63,15 +63,15 @@ lib.gridelements {
 		cObject {
 			templateName = 3ColumnGrid
 			templateRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Templates/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Templates/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Templates/
 			}
 			partialRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Partials/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Partials/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Partials/
 			}
 			layoutRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Layouts/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Layouts/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Layouts/
 			}
 			dataProcessing {
@@ -97,15 +97,15 @@ lib.gridelements {
 		cObject {
 			templateName = 4ColumnGrid
 			templateRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Templates/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Templates/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Templates/
 			}
 			partialRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Partials/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Partials/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Partials/
 			}
 			layoutRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Layouts/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Layouts/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Layouts/
 			}
 			dataProcessing {
@@ -134,15 +134,15 @@ lib.gridelements {
 		cObject {
 			templateName = Row
 			templateRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Templates/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Templates/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Templates/
 			}
 			partialRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Partials/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Partials/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Partials/
 			}
 			layoutRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Layouts/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Layouts/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Layouts/
 			}
 			dataProcessing {
@@ -161,15 +161,15 @@ lib.gridelements {
 		cObject {
 			templateName = SingleColumn
 			templateRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Templates/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Templates/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Templates/
 			}
 			partialRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Partials/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Partials/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Partials/
 			}
 			layoutRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Layouts/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Layouts/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Layouts/
 			}
 			dataProcessing {
@@ -188,15 +188,15 @@ lib.gridelements {
 		cObject {
 			templateName = Carousel
 			templateRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Templates/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Templates/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Templates/
 			}
 			partialRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Partials/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Partials/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Partials/
 			}
 			layoutRootPaths {
-				300 = EXT:theme_bootstrap_onepage/Resources/Private/Extensions/ThemesGridelements/Layouts/
+				300 = EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/Layouts/
 				400 = {$themes.resourcesPrivatePath}Extensions/ThemesGridelements/Layouts/
 			}
 			dataProcessing {
