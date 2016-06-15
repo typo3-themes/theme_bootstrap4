@@ -45,4 +45,6 @@
 // Utility classes
 @import "../../../Public/Contrib/Bootstrap/scss/utilities";
 @import "../../../Public/Contrib/Bootstrap/scss/utilities-spacing";
+@import "../../../Public/Contrib/Bootstrap/scss/utilities-background";
+@include bg-variant('.bg-secondary', $brand-secondary);
 @import "../../../Public/Contrib/Bootstrap/scss/utilities-responsive";

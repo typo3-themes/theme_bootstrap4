@@ -1,6 +1,29 @@
 #ToDo Have a look in the Documentation: Navigation, panels are changed
 
 lib.content.cssMap.behaviour {
+
+
+	# Carousel behaviour
+	carousel-interval {
+		none = false
+		duration-3000 = 3000
+		duration-5000 = 5000
+	}
+	carousel-pause = hover
+	carousel-animation {
+		slide = slide
+		fade = fade
+	}
+	carousel-wrap = wrap
+	#
+	# Container behaviour
+	container {
+		default = container
+		fluid = container-fluid
+
+	}
+	
+	
 	#behaviour-container = container
 	#behaviour-table-responsive = table-responsive
 	#accordion {
@@ -19,8 +42,6 @@ lib.content.cssMap.behaviour {
 	#	}
 	#}
 
-	container-default = container
-	container-fluid = container-fluid
 
 	screenreader-label =
 	screenreader-only = sr-only

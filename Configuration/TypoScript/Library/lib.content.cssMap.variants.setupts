@@ -13,6 +13,17 @@ lib.content.cssMap.variants {
 	framed-small = well well-sm
 	framed-large = well well-lg
 
+	# Backgrounds
+	background {
+		color-primary = bg bg-primary
+		color-secondary = bg bg-secondary
+		color-success = bg bg-success
+		color-info = bg bg-info
+		color-warning = bg bg-warning
+		color-danger = bg bg-danger
+		color-inverse = bg bg-inverse
+	}
+
 	# Variants only for header content elements
 	page-header = page-header
 

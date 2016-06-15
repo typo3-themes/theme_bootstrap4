@@ -47,7 +47,7 @@ lib.gridelements {
 				30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
 				40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
 				50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
-				60 = KayStrobach\Themes\DataProcessing\ThemesResponsiveColumnDataProcessor
+				#60 = KayStrobach\Themes\DataProcessing\ThemesResponsiveColumnDataProcessor
 			}
 		}
 		columns.0 {
@@ -78,7 +78,7 @@ lib.gridelements {
 				30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
 				40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
 				50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
-				60 = KayStrobach\Themes\DataProcessing\ThemesResponsiveColumnDataProcessor
+				#60 = KayStrobach\Themes\DataProcessing\ThemesResponsiveColumnDataProcessor
 			}
 		}
 		columns.0 {
@@ -112,7 +112,7 @@ lib.gridelements {
 				30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
 				40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
 				50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
-				60 = KayStrobach\Themes\DataProcessing\ThemesResponsiveColumnDataProcessor
+				#60 = KayStrobach\Themes\DataProcessing\ThemesResponsiveColumnDataProcessor
 			}
 		}
 		columns.0 {
@@ -219,23 +219,9 @@ tt_content.gridelements_pi1.20.10.setup.row < lib.gridelements.row
 tt_content.gridelements_pi1.20.10.setup.singleColumn < lib.gridelements.singleColumn
 tt_content.gridelements_pi1.20.10.setup.carousel < lib.gridelements.carousel
 
-lib.content.cssMap.behaviour {
-	carousel-interval {
-		none = false
-		duration-3000 = 3000
-		duration-5000 = 5000
-	}
-	carousel-pause = hover
-	carousel-animation {
-		slide = slide
-		fade = fade
-	}
-	carousel-wrap = wrap
-}
 lib.content.cssMap.variants {
 	carousel-hide-indicators = carousel-hide-indicators
 	carousel-hide-arrows = carousel-hide-arrows
-	carousel-show-preview = carousel-show-preview
 }
 
 plugin.tx_themes {
