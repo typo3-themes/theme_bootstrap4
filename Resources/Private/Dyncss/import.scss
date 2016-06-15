@@ -1,18 +1,6 @@
 // Be sure that all Bootstrap variables are defined!
 @import "../../Public/Contrib/Bootstrap/scss/variables.scss";
 
-// Define all overwritable Variables, so that EXT:dyncss
-// is able to overwrite them.
-// In case of overwriting the definition value doesnt matter
-$brand-primary: #ff8700;
-$brand-secondary: #FFFFFF;
-
-// Breadcrumbs
-$breadcrumb-divider: ">";
-
-// Base URL for images
-$baseurlImage: '/typo3conf/ext/theme_bootstrap4/Resources/Public/Images/';
-
 // Scss-Imports
 @import "Library/bootstrap.scss";
 @import "Library/layout.scss";

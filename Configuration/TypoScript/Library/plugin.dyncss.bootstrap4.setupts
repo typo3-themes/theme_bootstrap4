@@ -42,4 +42,10 @@ plugin.tx_dyncss.overrides {
 	footer-menu-divider = TEXT
 	footer-menu-divider.value = {$themes.configuration.menu.footer.divider}
 
+	baseurlImage = TEXT
+	baseurlImage.value = {$themes.configuration.baseurlImage}
+
+	baseurlIcon = TEXT
+	baseurlIcon.value = {$themes.configuration.baseurlIcon}
+
 }

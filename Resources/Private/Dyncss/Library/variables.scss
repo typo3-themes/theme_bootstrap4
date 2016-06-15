@@ -1,2 +1,14 @@
 // theme_bootstrap4
+
+// Color
+$brand-secondary: red !default;
+
+// Base URLs
+$baseurlImage: '/typo3conf/ext/theme_bootstrap4/Resources/Public/Images/' !default;
+$baseurlIcon: '/typo3conf/ext/theme_bootstrap4/Resources/Public/Icons/' !default;
+
+// Breadcrumbs
+$breadcrumb-divider: ">";
+
+// Footer
 $footer-menu-divider: "|" !default;
