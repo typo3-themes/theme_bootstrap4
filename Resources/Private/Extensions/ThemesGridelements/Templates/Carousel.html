@@ -2,70 +2,96 @@
 	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	  xmlns:vhs="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
-	<f:layout name="Default" />
-	<f:section name="content">
 
-		<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
-			<f:then>
+<theme:variable.set name="carouselWrap" value="false" />
+<f:if condition="{themes.behaviour.css.wrap} == 'wrap'">
+	<theme:variable.set name="carouselWrap" value="true" />
+	<theme:variable.popBehaviour name="wrap" />
+</f:if>
+<theme:variable.set name="carouselPause" value="false" />
+<f:if condition="{themes.behaviour.css.hover} == 'hover'">
+	<theme:variable.set name="carouselPause" value="hover" />
+	<theme:variable.popBehaviour name="hover" />
+</f:if>
+<theme:variable.set name="carouselHideIndicators" value="" />
+<f:if condition="{themes.variants.css.carousel-hide-indicators} == 'carousel-hide-indicators'">
+	<theme:variable.set name="carouselHideIndicators" value="hidden-xs-up" />
+	<theme:variable.popVariant name="carousel-hide-indicators" />
+</f:if>
+<theme:variable.set name="carouselHideArrows" value="" />
+<f:if condition="{themes.variants.css.carousel-hide-arrows} == 'carousel-hide-arrows'">
+	<theme:variable.set name="carouselHideArrows" value="hidden-xs-up" />
+	<theme:variable.popVariant name="carousel-hide-arrows" />
+</f:if>
 
-				<theme:variable.set name="carouselWrap" value="false" />
-				<f:if condition="{themes.behaviour.css.wrap} == 'wrap'">
-					<theme:variable.set name="carouselWrap" value="true" />
-				</f:if>
-				<theme:variable.set name="carouselPause" value="false" />
-				<f:if condition="{themes.behaviour.css.hover} == 'hover'">
-					<theme:variable.set name="carouselPause" value="hover" />
-				</f:if>
-				<theme:variable.set name="carouselHideIndicators" value="" />
-				<f:if condition="{themes.variants.css.carousel-hide-indicators} == 'carousel-hide-indicators'">
-					<theme:variable.set name="carouselHideIndicators" value="hidden" />
-				</f:if>
-				<theme:variable.set name="carouselHideArrows" value="" />
-				<f:if condition="{themes.variants.css.carousel-hide-arrows} == 'carousel-hide-arrows'">
-					<theme:variable.set name="carouselHideArrows" value="hidden" />
-				</f:if>
+<theme:variable.set name="iconPrevious" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.previous')}" />
+<theme:variable.set name="iconNext" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.next')}" />
 
-				<theme:variable.set name="iconPrevious" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.previous')}" />
-				<theme:variable.set name="iconNext" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.next')}" />
-				
-				<div id="slider{data.uid}"
-					 class="carousel {themes.behaviour.css.carousel-animation}"
-					 data-interval="{themes.behaviour.css.carousel-interval}" 
-					 data-ride="carousel"
-					 data-pause="{carouselPause}"
-					 data-wrap="{carouselWrap}">
-					<ol class="carousel-indicators {carouselHideIndicators}">
-						<f:for each="{data.tx_gridelements_view_children}" as="indicator" iteration="indicatorIteration">
+<f:comment> -- Use a background wrapper?! -- </f:comment>
+<f:if condition="{themes.variants.css.background}">
+	<f:format.printf arguments="{class: themes.variants.css.background}" value="<div class='%s'>" />
+	<theme:variable.popVariant name="background" />
+	<theme:variable.set name="closeBackground" value="1" />
+</f:if>
 
-							<li data-target="#slider{data.uid}" data-slide-to="{indicatorIteration.index}" {f:if(condition:'{indicatorIteration.isFirst}',then:' class="active"')}>
-								
-							</li>
-							
-						</f:for>
-					</ol>
-					<div class="carousel-inner" role="listbox">
-						<f:for each="{data.tx_gridelements_view_children}" as="slide" iteration="slideIteration">
-							<div class="item {f:if(condition:'{slideIteration.isFirst}',then:' active')}">
-								<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{slide.uid}')}</f:format.raw>
-							</div>
-						</f:for>
-					</div>
-					<a class="left carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="prev">
-						<span class="{iconPrevious}" aria-hidden="true"></span>
-						<span class="sr-only"><f:translate key="carousel_previous_label" /></span>
-					</a>
-					<a class="right carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="next">
-						<span class="{iconNext}" aria-hidden="true"></span>
-						<span class="sr-only"><f:translate key="carousel_next_label" /></span>
-					</a>
+<f:comment> -- Use a container wrapper?! -- </f:comment>
+<f:if condition="{themes.behaviour.css.container}">
+	<f:format.printf arguments="{class: themes.behaviour.css.container}" value="<div class='%s'>" />
+	<theme:variable.popBehaviour name="container" />
+	<theme:variable.set name="closeContainer" value="1" />
+</f:if>
+
+<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+
+	<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
+		<f:then>
+
+			<div id="slider{data.uid}"
+				 class="carousel {themes.behaviour.css.carousel-animation}"
+				 data-interval="{themes.behaviour.css.carousel-interval}"
+				 data-ride="carousel"
+				 data-pause="{carouselPause}"
+				 data-wrap="{carouselWrap}">
+				<ol class="carousel-indicators {carouselHideIndicators}">
+					<f:for each="{data.tx_gridelements_view_children}" as="indicator" iteration="indicatorIteration">
+
+						<li data-target="#slider{data.uid}" data-slide-to="{indicatorIteration.index}" {f:if(condition:'{indicatorIteration.isFirst}',then:' class="active"')}>
+
+						</li>
+
+					</f:for>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<f:for each="{data.tx_gridelements_view_children}" as="slide" iteration="slideIteration">
+						<div class="item {f:if(condition:'{slideIteration.isFirst}',then:' active')}">
+							<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{slide.uid}')}</f:format.raw>
+						</div>
+					</f:for>
 				</div>
-			</f:then>
-			<f:else>
-				<div class="alert alert-danger" role="alert">
-					<f:translate key="carousel_empty_label" />
-				</div>
-			</f:else>
-		</f:if>
+				<a class="left carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="prev">
+					<span class="{iconPrevious}" aria-hidden="true"></span>
+					<span class="sr-only"><f:translate key="carousel_previous_label" /></span>
+				</a>
+				<a class="right carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="next">
+					<span class="{iconNext}" aria-hidden="true"></span>
+					<span class="sr-only"><f:translate key="carousel_next_label" /></span>
+				</a>
+			</div>
+		</f:then>
+		<f:else>
+			<div class="alert alert-danger" role="alert">
+				<f:translate key="carousel_empty_label" />
+			</div>
+		</f:else>
+	</f:if>
 
-	</f:section>
+</div>
+
+<f:if condition="{closeContainer}">
+	<f:format.printf arguments="{0: ''}" value="</div>" />
+</f:if>
+<f:if condition="{closeBackground}">
+	<f:format.printf arguments="{0: ''}" value="</div>" />
+</f:if>
+
 </html>
