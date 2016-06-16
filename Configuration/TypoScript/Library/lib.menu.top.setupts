@@ -13,12 +13,12 @@ lib.menu.top.1 {
 	NO {
 		ATagParams = class="nav-link"
 		wrapItemAndSub.insertData = 1
-		wrapItemAndSub = <li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.top.prefix}|</li>{$themes.configuration.menu.top.divider}|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.top.prefix}|</li>{$themes.configuration.menu.top.divider}|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.top.prefix}|</li>
+		wrapItemAndSub = <li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.top.prefix}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.top.prefix}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.top.prefix}|</li>
 	}
 	ACT < .NO
 	ACT {
 		ATagParams = class="nav-link active"
 		ACT.wrapItemAndSub.insertData = 1
-		ACT.wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.top.prefix}|</li>{$themes.configuration.menu.top.divider}|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.top.prefix}|</li>{$themes.configuration.menu.top.divider}|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.top.prefix}|</li>
+		ACT.wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.top.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.top.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.top.prefix}|</li>
 	}
 }

@@ -28,7 +28,7 @@ themes.configuration.menu.top.containerPid = 0
 themes.configuration.menu.top.cssClasses = nav nav-inline
 
 # cat=menu,expert/menu_top/; type=string; label= Menu top: Divider (for example: <li class="divider"> &#124; </li>, &#124; is equal to a | pipe)
-themes.configuration.menu.top.divider = <li class="divider"> &#124; </li>
+themes.configuration.menu.top.divider = |
 
 # cat=menu,advanced/menu_top/; type=options[0,1]; label= Menu top: Include also items which are marked as 'include not in menu'
 themes.configuration.menu.top.includeNotInMenu = 0
@@ -119,7 +119,7 @@ themes.configuration.menu.footer.includeNotInMenu = 0
 themes.configuration.menu.breadcrumb.prefix = :&nbsp;
 
 # cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: Divider
-themes.configuration.menu.breadcrumb.divider = &gt;&nbsp;
+themes.configuration.menu.breadcrumb.divider = >
 
 # cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: CSS classes
 themes.configuration.menu.breadcrumb.cssClasses = breadcrumb

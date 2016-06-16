@@ -1,0 +1,6 @@
+#menu-top {
+	ul.nav li + li::before {
+		content: "#{$top-menu-divider}";
+		margin-right: 1rem;
+	}
+}

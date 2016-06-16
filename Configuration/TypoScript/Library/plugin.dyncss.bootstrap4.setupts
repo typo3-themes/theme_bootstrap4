@@ -33,11 +33,15 @@ plugin.tx_dyncss.overrides {
 	#brand-warning = TEXT
 	#brand-warning.value = {$themes.configuration.colors.warning}
 
-	breadcrumb-divider = TEXT
-	breadcrumb-divider.value = '{$themes.configuration.menu.breadcrumb.divider}'
-
 	#icon-font-path = TEXT
 	#icon-font-path.value = '{$themes.configuration.font.icon.fontFilePath}'
+
+
+	top-menu-divider = TEXT
+	top-menu-divider.value = {$themes.configuration.menu.footer.divider}
+
+	breadcrumb-divider = TEXT
+	breadcrumb-divider.value = '{$themes.configuration.menu.breadcrumb.divider}'
 
 	footer-menu-divider = TEXT
 	footer-menu-divider.value = {$themes.configuration.menu.footer.divider}
