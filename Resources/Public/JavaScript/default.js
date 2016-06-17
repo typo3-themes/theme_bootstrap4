@@ -16,9 +16,9 @@ jQuery(document).ready(function() {
 			});
 		}
 	}
-	
-	
-	
-	
+
+	// activate dropdown
+	// http://v4-alpha.getbootstrap.com/components/dropdowns/#via-javascript
+	jQuery('.dropdown-toggle').dropdown();
 
 });
