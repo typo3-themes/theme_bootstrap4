@@ -26,6 +26,14 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 		}
+		#ToDo: Include Files in theme_bootstrap4 and use CDN for production settings
+		tether = https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js
+		tether {
+			external = 1
+			forceOnTop = 1
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
 		theme = EXT:theme_bootstrap4/Resources/Public/JavaScript/default.js
 		theme {
 			external = 0
@@ -61,7 +69,7 @@ page {
 			bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js
 			bootstrap {
 				external = 1
-				integrity = sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7
+				#integrity = sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7
 			}
 		}
 	}
