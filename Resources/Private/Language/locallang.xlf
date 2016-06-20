@@ -2170,6 +2170,18 @@
 			<trans-unit id="content.variants.framed_large" xml:space="preserve">
 				<source>Framed (large)</source>
 			</trans-unit>
+			<trans-unit id="content.variants.headline_label" xml:space="preserve">
+				<source>Blockstyle for headline</source>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_left" xml:space="preserve">
+				<source>Headline align left</source>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_center" xml:space="preserve">
+				<source>Headline align center</source>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_right" xml:space="preserve">
+				<source>Headline align right</source>
+			</trans-unit>
 			<trans-unit id="content.variants.alert_success" xml:space="preserve">
 				<source>Alert-Success</source>
 			</trans-unit>

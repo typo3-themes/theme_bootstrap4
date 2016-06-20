@@ -90,6 +90,22 @@
 				<source>Framed (large)</source>
 				<target>Einrahmung (groß)</target>
 			</trans-unit>
+			<trans-unit id="content.variants.headline_label" xml:space="preserve">
+				<source>Blockstyle for headline</source>
+				<target>Ausrichtung für Überschrift</target>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_left" xml:space="preserve">
+				<source>Headline align left</source>
+				<target>Überschrift linksbündig</target>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_center" xml:space="preserve">
+				<source>Headline align center</source>
+				<target>Überschrift zentriert</target>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_right" xml:space="preserve">
+				<source>Headline align right</source>
+				<target>Überschrift rechtsbündig</target>
+			</trans-unit>
 			<trans-unit id="content.variants.alert_success" xml:space="preserve">
 				<source>Success-Message</source>
 				<target>Erfolgsmeldung</target>
