@@ -105,75 +105,116 @@ RTE.classes {
 		value = text-transform: lowercase;
 	}
 	text-uppercase {
-	    name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-uppercase_label
-	    value = text-transform: uppercase;
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-uppercase_label
+		value = text-transform: uppercase;
 	}
 	text-capitalize {
-	    name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-capitalize_label
-	    value = text-transform: capitalize;
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-capitalize_label
+		value = text-transform: capitalize;
 	}
-    # Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds
+	# Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds
 	text-muted {
-	    name = LLL Text muted
-	    value = color: #818a91
+		name = LLL Text muted
+		value = color: #818a91
 	}
 	text-primary {
-	    name = LLL Text primary
-	    value = color: #0275d8
+		name = LLL Text primary
+		value = color: #0275d8
 	}
 	text-secondary {
-	    # ToDo: gibt es die in Bootstrap?
-	    name = LLL Text secondary
-	    value = color: orange
+		# ToDo: gibt es die in Bootstrap?
+		name = LLL Text secondary
+		value = color: orange
 	}
 	text-success {
-	    name = LLL Text success
-	    value = color: #5cb85c
+		name = LLL Text success
+		value = color: #5cb85c
 	}
 	text-info {
-	    name = LLL Text info
-	    value = color: #5bc0de
+		name = LLL Text info
+		value = color: #5bc0de
 	}
 	text-warning {
-	    name = LLL Text warning
-	    value = color: #f0ad4e
+		name = LLL Text warning
+		value = color: #f0ad4e
 	}
 	text-danger {
-	    name = LLL Text danger
-	    value = color: #d9534f
+		name = LLL Text danger
+		value = color: #d9534f
 	}
 	bg-primary {
-	    name = LLL Background primary
-	    value = padding: 0.5rem; color: #ffffff; background-color: #0275d8
+		name = LLL Background primary
+		value = padding: 0.5rem; color: #ffffff; background-color: #0275d8
 	}
 	bg-secondary {
-	    # ToDo: gibt es die in Bootstrap?
-	    name = LLL Background secondary
-	    value = padding: 0.5rem; color: #ffffff; background-color: orange
+		# ToDo: gibt es die in Bootstrap?
+		name = LLL Background secondary
+		value = padding: 0.5rem; color: #ffffff; background-color: orange
 	}
 	bg-success {
-	    name = LLL Background success
-	    value = padding: 0.5rem; color: #ffffff; background-color: #5cb85c
+		name = LLL Background success
+		value = padding: 0.5rem; color: #ffffff; background-color: #5cb85c
 	}
 	bg-info {
-	    name = LLL Background info
-	    value = padding: 0.5rem; color: #ffffff; background-color: #5bc0de
+		name = LLL Background info
+		value = padding: 0.5rem; color: #ffffff; background-color: #5bc0de
 	}
 	bg-warning {
-	    name = LLL Background warning
-	    value = padding: 0.5rem; color: #ffffff; background-color: #f0ad4e
+		name = LLL Background warning
+		value = padding: 0.5rem; color: #ffffff; background-color: #f0ad4e
 	}
 	bg-danger {
-	    name = LLL Background danger
-	    value = padding: 0.5rem; color: #ffffff; background-color: #d9534f
+		name = LLL Background danger
+		value = padding: 0.5rem; color: #ffffff; background-color: #d9534f
 	}
 	bg-inverse {
-	    name = LLL Background inverse
-	    value = padding: 0.5rem; color: #eceeef; background-color: #373a3c
+		name = LLL Background inverse
+		value = padding: 0.5rem; color: #eceeef; background-color: #373a3c
 	}
 
 
 
+	# ToDo: Check manual
+	btn-default {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.default
+	}
+	btn-primary {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.primary
+	}
+	btn-secondary {
+		requires = btn
+		name = Secondary Button
+	}
+	btn-success {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.success
+	}
+	btn-info {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.info
+	}
+	btn-warning {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.warning
+	}
+	btn-danger {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.danger
+	}
+	btn-large {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.large
+	}
+	btn-small {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.small
+	}
+	btn-extra-small {
+		requires = btn
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.extra-small
+	}
 
 
 
@@ -228,7 +269,9 @@ RTE.default {
 	proc.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
 	proc.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
 	proc.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
-	proc.allowedClasses := addToList(small, initialism, blockquote-reverse) #
+	proc.allowedClasses := addToList(small, initialism, blockquote-reverse)
+	proc.allowedClasses := addToList(btn, btn-default, btn-primary, btn-secondary, btn-success, btn-info, btn-warning)
+	proc.allowedClasses := addToList(btn-danger, btn-large, btn-small, btn-extra-small)
 
 	buttons {
 		# A class name to be assigned to the blocks whenever the item is applied to selected text.
@@ -268,8 +311,10 @@ RTE.default {
 		}
 		# allowed classes for links (a-tag)
 		link.properties.class {
-		    allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
-        }
+			allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+			allowedClasses := addToList(btn, btn-default, btn-primary, btn-secondary, btn-success, btn-info, btn-warning)
+			allowedClasses := addToList(btn-danger, btn-large, btn-small, btn-extra-small)
+		}
 		# override: Hide infrequently used block types in the block formatting selector
 		formatblock.removeItems >
 	}

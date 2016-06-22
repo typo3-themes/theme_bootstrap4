@@ -87,25 +87,25 @@ span.h6 {
 div.display-1,
 p.display-1,
 span.display-1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 300;
 }
 div.display-2,
 p.display-2,
 span.display-2 {
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   font-weight: 300;
 }
 div.display-3,
 p.display-3,
 span.display-3 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 div.display-4,
 p.display-4,
 span.display-4 {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -280,6 +280,59 @@ span.bg-inverse {
   padding: 0.5rem;
   color: #eceeef;
   background-color: #373a3c;
+}
+
+/* ToDo Buttons */
+a.btn {
+  padding: 6px 12px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+}
+a.btn.btn-default,
+a.btn-default {
+  background-color: white;
+}
+a.btn.btn-primary,
+a.btn-primary {
+  background-color: #337ab7;
+  color: #fff;
+}
+a.btn.btn-secondary,
+a.btn-secondary {
+  background-color: #189f61;
+  color: #fff;
+}
+a.btn.btn-success,
+a.btn-success {
+  background-color: #5cb85c;
+  color: #fff;
+}
+a.btn.btn-info,
+a.btn-info {
+  background-color: #5bc0de;
+  color: #fff;
+}
+a.btn.btn-warning,
+a.btn-warning {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+a.btn.btn-danger,
+a.btn-danger {
+  background-color: #d9534f;
+  color: #fff;
+}
+a.btn.btn-large,
+a.btn-large {
+  font-size: 1.5em;
+}
+a.btn.btn-small,
+a.btn-small {
+  font-size: 0.9em;
+}
+a.btn.btn-extra-small,
+a.btn-extra-small {
+  font-size: 0.8em;
 }
 
 
