@@ -1,0 +1,7 @@
+# #customcategory=tracking=Theme: Site tracking
+
+# cat=tracking; type=options[0,1]; label= Google-Analytics: Disabled
+themes.configuration.tracking.googleAnalytics.disabled = 1
+
+# cat=tracking; type=string; label= Google-Analytics: Code
+themes.configuration.tracking.googleAnalytics.code = 
