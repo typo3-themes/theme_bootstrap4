@@ -322,17 +322,13 @@ a.btn-danger {
   background-color: #d9534f;
   color: #fff;
 }
-a.btn.btn-large,
-a.btn-large {
+a.btn.btn-lg,
+a.btn-lg {
   font-size: 1.5em;
 }
-a.btn.btn-small,
-a.btn-small {
+a.btn.btn-sm,
+a.btn-sm {
   font-size: 0.9em;
-}
-a.btn.btn-extra-small,
-a.btn-extra-small {
-  font-size: 0.8em;
 }
 
 

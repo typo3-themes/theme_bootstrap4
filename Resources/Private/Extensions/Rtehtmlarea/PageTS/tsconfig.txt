@@ -203,17 +203,13 @@ RTE.classes {
 		requires = btn
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.danger
 	}
-	btn-large {
+	btn-lg {
 		requires = btn
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.large
 	}
-	btn-small {
+	btn-sm {
 		requires = btn
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.small
-	}
-	btn-extra-small {
-		requires = btn
-		name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.extra-small
 	}
 
 
@@ -271,7 +267,7 @@ RTE.default {
 	proc.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
 	proc.allowedClasses := addToList(small, initialism, blockquote-reverse)
 	proc.allowedClasses := addToList(btn, btn-default, btn-primary, btn-secondary, btn-success, btn-info, btn-warning)
-	proc.allowedClasses := addToList(btn-danger, btn-large, btn-small, btn-extra-small)
+	proc.allowedClasses := addToList(btn-danger, btn-lg, btn-sm)
 
 	buttons {
 		# A class name to be assigned to the blocks whenever the item is applied to selected text.
@@ -313,7 +309,7 @@ RTE.default {
 		link.properties.class {
 			allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
 			allowedClasses := addToList(btn, btn-default, btn-primary, btn-secondary, btn-success, btn-info, btn-warning)
-			allowedClasses := addToList(btn-danger, btn-large, btn-small, btn-extra-small)
+			allowedClasses := addToList(btn-danger, btn-lg, btn-sm)
 		}
 		# override: Hide infrequently used block types in the block formatting selector
 		formatblock.removeItems >
