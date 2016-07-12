@@ -8,26 +8,26 @@ themes {
 				framed {
 					#ToDo: Label in language file
 					#ToDo: Frame is removed - check Documentation for new variants
-					label = LLL Chose frame
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_label
 					default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed
 					small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_small
 					large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_large
 				}
 				headline {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_label
-					left = LLL:EXT:THEME_BOOTSTRAP4/Resources/Private/Language/locallang.xlf:content.variants.headline_left
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_label
+					left = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_left
 					center = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_center
 					right = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_right
 				}
 				background {
-					none = LLL Choose background
-					color-primary = LLL Primary color
-					color-secondary = LLL Secondary color
-					color-success = LLL success color
-					color-info = LLL info color
-					color-warning = LLL warning color
-					color-danger = LLL danger color
-					color-inverse = LLL inverse color
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_label
+					color-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_primary
+					color-secondary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_secondary
+					color-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_success
+					color-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_info
+					color-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_warning
+					color-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_danger
+					color-inverse = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_inverse
 				}
 			}
 			# Special variant for Header

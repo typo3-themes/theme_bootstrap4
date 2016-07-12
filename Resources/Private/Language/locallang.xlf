@@ -2161,6 +2161,10 @@
 			<trans-unit id="content.variants.wide_screen" xml:space="preserve">
 				<source>Wide-Screen</source>
 			</trans-unit>
+
+			<trans-unit id="content.variants.framed_label" xml:space="preserve">
+				<source>Chose frame</source>
+			</trans-unit>
 			<trans-unit id="content.variants.framed" xml:space="preserve">
 				<source>Framed</source>
 			</trans-unit>
@@ -2170,6 +2174,7 @@
 			<trans-unit id="content.variants.framed_large" xml:space="preserve">
 				<source>Framed (large)</source>
 			</trans-unit>
+
 			<trans-unit id="content.variants.headline_label" xml:space="preserve">
 				<source>Blockstyle for headline</source>
 			</trans-unit>
@@ -2182,6 +2187,32 @@
 			<trans-unit id="content.variants.headline_right" xml:space="preserve">
 				<source>Headline align right</source>
 			</trans-unit>
+
+			<trans-unit id="content.variants.background_label" xml:space="preserve">
+				<source>Choose background</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_primary" xml:space="preserve">
+				<source>Primary color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_secondary" xml:space="preserve">
+				<source>Secondary color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_success" xml:space="preserve">
+				<source>Success color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_info" xml:space="preserve">
+				<source>Info color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_warning" xml:space="preserve">
+				<source>Warning color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_danger" xml:space="preserve">
+				<source>Danger color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_inverse" xml:space="preserve">
+				<source>Inverse color</source>
+			</trans-unit>
+
 			<trans-unit id="content.variants.alert_success" xml:space="preserve">
 				<source>Alert-Success</source>
 			</trans-unit>
@@ -2196,6 +2227,9 @@
 			</trans-unit>
 
 			<!-- Behaviours labels -->
+			<trans-unit id="content.behaviour.container_label" xml:space="preserve">
+				<source>Chose container</source>
+			</trans-unit>
 			<trans-unit id="content.behaviour.container" xml:space="preserve">
 				<source>Container</source>
 			</trans-unit>
@@ -2205,11 +2239,19 @@
 			<trans-unit id="content.behaviour.fade_in" xml:space="preserve">
 				<source>Fade in</source>
 			</trans-unit>
+
+			<trans-unit id="content.behaviour.screenreader_label" xml:space="preserve">
+				<source>Chose screenreader option</source>
+			</trans-unit>
 			<trans-unit id="content.behaviour.screenreader_only" xml:space="preserve">
 				<source>Screenreader only</source>
 			</trans-unit>
 			<trans-unit id="content.behaviour.screenreader_only_focusable" xml:space="preserve">
 				<source>Screenreader only (focusable)</source>
+			</trans-unit>
+
+			<trans-unit id="content.behaviour.print_label" xml:space="preserve">
+				<source>Chose print behaviour</source>
 			</trans-unit>
 			<trans-unit id="content.behaviour.print_hidden" xml:space="preserve">
 				<source>Hidden for printing</source>
@@ -2223,6 +2265,7 @@
 			<trans-unit id="content.behaviour.print_visible_inline_block" xml:space="preserve">
 				<source>Visible for printing (inline-block)</source>
 			</trans-unit>
+
 			<trans-unit id="content.behaviour.table_responsive" xml:space="preserve">
 				<source>Responsive table</source>
 			</trans-unit>

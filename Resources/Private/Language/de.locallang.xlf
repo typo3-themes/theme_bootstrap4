@@ -78,6 +78,12 @@
 				<source>Wide-Screen</source>
 				<target>Breitwand</target>
 			</trans-unit>
+
+			<trans-unit id="content.variants.framed_label" xml:space="preserve">
+				<source>Chose frame</source>
+				<target>Einrahmung wählen</target>
+			</trans-unit>
+
 			<trans-unit id="content.variants.framed" xml:space="preserve">
 				<source>Framed</source>
 				<target>Einrahmung</target>

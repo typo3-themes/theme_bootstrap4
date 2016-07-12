@@ -4,18 +4,18 @@ themes.content.behaviour {
 	default {
 		container {
 			#ToDo: Label in language file
-			none = LLL Chose container
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container_label
 			default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container
 			fluid = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container_fluid
 		}
 		screenreader {
-			label = LLL Chose screenreader option
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_label
 			only = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_only
 			only-focusable = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_only_focusable
 		}
 		print {
 			#ToDo: Label in language file
-			label = LLL Chose print behaviour
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_label
 			hidden = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_hidden
 			visible-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_block
 			visible-inline = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_inline
@@ -26,11 +26,11 @@ themes.content.behaviour {
 	textmedia {
 		responsive-embed {
 			#ToDo: Label in language file
-			label = LLL Chose responsive video behaviour
-			21by9 = LLL Responsive Video: 21:9
-			16by9 = LLL Responsive Video: 16:9
-			4by3 = LLL Responsive Video: 4:3
-			1by1 = LLL Responsive Video: 1:1
+			label = Chose responsive video behaviour
+			21by9 = Responsive Video: 21:9
+			16by9 = Responsive Video: 16:9
+			4by3 = Responsive Video: 4:3
+			1by1 = Responsive Video: 1:1
 		}
 	}
 	table {
