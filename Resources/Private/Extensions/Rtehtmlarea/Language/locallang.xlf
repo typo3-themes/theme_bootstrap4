@@ -7,7 +7,8 @@
 		product-name="rtehtmlarea">
 		<header/>
 		<body>
-      <!-- Typography - Headings -->
+
+			<!-- Typography - Headings -->
 			<trans-unit id="rte.h1_label" xml:space="preserve">
 				<source>Styling as Heading 1 (inline)</source>
 			</trans-unit>
@@ -26,13 +27,29 @@
 			<trans-unit id="rte.h6_label" xml:space="preserve">
 				<source>Styling as Heading 6 (inline)</source>
 			</trans-unit>
+
+			<trans-unit id="rte.display1_label" xml:space="preserve">
+				<source>Headline special Display 1</source>
+			</trans-unit>
+			<trans-unit id="rte.display2_label" xml:space="preserve">
+				<source>Headline special Display 2</source>
+			</trans-unit>
+			<trans-unit id="rte.display3_label" xml:space="preserve">
+				<source>Headline special Display 3</source>
+			</trans-unit>
+			<trans-unit id="rte.display4_label" xml:space="preserve">
+				<source>Headline special Display 4</source>
+			</trans-unit>
+
 			<trans-unit id="rte.small_label" xml:space="preserve">
 				<source>Small text</source>
 			</trans-unit>
+
 			<trans-unit id="rte.lead_label" xml:space="preserve">
 				<source>Lead body copy</source>
 			</trans-unit>
-      <!-- Typography - Inline text elements -->
+
+			<!-- Typography - Inline text elements -->
 			<trans-unit id="rte.category-mark_label" xml:space="preserve">
 				<source>Marked text</source>
 			</trans-unit>
@@ -42,11 +59,50 @@
 			<trans-unit id="rte.description-mark_label" xml:space="preserve">
 				<source>HTML5 Marked text</source>
 			</trans-unit>
-      <!-- Typography - Alignment classes -->
+
+			<!-- Typography - Alignment classes -->
+			<trans-unit id="rte.text-sm-left_label" xml:space="preserve">
+				<source>Text Left (sm or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-sm-center_label" xml:space="preserve">
+				<source>Text Center (sm or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-sm-right_label" xml:space="preserve">
+				<source>Text Right (sm or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-md-left_label" xml:space="preserve">
+				<source>Text Left (md or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-md-center_label" xml:space="preserve">
+				<source>Text Center (md or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-md-right_label" xml:space="preserve">
+				<source>Text Right (md or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-lg-left_label" xml:space="preserve">
+				<source>Text Left (lg or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-lg-center_label" xml:space="preserve">
+				<source>Text Center (lg or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-lg-right_label" xml:space="preserve">
+				<source>Text Right (lg or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-xl-left_label" xml:space="preserve">
+				<source>Text Left (xl or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-xl-center_label" xml:space="preserve">
+				<source>Text Center (xl or wider)</source>
+			</trans-unit>
+			<trans-unit id="rte.text-xl-right_label" xml:space="preserve">
+				<source>Text Right (xl or wider)</source>
+			</trans-unit>
+
 			<trans-unit id="rte.text-nowrap_label" xml:space="preserve">
 				<source>No wrap</source>
 			</trans-unit>
-      <!-- Typography - Transformation classes -->
+
+			<!-- Typography - Transformation classes -->
 			<trans-unit id="rte.text-lowercase_label" xml:space="preserve">
 				<source>Lowercased text</source>
 			</trans-unit>
@@ -56,16 +112,68 @@
 			<trans-unit id="rte.text-capitalize_label" xml:space="preserve">
 				<source>Capitalized text</source>
 			</trans-unit>
-      <!-- Typography - Abbreviations -->
+
+			<!-- Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds -->
+			<trans-unit id="rte.text-muted_label" xml:space="preserve">
+				<source>Text muted</source>
+			</trans-unit>
+			<trans-unit id="rte.text-primary_label" xml:space="preserve">
+				<source>Text primary</source>
+			</trans-unit>
+			<trans-unit id="rte.text-secondary_label" xml:space="preserve">
+				<source>Text secondary</source>
+			</trans-unit>
+
+			<trans-unit id="rte.text-success_label" xml:space="preserve">
+				<source>Text success</source>
+			</trans-unit>
+			<trans-unit id="rte.text-info_label" xml:space="preserve">
+				<source>Text info</source>
+			</trans-unit>
+			<trans-unit id="rte.text-warning_label" xml:space="preserve">
+				<source>Text warning</source>
+			</trans-unit>
+			<trans-unit id="rte.text-danger_label" xml:space="preserve">
+				<source>Text danger</source>
+			</trans-unit>
+
+			<trans-unit id="rte.bg-primary_label" xml:space="preserve">
+				<source>Background primary</source>
+			</trans-unit>
+			<trans-unit id="rte.bg-secondary_label" xml:space="preserve">
+				<source>Background secondary</source>
+			</trans-unit>
+			<trans-unit id="rte.bg-success_label" xml:space="preserve">
+				<source>Background success</source>
+			</trans-unit>
+			<trans-unit id="rte.bg-info_label" xml:space="preserve">
+				<source>Background info</source>
+			</trans-unit>
+			<trans-unit id="rte.bg-warning_label" xml:space="preserve">
+				<source>Background warning</source>
+			</trans-unit>
+			<trans-unit id="rte.bg-danger_label" xml:space="preserve">
+				<source>Background danger</source>
+			</trans-unit>
+			<trans-unit id="rte.bg-inverse_label" xml:space="preserve">
+				<source>Background inverse</source>
+			</trans-unit>
+
+			<!-- Button -->
+			<trans-unit id="rte.btn-secondary_label" xml:space="preserve">
+				<source>Secondary Button</source>
+			</trans-unit>
+
+			<!-- Typography - Abbreviations -->
 			<trans-unit id="rte.abbr-initialism_label" xml:space="preserve">
 				<source>Abbreviation for a smaller font-size</source>
 			</trans-unit>
-      <!-- Typography - blockquote-reverse -->
+
+			<!-- Typography - blockquote-reverse -->
 			<trans-unit id="rte.blockquote-reverse_label" xml:space="preserve">
 				<source>Alternate display</source>
 			</trans-unit>
-      
-      
+
 		</body>
 	</file>
 </xliff>

@@ -10,7 +10,6 @@ RTE.classes {
 	h1 {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h1_label
 	}
-
 	h2 {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.h2_label
 	}
@@ -29,16 +28,16 @@ RTE.classes {
 
 	# Bootrap4 -> Content -> Typography -> Display headings
 	display-1 {
-		name = LLL Display 1
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.display1_label
 	}
 	display-2 {
-		name = LLL Display 2
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.display2_label
 	}
 	display-3 {
-		name = LLL Display 3
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.display3_label
 	}
 	display-4 {
-		name = LLL Display 4
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.display4_label
 	}
 
 	# Bootrap4 -> Content -> Typography -> Lead
@@ -64,41 +63,42 @@ RTE.classes {
 		value = text-align: right;
 	}
 	text-sm-left {
-		name = LLL Left (sm or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-sm-left_label
 	}
 	text-sm-center {
-		name = LLL Center (sm or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-sm-center_label
 	}
 	text-sm-right {
-		name = LLL Right (sm or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-sm-right_label
 	}
 	text-md-left {
-		name = LLL Left (md or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-md-left_label
 	}
 	text-md-center {
-		name = LLL Center (md or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-md-center_label
 	}
 	text-md-right {
-		name = LLL Right (md or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-md-right_label
 	}
 	text-lg-left {
-		name = LLL Left (lg or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lg-left_label
 	}
 	text-lg-center {
-		name = LLL Center (lg or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lg-center_label
 	}
 	text-lg-right {
-		name = LLL Right (lg or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lg-right_label
 	}
 	text-xl-left {
-		name = LLL Left (xl or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xl-left_label
 	}
 	text-xl-center {
-		name = LLL Center (xl or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xl-center_label
 	}
 	text-xl-right {
-		name = LLL Right (xl or wider)
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xl-right_label
 	}
+
 	# Bootrap4 -> Components -> Utility classes  -> Text transform
 	text-lowercase {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lowercase_label
@@ -114,61 +114,61 @@ RTE.classes {
 	}
 	# Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds
 	text-muted {
-		name = LLL Text muted
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-muted_label
 		value = color: #818a91
 	}
 	text-primary {
-		name = LLL Text primary
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-primary_label
 		value = color: #0275d8
 	}
 	text-secondary {
 		# ToDo: gibt es die in Bootstrap?
-		name = LLL Text secondary
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-secondary_label
 		value = color: orange
 	}
 	text-success {
-		name = LLL Text success
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-success_label
 		value = color: #5cb85c
 	}
 	text-info {
-		name = LLL Text info
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-info_label
 		value = color: #5bc0de
 	}
 	text-warning {
-		name = LLL Text warning
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-warning_label
 		value = color: #f0ad4e
 	}
 	text-danger {
-		name = LLL Text danger
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-danger_label
 		value = color: #d9534f
 	}
 	bg-primary {
-		name = LLL Background primary
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-primary_label
 		value = padding: 0.5rem; color: #ffffff; background-color: #0275d8
 	}
 	bg-secondary {
 		# ToDo: gibt es die in Bootstrap?
-		name = LLL Background secondary
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-secondary_label
 		value = padding: 0.5rem; color: #ffffff; background-color: orange
 	}
 	bg-success {
-		name = LLL Background success
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-success_label
 		value = padding: 0.5rem; color: #ffffff; background-color: #5cb85c
 	}
 	bg-info {
-		name = LLL Background info
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-info_label
 		value = padding: 0.5rem; color: #ffffff; background-color: #5bc0de
 	}
 	bg-warning {
-		name = LLL Background warning
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-warning_label
 		value = padding: 0.5rem; color: #ffffff; background-color: #f0ad4e
 	}
 	bg-danger {
-		name = LLL Background danger
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-danger_label
 		value = padding: 0.5rem; color: #ffffff; background-color: #d9534f
 	}
 	bg-inverse {
-		name = LLL Background inverse
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-inverse_label
 		value = padding: 0.5rem; color: #eceeef; background-color: #373a3c
 	}
 
@@ -185,7 +185,7 @@ RTE.classes {
 	}
 	btn-secondary {
 		requires = btn
-		name = Secondary Button
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.btn-secondary_label
 	}
 	btn-success {
 		requires = btn
