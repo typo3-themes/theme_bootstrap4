@@ -63,7 +63,7 @@
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<f:for each="{data.tx_gridelements_view_children}" as="slide" iteration="slideIteration">
-						<div class="item {f:if(condition:'{slideIteration.isFirst}',then:' active')}">
+						<div class="carousel-item {f:if(condition:'{slideIteration.isFirst}',then:' active')}">
 							<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{slide.uid}')}</f:format.raw>
 						</div>
 					</f:for>
