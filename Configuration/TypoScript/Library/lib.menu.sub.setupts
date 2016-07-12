@@ -4,7 +4,7 @@ lib.menu.sub = HMENU
 lib.menu.sub.entryLevel = 1
 lib.menu.sub.includeNotInMenu = {$themes.configuration.menu.sub.includeNotInMenu}
 lib.menu.sub.excludeUidList = {$themes.configuration.menu.sub.excludeUidList}
-lib.menu.sub.wrap = <nav class="menu-sub-wrapper"><ul class="{$themes.configuration.menu.sub.cssClasses}"> | </ul></nav>
+lib.menu.sub.wrap = <nav id="menu-sub"><ul class="{$themes.configuration.menu.sub.cssClasses}"> | </ul></nav>
 lib.menu.sub.1 = TMENU
 lib.menu.sub.1 {
 	expAll = 0
