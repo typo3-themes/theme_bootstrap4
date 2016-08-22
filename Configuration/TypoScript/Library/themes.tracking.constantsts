@@ -4,4 +4,13 @@
 themes.configuration.tracking.googleAnalytics.disabled = 1
 
 # cat=tracking; type=string; label= Google-Analytics: Code
-themes.configuration.tracking.googleAnalytics.code = 
+themes.configuration.tracking.googleAnalytics.code =
+
+# cat=tracking; type=options[0,1]; label= Piwik: Disabled
+themes.configuration.tracking.piwik.disabled = 1
+
+# cat=tracking; type=string; label= Piwik: URL (without http:// or https://)
+themes.configuration.tracking.piwik.url = www.domain.tdl/piwik/
+
+# cat=tracking; type=int+; label= Piwik: Site ID
+themes.configuration.tracking.piwik.siteId =
