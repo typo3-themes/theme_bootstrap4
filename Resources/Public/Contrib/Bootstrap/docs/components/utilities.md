@@ -18,10 +18,12 @@ Assign `margin` or `padding` to an element or a subset of its sides with shortha
 The classes are named using the format: `{property}-{sides}-{size}`
 
 Where *property* is one of:
+
 * `m` - for classes that set `margin`
 * `p` - for classes that set `padding`
 
 Where *sides* is one of:
+
 * `t` - for classes that set `margin-top` or `padding-top`
 * `b` - for classes that set `margin-bottom` or `padding-bottom`
 * `l` - for classes that set `margin-left` or `padding-left`
@@ -31,13 +33,17 @@ Where *sides* is one of:
 * `a` - for classes that set a `margin` or `padding` on all 4 sides of the element
 
 Where *size* is one of:
+
 * `0` - for classes that eliminate the `margin` or `padding` by setting it to `0`
 * `1` - (by default) for classes that set the `margin` or `padding` to `$spacer-x` or `$spacer-y`
 * `2` - (by default) for classes that set the `margin` or `padding` to `$spacer-x * 1.5` or `$spacer-y * 1.5`
 * `3` - (by default) for classes that set the `margin` or `padding` to `$spacer-x * 3` or `$spacer-y * 3`
 
+(You can add more sizes by adding entries to the `$spacers` Sass map variable.)
+
 Here are some representative examples of these classes:
-```scss
+
+{% highlight scss %}
 .m-t-0 {
   margin-top: 0 !important;
 }
@@ -54,10 +60,22 @@ Here are some representative examples of these classes:
 .p-a-3 {
   padding: ($spacer-y * 3) ($spacer-x * 3) !important;
 }
-```
+{% endhighlight %}
 
-Additionally, Bootstrap also includes an `.m-x-auto` class which sets the horizontal margins to `auto`.
+### Horizontal centering
+Additionally, Bootstrap also includes an `.m-x-auto` class for horizontally centering fixed-width block level content by setting the horizontal margins to `auto`.
 
+<div class="bd-example">
+  <div class="m-x-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
+    Centered element
+  </div>
+</div>
+
+{% highlight html %}
+<div class="m-x-auto" style="width: 200px;">
+  Centered element
+</div>
+{% endhighlight %}
 
 ## Text alignment
 
@@ -91,6 +109,8 @@ Transform text in components with text capitalization classes.
 <p class="text-capitalize">CapiTaliZed text.</p>
 {% endexample %}
 
+Note how `text-capitalize` only changes the first letter of each word, leaving the case of any other letters unaffected.
+
 ## Font weight and italics
 
 Quickly change the weight (boldness) of text or italicize text.
@@ -98,7 +118,7 @@ Quickly change the weight (boldness) of text or italicize text.
 {% example html %}
 <p class="font-weight-bold">Bold text.</p>
 <p class="font-weight-normal">Normal weight text.</p>
-<p class="font-italic">Italicized text.</p>
+<p class="font-italic">Italic text.</p>
 {% endexample %}
 
 ## Contextual colors and backgrounds
@@ -142,11 +162,38 @@ Similar to the contextual text color classes, easily set the background of an el
 Sometimes contextual classes cannot be applied due to the specificity of another selector. In some cases, a sufficient workaround is to wrap your element's content in a `<div>` with the class.
 {% endcallout %}
 
-{% callout warning %}
-#### Conveying meaning to assistive technologies
+{% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
+{{ callout-include | markdownify }}
 
-Ensure that any meaning conveyed through color is also conveyed in a format that is not purely presentational.
-{% endcallout %}
+## Widths
+
+Easily make an element as wide as its parent using the `.w-100` utility class, which sets `width: 100%`.
+
+{% example html %}
+<img class="w-100" data-src="holder.js/200px100?outline=yes&text=Width%20%3D%20100%25" alt="Width = 100%">
+{% endexample %}
+
+## CSS `display` (`block`, `inline`, `inline-block`)
+
+Use `.d-block`, `.d-inline`, or `.d-inline-block` to simply set an element's [`display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/display) to `block`, `inline`, or `inline-block` (respectively).
+
+To make an element `display: none`, use our [responsive utilities](../layout/responsive-utilities/) instead.
+
+{% example html %}
+<div class="d-inline bg-success">Inline</div>
+<div class="d-inline bg-success">Inline</div>
+
+<span class="d-block bg-primary">Block</span>
+
+<div class="d-inline-block bg-warning">
+  <h3>inline-block</h3>
+  Boot that strap!
+</div>
+<div class="d-inline-block bg-warning">
+  <h3>inline-block</h3>
+  Strap that boot!
+</div>
+{% endexample %}
 
 ## Close icon
 
@@ -165,14 +212,14 @@ These utility classes float an element to the left or right, or disable floating
 Two similar non-responsive mixins (`pull-left` and `pull-right`) are also available.
 
 {% example html %}
-<div class="pull-xs-left">Float left on all viewport sizes</div>
-<div class="pull-xs-right">Float right on all viewport sizes</div>
-<div class="pull-xs-none">Don't float on all viewport sizes</div>
+<div class="pull-xs-left">Float left on all viewport sizes</div><br>
+<div class="pull-xs-right">Float right on all viewport sizes</div><br>
+<div class="pull-xs-none">Don't float on all viewport sizes</div><br>
 
-<div class="pull-sm-left">Float left on viewports sized SM (small) or wider</div>
-<div class="pull-md-left">Float left on viewports sized MD (medium) or wider</div>
-<div class="pull-lg-left">Float left on viewports sized LG (large) or wider</div>
-<div class="pull-xl-left">Float left on viewports sized XL (extra-large) or wider</div>
+<div class="pull-sm-left">Float left on viewports sized SM (small) or wider</div><br>
+<div class="pull-md-left">Float left on viewports sized MD (medium) or wider</div><br>
+<div class="pull-lg-left">Float left on viewports sized LG (large) or wider</div><br>
+<div class="pull-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br>
 {% endexample %}
 
 {% highlight scss %}
@@ -185,27 +232,7 @@ Two similar non-responsive mixins (`pull-left` and `pull-right`) are also availa
 }
 {% endhighlight %}
 
-## Center content
-
-Set an element to `display: block;` and center via `margin`. Available as a mixin and class.
-
-{% example html %}
-<div class="center-block">Centered block</div>
-{% endexample %}
-
-{% highlight scss %}
-// Class
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// Usage as a mixin
-.element {
-  @include center-block;
-}
-{% endhighlight %}
+## Clearfix
 
 Easily clear `float`s by adding `.clearfix` **to the parent element**. Utilizes [the micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) as popularized by Nicolas Gallagher. Can also be used as a mixin.
 
@@ -232,6 +259,20 @@ Easily clear `float`s by adding `.clearfix` **to the parent element**. Utilizes 
 }
 {% endhighlight %}
 
+## Fixed positioning
+
+The `.pos-f-t` class can be used to easily position elements at the top of the viewport and make them as wide as the viewport. **Be sure you understand the ramifications of fixed-position elements within your project.** Here's how the class is defined:
+
+{% highlight scss %}
+.pos-f-t {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
+}
+{% endhighlight %}
+
 ## Invisible content
 
 The `.invisible` class can be used to toggle only the visibility of an element, meaning its `display` is not modified and the element can still affect the flow of the document.
@@ -248,7 +289,7 @@ The `.invisible` class can be used to toggle only the visibility of an element, 
 
 // Usage as a mixin
 .element {
-  .invisible();
+  @include invisible;
 }
 {% endhighlight %}
 

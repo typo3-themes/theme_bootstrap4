@@ -34,7 +34,7 @@ Always try to place a modal's HTML code in a top-level position in your document
 {% callout warning %}
 #### Mobile device caveats
 
-There are some caveats regarding using modals on mobile devices. [See our browser support docs]({{ site.baseurl }}/getting-started/browsers-devices/#modals-navbars-and-virtual-keyboards) for details.
+There are some caveats regarding using modals on mobile devices. [See our browser support docs]({{ site.baseurl }}/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile) for details.
 {% endcallout %}
 
 ### Static example
@@ -181,7 +181,7 @@ Embedding YouTube videos in modals requires additional JavaScript not in Bootstr
 
 ## Optional sizes
 
-Modals have two optional sizes, available via modifier classes to be placed on a `.modal-dialog`.
+Modals have two optional sizes, available via modifier classes to be placed on a `.modal-dialog`. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
@@ -251,7 +251,7 @@ Modals have two optional sizes, available via modifier classes to be placed on a
 For modals that simply appear rather than fade in to view, remove the `.fade` class from your modal markup.
 
 {% highlight html %}
-<div class="modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
   ...
 </div>
 {% endhighlight %}
@@ -479,10 +479,6 @@ Bootstrap's modal class exposes a few events for hooking into modal functionalit
      <tr>
        <td>hidden.bs.modal</td>
        <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
-     </tr>
-     <tr>
-       <td>loaded.bs.modal</td>
-       <td>This event is fired when the modal has loaded content using the <code>remote</code> option.</td>
      </tr>
     </tbody>
   </table>

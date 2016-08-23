@@ -117,6 +117,12 @@ $('#example').tooltip(options)
 
 The required markup for a tooltip is only a `data` attribute and `title` on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to `top` by the plugin).
 
+{% callout warning %}
+#### Making tooltips work for keyboard and assistive technology users
+
+You should only add tooltips to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). Although arbitrary HTML elements (such as `<span>`s) can be made focusable by adding the `tabindex="0"` attribute, this will add potentially annoying and confusing tab stops on non-interactive elements for keyboard users. In addition, most assistive technologies currently do not announce the tooltip in this situation.
+{% endcallout %}
+
 {% highlight html %}
 <!-- HTML to write -->
 <a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
@@ -223,7 +229,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
         <td>An array of constraints - passed through to Tether. For more information refer to Tether's <a href="http://github.hubspot.com/tether/#constraints">constraint docs</a>.</td>
       </tr>
       <tr>
-        <td>offsets</td>
+        <td>offset</td>
         <td>string</td>
         <td>'0 0'</td>
         <td>Offset of the popover relative to its target. For more information refer to Tether's <a href="http://github.hubspot.com/tether/#constraints">offset docs</a>.</td>
