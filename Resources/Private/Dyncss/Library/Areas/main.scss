@@ -1,0 +1,6 @@
+#areaMain {
+	// Skip navigation Bug - have a look at: http://v4-alpha.getbootstrap.com/getting-started/accessibility/#skip-navigation
+	&:focus {
+		outline: none;
+	}
+}

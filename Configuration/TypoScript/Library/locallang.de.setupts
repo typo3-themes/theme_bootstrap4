@@ -7,6 +7,7 @@ plugin.tx_themes {
 			quickSearch_label = Suche
 			topLink_label = nach oben
 			printLink_label = drucken
+			skipNavigation_label = Direkt zum Inhalt
 		}
 	}
 }

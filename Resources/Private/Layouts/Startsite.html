@@ -1,9 +1,10 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
 <!-- theme_bootstrap4: Layouts/Startsite.html [begin] -->
+<a href="#areaMain" class="sr-only sr-only-focusable">
+	<f:translate key="skipNavigation_label" />
+</a>
 <div id="layoutStartsite">
 
-	
-	
 	<f:render partial="Area/Top" section="Default" arguments="{_all}" />
 
 	<f:render partial="Area/Header" section="Default" arguments="{_all}" />
@@ -13,7 +14,7 @@
 			<f:cObject typoscriptObjectPath="lib.content.feature" />
 		</section>
 
-		<main id="areaMain">
+		<main id="areaMain" tabindex="-1">
 			<div id="menu-breadcrumb">
 				<span class="breadcrumb-label"><f:translate key="breadcrumb_label" /></span>
 				<f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
@@ -28,5 +29,6 @@
 	</div>
 
 	<f:render partial="Area/Footer" section="Default" arguments="{_all}" />
+
 </div>
 <!-- theme_bootstrap4: Layouts/Startsite.html [end] -->
