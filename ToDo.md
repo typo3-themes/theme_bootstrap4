@@ -82,3 +82,6 @@ Following a list of Bootstrap 4 integration based on the Bootstrap 4 documentati
 
 
 Also note the information in the comments (ToDo)
+
+
+* Check licence in contrib-folder 
