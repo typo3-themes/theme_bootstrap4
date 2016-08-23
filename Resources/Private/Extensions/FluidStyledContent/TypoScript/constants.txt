@@ -1,0 +1,7 @@
+# Check if Extension VHS is loaded
+# Default = false
+extension.loaded.vhs = false
+# if Extension VHS is loaded change to true
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('vhs')]
+	extension.loaded.vhs = true
+[global]
