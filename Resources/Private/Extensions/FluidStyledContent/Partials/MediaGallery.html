@@ -157,7 +157,7 @@
 							height="{column.dimensions.height}"
 							alt="{column.media.alternative}"
 							title="{column.media.title}"
-					        class="figure-img img-fluid"
+					        class="figure-img img-fluid {f:if(condition: '{column.media.mimeType} == image/svg+xml', then: 'img-fluid-svg')}"
 					/>
 				</f:then>
 				<f:else>
@@ -167,7 +167,7 @@
 							height="{column.dimensions.height}"
 							alt="{column.media.alternative}"
 							title="{column.media.title}"
-					        class="img-fluid"
+					        class="img-fluid {f:if(condition: '{column.media.mimeType} == image/svg+xml', then: 'img-fluid-svg')}"
 					/>
 				</f:else>
 			</f:if>

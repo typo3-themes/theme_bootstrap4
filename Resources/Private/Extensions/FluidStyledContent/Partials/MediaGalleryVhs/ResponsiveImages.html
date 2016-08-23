@@ -12,5 +12,5 @@
 	               srcset="544,768,992,1200"
 	               alt="{column.media.alternative}"
 	               title="{column.media.title}"
-	               class="img-fluid" />
+	               class="img-fluid {f:if(condition: '{column.media.mimeType} == image/svg+xml', then: 'img-fluid-svg')}" />
 </f:if>
