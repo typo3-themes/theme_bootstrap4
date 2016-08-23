@@ -8,8 +8,7 @@
 	&.ce-above {
 		.ce-gallery,
 		.ce-bodytext {
-			@include make-col();
-			@include make-col-span(12);
+			@include make-col(12);
 		}
 	}
 	&.ce-intext.ce-nowrap {
@@ -25,10 +24,9 @@
 		}
 		.ce-gallery,
 		.ce-bodytext {
-			@include make-col();
-			@include make-col-span(12);
+			@include make-col(12);
 			@include media-breakpoint-up("sm") {
-				@include make-col-span(6);
+				@include make-col(6);
 			}
 		}
 	}
@@ -45,7 +43,7 @@
 		.ce-media {
 			> figure,
 			> img {
-				@extend .center-block;
+				@extend .m-x-auto;
 			}
 
 		}
