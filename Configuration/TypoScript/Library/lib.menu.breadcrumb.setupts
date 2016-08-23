@@ -24,7 +24,7 @@ lib.menu.breadcrumb {
 			NO {
 				stdWrap.htmlSpecialChars = 1
 				doNotLinkIt = |*| 0 |*| 1
-				linkWrap = <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active">|</li>
+				linkWrap = <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item active" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>
 				ATagParams = itemprop="url" title="{field:subtitle//field:title}"
 				ATagParams.insertData = 1
 				stdWrap.wrap = <span itemprop="title">|</span>
