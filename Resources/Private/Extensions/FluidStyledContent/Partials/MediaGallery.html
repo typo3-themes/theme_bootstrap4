@@ -1,5 +1,4 @@
-{namespace theme=KayStrobach\Themes\ViewHelpers}
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" 
 	  xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" 
 	  data-namespace-typo3-fluid="true">
 <f:if condition="{gallery.rows}">
@@ -63,39 +62,18 @@
 	<f:if condition="{column.media.link}">
 		<f:then>
 			<f:link.typolink parameter="{column.media.link}">
-				<f:if condition="{theme:constant(constant:'extension.loaded.vhs')}">
-					<f:then>
-						<f:render partial="MediaGalleryVhs/ResponsiveImages" arguments="{_all}" />
-					</f:then>
-					<f:else>
-						<f:render section="media" arguments="{_all}" />
-					</f:else>
-				</f:if>
+				<f:render section="media" arguments="{_all}" />
 			</f:link.typolink>
 		</f:then>
 		<f:else>
 			<f:if condition="{data.image_zoom}">
 				<f:then>
 					<ce:link.clickEnlarge image="{column.media}" configuration="{settings.media.popup}">
-						<f:if condition="{theme:constant(constant:'extension.loaded.vhs')}">
-							<f:then>
-								<f:render partial="MediaGalleryVhs/ResponsiveImages" arguments="{_all}" />
-							</f:then>
-							<f:else>
-								<f:render section="media" arguments="{_all}" />
-							</f:else>
-						</f:if>
+						<f:render section="media" arguments="{_all}" />
 					</ce:link.clickEnlarge>
 				</f:then>
 				<f:else>
-					<f:if condition="{theme:constant(constant:'extension.loaded.vhs')}">
-						<f:then>
-							<f:render partial="MediaGalleryVhs/ResponsiveImages" arguments="{_all}" />
-						</f:then>
-						<f:else>
-							<f:render section="media" arguments="{_all}" />
-						</f:else>
-					</f:if>
+					<f:render section="media" arguments="{_all}" />
 				</f:else>
 			</f:if>
 		</f:else>
@@ -111,6 +89,7 @@
 </f:section>
 
 <f:section name="media">
+
 	<f:if condition="{column.media.mimeType} == 'video/youtube'">
 		<f:then>
 			<script type="application/javascript">
