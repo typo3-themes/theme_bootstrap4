@@ -1,4 +1,5 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" 
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	  xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" 
 	  data-namespace-typo3-fluid="true">
 <f:if condition="{gallery.rows}">
@@ -130,28 +131,67 @@
 		<f:else>
 			<f:if condition="{column.media.description}">
 				<f:then>
-					<f:media
-							file="{column.media}"
-							width="{column.dimensions.width}"
-							height="{column.dimensions.height}"
-							alt="{column.media.alternative}"
-							title="{column.media.title}"
-					        class="figure-img img-fluid {f:if(condition: '{column.media.mimeType} == image/svg+xml', then: 'img-fluid-svg')}"
-					/>
+					<f:if condition="{theme:constant(constant: 'themes.configuration.extension.fluidStyledResponsiveImages.loaded')}">
+						<f:then>
+							<f:media
+									file="{column.media}"
+									width="{column.dimensions.width}"
+									height="{column.dimensions.height}"
+									alt="{column.media.alternative}"
+									title="{column.media.title}"
+									class="figure-img img-fluid
+											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+									additionalAttributes="{width:column.dimensions.width,height:column.dimensions.height}"
+							/>
+						</f:then>
+						<f:else>
+							<f:media
+									file="{column.media}"
+									width="{column.dimensions.width}"
+									height="{column.dimensions.height}"
+									alt="{column.media.alternative}"
+									title="{column.media.title}"
+									class="figure-img img-fluid
+											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+							/>
+						</f:else>
+					</f:if>
 				</f:then>
 				<f:else>
-					<f:media
-							file="{column.media}"
-							width="{column.dimensions.width}"
-							height="{column.dimensions.height}"
-							alt="{column.media.alternative}"
-							title="{column.media.title}"
-					        class="img-fluid {f:if(condition: '{column.media.mimeType} == image/svg+xml', then: 'img-fluid-svg')}"
-					/>
+					<f:if condition="{theme:constant(constant: 'themes.configuration.extension.fluidStyledResponsiveImages.loaded')}">
+						<f:then>
+							<f:media
+									file="{column.media}"
+									width="{column.dimensions.width}"
+									height="{column.dimensions.height}"
+									alt="{column.media.alternative}"
+									title="{column.media.title}"
+									class="img-fluid
+											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+									additionalAttributes="{width:column.dimensions.width,height:column.dimensions.height}"
+							/>
+						</f:then>
+						<f:else>
+							<f:media
+									file="{column.media}"
+									width="{column.dimensions.width}"
+									height="{column.dimensions.height}"
+									alt="{column.media.alternative}"
+									title="{column.media.title}"
+									class="img-fluid
+											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+							/>
+						</f:else>
+					</f:if>
 				</f:else>
 			</f:if>
 		</f:else>
 	</f:if>
 
 </f:section>
+
 </html>

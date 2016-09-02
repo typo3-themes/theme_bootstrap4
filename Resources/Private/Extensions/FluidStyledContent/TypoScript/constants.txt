@@ -1,7 +1,19 @@
-# Check if Extension VHS is loaded
-# Default = false
-extension.loaded.vhs = false
-# if Extension VHS is loaded change to true
-[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('vhs')]
-	extension.loaded.vhs = true
+# ToDo: is this the best workflow?
+# ToDo: is this the right place?
+
+
+# customsubcategory=image= Images
+
+# Images redering & loading
+#############################################
+# Check if Extension fluid_styled_responsive_images is loaded
+# cat=unused; type=options[0,1]; label=Extension Fluid Styled Responsive Images is loaded
+themes.configuration.extension.fluidStyledResponsiveImages.loaded = 0
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('fluid_styled_responsive_images')]
+		themes.configuration.extension.fluidStyledResponsiveImages.loaded = 1
 [global]
+# cat=theme,advanced/image/; type=options[0,1]; label=Use lazyloading (Lazy Sizes)
+themes.configuration.image.lazyloading = 0
+
+# ToDo: lazyloading funktioniert noch nicht. Die Extension fluid_styled_responsive_images 1.2.0 benötigt ein neues Update
+# https://github.com/alexanderschnitzler/fluid-styled-responsive-images/pull/17

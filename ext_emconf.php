@@ -41,6 +41,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'conflicts' => array(
 		),
 		'suggests' => array(
+			'fluid_styled_responsive_images' => '1.2.0-1.99.99',
 		),
 	),
 	'_md5_values_when_last_written' => 'a:0:{}',
