@@ -4,7 +4,7 @@
 	<f:section name="Default">
 		<!-- theme_bootstrap4: Templates/Theme/SidebarMenuContent.html [begin] -->
 
-		<div id="templateSidebarMenuContent">
+		<div id="template-sidebar-menu-content">
 			<div class="row">
 
 				<!--
@@ -13,13 +13,13 @@
 					when it switch into mobile view.  -->
 
 				<!-- Firstly the menu column, because Bootstrap not allows to pull/push xs and col-12 -->
-				<div id="contentMenu" class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-lg-push-3 col-xl-2 col-xl-push-3">
+				<div id="content-menu" class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-lg-push-3 col-xl-2 col-xl-push-3">
 					<f:render partial="Content/Menu" section="Default" arguments="{_all}" />
 				</div>
-				<div id="contentMain" class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-lg-push-3 col-xl-7 col-xl-push-3">
+				<div id="content-main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-lg-push-3 col-xl-7 col-xl-push-3">
 					<f:render partial="Content/Main" section="Default" arguments="{_all}" />
 				</div>
-				<aside id="contentSidebar" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-lg-pull-9 col-xl-3 col-xl-pull-9">
+				<aside id="content-sidebar" class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-lg-pull-9 col-xl-3 col-xl-pull-9">
 					<f:render partial="Content/Sidebar" section="Default" arguments="{_all}" />
 				</aside>
 

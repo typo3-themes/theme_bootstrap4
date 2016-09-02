@@ -1,20 +1,20 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
 <!-- theme_bootstrap4: Layouts/Special.html [begin] -->
-<a href="#areaMain" class="sr-only sr-only-focusable">
+<a href="#area-main" class="sr-only sr-only-focusable">
 	<f:translate key="skipNavigation_label" />
 </a>
-<div id="layoutDefault">
+<div id="layout-special">
 	
 	<f:render partial="Area/Top" section="Default" arguments="{_all}" />
 
 	<f:render partial="Area/Header" section="Default" arguments="{_all}" />
 	
 	<div class="container">
-		<section id="areaFeature">
+		<section id="area-feature">
 			<f:cObject typoscriptObjectPath="lib.content.feature" />
 		</section>
 
-		<main id="areaMain" tabindex="-1">
+		<main id="area-main" tabindex="-1">
 			<div id="menu-breadcrumb">
 				<span class="breadcrumb-label"><f:translate key="breadcrumb_label" /></span>
 				<f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
@@ -22,7 +22,7 @@
 			<f:render section="Default" />
 		</main>
 
-		<section id="areaExtended">
+		<section id="area-extended">
 			<f:cObject typoscriptObjectPath="lib.content.extended" />
 		</section>
 	</div>
