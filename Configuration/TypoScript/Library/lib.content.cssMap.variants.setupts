@@ -2,17 +2,19 @@
 
 lib.content.cssMap.variants {
 
-	# Variants available for each element
+	# Alerts
 	alert-success = alert alert-success
 	alert-info = alert alert-info
 	alert-warning = alert alert-warning
 	alert-danger = alert alert-danger
+	
 	wide-screen = jumbotron
 
 	framed-default = well
 	framed-small = well well-sm
 	framed-large = well well-lg
 
+	// Headling alignment
 	headline-left = headline-left
 	headline-center = headline-center
 	headline-right = headline-right
@@ -38,6 +40,18 @@ lib.content.cssMap.variants {
 	navigation-pills-color5 = nav-pills-color5
 	navigation-pills-color6 = nav-pills-color6
 
+	# Grid layout: carousel
+	carousel-hide-indicators = carousel-hide-indicators
+	carousel-hide-arrows = carousel-hide-arrows
+	
+	# Grid layout: tabs
+	tabs-navigation {
+		tabs = nav nav-tabs
+		pills = nav nav-pills 
+	}
+	
+	
+	# Buttons
 	buttons {
 		button-default = btn btn-default
 		button-primary = btn btn-primary

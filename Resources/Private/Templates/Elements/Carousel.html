@@ -3,6 +3,8 @@
 	  xmlns:vhs="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
 
+<f:debug>{themes}</f:debug>
+
 <theme:variable.set name="carouselWrap" value="false" />
 <f:if condition="{themes.behaviour.css.wrap} == 'wrap'">
 	<theme:variable.set name="carouselWrap" value="true" />

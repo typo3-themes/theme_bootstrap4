@@ -1,0 +1,94 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+
+<f:comment> -- Use a background wrapper?! -- </f:comment>
+<f:if condition="{themes.variants.css.background}">
+	<f:format.printf arguments="{class: themes.variants.css.background}" value="<div class='%s'>" />
+	<theme:variable.popVariant name="background" />
+	<theme:variable.set name="closeBackground" value="1" />
+</f:if>
+
+<f:comment> -- Use a container wrapper?! -- </f:comment>
+<f:if condition="{themes.behaviour.css.container}">
+	<f:format.printf arguments="{class: themes.behaviour.css.container}" value="<div class='%s'>" />
+	<theme:variable.popBehaviour name="container" />
+	<theme:variable.set name="closeContainer" value="1" />
+</f:if>
+
+<f:comment> -- Moving tab navigation variable -- </f:comment>
+<theme:variable.set name="navigationTabs" value="{themes.variants.key2css.tabs-navigation}" />
+<theme:variable.popVariant name="tabs-navigation" />
+
+<f:comment> -- Fade between tabs? -- </f:comment>
+<theme:variable.set name="fadeIn" value="" />
+<f:if condition="{themes.behaviour.key2css.fade-in}">
+	<theme:variable.set name="fadeIn" value="{themes.behaviour.key2css.fade-in}" />
+	<theme:variable.popBehaviour name="fade-in" />
+</f:if>
+
+
+<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}" role="tabpanel">
+
+	<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
+		<f:then>
+
+			<!--
+			@todo: aria attribute?!
+			-->
+			
+			<ul class="{navigationTabs}" role="tablist">
+				<f:for each="{data.tx_gridelements_view_children}" as="tab" iteration="tabIteration">
+					<f:if condition="{tabIteration.isFirst}">
+						<f:then>
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-content-{tab.uid}" role="tab">Home</a>
+							</li>
+						</f:then>
+						<f:else>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-content-{tab.uid}" role="tab">Profile</a>
+							</li>
+						</f:else>
+					</f:if>
+				</f:for>
+			</ul>
+			<div class="tab-content">
+				<f:for each="{data.tx_gridelements_view_children}" as="tabContent" iteration="tabContentIteration">
+					<f:if condition="{tabContentIteration.isFirst}">
+						<f:then>
+							<div class="tab-pane {fadeIn} active" id="tab-content-{tabContent.uid}" role="tabpanel">
+								<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{tabContent.uid}')}</f:format.raw>
+							</div>
+						</f:then>
+						<f:else>
+							<div class="tab-pane {fadeIn}" id="tab-content-{tabContent.uid}" role="tabpanel">
+								<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{tabContent.uid}')}</f:format.raw>
+							</div>
+						</f:else>
+					</f:if>
+				</f:for>
+			</div>
+			
+		</f:then>
+		<f:else>
+			<div class="alert alert-danger" role="alert">
+				<!--
+				@todo: translation value
+				-->
+				Please add at least one tab content!
+				<f:translate key="carousel_empty_label" />
+			</div>
+		</f:else>
+	</f:if>
+
+</div>
+
+<f:if condition="{closeContainer}">
+	<f:format.printf arguments="{0: ''}" value="</div>" />
+</f:if>
+<f:if condition="{closeBackground}">
+	<f:format.printf arguments="{0: ''}" value="</div>" />
+</f:if>
+
+</html>

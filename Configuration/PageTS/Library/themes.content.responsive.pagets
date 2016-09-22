@@ -15,46 +15,46 @@ themes {
 			
 			default {
 				extralarge {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extralarge
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
-						# hidden-up = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.hidden
+						# hidden-up = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.hidden
 						hidden-up = Hidden up
 						hidden-down = Hidden down
 					}
 				}
 				large {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.large
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.large
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						hidden-up = Hidden up
                         hidden-down = Hidden down
 					}
 				}
 				medium {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.medium
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.medium
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						hidden-up = Hidden up
                         hidden-down = Hidden down
 					}
 				}
 				small {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.small
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.small
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						hidden-up = Hidden up
                         hidden-down = Hidden down
 					}
 				}
 				extrasmall {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extrasmall
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extrasmall
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						hidden-up = Hidden up
                         hidden-down = Hidden down
@@ -250,7 +250,7 @@ themes {
 				
 				
 				extralarge {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extralarge
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
 					rowSettings {
 						equalHeight = equal height
 					}
@@ -262,7 +262,7 @@ themes {
 					}
 				}
 				large {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.large
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.large
 					rowSettings {
 						equalHeight = equal height
 					}
@@ -274,7 +274,7 @@ themes {
 					}
 				}
 				medium {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.medium
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.medium
 					rowSettings {
 						equalHeight = equal height
 					}
@@ -286,7 +286,7 @@ themes {
 					}
 				}
 				small {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.small
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.small
 					rowSettings {
 						equalHeight = equal height
 					}
@@ -298,7 +298,7 @@ themes {
 					}
 				}
 				extrasmall {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.responsive.devices.extrasmall
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extrasmall
 					rowSettings {
 						equalHeight = equal height
 					}

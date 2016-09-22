@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.0">
+	<file source-language="en"
+		datatype="plaintext"
+		original="messages"
+		date="2014-04-13T18:20:51Z"
+		product-name="theme_bootstrap4">
+		<header/>
+		<body>
+
+
+			<!-- Variants labels -->
+			<trans-unit id="content.variants.page_header" xml:space="preserve">
+				<source>Page-Header</source>
+			</trans-unit>
+			<trans-unit id="content.variants.wide_screen" xml:space="preserve">
+				<source>Wide-Screen</source>
+			</trans-unit>
+
+			<!-- Frame -->
+			<trans-unit id="content.variants.framed_label" xml:space="preserve">
+				<source>Chose frame</source>
+			</trans-unit>
+			<trans-unit id="content.variants.framed" xml:space="preserve">
+				<source>Framed</source>
+			</trans-unit>
+			<trans-unit id="content.variants.framed_small" xml:space="preserve">
+				<source>Framed (small)</source>
+			</trans-unit>
+			<trans-unit id="content.variants.framed_large" xml:space="preserve">
+				<source>Framed (large)</source>
+			</trans-unit>
+
+			<!-- Headline alignments -->
+			<trans-unit id="content.variants.headline_label" xml:space="preserve">
+				<source>Blockstyle for headline</source>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_left" xml:space="preserve">
+				<source>Headline align left</source>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_center" xml:space="preserve">
+				<source>Headline align center</source>
+			</trans-unit>
+			<trans-unit id="content.variants.headline_right" xml:space="preserve">
+				<source>Headline align right</source>
+			</trans-unit>
+
+			<!-- Background colors -->
+			<trans-unit id="content.variants.background_label" xml:space="preserve">
+				<source>Choose background</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_primary" xml:space="preserve">
+				<source>Primary color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_secondary" xml:space="preserve">
+				<source>Secondary color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_success" xml:space="preserve">
+				<source>Success color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_info" xml:space="preserve">
+				<source>Info color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_warning" xml:space="preserve">
+				<source>Warning color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_danger" xml:space="preserve">
+				<source>Danger color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_inverse" xml:space="preserve">
+				<source>Inverse color</source>
+			</trans-unit>
+
+			<!-- Alerts -->
+			<trans-unit id="content.variants.alert_success" xml:space="preserve">
+				<source>Alert-Success</source>
+			</trans-unit>
+			<trans-unit id="content.variants.alert_info" xml:space="preserve">
+				<source>Alert-Info</source>
+			</trans-unit>
+			<trans-unit id="content.variants.alert_warning" xml:space="preserve">
+				<source>Alert-Warning</source>
+			</trans-unit>
+			<trans-unit id="content.variants.alert_danger" xml:space="preserve">
+				<source>Alert-Error</source>
+			</trans-unit>
+
+			<!-- Panel -->
+			<!-- @todo panels gibt es nicht mehr!? -->
+			<trans-unit id="content.variants.panel_primary" xml:space="preserve">
+				<source>Primary Panel</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_success" xml:space="preserve">
+				<source>Success Panel</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_info" xml:space="preserve">
+				<source>Info Panel</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_warning" xml:space="preserve">
+				<source>Warning Panel</source>
+			</trans-unit>
+			<trans-unit id="content.variants.panel_danger" xml:space="preserve">
+				<source>Danger Panel</source>
+			</trans-unit>
+			
+			<!-- Grid layout: tabs -->
+			<trans-unit id="content.variants.navigation_pills" xml:space="preserve">
+				<source>Pills navigation</source>
+			</trans-unit>
+			<trans-unit id="content.variants.navigation_tabs" xml:space="preserve">
+				<source>Tabs navigation</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

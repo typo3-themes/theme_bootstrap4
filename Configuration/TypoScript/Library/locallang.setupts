@@ -8,6 +8,12 @@ plugin.tx_themes {
 			topLink_label = Top
 			printLink_label = Print
 			skipNavigation_label = Skip to main content
+
+
+			# Carousel
+			carousel_empty_label = Please add one or more images to the slider
+			carousel_previous_label = Next
+			carousel_next_label = Previous
 		}
 	}
 }

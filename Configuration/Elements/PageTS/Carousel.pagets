@@ -1,0 +1,14 @@
+# Carousel grid must allow new content type textmedia
+tx_gridelements.setup.carousel {
+	config {
+		rows {
+			1 {
+				columns {
+					1 {
+						allowed = textmedia
+					}
+				}
+			}
+		}
+	}
+}

@@ -4,24 +4,24 @@ themes.content.behaviour {
 	default {
 		container {
 			#ToDo: Label in language file
-			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container_label
-			default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container
-			fluid = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.container_fluid
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.container_label
+			default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.container
+			fluid = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.container_fluid
 		}
 		screenreader {
-			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_label
-			only = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_only
-			only-focusable = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.screenreader_only_focusable
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.screenreader_label
+			only = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.screenreader_only
+			only-focusable = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.screenreader_only_focusable
 		}
 		print {
 			#ToDo: Label in language file
-			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_label
-			hidden = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_hidden
-			visible-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_block
-			visible-inline = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_inline
-			visible-inline-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.print_visible_inline_block
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_label
+			hidden = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_hidden
+			visible-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_visible_block
+			visible-inline = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_visible_inline
+			visible-inline-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_visible_inline_block
 		}
-		fade-in = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.fade_in
+		fade-in = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.fade_in
 	}
 	textmedia {
 		responsive-embed {
@@ -35,7 +35,7 @@ themes.content.behaviour {
 	}
 	table {
 		#ToDo: New integrate classes
-		table-responsive = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.table_responsive
+		table-responsive = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.table_responsive
 	}
 	gridelements_pi1 {
 		#ToDo Have a look in the Documentation: Navigation, panels are changed
@@ -43,10 +43,6 @@ themes.content.behaviour {
 		#navigation-pills = Pills navigation
 		#navigation-tabs = Tabs navigation
 		
-		tabs {
-			navigation-pills = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.navigation_pills
-			navigation-tabs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.navigation_tabs
-		}
 		2ColumnGrid {
 		}
 		3ColumnGrid {
@@ -54,7 +50,7 @@ themes.content.behaviour {
 		4ColumnGrid {
 		}
 		accordion {
-			accordion-first-open = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.behaviour.accordion_first_open
+			accordion-first-open = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.accordion_first_open
 		}
 		carousel {
 			carousel-interval {

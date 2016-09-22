@@ -1,0 +1,32 @@
+lib.gridelements {
+	row >
+	row {
+		cObject = FLUIDTEMPLATE
+		cObject {
+			templateName = Elements/Row
+			templateRootPaths {
+				300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+				400 = {$themes.resourcesPrivatePath}Templates/
+			}
+
+
+			partialRootPaths {
+				300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+				400 = {$themes.resourcesPrivatePath}Partials/
+			}
+			layoutRootPaths {
+				300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+				400 = {$themes.resourcesPrivatePath}Layouts/
+			}
+			dataProcessing {
+				30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+				40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+				50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+			}
+		}
+		columns.0 {
+			renderObj =< tt_content
+		}
+	}
+}
+tt_content.gridelements_pi1.20.10.setup.row < lib.gridelements.row

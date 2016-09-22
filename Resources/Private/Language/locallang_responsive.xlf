@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.0">
+	<file source-language="en"
+		datatype="plaintext"
+		original="messages"
+		date="2014-04-13T18:20:51Z"
+		product-name="theme_bootstrap4">
+		<header/>
+		<body>
+
+			<!-- Responsive devices labels -->
+			<trans-unit id="content.responsive.devices.extralarge" xml:space="preserve">
+				<source>Large Desktops</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.devices.large" xml:space="preserve">
+				<source>Desktop</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.devices.medium" xml:space="preserve">
+				<source>Tablett</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.devices.small" xml:space="preserve">
+				<source>Landscape phones</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.devices.extrasmall" xml:space="preserve">
+				<source>Portrait phones</source>
+			</trans-unit>
+
+			
+			<!-- Responsive visibility labels -->
+			<trans-unit id="content.responsive.visibility.default" xml:space="preserve">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.visibility.inline" xml:space="preserve">
+				<source>Inline</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.visibility.inline_block" xml:space="preserve">
+				<source>Inline-Block</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.visibility.block" xml:space="preserve">
+				<source>Block</source>
+			</trans-unit>
+			<trans-unit id="content.responsive.visibility.hidden" xml:space="preserve">
+				<source>Hidden</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

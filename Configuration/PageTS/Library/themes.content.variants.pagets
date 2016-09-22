@@ -8,87 +8,107 @@ themes {
 				framed {
 					#ToDo: Label in language file
 					#ToDo: Frame is removed - check Documentation for new variants
-					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_label
-					default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed
-					small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_small
-					large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.framed_large
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_label
+					default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed
+					small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_small
+					large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_large
 				}
 				headline {
-					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_label
-					left = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_left
-					center = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_center
-					right = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.headline_right
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.headline_label
+					left = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.headline_left
+					center = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.headline_center
+					right = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.headline_right
 				}
 				background {
-					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_label
-					color-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_primary
-					color-secondary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_secondary
-					color-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_success
-					color-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_info
-					color-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_warning
-					color-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_danger
-					color-inverse = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.background_inverse
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_label
+					color-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_primary
+					color-secondary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_secondary
+					color-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_success
+					color-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_info
+					color-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_warning
+					color-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_danger
+					color-inverse = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_inverse
 				}
 			}
 			# Special variant for Header
 			# Used by ctype header
 			# Will be merged with default
 			header {
-				page-header = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.page_header
-				alert-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_success
-				alert-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_info
-				alert-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_warning
-				alert-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_danger
+				page-header = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.page_header
+				alert {
+					none =
+					success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_success
+					info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_info
+					warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_warning
+					danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
+				}
 			}
-			# ctype: text
-			text {
-				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
-				alert-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_success
-				alert-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_info
-				alert-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_warning
-				alert-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_danger
+			# ctype: textmedia
+			textmedia {
+				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
+				alert {
+					none = 
+					success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_success
+					info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_info
+					warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_warning
+					danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
+				}
 			}
 			# ctype: textpic
 			textpic {
-				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
+				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
 			}
 			# ctype: image
 			image {
-				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
+				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
 			}
 			# ctype: gridelements_pi1
 			gridelements_pi1 {
-
+				accordion {
+					
+				}
 				carousel {
 					carousel-hide-indicators = Hide indicators
 					carousel-hide-arrows = Hide arrows
 				}
+				tabs {
+					tabs-navigation {
+						tabs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.navigation_tabs
+						pills = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.navigation_pills
+					}
+				}
 				
 				container {
-					wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.wide_screen
-					alert-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_success
-					alert-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_info
-					alert-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_warning
-					alert-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.alert_danger
+					wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
+					alert {
+						none =
+						success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_success
+						info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_info
+						warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_warning
+						danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
+					}
 				}
 				singleColumnHeaderFooter {
-					panel-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_primary
-					panel-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_success
-					panel-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_info
-					panel-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_warning
-					panel-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.variants.panel_danger
+					panel-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.panel_primary
+					alert {
+						none =
+						success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_success
+						info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_info
+						warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_warning
+						danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
+					}
 				}
 			}
 			themes_buttoncontent_pi1 {
-				button-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.primary
-				button-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.success
-				button-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.info
-				button-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.warning
-				button-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.danger
-				button-large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.large
-				button-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.small
-				button-extra-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.extra-small
-				button-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.buttons.block
+				button-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.primary
+				button-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.success
+				button-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.info
+				button-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.warning
+				button-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.danger
+				button-large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.large
+				button-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.small
+				button-extra-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.extra-small
+				button-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.block
 			}
 		}
 	}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.0">
+	<file source-language="en"
+		datatype="plaintext"
+		original="messages"
+		date="2014-04-13T18:20:51Z"
+		product-name="theme_bootstrap4">
+		<header/>
+		<body>
+
+			<!-- Container -->
+			<trans-unit id="content.behaviour.container_label" xml:space="preserve">
+				<source>Chose container</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.container" xml:space="preserve">
+				<source>Container</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.container_fluid" xml:space="preserve">
+				<source>Container (fluid)</source>
+			</trans-unit>
+
+			<!-- Screenreader -->
+			<trans-unit id="content.behaviour.screenreader_label" xml:space="preserve">
+				<source>Chose screenreader option</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.screenreader_only" xml:space="preserve">
+				<source>Screenreader only</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.screenreader_only_focusable" xml:space="preserve">
+				<source>Screenreader only (focusable)</source>
+			</trans-unit>
+
+			<!-- Printing -->
+			<trans-unit id="content.behaviour.print_label" xml:space="preserve">
+				<source>Chose print behaviour</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.print_hidden" xml:space="preserve">
+				<source>Hidden for printing</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.print_visible_block" xml:space="preserve">
+				<source>Visible for printing (block)</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.print_visible_inline" xml:space="preserve">
+				<source>Visible for printing (inline)</source>
+			</trans-unit>
+			<trans-unit id="content.behaviour.print_visible_inline_block" xml:space="preserve">
+				<source>Visible for printing (inline-block)</source>
+			</trans-unit>
+
+			<!-- Responsive table -->
+			<trans-unit id="content.behaviour.table_responsive" xml:space="preserve">
+				<source>Responsive table</source>
+			</trans-unit>
+
+			<!-- Grid layout: accordion -->
+			<trans-unit id="content.behaviour.accordion_first_open" xml:space="preserve">
+				<source>Open first accordion item</source>
+			</trans-unit>
+
+			<trans-unit id="content.behaviour.fade_in" xml:space="preserve">
+				<source>Fade in</source>
+			</trans-unit>
+			
+			
+
+		</body>
+	</file>
+</xliff>
