@@ -45,9 +45,10 @@ lib.content.cssMap.variants {
 	carousel-hide-arrows = carousel-hide-arrows
 	
 	# Grid layout: tabs
+	tabs-in-card = tabs-in-card
 	tabs-navigation {
-		tabs = nav nav-tabs
-		pills = nav nav-pills 
+		tabs = tabs
+		pills = pills 
 	}
 	
 	

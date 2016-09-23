@@ -3,8 +3,6 @@
 	  xmlns:vhs="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
 
-<f:debug>{themes}</f:debug>
-
 <theme:variable.set name="carouselWrap" value="false" />
 <f:if condition="{themes.behaviour.css.wrap} == 'wrap'">
 	<theme:variable.set name="carouselWrap" value="true" />
@@ -48,7 +46,7 @@
 	<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
 		<f:then>
 
-			<div id="slider{data.uid}"
+			<div id="slider-{data.uid}"
 				 class="carousel {themes.behaviour.css.carousel-animation}"
 				 data-interval="{themes.behaviour.css.carousel-interval}"
 				 data-ride="carousel"
@@ -57,7 +55,7 @@
 				<ol class="carousel-indicators {carouselHideIndicators}">
 					<f:for each="{data.tx_gridelements_view_children}" as="indicator" iteration="indicatorIteration">
 
-						<li data-target="#slider{data.uid}" data-slide-to="{indicatorIteration.index}" {f:if(condition:'{indicatorIteration.isFirst}',then:' class="active"')}>
+						<li data-target="#slider-{data.uid}" data-slide-to="{indicatorIteration.index}" {f:if(condition:'{indicatorIteration.isFirst}',then:' class="active"')}>
 
 						</li>
 
@@ -70,11 +68,11 @@
 						</div>
 					</f:for>
 				</div>
-				<a class="left carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="prev">
+				<a class="left carousel-control {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="prev">
 					<span class="{iconPrevious}" aria-hidden="true"></span>
 					<span class="sr-only"><f:translate key="carousel_previous_label" /></span>
 				</a>
-				<a class="right carousel-control {carouselHideArrows}" href="#slider{data.uid}" role="button" data-slide="next">
+				<a class="right carousel-control {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="next">
 					<span class="{iconNext}" aria-hidden="true"></span>
 					<span class="sr-only"><f:translate key="carousel_next_label" /></span>
 				</a>

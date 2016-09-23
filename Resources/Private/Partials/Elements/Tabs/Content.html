@@ -1,0 +1,22 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+
+	<div class="tab-content {classCardBlock}">
+		<f:for each="{data.tx_gridelements_view_children}" as="tabContent" iteration="tabContentIteration">
+			<f:if condition="{tabContentIteration.isFirst}">
+				<f:then>
+					<div class="tab-pane {fadeIn} active" id="tab-content-{tabContent.uid}" role="tabpanel">
+						<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{tabContent.uid}')}</f:format.raw>
+					</div>
+				</f:then>
+				<f:else>
+					<div class="tab-pane {fadeIn}" id="tab-content-{tabContent.uid}" role="tabpanel">
+						<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{tabContent.uid}')}</f:format.raw>
+					</div>
+				</f:else>
+			</f:if>
+		</f:for>
+	</div>
+
+</html>

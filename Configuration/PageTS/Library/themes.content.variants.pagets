@@ -54,14 +54,6 @@ themes {
 					danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
 				}
 			}
-			# ctype: textpic
-			textpic {
-				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
-			}
-			# ctype: image
-			image {
-				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
-			}
 			# ctype: gridelements_pi1
 			gridelements_pi1 {
 				accordion {
@@ -72,9 +64,10 @@ themes {
 					carousel-hide-arrows = Hide arrows
 				}
 				tabs {
+					tabs-in-card = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.tabs_in_card
 					tabs-navigation {
-						tabs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.navigation_tabs
-						pills = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.navigation_pills
+						tabs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.tabs_navigation_tabs
+						pills = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.tabs_navigation_pills
 					}
 				}
 				

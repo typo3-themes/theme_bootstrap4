@@ -104,10 +104,13 @@
 			</trans-unit>
 			
 			<!-- Grid layout: tabs -->
-			<trans-unit id="content.variants.navigation_pills" xml:space="preserve">
+			<trans-unit id="content.variants.tabs_in_card" xml:space="preserve">
+				<source>Tabs in card</source>
+			</trans-unit>
+			<trans-unit id="content.variants.tabs_navigation_pills" xml:space="preserve">
 				<source>Pills navigation</source>
 			</trans-unit>
-			<trans-unit id="content.variants.navigation_tabs" xml:space="preserve">
+			<trans-unit id="content.variants.tabs_navigation_tabs" xml:space="preserve">
 				<source>Tabs navigation</source>
 			</trans-unit>
 

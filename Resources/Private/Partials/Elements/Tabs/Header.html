@@ -1,0 +1,21 @@
+<f:comment> -- Tabs in card?! -- </f:comment>
+<f:if condition="{tabsInCard}">
+	<f:format.printf arguments="{class: 'card-header'}" value="<div class='%s'>" />
+</f:if>
+
+<ul class="nav nav-{navigationType} {classCardHeaderTabs}" role="tablist">
+	<f:for each="{data.tx_gridelements_view_children}" as="tab" iteration="tabIteration">
+		<f:if condition="{tabIteration.isFirst}">
+			<f:then>
+				<f:render partial="Elements/Tabs/HeaderTab.html" arguments="{tab: tab, active: 'active', ariaExpanded: 'true'}" />
+			</f:then>
+			<f:else>
+				<f:render partial="Elements/Tabs/HeaderTab.html" arguments="{tab: tab, active: '', ariaExpanded: 'false'}" />
+			</f:else>
+		</f:if>
+	</f:for>
+</ul>
+
+<f:if condition="{tabsInCard}">
+	<f:format.printf arguments="{0: ''}" value="</div>" />
+</f:if>

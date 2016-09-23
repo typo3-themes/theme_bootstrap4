@@ -17,7 +17,7 @@
 </f:if>
 
 <f:comment> -- Moving tab navigation variable -- </f:comment>
-<theme:variable.set name="navigationTabs" value="{themes.variants.key2css.tabs-navigation}" />
+<theme:variable.set name="navigationType" value="{themes.variants.key2css.tabs-navigation}" />
 <theme:variable.popVariant name="tabs-navigation" />
 
 <f:comment> -- Fade between tabs? -- </f:comment>
@@ -27,49 +27,29 @@
 	<theme:variable.popBehaviour name="fade-in" />
 </f:if>
 
+<f:comment> -- Tabs in card? -- </f:comment>
+<theme:variable.set name="tabsInCard" value="0" />
+<theme:variable.set name="classCard" value="" />
+<theme:variable.set name="classCardBlock" value="" />
+<theme:variable.set name="classCardHeaderTabs" value="" />
+<f:if condition="{themes.variants.key2css.tabs-in-card}">
+	<theme:variable.set name="tabsInCard" value="1" />
+	<theme:variable.set name="classCard" value="card" />
+	<theme:variable.set name="classCardBlock" value="card-block" />
+	<theme:variable.set name="classCardHeaderTabs" value="card-header-{navigationType}" />
+	<theme:variable.popVariant name="tabs-in-card" />
+</f:if>
+	
 
-<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}" role="tabpanel">
+<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses} {classCard}" role="tabpanel">
 
 	<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
 		<f:then>
-
 			<!--
 			@todo: aria attribute?!
 			-->
-			
-			<ul class="{navigationTabs}" role="tablist">
-				<f:for each="{data.tx_gridelements_view_children}" as="tab" iteration="tabIteration">
-					<f:if condition="{tabIteration.isFirst}">
-						<f:then>
-							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#tab-content-{tab.uid}" role="tab">Home</a>
-							</li>
-						</f:then>
-						<f:else>
-							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#tab-content-{tab.uid}" role="tab">Profile</a>
-							</li>
-						</f:else>
-					</f:if>
-				</f:for>
-			</ul>
-			<div class="tab-content">
-				<f:for each="{data.tx_gridelements_view_children}" as="tabContent" iteration="tabContentIteration">
-					<f:if condition="{tabContentIteration.isFirst}">
-						<f:then>
-							<div class="tab-pane {fadeIn} active" id="tab-content-{tabContent.uid}" role="tabpanel">
-								<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{tabContent.uid}')}</f:format.raw>
-							</div>
-						</f:then>
-						<f:else>
-							<div class="tab-pane {fadeIn}" id="tab-content-{tabContent.uid}" role="tabpanel">
-								<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{tabContent.uid}')}</f:format.raw>
-							</div>
-						</f:else>
-					</f:if>
-				</f:for>
-			</div>
-			
+			<f:render partial="Elements/Tabs/Header.html" arguments="{_all}" />
+			<f:render partial="Elements/Tabs/Content.html" arguments="{_all}" />
 		</f:then>
 		<f:else>
 			<div class="alert alert-danger" role="alert">
