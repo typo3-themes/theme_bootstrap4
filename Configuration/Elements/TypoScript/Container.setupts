@@ -8,8 +8,6 @@ lib.gridelements {
 				300 = EXT:theme_bootstrap4/Resources/Private/Templates/
 				400 = {$themes.resourcesPrivatePath}Templates/
 			}
-
-
 			partialRootPaths {
 				300 = EXT:theme_bootstrap4/Resources/Private/Partials/
 				400 = {$themes.resourcesPrivatePath}Partials/
