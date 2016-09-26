@@ -1,11 +1,12 @@
-//// Be sure that all Bootstrap variables are defined!
+// Be sure that all Bootstrap variables are defined!
 @import "../../Public/Contrib/Bootstrap/scss/variables.scss";
-//
-//// Scss-Imports
+
+// Scss-Imports
 @import "Library/bootstrap.scss";
 @import "Library/layout.scss";
 @import "Library/partial.socialmedia.scss";
 @import "Library/img-fluid-svg.scss";
+@import "Library/typography.scss";
 
 // Styles for Areas
 @import "Library/Areas/feature.scss";

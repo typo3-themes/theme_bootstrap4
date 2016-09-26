@@ -1,0 +1,5 @@
+// Clean Up Chrome and Safari's Webfont Rendering
+// https://blakepetersen.io/how-to-clean-up-chrome-and-safaris-webfont-rendering/
+html {
+	-webkit-font-smoothing: antialiased;
+}
