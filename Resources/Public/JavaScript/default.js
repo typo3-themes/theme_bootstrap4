@@ -79,8 +79,8 @@ var theme = {
 			 */
 			scrollToggleClasses: ['', 'navbar-fixed-top'],
 			initialize: function() {
-				this.main.jo = jQuery('#menu-main');
-				if (theme.menu.language.jo.length > 0) {
+				this.jo = jQuery('#menu-main');
+				if (theme.menu.main.jo.length > 0) {
 					// menu main initialization
 				}
 			}
@@ -89,12 +89,12 @@ var theme = {
 		language: {
 			jo: null,
 			initialize: function() {
-				this.language.jo = jQuery('#menu-language');
+				this.jo = jQuery('#menu-language');
 				if(theme.menu.language.jo.length>0) {
 					// Only in case of a select-box language menu
-					if (theme.menu.language.is('select')) {
+					if (theme.menu.language.jo.is('select')) {
 						// ..bind the on-change
-						theme.menu.language.on('change', function () {
+						theme.menu.language.jo.on('change', function () {
 							document.location = $(this).find(':selected').data('link');
 						});
 					}
@@ -109,18 +109,22 @@ var theme = {
 	 */
 	onscroll: function() {
 
-		if(jQuery(this).scrollTop() > theme.body.scrollOffset) {
-			theme.body.jo.addClass(theme.body.scrollToggleClasses[1]).removeClass(theme.body.scrollToggleClasses[0]);
-		}
-		else {
-			theme.body.jo.addClass(theme.body.scrollToggleClasses[0]).removeClass(theme.body.scrollToggleClasses[1]);
+		if(theme.body.jo != null) {
+			if(jQuery(this).scrollTop() > theme.body.scrollOffset) {
+				theme.body.jo.addClass(theme.body.scrollToggleClasses[1]).removeClass(theme.body.scrollToggleClasses[0]);
+			}
+			else {
+				theme.body.jo.addClass(theme.body.scrollToggleClasses[0]).removeClass(theme.body.scrollToggleClasses[1]);
+			}
 		}
 
-		if(jQuery(this).scrollTop() > theme.menu.main.scrollOffset) {
-			theme.menu.main.jo.addClass(theme.menu.main.scrollToggleClasses[1]).removeClass(theme.menu.main.scrollToggleClasses[0]);
-		}
-		else {
-			theme.menu.main.jo.addClass(theme.menu.main.scrollToggleClasses[0]).removeClass(theme.menu.main.scrollToggleClasses[1]);
+		if(theme.menu.main.jo != null) {
+			if (jQuery(this).scrollTop() > theme.menu.main.scrollOffset) {
+				theme.menu.main.jo.addClass(theme.menu.main.scrollToggleClasses[1]).removeClass(theme.menu.main.scrollToggleClasses[0]);
+			}
+			else {
+				theme.menu.main.jo.addClass(theme.menu.main.scrollToggleClasses[0]).removeClass(theme.menu.main.scrollToggleClasses[1]);
+			}
 		}
 	},
 
