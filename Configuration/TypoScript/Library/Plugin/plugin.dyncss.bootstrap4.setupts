@@ -4,15 +4,23 @@ plugin.tx_dyncss.overrides {
 
 	brand-primary = TEXT
 	brand-primary.value = {$themes.configuration.colors.primary}
+
 	brand-secondary = TEXT
 	brand-secondary.value = {$themes.configuration.colors.secondary}
+
 	link-color = TEXT
 	link-color.value = {$themes.configuration.colors.link}
+
 	link-hover-color = TEXT
 	link-hover-color.value = {$themes.configuration.colors.linkHover}
+
 	body-color = TEXT
 	body-color.value = {$themes.configuration.colors.text}
 
+	body-bg = TEXT
+	body-bg.value = {$themes.configuration.colors.bodyBackground}
+
+	#	@ToDo dbruening
 	#gray = TEXT
 	#gray.value = {$themes.configuration.colors.gray}
 	#gray-dark = TEXT

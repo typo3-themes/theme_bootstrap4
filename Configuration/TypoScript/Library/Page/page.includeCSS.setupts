@@ -36,8 +36,4 @@ page {
 			else window.addEventListener('load', loadDeferredStyles);
 		</script>
 	)
-
-	
-	
-	
 }
