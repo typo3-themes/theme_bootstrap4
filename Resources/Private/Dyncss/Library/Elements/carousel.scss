@@ -1,26 +1,27 @@
-.carousel.fade .carousel-inner .carousel-item {
-	opacity: 0;
-	-webkit-transition-property: opacity;
-	-moz-transition-property: opacity;
-	-o-transition-property: opacity;
-	transition-property: opacity;
-}
-.carousel.fade .carousel-inner .active {
+.carousel.carousel-fade {
 	opacity: 1;
+	.carousel-inner .carousel-item {
+		opacity: 0;
+		-webkit-transition-property: opacity;
+		-moz-transition-property: opacity;
+		-o-transition-property: opacity;
+		transition-property: opacity;
+	}
+	.carousel-inner .active {
+		opacity: 1;
+	}
+	.carousel-inner .active.left,
+	.carousel-inner .active.right {
+		left: 0;
+		opacity: 0;
+		z-index: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-inner .next.left,
+	.carousel-inner .prev.right {
+		opacity: 1;
+	}
+	.carousel-control {
+		z-index: 2;
+	}
 }
-.carousel.fade .carousel-inner .active.left,
-.carousel.fade .carousel-inner .active.right {
-	left: 0;
-	opacity: 0;
-	z-index: 1;
-}
-.carousel.fade .carousel-inner .next.left,
-.carousel.fade .carousel-inner .prev.right {
-	opacity: 1;
-}
-.carousel.fade .carousel-control {
-	z-index: 2;
-}
-/**
- * @todo fix the fade for bootstrap 4
- */

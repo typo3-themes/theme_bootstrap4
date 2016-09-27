@@ -12,7 +12,7 @@ lib.content.cssMap.behaviour {
 	carousel-pause = hover
 	carousel-animation {
 		slide = slide
-		fade = fade
+		fade = slide carousel-fade
 	}
 	carousel-wrap = wrap
 	#
