@@ -1,0 +1,12 @@
+$useFontSecondaryFromCdn: '' !default;
+$fontSecondaryCdnUrl: '' !default;
+$fontSecondaryName: '' !default;
+$fontSecondaryFallback: '' !default;
+$fontSecondaryFilePath: '' !default;
+$fontSecondaryFileEot: '' !default;
+$fontSecondaryFileSvg: '' !default;
+$fontSecondaryFileTtf: '' !default;
+$fontSecondaryFileWoff: '' !default;
+$fontSecondaryFileWoff2: '' !default;
+
+$fontFamilySecondary: $fontSecondaryName, $fontSecondaryFallback;

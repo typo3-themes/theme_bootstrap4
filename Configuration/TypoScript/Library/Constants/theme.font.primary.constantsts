@@ -1,0 +1,34 @@
+#############################################
+# Font: Primary-Font constants
+#############################################
+# customsubcategory=fontPrimary=Font primary
+
+# cat=font,advanced/fontPrimary/; type=options[0,1]; label= Font-Primary: Use font from CDN?
+themes.configuration.font.primary.useFontFromCdn = 1
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: CDN-Fonts URL (Google-Webfonts, ...)
+themes.configuration.font.primary.fontCdnUrl = https://fonts.googleapis.com/css?family=Roboto
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Font Name
+themes.configuration.font.primary.fontName = Roboto
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Font Fallback
+themes.configuration.font.primary.fontFallback = -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Path for local Fonts
+themes.configuration.font.primary.fontFilePath =
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Filename of EOT-Font
+themes.configuration.font.primary.fontFileEot =
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Filename of SVG-Font
+themes.configuration.font.primary.fontFileSvg =
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Filename of TTF-Font
+themes.configuration.font.primary.fontFileTtf =
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Filename of WOFF-Font
+themes.configuration.font.primary.fontFileWoff =
+
+# cat=font,advanced/fontPrimary/; type=string; label= Font-Primary: Filename of WOFF2-Font
+themes.configuration.font.primary.fontFileWoff2 =

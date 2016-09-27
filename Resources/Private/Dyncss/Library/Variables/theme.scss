@@ -15,3 +15,8 @@ $breadcrumb-divider: ">" !default;
 
 // Footer
 $footer-menu-divider: "|" !default;
+
+// Typography
+$font-family-sans-serif: $fontFamilyPrimary;
+$font-family-serif:      $fontFamilySecondary;
+$font-family-base:       $font-family-sans-serif;

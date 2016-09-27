@@ -1,8 +1,13 @@
 // Be sure that all Bootstrap variables are defined!
 @import "../../Public/Contrib/Bootstrap/scss/variables.scss";
+@import "Library/Variables/font.primary.include.scss";
+@import "Library/Variables/font.secondary.include.scss";
+@import "Library/Variables/theme.scss";
 
 // Scss-Imports
 @import "Library/bootstrap.scss";
+@import "Library/font.primary.include.scss";
+@import "Library/font.secondary.include.scss";
 @import "Library/layout.scss";
 @import "Library/partial.socialmedia.scss";
 @import "Library/img-fluid-svg.scss";

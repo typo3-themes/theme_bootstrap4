@@ -1,0 +1,28 @@
+#############################################
+# Plugin: Dyncss font secondary override
+#############################################
+
+plugin.tx_dyncss.overrides {
+
+  useFontSecondaryFromCdn = TEXT
+  useFontSecondaryFromCdn.value = {$themes.configuration.font.secondary.useFontFromCdn}
+  fontSecondaryCdnUrl = TEXT
+  fontSecondaryCdnUrl.value = '{$themes.configuration.font.secondary.fontCdnUrl}'
+  fontSecondaryName = TEXT
+  fontSecondaryName.value = '{$themes.configuration.font.secondary.fontName}'
+  fontSecondaryFallback = TEXT
+  fontSecondaryFallback.value = '{$themes.configuration.font.secondary.fontFallback}'
+  fontSecondaryFilePath = TEXT
+  fontSecondaryFilePath.value = '{$themes.configuration.font.secondary.fontFilePath}'
+  fontSecondaryFileEot = TEXT
+  fontSecondaryFileEot.value = '{$themes.configuration.font.secondary.fontFileEot}'
+  fontSecondaryFileSvg = TEXT
+  fontSecondaryFileSvg.value = '{$themes.configuration.font.secondary.fontFileSvg}'
+  fontSecondaryFileTtf = TEXT
+  fontSecondaryFileTtf.value = '{$themes.configuration.font.secondary.fontFileTtf}'
+  fontSecondaryFileWoff = TEXT
+  fontSecondaryFileWoff.value = '{$themes.configuration.font.secondary.fontFileWoff}'
+  fontSecondaryFileWoff2 = TEXT
+  fontSecondaryFileWoff2.value = '{$themes.configuration.font.secondary.fontFileWoff2}'
+
+}

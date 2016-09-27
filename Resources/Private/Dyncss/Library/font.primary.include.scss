@@ -1,0 +1,14 @@
+/* Use CDN font primary */
+@mixin fontMixinCdn {
+	@if $useFontPrimaryFromCdn == 1 {
+		@import url($fontPrimaryCdnUrl);
+	} @else {
+		@font-face {
+			font-family: $fontPrimaryName;
+			src:url("${fontPrimaryFilePath}@{fontPrimaryFileEot}?#iefix");
+			src:url("${fontPrimaryFilePath}@{fontPrimaryFileEot}?#iefix") format("eot"),url("${fontPrimaryFilePath}@{fontPrimaryFileWoff}") format("woff"),url("${fontPrimaryFilePath}@{fontPrimaryFileWoff2}") format("woff2"),url("${fontPrimaryFilePath}@{fontPrimaryFileTtf}") format("truetype"),url("${fontPrimaryFilePath}@{fontPrimaryFileSvg}") format("svg");
+		}
+	}
+}
+
+@include fontMixinCdn($useFontPrimaryFromCdn);
