@@ -164,11 +164,11 @@ var theme = {
 				label = TYPO3.lang[type][key];
 			}
 			else if(typeof console !== 'undefined') {
-				console.warn('cars.translate failed: TYPO3.lang[\'' + type + '\'].' + key + ' not found');
+				console.warn('theme.translate failed: TYPO3.lang[\'' + type + '\'].' + key + ' not found');
 			}
 		}
 		else if(typeof console !== 'undefined') {
-			console.warn('cars.translate failed: TYPO3.lang[\'' + type + '\'] not found');
+			console.warn('theme.translate failed: TYPO3.lang[\'' + type + '\'] not found');
 		}
 		return label;
 	}
