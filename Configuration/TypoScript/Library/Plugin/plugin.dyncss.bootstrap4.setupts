@@ -21,16 +21,18 @@ plugin.tx_dyncss.overrides {
 	body-bg.value = {$themes.configuration.colors.bodyBackground}
 
 	#	@ToDo dbruening
-	#gray = TEXT
-	#gray.value = {$themes.configuration.colors.gray}
-	#gray-dark = TEXT
-	#gray-dark.value = {$themes.configuration.colors.grayDark}
+	gray = TEXT
+	gray.value = {$themes.configuration.colors.gray}
+	gray-dark = TEXT
+	gray-dark.value = {$themes.configuration.colors.grayDark}
 	#gray-darker = TEXT
 	#gray-darker.value = {$themes.configuration.colors.grayDarker}
-	#gray-light = TEXT
-	#gray-light.value = {$themes.configuration.colors.grayLight}
-	#gray-lighter = TEXT
-	#gray-lighter.value = {$themes.configuration.colors.grayLighter}
+	gray-light = TEXT
+	gray-light.value = {$themes.configuration.colors.grayLight}
+	gray-lighter = TEXT
+	gray-lighter.value = {$themes.configuration.colors.grayLighter}
+	gray-lightest = TEXT
+	gray-lightest.value = {$themes.configuration.colors.grayLightest}
 
 	#brand-danger = TEXT
 	#brand-danger.value = {$themes.configuration.colors.error}
