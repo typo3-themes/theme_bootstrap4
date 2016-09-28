@@ -1,0 +1,2 @@
+# Set default Image Columns to 1
+mod.wizards.newContentElement.wizardItems.common.elements.textmedia.tt_content_defValues.imagecols = 1

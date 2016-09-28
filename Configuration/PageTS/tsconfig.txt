@@ -4,5 +4,5 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/PageTS/Library/" extensions="pagets">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/PageTS/tsconfig.txt">
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/PageTS/tsconfig.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/PageTS/tsconfig.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/ThemesGridelements/PageTS/tsconfig.txt">
