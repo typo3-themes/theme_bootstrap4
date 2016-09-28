@@ -51,7 +51,7 @@ lib.menu.main {
 		}
 		ACT < .NO
 		ACT {
-			ATagParams = class="nav-link active"
+			ATagParams = class="dropdown-item active"
 			wrapItemAndSub.insertData = 1
 			wrapItemAndSub = <li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.main.prefixSecondLevel}|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.main.prefixSecondLevel}|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.main.prefixSecondLevel}|</li>
 		}
