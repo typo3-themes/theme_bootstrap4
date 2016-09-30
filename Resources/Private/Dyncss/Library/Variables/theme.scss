@@ -17,6 +17,7 @@ $breadcrumb-divider: ">" !default;
 $footer-menu-divider: "|" !default;
 
 // Typography
-$font-family-sans-serif: $fontFamilyPrimary;
-$font-family-serif:      $fontFamilySecondary;
+$font-family-sans-serif: "#{map-get($font-map, sans-serif-name)}" #{map-get($font-map, sans-serif-fallback)};
+$font-family-serif:      "#{map-get($font-map, serif-name)}" #{map-get($font-map, serif-fallback)};
+$font-family-monospace:  "#{map-get($font-map, monospace-name)}" #{map-get($font-map, monospace-fallback)};;
 $font-family-base:       $font-family-sans-serif;

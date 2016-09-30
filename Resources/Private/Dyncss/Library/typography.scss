@@ -3,3 +3,8 @@
 html {
 	-webkit-font-smoothing: antialiased;
 }
+
+// Font includes
+@include font-include(sans-serif);
+@include font-include(serif);
+@include font-include(monospace);

@@ -1,0 +1,31 @@
+// Define alls font-family-sans-serif variables
+$font-family-sans-serif-use-font-from: '' !default;
+$font-family-sans-serif-cdn-url: '' !default;
+$font-family-sans-serif-name: '' !default;
+$font-family-sans-serif-fallback: '' !default;
+$font-family-sans-serif-file-path: '' !default;
+$font-family-sans-serif-file-eot: '' !default;
+$font-family-sans-serif-file-svg: '' !default;
+$font-family-sans-serif-file-ttf: '' !default;
+$font-family-sans-serif-file-woff: '' !default;
+$font-family-sans-serif-file-woff2: '' !default;
+
+// Define font-family map for use in mixin through $font-map
+$font-family: (
+	sans-serif-name: $font-family-sans-serif-name,
+	sans-serif-fallback: $font-family-sans-serif-fallback,
+	sans-serif-use-font-from: $font-family-sans-serif-use-font-from,
+	sans-serif-cdn-url: $font-family-sans-serif-cdn-url,
+	sans-serif-file-path: $font-family-sans-serif-file-path,
+	sans-serif-file-eot: $font-family-sans-serif-file-eot,
+	sans-serif-file-svg: $font-family-sans-serif-file-svg,
+	sans-serif-file-ttf: $font-family-sans-serif-file-ttf,
+	sans-serif-file-woff: $font-family-sans-serif-file-woff,
+	sans-serif-file-woff2: $font-family-sans-serif-file-woff2
+);
+
+// Set empty default font-map for mixin use
+$font-map: () !default;
+
+// Merge font-family sans-serif with $font-map
+$font-map: map-merge($font-map, $font-family);

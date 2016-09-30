@@ -1,0 +1,31 @@
+// Define alls font-family-serif variables
+$font-family-serif-use-font-from: '' !default;
+$font-family-serif-cdn-url: '' !default;
+$font-family-serif-name: '' !default;
+$font-family-serif-fallback: '' !default;
+$font-family-serif-file-path: '' !default;
+$font-family-serif-file-eot: '' !default;
+$font-family-serif-file-svg: '' !default;
+$font-family-serif-file-ttf: '' !default;
+$font-family-serif-file-woff: '' !default;
+$font-family-serif-file-woff2: '' !default;
+
+// Define font-family map for use in mixin through $font-map
+$font-family: (
+	serif-name: $font-family-serif-name,
+	serif-fallback: $font-family-serif-fallback,
+	serif-use-font-from: $font-family-serif-use-font-from,
+	serif-cdn-url: $font-family-serif-cdn-url,
+	serif-file-path: $font-family-serif-file-path,
+	serif-file-eot: $font-family-serif-file-eot,
+	serif-file-svg: $font-family-serif-file-svg,
+	serif-file-ttf: $font-family-serif-file-ttf,
+	serif-file-woff: $font-family-serif-file-woff,
+	serif-file-woff2: $font-family-serif-file-woff2
+);
+
+// Set empty default font-map for mixin use
+$font-map: () !default;
+
+// Merge font-family serif with $font-map
+$font-map: map-merge($font-map, $font-family);

@@ -1,0 +1,28 @@
+#############################################
+# Plugin: Dyncss font family sans-serif override
+#############################################
+
+plugin.tx_dyncss.overrides {
+
+	font-family-sans-serif-use-font-from = TEXT
+	font-family-sans-serif-use-font-from.value = {$themes.configuration.font.family.sansSerif.useFontFrom}
+	font-family-sans-serif-cdn-url = TEXT
+	font-family-sans-serif-cdn-url.value = '{$themes.configuration.font.family.sansSerif.fontCdnUrl}'
+	font-family-sans-serif-name = TEXT
+	font-family-sans-serif-name.value = '{$themes.configuration.font.family.sansSerif.fontName}'
+	font-family-sans-serif-fallback = TEXT
+	font-family-sans-serif-fallback.value = ', {$themes.configuration.font.family.sansSerif.fontFallback}'
+	font-family-sans-serif-file-ath = TEXT
+	font-family-sans-serif-file-path.value = '{$themes.configuration.font.family.sansSerif.fontFilePath}'
+	font-family-sans-serif-file-eot = TEXT
+	font-family-sans-serif-file-eot.value = '{$themes.configuration.font.family.sansSerif.fontFileEot}'
+	font-family-sans-serif-file-svg = TEXT
+	font-family-sans-serif-file-svg.value = '{$themes.configuration.font.family.sansSerif.fontFileSvg}'
+	font-family-sans-serif-file-ttf = TEXT
+	font-family-sans-serif-file-ttf.value = '{$themes.configuration.font.family.sansSerif.fontFileTtf}'
+	font-family-sans-serif-file-woff = TEXT
+	font-family-sans-serif-file-woff.value = '{$themes.configuration.font.family.sansSerif.fontFileWoff}'
+	font-family-sans-serif-file-woff2 = TEXT
+	font-family-sans-serif-file-woff2.value = '{$themes.configuration.font.family.sansSerif.fontFileWoff2}'
+
+}

@@ -1,13 +1,17 @@
 // Be sure that all Bootstrap variables are defined!
 @import "../../Public/Contrib/Bootstrap/scss/variables.scss";
-@import "Library/Variables/font.primary.include.scss";
-@import "Library/Variables/font.secondary.include.scss";
+@import "Library/Variables/font-family-sans-serif.scss";
+@import "Library/Variables/font-family-serif.scss";
+@import "Library/Variables/font-family-monospace.scss";
 @import "Library/Variables/theme.scss";
+
+// Mixins
+@import "Library/Mixins/font-include.scss";
 
 // Scss-Imports
 @import "Library/bootstrap.scss";
-@import "Library/font.primary.include.scss";
-@import "Library/font.secondary.include.scss";
+//@import "Library/font.primary.include.scss";
+//@import "Library/font.secondary.include.scss";
 @import "Library/layout.scss";
 @import "Library/partial.socialmedia.scss";
 @import "Library/img-fluid-svg.scss";
@@ -32,3 +36,4 @@
 // Styles for Extensions
 @import "../Extensions/FluidStyledContent/Dyncss/import.scss";
 @import "../Extensions/Rtehtmlarea/Dyncss/frontend.scss";
+

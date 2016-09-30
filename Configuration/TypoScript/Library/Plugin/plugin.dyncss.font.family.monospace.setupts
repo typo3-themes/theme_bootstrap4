@@ -1,0 +1,28 @@
+#############################################
+# Plugin: Dyncss font family monospace override
+#############################################
+
+plugin.tx_dyncss.overrides {
+
+	font-family-monospace-use-font-from = TEXT
+	font-family-monospace-use-font-from.value = {$themes.configuration.font.family.monospace.useFontFrom}
+	font-family-monospace-cdn-url = TEXT
+	font-family-monospace-cdn-url.value = '{$themes.configuration.font.family.monospace.fontCdnUrl}'
+	font-family-monospace-name = TEXT
+	font-family-monospace-name.value = '{$themes.configuration.font.family.monospace.fontName}'
+	font-family-monospace-fallback = TEXT
+	font-family-monospace-fallback.value = ', {$themes.configuration.font.family.monospace.fontFallback}'
+	font-family-monospace-file-ath = TEXT
+	font-family-monospace-file-path.value = '{$themes.configuration.font.family.monospace.fontFilePath}'
+	font-family-monospace-file-eot = TEXT
+	font-family-monospace-file-eot.value = '{$themes.configuration.font.family.monospace.fontFileEot}'
+	font-family-monospace-file-svg = TEXT
+	font-family-monospace-file-svg.value = '{$themes.configuration.font.family.monospace.fontFileSvg}'
+	font-family-monospace-file-ttf = TEXT
+	font-family-monospace-file-ttf.value = '{$themes.configuration.font.family.monospace.fontFileTtf}'
+	font-family-monospace-file-woff = TEXT
+	font-family-monospace-file-woff.value = '{$themes.configuration.font.family.monospace.fontFileWoff}'
+	font-family-monospace-file-woff2 = TEXT
+	font-family-monospace-file-woff2.value = '{$themes.configuration.font.family.monospace.fontFileWoff2}'
+
+}

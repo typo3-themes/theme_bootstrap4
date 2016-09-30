@@ -1,0 +1,34 @@
+#############################################
+# Font Family: serif constants
+#############################################
+# customsubcategory=fontfamily.serif=Font family: sans serif
+
+# cat=font,advanced/fontfamily.serif/; type=options[Client-System,CDN,Local]; label= Font-family serif: Use from Client-System, CDN or Local-File?
+themes.configuration.font.family.serif.useFontFrom = System
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: CDN-Fonts URL (Google-Webfonts, ...)
+themes.configuration.font.family.serif.fontCdnUrl =
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Font Name
+themes.configuration.font.family.serif.fontName =
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Font Fallback
+themes.configuration.font.family.serif.fontFallback = Georgia, "Times New Roman", Times, serif
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Path for local Fonts
+themes.configuration.font.family.serif.fontFilePath =
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Filename of EOT-Font
+themes.configuration.font.family.serif.fontFileEot =
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Filename of SVG-Font
+themes.configuration.font.family.serif.fontFileSvg =
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Filename of TTF-Font
+themes.configuration.font.family.serif.fontFileTtf =
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Filename of WOFF-Font
+themes.configuration.font.family.serif.fontFileWoff =
+
+# cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: Filename of WOFF2-Font
+themes.configuration.font.family.serif.fontFileWoff2 =

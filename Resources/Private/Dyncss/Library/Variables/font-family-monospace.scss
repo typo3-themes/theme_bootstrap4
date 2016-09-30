@@ -1,0 +1,31 @@
+// Define alls font-family-monospace variables
+$font-family-monospace-use-font-from: '' !default;
+$font-family-monospace-cdn-url: '' !default;
+$font-family-monospace-name: '' !default;
+$font-family-monospace-fallback: '' !default;
+$font-family-monospace-file-path: '' !default;
+$font-family-monospace-file-eot: '' !default;
+$font-family-monospace-file-svg: '' !default;
+$font-family-monospace-file-ttf: '' !default;
+$font-family-monospace-file-woff: '' !default;
+$font-family-monospace-file-woff2: '' !default;
+
+// Define font-family map for use in mixin through $font-map
+$font-family: (
+	monospace-name: $font-family-monospace-name,
+	monospace-fallback: $font-family-monospace-fallback,
+	monospace-use-font-from: $font-family-monospace-use-font-from,
+	monospace-cdn-url: $font-family-monospace-cdn-url,
+	monospace-file-path: $font-family-monospace-file-path,
+	monospace-file-eot: $font-family-monospace-file-eot,
+	monospace-file-svg: $font-family-monospace-file-svg,
+	monospace-file-ttf: $font-family-monospace-file-ttf,
+	monospace-file-woff: $font-family-monospace-file-woff,
+	monospace-file-woff2: $font-family-monospace-file-woff2
+);
+
+// Set empty default font-map for mixin use
+$font-map: () !default;
+
+// Merge font-family monospace with $font-map
+$font-map: map-merge($font-map, $font-family);
