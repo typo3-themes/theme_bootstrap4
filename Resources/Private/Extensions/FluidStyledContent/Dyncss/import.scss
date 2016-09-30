@@ -39,11 +39,23 @@
 	}
 	&.ce-intext:not(.ce-nowrap) {
 		@include clearfix();
-		&.ce-right .ce-media {
-			padding-left: $grid-gutter-width;
+		@include media-breakpoint-up("sm") {
+			.ce-gallery {
+				display: inline-block;
+				max-width: 50%;
+			}
 		}
-		&.ce-left .ce-media {
-			padding-right: $grid-gutter-width;
+		&.ce-right {
+			.ce-gallery {
+				float: right;
+				padding-left: $grid-gutter-width / 2;
+			}
+		}
+		&.ce-left {
+			.ce-gallery {
+				float: left;
+				padding-left: $grid-gutter-width / 2;
+			}
 		}
 	}
 	&.ce-center {
