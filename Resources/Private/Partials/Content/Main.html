@@ -5,6 +5,7 @@
 
 		<div id="partial-content-main" class="content-column">
 			
+			<f:comment>
 			<f:if condition="{0:templateName} == {0:'ContentStartsite'}">
 				<f:then>
 					<!-- Don't use the H1-Headline, because in 
@@ -16,6 +17,7 @@
 					</div>
 				</f:else>
 			</f:if>
+			</f:comment>
 
 			<!--TYPO3SEARCH_begin-->
 			<f:cObject typoscriptObjectPath="lib.content.main" />
