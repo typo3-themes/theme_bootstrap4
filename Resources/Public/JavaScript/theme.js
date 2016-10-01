@@ -36,6 +36,7 @@ var theme = {
 		// 
 		//theme.onscroll();
 		this.menu.initialize();
+		this.elements.initialize();
 	},
 
 	responsive: {
@@ -158,7 +159,7 @@ var theme = {
 	translate: function(key, type) {
 		var label = '';
 		type = typeof type !== 'undefined' ? type : 'label';
-		type = 'tx_cars_' + type + '.';
+		type = 'tx_themes_' + type + '.';
 		if(typeof TYPO3.lang[type] !== 'undefined') {
 			if(typeof TYPO3.lang[type][key] !== 'undefined') {
 				label = TYPO3.lang[type][key];
@@ -171,21 +172,28 @@ var theme = {
 			console.warn('theme.translate failed: TYPO3.lang[\'' + type + '\'] not found');
 		}
 		return label;
+	},
+	
+	elements: {
+		initialize: function() {
+
+			this.topLink.initialize();
+		},
+		topLink: {
+			jo: null,
+			initialize: function () {
+				this.jo = jQuery('#partial-elements-top-link');
+				if(theme.elements.topLink.jo.length>0) {
+					jQuery('a', theme.elements.topLink.jo).click(function () {
+						theme.scrollTo(theme.body.jo);
+						return false;
+					});
+				}
+			}
+		}
+		
+		
 	}
 
 
 };
-
-/**
- * Theme specific initialization
- */
-jQuery(document).ready(function() {
-	theme.body.scrollOffset = 180;
-	theme.menu.main.scrollOffset = 180;
-	theme.initialize();
-
-	// activate dropdown
-	// http://v4-alpha.getbootstrap.com/components/dropdowns/#via-javascript
-	jQuery('.dropdown-toggle').dropdown();
-	
-});

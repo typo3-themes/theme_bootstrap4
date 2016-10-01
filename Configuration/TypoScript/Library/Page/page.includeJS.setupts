@@ -17,6 +17,12 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 		}
+		theme = EXT:theme_bootstrap4/Resources/Public/JavaScript/theme.js
+		theme {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
 	}
 	includeJS {
 		bootstrap = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/dist/js/bootstrap.min.js
@@ -33,8 +39,8 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 		}
-		theme = EXT:theme_bootstrap4/Resources/Public/JavaScript/default.js
-		theme {
+		initialize = EXT:theme_bootstrap4/Resources/Public/JavaScript/initialize.js
+		initialize {
 			external = 0
 			disableCompression = 1
 			excludeFromConcatenation = 1
