@@ -1,7 +1,7 @@
 #############################################
 # Font Family: serif constants
 #############################################
-# customsubcategory=fontfamily.serif=Font family: sans serif
+# customsubcategory=fontfamily.serif=Font family: serif
 
 # cat=font,advanced/fontfamily.serif/; type=options[Client-System,CDN,Local]; label= Font-family serif: Use from Client-System, CDN or Local-File?
 themes.configuration.font.family.serif.useFontFrom = System
