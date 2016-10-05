@@ -4,7 +4,7 @@
 		@if map-get($font-map, #{$family}-use-font-from) == 'CDN' {
 			@import url("#{map-get($font-map, #{$family}-cdn-url)}");
 		}
-		@if map-get($font-map, #{$family}-use-font-from) == 'Local' {
+		@if map-get($font-map, #{$family}-use-font-from) == 'Webserver' {
 			@font-face {
 				font-family: "#{map-get($font-map, #{$family}-name)}" #{map-get($font-map, #{$family}-fallback)};
 				//font-family: "#{map-get($font-map, #{$family}-name)}" , #{"," map-get($font-map, #{$family}-fallback)};

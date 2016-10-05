@@ -3,8 +3,8 @@
 #############################################
 # customsubcategory=fontfamily.serif=Font family: serif
 
-# cat=font,advanced/fontfamily.serif/; type=options[Client-System,CDN,Local]; label= Font-family serif: Use from Client-System, CDN or Local-File?
-themes.configuration.font.family.serif.useFontFrom = System
+# cat=font,advanced/fontfamily.serif/; type=options[Local,CDN,Webserver]; label= Font-family serif: Use from Local (for example: Arial), CDN (for example: Google-webfonts) or Webserver (for example: font provided by theme extension)
+themes.configuration.font.family.serif.useFontFrom = Local
 
 # cat=font,advanced/fontfamily.serif/; type=string; label= Font-family serif: CDN-Fonts URL (Google-Webfonts, ...)
 themes.configuration.font.family.serif.fontCdnUrl =

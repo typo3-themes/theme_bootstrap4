@@ -3,8 +3,8 @@
 #############################################
 # customsubcategory=fontfamily.sansSerif=Font family: sans serif
 
-# cat=font,advanced/fontfamily.sansSerif/; type=options[Client-System,CDN,Local]; label= Font-family sans-serif: Use from Client-System, CDN or Local-File?
-themes.configuration.font.family.sansSerif.useFontFrom = System
+# cat=font,advanced/fontfamily.sansSerif/; type=options[Local,CDN,Webserver]; label= Font-family sans-serif: Use from Local (for example: Arial), CDN (for example: Google-webfonts) or Webserver (for example: font provided by theme extension)
+themes.configuration.font.family.sansSerif.useFontFrom = Local
 
 # cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: CDN-Fonts URL (Google-Webfonts, ...)
 themes.configuration.font.family.sansSerif.fontCdnUrl = https://fonts.googleapis.com/css?family=Roboto
