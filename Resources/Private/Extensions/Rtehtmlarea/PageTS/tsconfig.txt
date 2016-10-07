@@ -112,6 +112,10 @@ RTE.classes {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-capitalize_label
 		value = text-transform: capitalize;
 	}
+	text-normal {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-normal_label
+		value = text-transform: none;
+	}
 	# Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds
 	text-muted {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-muted_label
@@ -262,7 +266,7 @@ RTE.default {
 	proc.allowedClasses := addToList(text-md-left, text-md-center, text-md-right)
 	proc.allowedClasses := addToList(text-lg-left, text-lg-center, text-lg-right)
 	proc.allowedClasses := addToList(text-xl-left, text-xl-center, text-xl-right)
-	proc.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
+	proc.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize, text-normal)
 	proc.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
 	proc.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
 	proc.allowedClasses := addToList(small, initialism, blockquote-reverse)
@@ -282,7 +286,7 @@ RTE.default {
 				div.allowedClasses := addToList(text-md-left, text-md-center, text-md-right)
 				div.allowedClasses := addToList(text-lg-left, text-lg-center, text-lg-right)
 				div.allowedClasses := addToList(text-xl-left, text-xl-center, text-xl-right)
-				div.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
+				div.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize, text-normal)
 				div.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
 				div.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
 				div.allowedClasses := addToList(small)  #
@@ -298,7 +302,7 @@ RTE.default {
 			span.allowedClasses := addToList(display-1, display-2, display-3, display-4)
 			span.allowedClasses := addToList(lead)
 			span.allowedClasses := addToList(text-nowrap)
-			span.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize)
+			span.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize, text-normal)
 			span.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
 			span.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
 			span.allowedClasses := addToList(small) #

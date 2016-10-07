@@ -112,6 +112,9 @@
 			<trans-unit id="rte.text-capitalize_label" xml:space="preserve">
 				<source>Capitalized text</source>
 			</trans-unit>
+			<trans-unit id="rte.text-normal_label" xml:space="preserve">
+				<source>Normal text</source>
+			</trans-unit>
 
 			<!-- Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds -->
 			<trans-unit id="rte.text-muted_label" xml:space="preserve">

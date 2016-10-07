@@ -45,6 +45,8 @@ div.indent { margin-left: 2em; }
 # default css file for content edited with htmlArea RTE with Bootstrap 4
 # ***************************************************************************************/
 
+/* @ToDo: add b and i tags to the selectors */
+
 /* Bootrap4 -> Content -> Typography -> Headings  */
 div.h1,
 p.h1,
@@ -188,45 +190,64 @@ p.text-capitalize,
 span.text-capitalize {
   text-transform: capitalize;
 }
+div.text-normal,
+p.text-normal,
+span.text-normal {
+  text-transform: none;
+}
 /* Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds */
 div.text-muted,
 p.text-muted,
+b.text-muted,
+i.text-muted,
 span.text-muted,
 a.text-muted {
   color: #818a91;
 }
 div.text-primary,
 p.text-primary,
+b.text-primary,
+i.text-primary,
 span.text-primary,
 a.text-primary {
   color: #0275d8;
 }
 div.text-secondary,
 p.text-secondary,
+b.text-secondary,
+i.text-secondary,
 span.text-secondary,
 a.text-secondary {
   color: orange;
 }
 div.text-success,
 p.text-success,
+b.text-success,
+i.text-success,
 span.text-success,
 a.text-success {
   color: #5cb85c;
 }
 div.text-info,
 p.text-info,
+b.text-info,
+i.text-info,
 span.text-info,
 a.text-info {
   color: #5bc0de;
 }
 div.text-warning,
 p.text-warning,
+b.text-warning,
+i.text-warning,
 span.text-warning,
 a.text-warning {
   color: #f0ad4e;
 }
 div.text-danger,
 p.text-danger,
+b.text-danger,
+i.text-danger,
 span.text-danger,
 a.text-danger {
   color: #d9534f;
