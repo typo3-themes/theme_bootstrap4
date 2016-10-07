@@ -40,6 +40,14 @@ lib.content.cssMap.variants {
 	navigation-pills-color5 = nav-pills-color5
 	navigation-pills-color6 = nav-pills-color6
 
+	# Variants for uploads/download content element
+	uploads-table-header = table-header
+	uploads-table-striped = table-striped
+	uploads-table-bordered = table-bordered
+	uploads-table-inverse = table-inverse
+	uploads-table-hover = table-hover
+	uploads-table-small = table-sm
+	
 	# Grid layout: carousel
 	carousel-hide-indicators = carousel-hide-indicators
 	carousel-hide-arrows = carousel-hide-arrows

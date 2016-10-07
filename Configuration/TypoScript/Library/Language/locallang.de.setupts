@@ -8,7 +8,13 @@ plugin.tx_themes {
 			topLink_label = nach oben
 			printLink_label = drucken
 			skipNavigation_label = Direkt zum Inhalt
-			
+
+
+			# Uploads -->
+			uploads_table_type =
+			uploads_table_file = Datei
+			uploads_table_description = Beschreibung
+			uploads_table_size = Größe
 			
 			# Carousel
 			carousel_empty_label = Please add one or more images to the slider

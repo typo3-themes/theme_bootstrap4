@@ -17,9 +17,6 @@
 				<source>Imprint</source>
 			</trans-unit>
 			
-			
-
-
 			<trans-unit id="content.buttons.default" xml:space="preserve">
 				<source>Default Button</source>
 			</trans-unit>

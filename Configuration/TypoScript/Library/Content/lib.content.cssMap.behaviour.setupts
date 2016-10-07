@@ -2,6 +2,8 @@
 
 lib.content.cssMap.behaviour {
 
+	# Behaviour for uploads/download content element
+	uploads-table-responsive = table-responsive
 
 	# Carousel behaviour
 	carousel-interval {
