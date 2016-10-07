@@ -10,6 +10,12 @@ plugin.tx_themes {
 			skipNavigation_label = Skip to main content
 
 
+			# Uploads -->
+			uploads_table_type = 
+			uploads_table_file = File
+			uploads_table_description = Description
+			uploads_table_size = Size
+
 			# Carousel
 			carousel_empty_label = Please add one or more images to the slider
 			carousel_previous_label = Next

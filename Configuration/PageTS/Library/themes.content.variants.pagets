@@ -54,6 +54,16 @@ themes {
 					danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
 				}
 			}
+			# ctype uploads
+			uploads {
+				uploads-table-header = Table header
+				uploads-table-striped = Table striped
+				uploads-table-bordered = Table bordered
+				uploads-table-inverse = Table inverse
+				uploads-table-hover = Table rows hover
+				uploads-table-small = Table small
+				uploads-table-responsive = Responsive table
+			}
 			# ctype: gridelements_pi1
 			gridelements_pi1 {
 				accordion {

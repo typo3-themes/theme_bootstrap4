@@ -33,6 +33,10 @@ themes.content.behaviour {
 			1by1 = Responsive Video: 1:1
 		}
 	}
+	# ctype uploads
+	uploads {
+		uploads-table-responsive = Responsive table
+	}
 	table {
 		#ToDo: New integrate classes
 		table-responsive = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.table_responsive

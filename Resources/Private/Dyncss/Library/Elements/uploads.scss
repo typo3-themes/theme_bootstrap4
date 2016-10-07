@@ -1,0 +1,25 @@
+.ce-uploads {
+	/**
+	 * @todo: add more file types. Currently uses FontAwesome
+	 */
+	.file-icon {
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: inherit;
+		text-rendering: auto;
+	}
+	.file-icon:before {
+		content: "\f016";
+	}
+	.file-icon-gif:before,
+	.file-icon-bmp:before,
+	.file-icon-tif:before,
+	.file-icon-jpg:before,
+	.file-icon-jpeg:before,
+	.file-icon-png:before {
+		content: "\f1c5";
+	}
+	.file-icon-pdf:before {
+		content: "\f1c1";
+	}
+}
