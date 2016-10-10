@@ -4,7 +4,7 @@
 	<header class="header-layout-{data.header_layout}">
 		<f:comment> -- header -- </f:comment>
 		<f:if condition="{data.header}">
-			<f:switch expression="{header_layout}">
+			<f:switch expression="{data.header_layout}">
 				<f:case value="1">
 					<h1><i class="{themes.icon}"></i><f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink></h1>
 				</f:case>
