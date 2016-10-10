@@ -2,7 +2,7 @@
 themes.configuration.container.news = {$themes.templatePageId}
 
 # cat=pages; type=int+; label= News list page
-themes.configuration.pages.newsList = 89
+themes.configuration.pages.newsList = 0
 
 # cat=pages; type=int+; label= News detail page
-themes.configuration.pages.newsDetails = 90
+themes.configuration.pages.newsDetails = 0

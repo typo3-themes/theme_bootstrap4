@@ -1,7 +1,17 @@
 .news {
-  .article {
-    .news-img-wrap a {
-      border-style: dashed;
-    }
-  }
+	.article {
+		.news-img-wrap a {
+			border-style: dashed;
+		}
+	}
+	.page-navigation {
+		text-align: center;
+		ul {
+			float: none;
+			li {
+				display: inline;
+				padding: 0;
+			}
+		}
+	}
 }

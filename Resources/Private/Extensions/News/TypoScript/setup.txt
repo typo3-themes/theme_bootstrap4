@@ -35,6 +35,10 @@ plugin.tx_news {
 			media {
 				dummyImage = {$themes.resourcesPublicPath}Extensions/News/Images/no-image.png
 			}
+			# Paginate
+			paginate {
+				templatePath = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
+			}
 		}
 	}
 

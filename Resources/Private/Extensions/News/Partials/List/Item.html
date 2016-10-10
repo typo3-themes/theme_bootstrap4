@@ -1,14 +1,14 @@
-{namespace n=Tx_News_ViewHelpers}<!--
+{namespace n=GeorgRinger\News\ViewHelpers}<!--
 	=====================
 		Partials/List/Item.html
 -->
-<div class="article articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}">
+<div class="article articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}" itemscope="itemscope" itemtype="http://schema.org/Article">
 	<n:excludeDisplayedNews newsItem="{newsItem}"/>
 	<!-- header -->
 	<div class="header">
 		<h3>
-			<n:link newsItem="{newsItem}" settings="{settings}">
-				{newsItem.title}
+			<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+				<span itemprop="headline">{newsItem.title}</span>
 			</n:link>
 		</h3>
 	</div>
@@ -19,13 +19,16 @@
 			<div class="news-img-wrap">
 				<f:if condition="{newsItem.falMediaPreviews}">
 					<f:then>
-						<n:link newsItem="{newsItem}" settings="{settings}">
+						<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
 							<f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
 								<f:if condition="{mediaElement.originalResource.type} == 2">
-									<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
+									<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
 								</f:if>
 								<f:if condition="{mediaElement.originalResource.type} == 4">
 									<f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement}"/>
+								</f:if>
+								<f:if condition="{mediaElement.originalResource.type} == 5">
+									<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
 								</f:if>
 							</f:alias>
 						</n:link>
@@ -33,7 +36,7 @@
 					<f:else>
 						<f:if condition="{settings.displayDummyIfNoMedia}">
 							<span class="no-media-element">
-								<n:link newsItem="{newsItem}" settings="{settings}">
+								<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
 									<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
 								</n:link>
 							</span>
@@ -51,7 +54,7 @@
 					<div class="news-img-wrap">
 						<f:if condition="{newsItem.mediaPreviews}">
 							<f:then>
-								<n:link newsItem="{newsItem}" settings="{settings}">
+								<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
 									<f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
 										<f:if condition="{mediaElement.type} == 0">
 											<f:image src="uploads/tx_news/{mediaElement.image}" title="{mediaElement.title}" alt="{mediaElement.alt}" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
@@ -68,7 +71,7 @@
 							<f:else>
 								<f:if condition="{settings.displayDummyIfNoMedia}">
 									<span class="no-media-element">
-										<n:link newsItem="{newsItem}" settings="{settings}">
+										<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
 											<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
 										</n:link>
 									</span>
@@ -82,7 +85,7 @@
 					<f:if condition="{settings.displayDummyIfNoMedia}">
 						<f:then>
 							<div class="news-img-wrap">
-								<n:link newsItem="{newsItem}" settings="{settings}">
+								<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
 									<span class="no-media-element">
 										<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}"/>
 									</span>
@@ -97,14 +100,14 @@
 	</f:if>
 
 
-	<!-- teas=ser text -->
+	<!-- teaser -->
 	<div class="teaser-text">
 		<f:if condition="{newsItem.teaser}">
 			<f:then>
-				{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+				<span itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</span>
 			</f:then>
 			<f:else>
-				{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+				<span itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</span>
 			</f:else>
 		</f:if>
 
@@ -118,8 +121,9 @@
 		<p>
 			<!-- date -->
 			<span class="news-list-date">
-				<time datetime="{f:format.date(date:newsItem.datetime,format:'Y-m-d')}">
-					<n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date>
+				<time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+					<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+					<meta itemprop="datePublished" content="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}" />
 				</time>
 			</span>
 
@@ -130,7 +134,7 @@
 
 			<f:if condition="{newsItem.tags}">
 				<!-- Tags -->
-				<span class="news-list-tags">
+				<span class="news-list-tags" itemprop="keywords">
 					<f:for each="{newsItem.tags}" as="tag">
 						{tag.title}
 					</f:for>
