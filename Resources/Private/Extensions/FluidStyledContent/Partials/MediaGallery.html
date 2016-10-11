@@ -69,6 +69,9 @@
 		<f:else>
 			<f:if condition="{data.image_zoom}">
 				<f:then>
+
+					title="{column.media.title}"
+					
 					<ce:link.clickEnlarge image="{column.media}" configuration="{settings.media.popup}">
 						<f:render section="media" arguments="{_all}" />
 					</ce:link.clickEnlarge>
