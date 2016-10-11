@@ -13,22 +13,6 @@ lib.fluidContent {
 	}
 }
 
-# ToDo use constants
-tt_content {
-	textmedia {
-		dataProcessing {
-			20 {
-				maxGalleryWidth = 1140
-				maxGalleryWidthInText = 1140
-				columnSpacing = 10
-				borderWidth = 2
-				borderPadding = 0
-			}
-		}
-	}
-}
-
-
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('fluid_styled_responsive_images')]
 	# Bootstrap: $container-max-widths - $grid-gutter-width
 	tt_content.textmedia.settings.responsive_image_rendering {

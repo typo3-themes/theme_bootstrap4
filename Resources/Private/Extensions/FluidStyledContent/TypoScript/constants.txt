@@ -17,3 +17,11 @@ themes.configuration.image.lazyloading = 0
 
 # ToDo: lazyloading funktioniert noch nicht. Die Extension fluid_styled_responsive_images 1.2.0 benötigt ein neues Update
 # https://github.com/alexanderschnitzler/fluid-styled-responsive-images/pull/17
+
+
+
+styles.content.textmedia.maxW = 1140
+styles.content.textmedia.maxWInText = 1140
+styles.content.textmedia.columnSpacing = 10
+styles.content.textmedia.borderWidth = 2
+styles.content.textmedia.borderPadding = 0

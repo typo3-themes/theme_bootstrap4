@@ -8,9 +8,12 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/TypoScript/Library" extensions="constantsts">
 
 # Extensions
-# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/News/TypoScript/constants.txt">
-# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/TypoScript/constants.txt">
-
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')]
+	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/News/TypoScript/constants.txt">
+[global]
+[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('fluid_styled_content')]
+	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/TypoScript/constants.txt">
+[global]
 
 # ToDo: Do we need the following configuration here?
 
