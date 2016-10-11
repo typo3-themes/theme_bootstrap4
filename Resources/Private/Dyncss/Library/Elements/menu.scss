@@ -1,0 +1,132 @@
+ul.ce-menu {
+	&.ce-menu-2 {
+		color: $brand-primary;
+		@extend .list-unstyled;
+		// Base style
+		li {
+			&::before {
+				display: inline-block;
+				font-family: FontAwesome;
+				font-feature-settings: normal;
+				font-kerning: auto;
+				font-language-override: normal;
+				font-size: inherit;
+				font-size-adjust: none;
+				font-stretch: normal;
+				font-style: normal;
+				font-synthesis: weight style;
+				font-variant: normal;
+				font-weight: normal;
+				line-height: 1;
+				text-rendering: auto;
+			}
+		}
+		> li {
+			// Home-Link
+			display: block;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: $font-size-h2;
+			&::before {
+				content: '\f015';
+			}
+			// Site pages
+			// 1. level
+			> ul {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				align-content: flex-start;
+				text-transform: none;
+				font-weight: normal;
+				font-size: $font-size-root;
+				margin: 0;
+				@extend .list-unstyled;
+				> li {
+					width: 100%;
+					font-size: $font-size-h3;
+					margin-top: 1rem;
+					@include media-breakpoint-up(md) {
+						width: 50%;
+					}
+					@include media-breakpoint-up(xl) {
+						width: 33.3%;
+					}
+					&::before {
+						content: '\f115';
+					}
+					// 2. level
+					ul {
+						position: relative;
+						padding-left: 0.5em;
+						font-size: $font-size-root;
+						margin-left: 0;
+						@extend .list-unstyled;
+						li {
+							position: relative;
+							margin: 0;
+							padding: 0 1em 6.4px 2.1em;
+							line-height: 1.6em;
+							font-size: $font-size-root;
+							&:not(:last-child)::after {
+								content: '';
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 1px;
+								background-color: $brand-primary;
+								height: 100%;
+							}
+							&::before {
+								content: '\f016';
+								display: inline-block;
+								font-family: FontAwesome;
+								font-feature-settings: normal;
+								font-kerning: auto;
+								font-language-override: normal;
+								font-size: inherit;
+								font-size-adjust: none;
+								font-stretch: normal;
+								font-style: normal;
+								font-synthesis: weight style;
+								font-variant: normal;
+								font-weight: normal;
+								line-height: 1;
+								text-rendering: auto;
+								margin-left: -1.1em;
+							}
+							a {
+								line-height: 1em;
+								&::before {
+									position: absolute;
+									top: 0.8em;
+									left: 0;
+									content: "";
+									display: block;
+									height: 1px;
+									background-color: $brand-primary;
+									margin-top: -1px;
+									width: 10px;
+								}
+								&::after {
+									content: '';
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 1px;
+									background-color: $brand-primary;
+									height: 0.8em;
+								}
+							}
+							ul {
+								margin-left: -1.1em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
