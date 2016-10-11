@@ -1,0 +1,1 @@
+plugin.tx_linkhandler.news.singlePid = {$themes.configuration.pages.newsDetails}
