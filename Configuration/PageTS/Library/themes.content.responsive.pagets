@@ -146,6 +146,8 @@ themes {
 					extralarge {
 						column-width {
 							4-4-4 = 4:4:4
+							6-6-12 = 6:6:12
+							12-6-6 = 12:6:6
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
@@ -156,6 +158,8 @@ themes {
 					large {
 						column-width {
 							4-4-4 = 4:4:4
+							6-6-12 = 6:6:12
+							12-6-6 = 12:6:6
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
@@ -166,6 +170,8 @@ themes {
 					medium {
 						column-width {
 							4-4-4 = 4:4:4
+							6-6-12 = 6:6:12
+							12-6-6 = 12:6:6
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
@@ -176,6 +182,8 @@ themes {
 					small {
 						column-width {
 							4-4-4 = 4:4:4
+							6-6-12 = 6:6:12
+							12-6-6 = 12:6:6
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
@@ -186,6 +194,8 @@ themes {
 					extrasmall {
 						column-width {
 							4-4-4 = 4:4:4
+							6-6-12 = 6:6:12
+							12-6-6 = 12:6:6
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
