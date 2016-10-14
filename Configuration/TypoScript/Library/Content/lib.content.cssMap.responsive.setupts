@@ -112,26 +112,36 @@ lib.content.cssMap.responsive {
 	
 	# Four column grid
 	extralarge-column-width-3-3-3-3 = col-xl-%s
+	extralarge-column-width-6-6-6-6 = col-xl-%s
+	extralarge-column-width-3-4-5-12 = col-xl-%s
 	extralarge-column-width-12-12-12-12 = col-xl-%s
 	extralarge-column-equal-height-true = xl-eq-height
 	extralarge-column-equal-height-false =
 
 	large-column-width-3-3-3-3 = col-lg-%s
+	large-column-width-6-6-6-6 = col-lg-%s
+	large-column-width-3-4-5-12 = col-lg-%s
 	large-column-width-12-12-12-12 = col-lg-%s
 	large-column-equal-height-true = lg-eq-height
 	large-column-equal-height-false =
 
 	medium-column-width-3-3-3-3 = col-md-%s
+	medium-column-width-6-6-6-6 = col-md-%s
+	medium-column-width-3-4-5-12 = col-md-%s
 	medium-column-width-12-12-12-12 = col-md-%s
 	medium-column-equal-height-true = md-eq-height
 	medium-column-equal-height-false =
 
 	small-column-width-3-3-3-3 = col-sm-%s
+	small-column-width-6-6-6-6 = col-sm-%s
+	small-column-width-3-4-5-12 = col-sm-%s
 	small-column-width-12-12-12-12 = col-sm-%s
 	small-column-equal-height-true = sm-eq-height
 	small-column-equal-height-false =
 
 	extrasmall-column-width-3-3-3-3 = col-xs-%s
+	extrasmall-column-width-6-6-6-6 = col-xs-%s
+	extrasmall-column-width-3-4-5-12 = col-xs-%s
 	extrasmall-column-width-12-12-12-12 = col-xs-%s
 	extrasmall-column-equal-height-true = xs-eq-height
 	extrasmall-column-equal-height-false =
