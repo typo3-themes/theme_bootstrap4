@@ -62,4 +62,29 @@ plugin.tx_dyncss.overrides {
 	baseurlIcon = TEXT
 	baseurlIcon.value = {$themes.configuration.baseurlIcon}
 
+	# Options: Quickly modify global styling by enabling or disabling optional features.
+	enable-flex = TEXT
+	enable-flex.value = {$themes.configuration.bootstrap.options.enableFlex}
+
+	enable-rounded = TEXT
+	enable-rounded.value = {$themes.configuration.bootstrap.options.enableRounded}
+
+	enable-shadows = TEXT
+	enable-shadows.value = {$themes.configuration.bootstrap.options.enableShadows}
+
+	enable-gradients = TEXT
+	enable-gradients.value = {$themes.configuration.bootstrap.options.enableGradients}
+
+	enable-transitions = TEXT
+	enable-transitions.value = {$themes.configuration.bootstrap.options.enableTransitions}
+
+	enable-hover-media-query = TEXT
+	enable-hover-media-query.value = {$themes.configuration.bootstrap.options.enableHoverMediaQuery}
+
+	enable-grid-classes = TEXT
+	enable-grid-classes.value = {$themes.configuration.bootstrap.options.enableGridClasses}
+
+	enable-print-styles = TEXT
+	enable-print-styles.value = {$themes.configuration.bootstrap.options.enablePrintStyles}
+
 }

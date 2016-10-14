@@ -1,17 +1,5 @@
 // theme_bootstrap4
 
-// Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
-$enable-flex:               false;
-$enable-rounded:            false;
-$enable-shadows:            false;
-$enable-gradients:          false;
-$enable-transitions:        false;
-$enable-hover-media-query:  false;
-$enable-grid-classes:       true ;
-$enable-print-styles:       true;
-
 // Color
 $brand-secondary: red !default;
 
@@ -29,7 +17,7 @@ $breadcrumb-divider: ">" !default;
 $footer-menu-divider: "|" !default;
 
 // Typography
-$font-family-sans-serif: "#{map-get($font-map, sans-serif-name)}" #{map-get($font-map, sans-serif-fallback)};
-$font-family-serif:      "#{map-get($font-map, serif-name)}" #{map-get($font-map, serif-fallback)};
-$font-family-monospace:  "#{map-get($font-map, monospace-name)}" #{map-get($font-map, monospace-fallback)};;
-$font-family-base:       $font-family-sans-serif;
+$font-family-sans-serif: "#{map-get($font-map, sans-serif-name)}" #{map-get($font-map, sans-serif-fallback)} !default;
+$font-family-serif:      "#{map-get($font-map, serif-name)}" #{map-get($font-map, serif-fallback)} !default;
+$font-family-monospace:  "#{map-get($font-map, monospace-name)}" #{map-get($font-map, monospace-fallback)} !default;
+$font-family-base:       $font-family-sans-serif !default;
