@@ -1,26 +1,33 @@
 .carousel.carousel-fade {
-	.carousel-inner .carousel-item {
-		opacity: 0;
-		-webkit-transition-property: opacity;
-		-moz-transition-property: opacity;
-		-o-transition-property: opacity;
-		transition-property: opacity;
-	}
-	.carousel-inner .active {
-		opacity: 1;
-	}
-	.carousel-inner .active.left,
-	.carousel-inner .active.right {
-		left: 0;
-		opacity: 0;
-		z-index: 1;
-		transform: translate3d(0, 0, 0);
-	}
-	.carousel-inner .next.left,
-	.carousel-inner .prev.right {
-		opacity: 1;
-	}
-	.carousel-control {
-		z-index: 2;
+	.carousel-inner {
+		height: 100%;
+		.carousel-item {
+			//background-color: $body-bg;
+			-webkit-transition: opacity linear 1s;
+			-moz-transition: opacity linear 1s;
+			-o-transition: opacity linear 1s;
+			transition: opacity linear 1s;
+			left: 0;
+			opacity: 0; /* hide all slides */
+			top: 0;
+			position: absolute;
+			width: 100%;
+			display: block;
+			bottom: 0;
+			&:first-child {
+				top: auto;
+				//opacity: 1; /* show first slide */
+				position: relative;
+			}
+			&.active {
+				opacity: 1;
+			}
+			&.active.left,
+			&.active.right {
+				-webkit-transform: translate3d(0, 0, 0);
+				-ms-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
 	}
 }
