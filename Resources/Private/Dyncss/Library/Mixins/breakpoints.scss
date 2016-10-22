@@ -1,6 +1,12 @@
 @mixin theme-media-breakpoint-only($name, $breakpoints: $grid-breakpoints) {
 	$min: map-get($breakpoints, $name);
 	$max: map-get($breakpoints, breakpoint-next($name)) - 1px;
+	@if $name == xl {
+		$max: 100vw;
+	}
+	@if $name == xs {
+		$min: 0px;
+	}
 	@media (min-width: $min) and (max-width: $max) {
 		@content;
 	}
