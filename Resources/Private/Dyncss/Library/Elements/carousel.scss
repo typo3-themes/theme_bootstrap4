@@ -1,6 +1,7 @@
 .carousel.carousel-fade {
 	.carousel-inner {
 		height: 100%;
+		overflow: visible;
 		.carousel-item {
 			//background-color: $body-bg;
 			-webkit-transition: opacity linear 1s;
