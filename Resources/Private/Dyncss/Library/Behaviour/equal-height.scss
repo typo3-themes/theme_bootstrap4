@@ -1,0 +1,60 @@
+// @ToDo: Is here the right place?
+// @ToDo: Maybe with condition for flex-grid?
+
+.equal-height, .equal-height > div[class*='col-'] {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	flex:1 0 auto;
+}
+
+.xl-eq-height {
+	@include theme-media-breakpoint-only(xl) {
+		.row, .row > div[class*='col-'] {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			flex:1 0 auto;
+		}
+	}
+}
+.lg-eq-height {
+	@include theme-media-breakpoint-only(lg) {
+		.row, .row > div[class*='col-'] {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			flex:1 0 auto;
+		}
+	}
+}
+.md-eq-height {
+	@include theme-media-breakpoint-only(md) {
+		.row, .row > div[class*='col-'] {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			flex:1 0 auto;
+		}
+	}
+}
+.sm-eq-height {
+	@include theme-media-breakpoint-only(sm) {
+		.row, .row > div[class*='col-'] {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			flex:1 0 auto;
+		}
+	}
+}
+.xs-eq-height {
+	@include theme-media-breakpoint-only(xs) {
+		.row, .row > div[class*='col-'] {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			flex:1 0 auto;
+		}
+	}
+}

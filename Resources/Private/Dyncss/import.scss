@@ -7,6 +7,7 @@
 
 // Mixins
 @import "Library/Mixins/font-include.scss";
+@import "Library/Mixins/breakpoints.scss";
 
 // Scss-Imports
 @import "Library/bootstrap.scss";
@@ -31,6 +32,9 @@
 @import "Library/Menus/top.scss";
 @import "Library/Menus/breadcrumb.scss";
 @import "Library/Menus/footer.scss";
+
+// Styles for Behaviour
+@import "Library/Behaviour/equal-height.scss";
 
 // Styles for Variants
 @import "Library/Variants/headline.scss";
