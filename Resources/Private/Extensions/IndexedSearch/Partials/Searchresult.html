@@ -1,0 +1,58 @@
+<div class="tx-indexedsearch-res card">
+	<div class="card-header">
+		<span class="tx-indexedsearch-icon">{row.icon -> f:format.raw()}</span>
+		<f:if condition="{settings.displayResultNumber}"><span class="tx-indexedsearch-result-number">{row.result_number}</span></f:if>
+		<span class="tx-indexedsearch-title{row.CSSsuffix}">{row.title -> f:format.raw()}</span>
+		<span class="tx-indexedsearch-percent">{row.rating}</span>
+	</div>
+	<f:if condition="{row.headerOnly} == 0">
+		<div class="card-block">
+			<p class="tx-indexedsearch-description">{row.description -> f:format.raw()}</p>
+			<span><b><f:translate key="result.path" />&nbsp;</b><f:format.raw>{row.path}</f:format.raw></span>
+		</div>
+		<div class="card-footer">
+			<div class="row">
+				<div class="col-md-4">
+					<dl class="tx-indexedsearch-info row">
+						<dt class="tx-indexedsearch-text-item-size col-md-4"><f:translate key="result.size" />&nbsp;</dt>
+						<dd class="tx-indexedsearch-text-item-size col-md-4">{row.size}</dd>
+					</dl>
+				</div>
+	
+				<div class="col-md-4">
+					<dl class="tx-indexedsearch-info row">
+						<dt class="tx-indexedsearch-text-item-crdate col-md-4"><f:translate key="result.created" />&nbsp;</dt>
+						<dd class="tx-indexedsearch-text-item-crdate col-md-4"><f:format.date>@{row.created}</f:format.date></dd>
+					</dl>
+				</div>
+	
+				<div class="col-md-4">
+					<dl class="tx-indexedsearch-info row">
+						<dt class="tx-indexedsearch-text-item-mtime col-md-4"><f:translate key="result.modified" />&nbsp;</dt>
+						<dd class="tx-indexedsearch-text-item-mtime col-md-4"><f:format.date>@{row.modified}</f:format.date></dd>
+					</dl>
+				</div>
+				<f:comment>
+				<div class="col-md-4">
+					<dl class="tx-indexedsearch-info row">
+						<dt class="tx-indexedsearch-text-item-path"><f:translate key="result.path" />&nbsp;</dt>
+						<dd class="tx-indexedsearch-text-item-path"><f:format.html>{row.path}</f:format.html></dd>
+					</dl>
+				</div>
+				</f:comment>
+			</div>
+		</div>
+	</f:if>
+
+	<f:if condition="{row.headerOnly} == 1">
+		<p class="tx-indexedsearch-description">{row.description -> f:format.raw()}</p>
+	</f:if>
+
+	<f:if condition="{row.subresults}">
+		<p class="tx-indexedsearch-list">
+			<f:for each="{row.subresults.items}" as="subrow">
+				<f:render partial="Searchresult" arguments="{row: subrow}" />
+			</f:for>
+		</p>
+	</f:if>
+</div>

@@ -84,6 +84,45 @@
 			<trans-unit id="content.variants.alert_danger" xml:space="preserve">
 				<source>Alert-Error</source>
 			</trans-unit>
+			
+			<!-- Button/Button group -->
+			<trans-unit id="content.buttons.primary" xml:space="preserve">
+				<source>Color: Primary Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.secondary" xml:space="preserve">
+				<source>Color: Secondary Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.success" xml:space="preserve">
+				<source>Color: Success Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.info" xml:space="preserve">
+				<source>Color: Info Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.warning" xml:space="preserve">
+				<source>Color: Warning Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.danger" xml:space="preserve">
+				<source>Color: Danger Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.link" xml:space="preserve">
+				<source>Color: Link Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.outline" xml:space="preserve">
+				<source>Outline Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.default" xml:space="preserve">
+				<source>Size: Default Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.small" xml:space="preserve">
+				<source>Size: Small Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.large" xml:space="preserve">
+				<source>Size: Large Button</source>
+			</trans-unit>
+			<trans-unit id="content.buttons.block" xml:space="preserve">
+				<source>Block Button</source>
+			</trans-unit>
+			
 
 			<!-- Panel -->
 			<!-- @todo panels gibt es nicht mehr!? -->

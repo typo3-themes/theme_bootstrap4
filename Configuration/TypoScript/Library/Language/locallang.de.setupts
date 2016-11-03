@@ -4,11 +4,14 @@ plugin.tx_themes {
 			languageMenu_label = Website-Sprache
 			breadcrumb_label = Sie sind hier
 			imprint_label = Impressum
-			quickSearch_label = Suche
 			topLink_label = nach oben
 			printLink_label = drucken
 			skipNavigation_label = Direkt zum Inhalt
 
+			# Indexed search / quick search
+			indexed_search_quick_search_headline = Geben Sie einfach ein Suchwort ein…
+			indexed_search_quick_search_button_title = Suche abschicken
+			indexed_search_quick_search_button_label =
 
 			# Uploads -->
 			uploads_table_type =

@@ -16,37 +16,6 @@
 			<trans-unit id="imprint_label" xml:space="preserve">
 				<source>Imprint</source>
 			</trans-unit>
-			
-			<trans-unit id="content.buttons.default" xml:space="preserve">
-				<source>Default Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.primary" xml:space="preserve">
-				<source>Primary Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.success" xml:space="preserve">
-				<source>Success Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.info" xml:space="preserve">
-				<source>Info Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.warning" xml:space="preserve">
-				<source>Warning Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.danger" xml:space="preserve">
-				<source>Danger Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.large" xml:space="preserve">
-				<source>Large Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.small" xml:space="preserve">
-				<source>Small Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.extra-small" xml:space="preserve">
-				<source>Extra Small Button</source>
-			</trans-unit>
-			<trans-unit id="content.buttons.block" xml:space="preserve">
-				<source>Block Button</source>
-			</trans-unit>
 
 			<trans-unit id="content.bullets" xml:space="preserve">
 				<source>Panel with List Group</source>

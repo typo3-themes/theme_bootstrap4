@@ -69,18 +69,22 @@ lib.content.cssMap.variants {
 		pills = pills 
 	}
 	
-	
-	# Buttons
-	buttons {
-		button-default = btn btn-default
-		button-primary = btn btn-primary
-		button-success = btn btn-success
-		button-info = btn btn-info
-		button-warning = btn btn-warning
-		button-danger = btn btn-danger
-		button-large = btn btn-lg
-		button-small = btn btn-sm
-		button-extra-small = btn btn-xs
-		button-block = btn btn-block
+	# Buttons/Button groups
+	button-color {
+		primary = btn btn-primary
+		secondary = btn btn-secondary
+		success = btn btn-success
+		info = btn btn-info
+		warning = btn btn-warning
+		danger = btn btn-danger
+		link = btn btn-link
 	}
+	button-outline = outline
+	button-size {
+		default = 
+		large = btn-lg
+		small = btn-sm
+	}
+	button-block = btn-block
+	
 }

@@ -6,7 +6,6 @@ page.inlineLanguageLabel {
 	languageMenu_label = Language menu
 	breadcrumb_label = You are here
 	imprint_label = Imprint
-	quickSearch_label = Search
 	topLink_label = Top
 	printLink_label = Print
 }

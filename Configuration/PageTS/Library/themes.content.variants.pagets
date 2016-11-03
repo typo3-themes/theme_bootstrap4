@@ -73,6 +73,25 @@ themes {
 				uploads-table-small = Table small
 				uploads-table-responsive = Responsive table
 			}
+			# ctype themes_buttoncontent_pi1 
+			themes_buttoncontent_pi1 {
+				button-color {
+					primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.primary
+					secondary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.secondary
+					success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.success
+					info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.info
+					warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.warning
+					danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.danger
+					link = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.link
+				}
+				button-outline = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.outline
+				button-size {
+					default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.default
+					large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.large
+					small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.small
+				}
+				button-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.block
+			}
 			# ctype: gridelements_pi1
 			gridelements_pi1 {
 				accordion {
@@ -110,17 +129,6 @@ themes {
 						danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
 					}
 				}
-			}
-			themes_buttoncontent_pi1 {
-				button-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.primary
-				button-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.success
-				button-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.info
-				button-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.warning
-				button-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.danger
-				button-large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.large
-				button-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.small
-				button-extra-small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.extra-small
-				button-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.block
 			}
 		}
 	}

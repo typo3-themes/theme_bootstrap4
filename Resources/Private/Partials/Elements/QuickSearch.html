@@ -1,0 +1,27 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Partials/QuickSearch.html [begin] -->
+
+		<div class="partial-quickSearch">
+			<f:form pageUid="{theme:constant(constant: 'themes.configuration.pages.search')}" action="search"
+					fieldNamePrefix="tx_indexedsearch_pi2" controller="Search" extensionName="IndexedSearch" pluginName="Pi2">
+				<f:if condition="{f:translate(key: 'indexed_search_quick_search_headline')}">
+					<p><f:translate key="indexed_search_quick_search_headline" /></p>
+				</f:if>
+				<div class="input-group">
+					<f:form.textfield name="search[sword]" class="form-control" placeholder="{f:translate(key: 'search_placeholder')}" />
+					<span class="input-group-btn tx-indexedsearch-search-submit">
+						<button class="btn btn-primary" type="submit" name="search[submitButton]" 
+								title="{f:translate(key: 'indexed_search_quick_search_button_title')}">
+							<i class="fa fa-search"></i> <f:translate key="indexed_search_quick_search_button_label" />
+						</button>
+					</span>
+				</div>
+			</f:form>
+		</div>
+		
+		<!-- theme_bootstrap4: Partials/QuickSearch.html [end] -->
+	</f:section>
+</div>

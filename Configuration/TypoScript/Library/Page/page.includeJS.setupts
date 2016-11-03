@@ -4,7 +4,7 @@
 # Settings for the development system
 
 page {
-	includeJSlibs {
+	includeJSLibs {
 		modernizr = EXT:theme_bootstrap4/Resources/Public/Contrib/Modernizr/modernizr.min.js
 		modernizr {
 			external = 0
