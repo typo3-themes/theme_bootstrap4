@@ -40,6 +40,9 @@ plugin.tx_news {
 				templatePath = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
 			}
 		}
+		detail {
+			showSocialShareButtons = 0
+		}
 	}
 
 	_LOCAL_LANG {

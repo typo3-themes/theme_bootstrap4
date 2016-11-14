@@ -57,7 +57,7 @@
 					</li>
 				</f:if>
 				<f:if condition="{pagination.hasLessPages}">
-					<li>....</li>
+					<li class="page-item"><span class="page-link">....</span></li>
 				</f:if>
 				<f:for each="{pagination.pages}" as="page">
 					<f:if condition="{page.isCurrent}">
@@ -81,7 +81,7 @@
 					</f:if>
 				</f:for>
 				<f:if condition="{pagination.hasMorePages}">
-					<li>....</li>
+					<li class="page-item"><span class="page-link">....</span></li>
 				</f:if>
 				<f:if condition="{pagination.displayRangeEnd} < {pagination.numberOfPages}">
 					<li class="page-item last">
