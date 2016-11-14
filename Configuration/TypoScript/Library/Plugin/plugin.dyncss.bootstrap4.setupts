@@ -48,7 +48,7 @@ plugin.tx_dyncss.overrides {
 
 
 	top-menu-divider = TEXT
-	top-menu-divider.value = {$themes.configuration.menu.footer.divider}
+	top-menu-divider.value = {$themes.configuration.menu.top.divider}
 
 	breadcrumb-divider = TEXT
 	breadcrumb-divider.value = '{$themes.configuration.menu.breadcrumb.divider}'
