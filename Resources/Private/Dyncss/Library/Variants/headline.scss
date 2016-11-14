@@ -1,4 +1,4 @@
-.headline-left {
+.headline-left > header {
 	> h1,
 	> h2,
 	> h3,
@@ -8,7 +8,7 @@
 		text-align: left;
 	}
 }
-.headline-center {
+.headline-center > header {
 	> h1,
 	> h2,
 	> h3,
@@ -18,7 +18,7 @@
 		text-align: center;
 	}
 }
-.headline-right {
+.headline-right > header {
 	> h1,
 	> h2,
 	> h3,
