@@ -1,9 +1,9 @@
 lib.content.cssMap.responsive {
 
 	#Extra Large Size Visibility for each element
-	extrasmall-default =
-	extrasmall-hidden-up = hidden-xl-up
-    extrasmall-hidden-down = hidden-xl-down
+	extralarge-default =
+	extralarge-hidden-up = hidden-xl-up
+	extralarge-hidden-down = hidden-xl-down
 
 	#Large Size Visibility for each element
 	large-default =
