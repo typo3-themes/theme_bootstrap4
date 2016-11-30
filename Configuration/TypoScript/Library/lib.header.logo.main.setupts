@@ -5,6 +5,7 @@ lib.header.logo {
 	#main.file.height = {$themes.configuration.header.logo.main.height}
 	main.titleText = {$themes.configuration.siteName}
 	main.altText = {$themes.configuration.siteName}
+	main.params = class="img-fluid"
 	main.stdWrap {
 		required = 1
 		typolink {
