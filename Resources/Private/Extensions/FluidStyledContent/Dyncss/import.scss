@@ -63,13 +63,13 @@
 			text-align: center;
 			> figure,
 			> img {
-				@extend .m-x-auto;
+				@extend .mx-auto;
 			}
 		}
 	}
 	&.ce-right {
 		.ce-media {
-			@extend .pull-xs-right;
+			@extend .float-xs-right;
 		}
 	}
 	&.ce-left {
