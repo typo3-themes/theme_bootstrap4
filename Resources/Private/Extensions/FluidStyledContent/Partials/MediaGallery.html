@@ -142,7 +142,9 @@
 									title="{column.media.title}"
 									class="figure-img img-fluid
 											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
-											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}
+											{f:if(condition: '{imageClass}', then: '{imageClass.class}')}
+											{f:if(condition: data.imageborder, then: ' img-thumbnail')} "
 									additionalAttributes="{width:column.dimensions.width,height:column.dimensions.height}"
 							/>
 						</f:then>
@@ -155,7 +157,9 @@
 									title="{column.media.title}"
 									class="figure-img img-fluid
 											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
-											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}
+											{f:if(condition: '{imageClass}', then: '{imageClass.class}')}
+											{f:if(condition: data.imageborder, then: ' img-thumbnail')} "
 							/>
 						</f:else>
 					</f:if>
@@ -171,7 +175,9 @@
 									title="{column.media.title}"
 									class="img-fluid
 											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
-											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}
+											{f:if(condition: '{imageClass}', then: '{imageClass.class}')}
+											{f:if(condition: data.imageborder, then: ' img-thumbnail')} "
 									additionalAttributes="{width:column.dimensions.width,height:column.dimensions.height}"
 							/>
 						</f:then>
@@ -184,7 +190,9 @@
 									title="{column.media.title}"
 									class="img-fluid
 											{f:if(condition: '{column.media.mimeType} == \'image/svg+xml\'', then: 'img-fluid-svg')}
-											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}"
+											{f:if(condition: '{theme:constant(constant: \'themes.configuration.image.lazyloading\')}', then: 'lazyload')}
+											{f:if(condition: '{imageClass}', then: '{imageClass.class}')}
+											{f:if(condition: data.imageborder, then: ' img-thumbnail')} "
 							/>
 						</f:else>
 					</f:if>
