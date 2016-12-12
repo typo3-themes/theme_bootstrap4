@@ -1,28 +1,49 @@
-# Modify ParseFunc setup for RTE content (css_styled_content)
+# Modify ParseFunc setup for RTE content
 lib.parseFunc_RTE {
-  # Sondertag angeben, damit dieser im Frontend ausgegeben wird
-  allowTags := addToList(mark)
+	# Sondertag angeben, damit dieser im Frontend ausgegeben wird
+	allowTags := addToList(mark)
 	externalBlocks {
-    # no override of blockquote atrributs
-    blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
-  }
-  # Eigener Tag oder auch Schnipsel  
-  tags {
-    sondertag = TEXT
-    sondertag {
-      # mit current=1 enthält man den aktuellen Inhalt des Tags
-      current = 1
-      # eigenes wrap, z. B. für Boxen
-      wrap (
-        <div class="box"><div class="top"></div><div class="center">|</div><div class="bottom"></div></div>
-      )
-      # Leerzeilen vor und nach dem Inhalt des Tags entfernen
-      stripNL = 1
-    }
-  } 
+		# no override of blockquote atrributs
+		blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
+	}
+
+	# Eigener Tag oder auch Schnipsel
+	tags {
+		sondertag = TEXT
+		sondertag {
+			# mit current=1 enthält man den aktuellen Inhalt des Tags
+			current = 1
+			# eigenes wrap, z. B. für Boxen
+			wrap (
+		<div class="box"><div class="top"></div><div class="center">|</div><div class="bottom"></div></div>
+			)
+			# Leerzeilen vor und nach dem Inhalt des Tags entfernen
+			stripNL = 1
+		}
+	}
+
+	externalBlocks {
+		table {
+			stdWrap {
+				# Wrap table and make it responsive
+				wrap = <div class="table-responsive">|</div>
+				# Display class-name in FE
+				HTMLparser.tags.table.fixAttrib.class {
+					list >
+					# Chance default class-name for tables
+					default = contenttable
+					# Add new classes
+					list = contenttable
+					list := addToList(table, table-inverse, table-striped, table-striped-inverse, table-sm, table-reflow)
+					list := addToList(table-bordered, table-bordered-inverse, table-hover, table-hover-inverse)
+				}
+			}
+		}
+	}
 }
+
 
 # Sondertag hier angeben, damit dieser im Frontend bei allen Texteingabefelder, auch die nicht den RTE benutzen, ausgegeben wird
 lib.parseFunc {
-  allowTags := addToList(mark)
+	allowTags := addToList(mark)
 }

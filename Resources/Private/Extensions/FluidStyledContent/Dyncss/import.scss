@@ -48,13 +48,13 @@
 		&.ce-right {
 			.ce-gallery {
 				float: right;
-				padding-left: $grid-gutter-width / 2;
+				padding-left: $grid-gutter-width-base / 2;
 			}
 		}
 		&.ce-left {
 			.ce-gallery {
 				float: left;
-				padding-right: $grid-gutter-width / 2;
+				padding-right: $grid-gutter-width-base / 2;
 			}
 		}
 	}
@@ -63,13 +63,13 @@
 			text-align: center;
 			> figure,
 			> img {
-				@extend .m-x-auto;
+				@extend .mx-auto;
 			}
 		}
 	}
 	&.ce-right {
 		.ce-media {
-			@extend .pull-xs-right;
+			@extend .float-xs-right;
 		}
 	}
 	&.ce-left {

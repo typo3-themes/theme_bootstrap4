@@ -45,14 +45,23 @@ themes {
 			}
 			# ctype: textmedia
 			textmedia {
-				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
 				alert {
-					none = 
+					none = Chose alert
 					success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_success
 					info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_info
 					warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_warning
 					danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
 				}
+				image {
+					none = Chose image style
+					rounded = Image rounded
+					rounded-top = Image rounded-top
+					rounded-right = Image rounded-right
+					rounded-bottom = Image rounded-bottom
+					rounded-left = Image rounded-left
+					rounded-circle = Image rounded-circle
+				}
+				wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
 			}
 			# ctype uploads
 			uploads {

@@ -7,7 +7,7 @@
 		product-name="rtehtmlarea">
 		<header/>
 		<body>
-      <!-- Typography - Headings -->
+	  <!-- Typography - Headings -->
 			<trans-unit id="rte.h1_label" xml:space="preserve">
 				<source>Styling as Heading 1 (inline)</source>
 				<target>Stil wie Überschrift 1 (in Zeile)</target>
@@ -40,7 +40,7 @@
 				<source>Lead body copy</source>
 				<target>Einleitung</target>
 			</trans-unit>
-      <!-- Typography - Inline text elements -->
+	  <!-- Typography - Inline text elements -->
 			<trans-unit id="rte.category-mark_label" xml:space="preserve">
 				<source>Marked text</source>
 				<target>Markierter Text</target>
@@ -52,13 +52,32 @@
 			<trans-unit id="rte.description-mark_label" xml:space="preserve">
 				<source>Marked text</source>
 				<target>HTML5 Markierter Text</target>
-			</trans-unit>  
-      <!-- Typography - Alignment classes -->
+			</trans-unit>
+
+	  <!-- Typography - Alignment classes -->
 			<trans-unit id="rte.text-nowrap_label" xml:space="preserve">
 				<source>No wrap</source>
 				<target>Kein Zeilenumbruch</target>
 			</trans-unit>
-      <!-- Typography - Transformation classes -->
+			<trans-unit id="rte.text-justify_label" xml:space="preserve">
+				<source>Justify Full</source>
+				<target>Textausrichtung: Blocksatz</target>
+			</trans-unit>
+
+			<trans-unit id="rte.text-xs-left_label" xml:space="preserve">
+				<source>Justify Left</source>
+				<target>Textausrichtung: Links</target>
+			</trans-unit>
+			<trans-unit id="rte.text-xs-center_label" xml:space="preserve">
+				<source>Justify Center</source>
+				<target>Textausrichtung: Zentriert</target>
+			</trans-unit>
+			<trans-unit id="rte.text-xs-right_label" xml:space="preserve">
+				<source>Justify Right</source>
+				<target>Textausrichtung: Rechts</target>
+			</trans-unit>
+
+	  <!-- Typography - Transformation classes -->
 			<trans-unit id="rte.text-lowercase_label" xml:space="preserve">
 				<source>Lowercased text</source>
 				<target>Text in kleinbuchstaben</target>
@@ -71,17 +90,17 @@
 				<source>Capitalized text</source>
 				<target>Wortanfang in Großbuchstaben</target>
 			</trans-unit>
-      <!-- Typography - Abbreviations -->
+	  <!-- Typography - Abbreviations -->
 			<trans-unit id="rte.abbr-initialism_label" xml:space="preserve">
 				<source>Abbreviation for a smaller font-size</source>
 				<target>Abkürzung für eine kleinere Schriftgröße</target>
 			</trans-unit>
-      <!-- Typography - blockquote-reverse -->
+	  <!-- Typography - blockquote-reverse -->
 			<trans-unit id="rte.blockquote-reverse_label" xml:space="preserve">
 				<source>Alternate display</source>
 				<target>Alternative Darstellung</target>
 			</trans-unit>
-      
+
 		</body>
 	</file>
 </xliff>

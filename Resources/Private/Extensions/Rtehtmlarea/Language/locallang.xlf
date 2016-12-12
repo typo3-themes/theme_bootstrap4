@@ -61,6 +61,15 @@
 			</trans-unit>
 
 			<!-- Typography - Alignment classes -->
+			<trans-unit id="rte.text-xs-left_label" xml:space="preserve">
+				<source>Justify Left</source>
+			</trans-unit>
+			<trans-unit id="rte.text-xs-center_label" xml:space="preserve">
+				<source>Justify Center</source>
+			</trans-unit>
+			<trans-unit id="rte.text-xs-right_label" xml:space="preserve">
+				<source>Justify Right</source>
+			</trans-unit>
 			<trans-unit id="rte.text-sm-left_label" xml:space="preserve">
 				<source>Text Left (sm or wider)</source>
 			</trans-unit>
@@ -98,6 +107,10 @@
 				<source>Text Right (xl or wider)</source>
 			</trans-unit>
 
+			<trans-unit id="rte.text-justify_label" xml:space="preserve">
+				<source>Justify Full</source>
+			</trans-unit>
+
 			<trans-unit id="rte.text-nowrap_label" xml:space="preserve">
 				<source>No wrap</source>
 			</trans-unit>
@@ -118,26 +131,29 @@
 
 			<!-- Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds -->
 			<trans-unit id="rte.text-muted_label" xml:space="preserve">
-				<source>Text muted</source>
+				<source>Text color muted</source>
 			</trans-unit>
 			<trans-unit id="rte.text-primary_label" xml:space="preserve">
-				<source>Text primary</source>
+				<source>Text color primary</source>
 			</trans-unit>
 			<trans-unit id="rte.text-secondary_label" xml:space="preserve">
-				<source>Text secondary</source>
+				<source>Text color secondary</source>
 			</trans-unit>
 
 			<trans-unit id="rte.text-success_label" xml:space="preserve">
-				<source>Text success</source>
+				<source>Text color success</source>
 			</trans-unit>
 			<trans-unit id="rte.text-info_label" xml:space="preserve">
-				<source>Text info</source>
+				<source>Text color info</source>
 			</trans-unit>
 			<trans-unit id="rte.text-warning_label" xml:space="preserve">
-				<source>Text warning</source>
+				<source>Text color warning</source>
 			</trans-unit>
 			<trans-unit id="rte.text-danger_label" xml:space="preserve">
-				<source>Text danger</source>
+				<source>Text color danger</source>
+			</trans-unit>
+			<trans-unit id="rte.text-link-hover-color_label" xml:space="preserve">
+				<source>Text color link hover</source>
 			</trans-unit>
 
 			<trans-unit id="rte.bg-primary_label" xml:space="preserve">

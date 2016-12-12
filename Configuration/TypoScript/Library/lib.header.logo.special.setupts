@@ -6,6 +6,7 @@ lib.header.logo {
 	#special.file.height = {$themes.configuration.header.logo.special.height}
 	special.titleText = {$themes.configuration.header.logo.special.title}
 	special.altText = {$themes.configuration.header.logo.special.title}
+	special.params = class="img-fluid"
 	special.stdWrap.typolink {
 		parameter = {$themes.configuration.header.logo.special.linkUid}
 		parameter.insertData = 1

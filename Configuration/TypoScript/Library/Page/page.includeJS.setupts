@@ -71,7 +71,7 @@ page {
 			}
 		}
 		includeJS {
-			bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js
+			bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js
 			bootstrap {
 				external = 1
 			}

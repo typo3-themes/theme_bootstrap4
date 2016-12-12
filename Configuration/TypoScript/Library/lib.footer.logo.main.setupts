@@ -5,6 +5,7 @@ lib.footer.logo {
 	#main.file.height = {$themes.configuration.footer.logo.main.height}
 	main.titleText = {$themes.configuration.footer.logo.main.title}
 	main.altText = {$themes.configuration.footer.logo.main.title}
+	main.params = class="img-fluid"
 	main.stdWrap.typolink {
 		parameter = {$themes.configuration.footer.logo.main.linkUid}
 		parameter.insertData = 1

@@ -30,6 +30,16 @@ lib.content.cssMap.variants {
 		color-inverse = bg bg-inverse
 	}
 
+	# Image
+	image {
+		rounded = rounded
+		rounded-top = rounded-top
+		rounded-right = rounded-right
+		rounded-bottom = rounded-bottom
+		rounded-left = rounded-left
+		rounded-circle = rounded-circle
+	}
+
 	# Variants only for header content elements
 	page-header = page-header
 

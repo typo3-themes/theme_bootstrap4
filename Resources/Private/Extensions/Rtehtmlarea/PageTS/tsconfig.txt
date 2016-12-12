@@ -1,10 +1,41 @@
 # ToDo: Language Keys
 
+
+# Remove unused classes
 RTE.classes {
-	# ToDo: Remove not used default styles don't work
-	align-left >
-	align-center >
-	align-right >
+	align-left {
+		value = display: none;
+	}
+	align-center {
+		value = display: none;
+	}
+	align-right {
+		value = display: none;
+	}
+	align-justify {
+		value = display: none;
+	}
+	# Table
+	csc-frame-frame1 {
+		value = display: none;
+	}
+	csc-frame-frame2 {
+		value = display: none;
+	}
+	# Textstyle
+	important {
+		value = display: none;
+	}
+	name-of-person {
+		value = display: none;
+	}
+	detail {
+		value = display: none;
+	}
+}
+
+# New classes
+RTE.classes {
 
 	# Bootrap4 -> Content -> Typography -> Headings
 	h1 {
@@ -46,57 +77,71 @@ RTE.classes {
 	}
 
 	# Bootrap4 -> Components -> Utility classes  -> Text alignment
-	# text-justify = align-justify
+	text-justify {
+		 name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-justify_label
+	}
 	text-nowrap {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-nowrap_label
 	}
 	text-xs-left {
-		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifyleft
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xs-left_label
 		value = text-align: left;
 	}
 	text-xs-center {
-		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifycenter
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xs-center_label
 		value = text-align: center;
 	}
 	text-xs-right {
-		name = LLL:EXT:rtehtmlarea/Resources/Private/Language/locallang_tooltips.xlf:justifyright
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xs-right_label
 		value = text-align: right;
 	}
 	text-sm-left {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-sm-left_label
+		value = display: none;
 	}
 	text-sm-center {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-sm-center_label
+		value = display: none;
 	}
 	text-sm-right {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-sm-right_label
+		value = display: none;
 	}
 	text-md-left {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-md-left_label
+		value = display: none;
 	}
 	text-md-center {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-md-center_label
+		value = display: none;
 	}
 	text-md-right {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-md-right_label
+		value = display: none;
 	}
 	text-lg-left {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lg-left_label
+		value = display: none;
 	}
 	text-lg-center {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lg-center_label
+		value = display: none;
 	}
 	text-lg-right {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-lg-right_label
+		value = display: none;
 	}
 	text-xl-left {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xl-left_label
+		value = display: none;
 	}
 	text-xl-center {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xl-center_label
+		value = display: none;
 	}
 	text-xl-right {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-xl-right_label
+		value = display: none;
 	}
 
 	# Bootrap4 -> Components -> Utility classes  -> Text transform
@@ -119,61 +164,65 @@ RTE.classes {
 	# Bootrap4 -> Components -> Utility classes  -> Contextual colors and backgrounds
 	text-muted {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-muted_label
-		value = color: #818a91
+		value = color: #818a91;
 	}
 	text-primary {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-primary_label
-		value = color: #0275d8
+		value = color: #0275d8;
 	}
 	text-secondary {
 		# ToDo: gibt es die in Bootstrap?
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-secondary_label
-		value = color: orange
+		value = color: orange;
 	}
 	text-success {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-success_label
-		value = color: #5cb85c
+		value = color: #5cb85c;
 	}
 	text-info {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-info_label
-		value = color: #5bc0de
+		value = color: #5bc0de;
 	}
 	text-warning {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-warning_label
-		value = color: #f0ad4e
+		value = color: #f0ad4e;
 	}
 	text-danger {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-danger_label
-		value = color: #d9534f
+		value = color: #d9534f;
+	}
+	text-link-hover-color {
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.text-link-hover-color_label
+		value = color: #662483;
 	}
 	bg-primary {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-primary_label
-		value = padding: 0.5rem; color: #ffffff; background-color: #0275d8
+		value = padding: 0.5rem; color: #ffffff; background-color: #0275d8;
 	}
 	bg-secondary {
 		# ToDo: gibt es die in Bootstrap?
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-secondary_label
-		value = padding: 0.5rem; color: #ffffff; background-color: orange
+		value = padding: 0.5rem; color: #ffffff; background-color: orange;
 	}
 	bg-success {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-success_label
-		value = padding: 0.5rem; color: #ffffff; background-color: #5cb85c
+		value = padding: 0.5rem; color: #ffffff; background-color: #5cb85c;
 	}
 	bg-info {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-info_label
-		value = padding: 0.5rem; color: #ffffff; background-color: #5bc0de
+		value = padding: 0.5rem; color: #ffffff; background-color: #5bc0de;
 	}
 	bg-warning {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-warning_label
-		value = padding: 0.5rem; color: #ffffff; background-color: #f0ad4e
+		value = padding: 0.5rem; color: #ffffff; background-color: #f0ad4e;
 	}
 	bg-danger {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-danger_label
-		value = padding: 0.5rem; color: #ffffff; background-color: #d9534f
+		value = padding: 0.5rem; color: #ffffff; background-color: #d9534f;
 	}
 	bg-inverse {
 		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.bg-inverse_label
-		value = padding: 0.5rem; color: #eceeef; background-color: #373a3c
+		value = padding: 0.5rem; color: #eceeef; background-color: #373a3c;
 	}
 
 
@@ -221,19 +270,107 @@ RTE.classes {
 	# ToDo: Chek the following classes!
 
 	small {
-	name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.small_label
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.small_label
 	}
 
 	### Alignment classes
 
 	### Abbreviations
 	initialism {
-	name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.abbr-initialism_label
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.abbr-initialism_label
 	}
 	### Blockquotes
 	blockquote-reverse {
-	name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.blockquote-reverse_label
+		name = LLL:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Language/locallang.xlf:rte.blockquote-reverse_label
 	}
+
+
+	### Tables
+	# @ToDo: Language Files
+	table {
+		name = Default
+	}
+	table-inverse {
+		requires = table
+		name = Default (invert)
+	}
+	table-striped {
+		requires = table
+		name = Striped rows
+	}
+	table-striped-inverse {
+		requires = table table-striped table-inverse
+		name = Striped rows (invert)
+	}
+	table-bordered {
+		requires = table table-bordered
+		name = Bordered table
+	}
+	table-bordered-inverse {
+		requires = table table-bordered table-inverse
+		name = Bordered table (invert)
+	}
+	table-hover {
+		requires = table table-hover
+		name = Hoverable rows
+	}
+	table-hover-inverse {
+		requires = table table-hover table-inverse
+		name = Hoverable rows (invert)
+	}
+	table-sm {
+		requires = table
+		name = Small table
+	}
+	thead-default {
+		name = Default
+	}
+	thead-inverse {
+		name = Inverse
+	}
+	table-reflow {
+		requires = table
+		name = Reflow
+	}
+
+	table-active {
+		name = Background active (not for invert table)
+	}
+	table-success {
+		name = Background success (not for invert table)
+	}
+	table-warning {
+		name = Background warning (not for invert table)
+	}
+	table-danger {
+		name = Background danger (not for invert table)
+	}
+	table-info {
+		name = Background info (not for invert table)
+	}
+
+	table-bg-primary {
+		requires = bg-primary
+		name = Background primary
+	}
+	table-bg-success {
+		requires = bg-success
+		name = Background success
+	}
+	table-bg-warning {
+		requires = bg-warning
+		name = Background warning
+	}
+	table-bg-danger {
+		requires = bg-danger
+		name = Background danger
+	}
+	table-bg-info {
+		requires = bg-info
+		name = Background info
+	}
+
+	# ToDo: Contextual classes bg... will not be displayed good in the rte
 }
 
 
@@ -260,18 +397,24 @@ RTE.default {
 	proc.allowedClasses := addToList(h1, h2, h3, h4, h5, h6)
 	proc.allowedClasses := addToList(display-1, display-2, display-3, display-4)
 	proc.allowedClasses := addToList(lead)
-	proc.allowedClasses := addToList(text-nowrap)
+	proc.allowedClasses := addToList(text-nowrap, text-justify)
 	proc.allowedClasses := addToList(text-xs-left, text-xs-center, text-xs-right)
 	proc.allowedClasses := addToList(text-sm-left, text-sm-center, text-sm-right)
 	proc.allowedClasses := addToList(text-md-left, text-md-center, text-md-right)
 	proc.allowedClasses := addToList(text-lg-left, text-lg-center, text-lg-right)
 	proc.allowedClasses := addToList(text-xl-left, text-xl-center, text-xl-right)
 	proc.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize, text-normal)
-	proc.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+	proc.allowedClasses := addToList(text-muted, text-primary, text-secondary, text-success, text-info, text-warning, text-danger, text-link-hover-color)
 	proc.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
 	proc.allowedClasses := addToList(small, initialism, blockquote-reverse)
 	proc.allowedClasses := addToList(btn, btn-default, btn-primary, btn-secondary, btn-success, btn-info, btn-warning)
 	proc.allowedClasses := addToList(btn-danger, btn-lg, btn-sm)
+	proc.allowedClasses := addToList(table, table-inverse, table-striped, table-striped-inverse)
+	proc.allowedClasses := addToList(table-bordered, table-bordered-inverse)
+	proc.allowedClasses := addToList(table-hover, table-hover-inverse, table-sm, table-reflow)
+	proc.allowedClasses := addToList(thead-default, thead-inverse)
+	proc.allowedClasses := addToList(table-active, table-success, table-warning, table-danger, table-info)
+	proc.allowedClasses := addToList(table-bg-primary,table- bg-success, table-bg-warning, table-bg-danger, table-bg-info)
 
 	buttons {
 		# A class name to be assigned to the blocks whenever the item is applied to selected text.
@@ -280,20 +423,27 @@ RTE.default {
 				div.allowedClasses := addToList(h1, h2, h3, h4, h5, h6)
 				div.allowedClasses := addToList(display-1, display-2, display-3, display-4)
 				div.allowedClasses := addToList(lead)
-				div.allowedClasses := addToList(text-nowrap)
+				div.allowedClasses := addToList(text-nowrap, text-justify)
 				div.allowedClasses := addToList(text-xs-left, text-xs-center, text-xs-right)
 				div.allowedClasses := addToList(text-sm-left, text-sm-center, text-sm-right)
 				div.allowedClasses := addToList(text-md-left, text-md-center, text-md-right)
 				div.allowedClasses := addToList(text-lg-left, text-lg-center, text-lg-right)
 				div.allowedClasses := addToList(text-xl-left, text-xl-center, text-xl-right)
 				div.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize, text-normal)
-				div.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+				div.allowedClasses := addToList(text-muted, text-primary, text-secondary, text-success, text-info, text-warning, text-danger, text-link-hover-color)
 				div.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
-				div.allowedClasses := addToList(small)  #
+				div.allowedClasses := addToList(small)
 				# allowed classes for table-tag
-				table.allowedClasses := addToList()
+				table.allowedClasses := addToList(table, table-inverse, table-striped, table-striped-inverse)
+				table.allowedClasses := addToList(table-bordered, table-bordered-inverse, table-sm)
+				table.allowedClasses := addToList(table-hover, table-hover-inverse, table-reflow)
+				tags.tr.allowedClasses := addToList(table-active, table-success, table-warning, table-danger, table-info)
+				tags.tr.allowedClasses := addToList(table-bg-primary, table-bg-success, table-bg-warning, table-bg-danger, table-bg-info)
+				tags.td.allowedClasses := addToList(table-active, table-success, table-warning, table-danger, table-info)
+				tags.td.allowedClasses := addToList(table-bg-primary, table-bg-success, table-bg-warning, table-bg-danger, table-bg-info)
+				tags.thead.allowedClasses := addToList(thead-default, thead-inverse)
 				# allowed classes for blockquote-tag
-				blockquote.allowedClasses := addToList(blockquote-reverse)  #
+				blockquote.allowedClasses := addToList(blockquote-reverse)
 		}
 		# for the textstyle
 		textstyle.tags {
@@ -303,15 +453,15 @@ RTE.default {
 			span.allowedClasses := addToList(lead)
 			span.allowedClasses := addToList(text-nowrap)
 			span.allowedClasses := addToList(text-lowercase, text-uppercase, text-capitalize, text-normal)
-			span.allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+			span.allowedClasses := addToList(text-muted, text-primary, text-secondary, text-success, text-info, text-warning, text-danger, text-link-hover-color)
 			span.allowedClasses := addToList(bg-primary, bg-success, bg-info, bg-warning, bg-danger, bg-inverse)
-			span.allowedClasses := addToList(small) #
+			span.allowedClasses := addToList(small)
 			# allowed classes for acronym-tag
 			acronym.allowedClasses := addToList(initialism)
 		}
 		# allowed classes for links (a-tag)
 		link.properties.class {
-			allowedClasses := addToList(text-muted, text-primary, text-success, text-info, text-warning, text-danger)
+			allowedClasses := addToList(text-muted, text-primary, text-secondary, text-success, text-info, text-warning, text-danger, text-link-hover-color)
 			allowedClasses := addToList(btn, btn-default, btn-primary, btn-secondary, btn-success, btn-info, btn-warning)
 			allowedClasses := addToList(btn-danger, btn-lg, btn-sm)
 		}
