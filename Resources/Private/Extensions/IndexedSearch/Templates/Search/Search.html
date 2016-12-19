@@ -2,7 +2,7 @@
 {namespace bootstrap4=KayStrobach\ThemeBootstrap4\ViewHelpers}
 
 <f:alias map="{sword: searchParams.sword}">
-	<f:render partial="Form" arguments="{_all}"/>
+	<f:render partial="Form" arguments="{_all}" section="Default" />
 </f:alias>
 
 <f:for each="{resultsets}" as="result">

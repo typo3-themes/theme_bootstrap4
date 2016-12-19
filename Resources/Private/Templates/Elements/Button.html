@@ -1,10 +1,53 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-	<f:layout name="Content/Default" />
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+	<f:layout name="Content/Button" />
 	<f:section name="content">
-		<f:comment><!-- =================================
-			<f:debug>{_all}</f:debug>
-		================================= --></f:comment>
-	
-		@todo implementation needed
+		
+		<f:for each="{themes.buttons}" as="button" iteration="buttonIterator">
+
+			<f:comment><!-- Link href --></f:comment>
+			<f:if condition="{button.linkPageUid}">
+				<f:then>
+					<theme:variable.set name="href" value="{f:uri.page(pageUid: button.linkPageUid)}" />
+				</f:then>
+				<f:else>
+					<theme:variable.set name="href" value="http://{button.link}" />
+				</f:else>
+			</f:if>
+
+			<f:comment><!-- Link href --></f:comment>
+			<theme:variable.set name="target" value="" />
+			<f:if condition="{button.linkTarget}">
+				<theme:variable.set name="target">target="{button.linkTarget}"</theme:variable.set>
+			</f:if>
+
+			<f:comment><!-- Link title --></f:comment>
+			<theme:variable.set name="title" value="" />
+			<f:if condition="{button.linkTitle}">
+				<theme:variable.set name="title">title="{button.linkTitle}"</theme:variable.set>
+			</f:if>
+
+			<f:comment><!-- Link css class --></f:comment>
+			<theme:variable.set name="cssClass" value="" />
+			<f:if condition="{button.linkCssClass}">
+				<theme:variable.set name="cssClass">{button.linkCssClass}"</theme:variable.set>
+			</f:if>
+			
+			<f:if condition="{button.icon}">
+				<f:then>
+					<theme:variable.set name="icon"><i class="{button.icon}"></i> </theme:variable.set>
+				</f:then>
+				<f:else>
+					<theme:variable.set name="icon" value="" />
+				</f:else>
+			</f:if>
+			<f:if condition="{buttonIterator.isFirst}">
+				<f:then>
+					<a href="{href}" class="{buttonColor} {buttonSize} {cssClass}" title="{button.title}" {target} role="button"><f:format.raw>{icon}</f:format.raw>{button.text}</a>
+				</f:then>
+			</f:if>
+		</f:for>
+		
 	</f:section>
 </html>

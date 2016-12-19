@@ -29,6 +29,12 @@ plugin.tx_news {
 			500 = {$themes.resourcesPrivatePath}Extensions/News/Layouts/
 		}
 	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+		# Skip default arguments from urls
+		skipDefaultArguments = 1
+	}
 	settings {
 		list {
 			# media configuration
@@ -55,3 +61,27 @@ plugin.tx_news {
 	}
 }
 
+# Breadcrumb settings for news
+[globalVar = GP:tx_news_pi1|news > 0]
+	lib.menu.breadcrumb {
+		10.1 {
+			NO {
+				doNotLinkIt = 0
+				linkWrap = <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>
+			}
+			wrap >
+		}
+		20 = RECORDS
+		20 {
+			dontCheckPid = 1
+			tables = tx_news_domain_model_news
+			source.data = GP:tx_news_pi1|news
+			source.intval = 1
+			conf.tx_news_domain_model_news = TEXT
+			conf.tx_news_domain_model_news.field = title
+			conf.tx_news_domain_model_news.htmlSpecialChars = 1
+			wrap = <li class="breadcrumb-item active news" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">|</span></li>
+		}
+		wrap = <div class="prefix"><span>{$themes.configuration.menu.breadcrumb.prefix}</span></div><ol id="menuBreadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
+	}
+[end]

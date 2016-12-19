@@ -1,0 +1,48 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+
+	<f:if condition="{themes.variants.css.button-color}">
+		<theme:variable.set name="buttonColor" value="{themes.variants.css.button-color}" />
+		<theme:variable.popVariant name="button-color" />
+	</f:if>
+	<f:if condition="{themes.variants.css.button-size}">
+		<theme:variable.set name="buttonSize" value="{themes.variants.css.button-size}" />
+		<theme:variable.popVariant name="button-size" />
+	</f:if>
+	<f:if condition="{themes.variants.css.btn-outline}">
+		<theme:variable.set name="buttonColor" value="{theme:format.replace(substring: 'btn btn-', replacement: 'btn btn-outline-', content: buttonColor)}" />
+		<theme:variable.popVariant name="btn-outline" />
+	</f:if>
+	<theme:variable.set name="buttonBlock" value="0" />
+	<f:if condition="{themes.variants.css.button-block}">
+		<theme:variable.set name="buttonBlock" value="1" />
+		<theme:variable.popVariant name="button-block" />
+	</f:if>
+
+	<f:comment> -- Use a background wrapper?! -- </f:comment>
+	<f:if condition="{themes.variants.css.background}">
+		<f:format.printf arguments="{class: themes.variants.css.background}" value="<div class='%s'>" />
+		<theme:variable.popVariant name="background" />
+		<theme:variable.set name="closeBackground" value="1" />
+	</f:if>
+
+	<f:comment> -- Use a container wrapper?! -- </f:comment>
+	<f:if condition="{themes.behaviour.css.container}">
+		<f:format.printf arguments="{class: themes.behaviour.css.container}" value="<div class='%s'>" />
+		<theme:variable.popBehaviour name="container" />
+		<theme:variable.set name="closeContainer" value="1" />
+	</f:if>
+
+	<div id="c{data.uid}" class="ce-button {themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+		<f:render section="content" />
+	</div>
+	
+	<f:if condition="{closeContainer}">
+		<f:format.printf arguments="{0: ''}" value="</div>" />
+	</f:if>
+	<f:if condition="{closeBackground}">
+		<f:format.printf arguments="{0: ''}" value="</div>" />
+	</f:if>
+
+</html>

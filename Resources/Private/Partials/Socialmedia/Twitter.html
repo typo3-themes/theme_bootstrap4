@@ -1,0 +1,17 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Partials/Socialmedia/Twitter.html [begin] -->
+		
+		<f:if condition="{settings.socialmedia.twitter.active}">
+			<li class="partial-socialmedia-twitter list-inline-item">
+				<a href="https://twitter.com/intent/user?screen_name={settings.socialmedia.twitter.username}"
+				   target="_blank" 
+				   title="{settings.socialmedia.twitter.title}" 
+				   class="{settings.socialmedia.twitter.cssClass}"></a>
+			</li>
+		</f:if>
+
+		<!-- theme_bootstrap4: Partials/Socialmedia/Twitter.html [end] -->
+	</f:section>
+</div>

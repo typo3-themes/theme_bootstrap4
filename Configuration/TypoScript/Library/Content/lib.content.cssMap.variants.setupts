@@ -79,7 +79,7 @@ lib.content.cssMap.variants {
 		danger = btn btn-danger
 		link = btn btn-link
 	}
-	button-outline = outline
+	button-outline = btn-outline
 	button-size {
 		default = 
 		large = btn-lg

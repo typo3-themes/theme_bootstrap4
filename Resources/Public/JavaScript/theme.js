@@ -31,12 +31,16 @@ var theme = {
 
 		this.body.jo = jQuery('body');
 
-		// Bind onscroll event
-		jQuery(document).on('scroll', this.body.jo, theme.onscroll);
+		// Bind on scroll event
+		jQuery(document).on('scroll', this.body.jo, theme.onScroll);
 		// 
-		//theme.onscroll();
+		//theme.onScroll();
 		this.menu.initialize();
 		this.elements.initialize();
+		// Bind on resize and init
+		jQuery(window).resize(theme.onResize);
+		theme.onResize();
+		theme.onScroll();
 	},
 
 	responsive: {
@@ -106,21 +110,33 @@ var theme = {
 	},
 
 	/**
+	 * Is called on resize for executing theme actions
+	 */
+	onResize: function() {
+		// Identify the current device width
+		jQuery.each(theme.responsive.breakpoints, function(key, value) {
+			var width = jQuery(window).width();
+			if(value <= width) {
+				theme.responsive.currentDevice = key;
+			}
+		});
+	},
+
+	/**
 	 * Is called on scroll for executing theme actions
 	 */
-	onscroll: function() {
-
+	onScroll: function() {
+		var scrollTop = jQuery(window).scrollTop();
 		if(theme.body.jo != null) {
-			if(jQuery(this).scrollTop() > theme.body.scrollOffset) {
+			if(scrollTop > theme.body.scrollOffset) {
 				theme.body.jo.addClass(theme.body.scrollToggleClasses[1]).removeClass(theme.body.scrollToggleClasses[0]);
 			}
 			else {
 				theme.body.jo.addClass(theme.body.scrollToggleClasses[0]).removeClass(theme.body.scrollToggleClasses[1]);
 			}
 		}
-
 		if(theme.menu.main.jo != null) {
-			if (jQuery(this).scrollTop() > theme.menu.main.scrollOffset) {
+			if (scrollTop > theme.menu.main.scrollOffset) {
 				theme.menu.main.jo.addClass(theme.menu.main.scrollToggleClasses[1]).removeClass(theme.menu.main.scrollToggleClasses[0]);
 			}
 			else {

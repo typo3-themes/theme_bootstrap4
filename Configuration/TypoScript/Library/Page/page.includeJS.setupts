@@ -5,23 +5,26 @@
 
 page {
 	includeJSLibs {
+		#jquery = //cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js
+		jquery = EXT:theme_bootstrap4/Resources/Public/Contrib/jquery/jquery-3.1.0.min.js
+		jquery {
+			external = 0
+			forceOnTop = 1
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+		#modernizr = //cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
 		modernizr = EXT:theme_bootstrap4/Resources/Public/Contrib/Modernizr/modernizr.min.js
 		modernizr {
 			external = 0
 			disableCompression = 1
-			excludeFromConcatenation = 1
-		}
-		jquery = EXT:theme_bootstrap4/Resources/Public/Contrib/jquery/jquery-3.1.0.min.js
-		jquery {
-			external = 0
-			disableCompression = 1
-			excludeFromConcatenation = 1
+			excludeFromConcatenation = 0
 		}
 		theme = EXT:theme_bootstrap4/Resources/Public/JavaScript/theme.js
 		theme {
 			external = 0
 			disableCompression = 1
-			excludeFromConcatenation = 1
+			excludeFromConcatenation = 0
 		}
 	}
 	includeJS {
@@ -30,55 +33,20 @@ page {
 			external = 0
 			forceOnTop = 1
 			disableCompression = 1
-			excludeFromConcatenation = 1
+			excludeFromConcatenation = 0
 		}
 		tether = EXT:theme_bootstrap4/Resources/Public/Contrib/tether/dist/js/tether.min.js
 		tether {
 			external = 0
 			forceOnTop = 1
 			disableCompression = 1
-			excludeFromConcatenation = 1
+			excludeFromConcatenation = 0
 		}
 		initialize = EXT:theme_bootstrap4/Resources/Public/JavaScript/initialize.js
 		initialize {
 			external = 0
-			disableCompression = 1
-			excludeFromConcatenation = 1
+			disableCompression = 0
+			excludeFromConcatenation = 0
 		}
 	}
 }
-
-# support t3jquery
-[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('t3jquery')]
-	page.10 = USER
-	page.10 {
-		userFunc = tx_t3jquery->addJS
-	}
-	page.includeJSLibs.jquery >
-[END]
-
-# Settings for the production system
-[globalVar = LIT:1 = {$themes.mode.isProduction}]
-	page {
-		includeJSlibs {
-			modernizr = //cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
-			modernizr {
-				external = 1
-			}
-			jquery = //cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js
-			jquery {
-				external = 1
-			}
-		}
-		includeJS {
-			bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js
-			bootstrap {
-				external = 1
-			}
-			tether = https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.4/js/tether.min.js
-			tether {
-				external = 1
-			}
-		}
-	}
-[global]

@@ -1,85 +1,130 @@
 #############################################
 # Socialmedia constants
 #############################################
-
-# #customcategory=socialmedia=Theme: Socialmedia settings
-# customsubcategory=socialmedia_twitter=Twitter
-# customsubcategory=socialmedia_facebook=Facebook
-# customsubcategory=socialmedia_rss=RSS
-# customsubcategory=socialmedia_google_plus=Google Plus
-# customsubcategory=socialmedia_xing=XING
-# customsubcategory=socialmedia_youtube=YouTube
-
-
-# Twitter
-# cat=socialmedia,advanced/socialmedia_twitter/; type=options[0,1]; label= Twitter: Activate?!
-themes.configuration.socialmedia.useTwitter = 1
-
-# cat=socialmedia,advanced/socialmedia_twitter/; type=string; label= Twitter: Username, without @
-themes.configuration.socialmedia.twitterUsername = TYPO3THEMES
-
-
-
-# Facebook
-#############################################
-
-# cat=socialmedia,advanced/socialmedia_facebook/; type=options[0,1]; label= Facebook: Activate?!
-themes.configuration.socialmedia.useFacebook = 1
-
-# cat=socialmedia,advanced/socialmedia_facebook/; type=string; label= Facebook: Pagelink
-themes.configuration.socialmedia.facebookLink = https://www.facebook.com/typo3
-
-
-
-# RSS
-#############################################
-
-# cat=socialmedia,advanced/socialmedia_rss/; type=options[0,1]; label= RSS: Activate?!
-themes.configuration.socialmedia.useRss = 1
-
-# cat=socialmedia,advanced/socialmedia_rss/; type=string; label= RSS: Feedlink
-themes.configuration.socialmedia.rssLink = /xml-feeds/rss.xml
-
-
-
-# Google plus
-#############################################
-
-# cat=socialmedia,advanced/socialmedia_google_plus/; type=options[0,1]; label= Google+: Activate?!
-themes.configuration.socialmedia.useGooglePlus = 1
-
-# cat=socialmedia,advanced/socialmedia_google_plus/; type=string; label= Google+: Pagelink
-themes.configuration.socialmedia.googlePlusLink = https://plus.google.com/communities/100060687535829230492
-
-
-
-# Xing
-#############################################
-
-# cat=socialmedia,advanced/socialmedia_xing/; type=options[0,1]; label= XING: Activate?!
-themes.configuration.socialmedia.useXing = 1
-
-# cat=socialmedia,advanced/socialmedia_xing/; type=string; label= XING: Pagelink
-themes.configuration.socialmedia.xingLink = https://www.xing.com/companies/typo3association
-
-
-
-# Youtube
-#############################################
-
-# cat=socialmedia,advanced/socialmedia_youtube/; type=options[0,1]; label= Youtube: Activate?!
-themes.configuration.socialmedia.useYoutube = 1
-
-# cat=socialmedia,advanced/socialmedia_youtube/; type=string; label= Youtube: Pagelink
-themes.configuration.socialmedia.youtubeLink = https://www.youtube.com/user/typo3/
-
-
-
-# Instagram
-#############################################
-
-# cat=socialmedia,advanced/socialmedia_instagram/; type=options[0,1]; label= Instagram: Activate?!
-themes.configuration.socialmedia.useInstagram = 1
-
-# cat=socialmedia,advanced/socialmedia_instagram/; type=string; label= Instagram: Pagelink
-themes.configuration.socialmedia.instagramLink = https://www.instagram.com/explore/tags/typo3/
+# @tooo: translation values
+themes.configuration {
+	#customcategory=socialmedia=Socialmedia settings
+	socialmedia {
+		# customsubcategory=socialmedia_twitter=Twitter
+		twitter {
+			# cat=socialmedia,advanced/socialmedia_twitter/10; type=options[0,1]; label= Twitter-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_twitter/20; type=string; label= Twitter-Username, without @
+			username = TYPO3THEMES
+			# cat=socialmedia,advanced/socialmedia_twitter/30; type=string; label= Twitter-Link title
+			title = Twitter
+			# cat=socialmedia,advanced/socialmedia_twitter/40; type=string; label= Twitter-Link CSS class
+			cssClass = fa fa-twitter
+		}
+		# customsubcategory=socialmedia_facebook=Facebook
+		facebook {
+			# cat=socialmedia,advanced/socialmedia_facebook/10; type=options[0,1]; label= Facebook-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_facebook/20; type=string; label= Facebook-Link URL
+			link = https://www.facebook.com/typo3
+			# cat=socialmedia,advanced/socialmedia_facebook/30; type=string; label= Facebook-Link title
+			title = Facebook
+			# cat=socialmedia,advanced/socialmedia_facebook/40; type=string; label= Facebook-Link CSS class
+			cssClass = fa fa-facebook
+		}
+		# customsubcategory=socialmedia_rss=RSS
+		rss {
+			# cat=socialmedia,advanced/socialmedia_rss/10; type=options[0,1]; label= RSS-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_rss/20; type=string; label= RSS-Link URL
+			link = /xml-feeds/rss.xml
+			# cat=socialmedia,advanced/socialmedia_rss/30; type=string; label= RSS-Link title
+			title = RSS
+			# cat=socialmedia,advanced/socialmedia_rss/40; type=string; label= RSS-Link CSS class
+			cssClass = fa fa-rss
+		}
+		# customsubcategory=socialmedia_googleplus=Google+
+		googlePlus {
+			# cat=socialmedia,advanced/socialmedia_googleplus/10; type=options[0,1]; label= Google+-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_googleplus/20; type=string; label= Google+-Link URL
+			link = https://plus.google.com/communities/100060687535829230492
+			# cat=socialmedia,advanced/socialmedia_googleplus/30; type=string; label= Google+-Link title
+			title = Google+
+			# cat=socialmedia,advanced/socialmedia_googleplus/40; type=string; label= Google+-Link CSS class
+			cssClass = fa fa-google-plus
+		}
+		# customsubcategory=socialmedia_xing=Xing
+		xing {
+			# cat=socialmedia,advanced/socialmedia_xing/10; type=options[0,1]; label= Xing-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_xing/20; type=string; label= Xing-Link URL
+			link = https://www.xing.com/companies/typo3association
+			# cat=socialmedia,advanced/socialmedia_xing/30; type=string; label= Xing-Link title
+			title = Xing
+			# cat=socialmedia,advanced/socialmedia_xing/40; type=string; label= Xing-Link CSS class
+			cssClass = fa fa-xing
+		}
+		# customsubcategory=socialmedia_youtube=Youtube
+		youtube {
+			# cat=socialmedia,advanced/socialmedia_youtube/10; type=options[0,1]; label= Youtube-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_youtube/20; type=string; label= Youtube-Link URL
+			link = https://www.youtube.com/user/typo3/
+			# cat=socialmedia,advanced/socialmedia_youtube/30; type=string; label= Youtube-Link title
+			title = Youtube
+			# cat=socialmedia,advanced/socialmedia_youtube/40; type=string; label= Youtube-Link CSS class
+			cssClass = fa fa-youtube
+		}
+		# customsubcategory=socialmedia_instagram=Instagram
+		instagram {
+			# cat=socialmedia,advanced/socialmedia_instagram/10; type=options[0,1]; label= Instagram-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_instagram/20; type=string; label= Instagram-Link URL
+			link = https://www.instagram.com/explore/tags/typo3/
+			# cat=socialmedia,advanced/socialmedia_instagram/30; type=string; label= Instagram-Link title
+			title = Instagram
+			# cat=socialmedia,advanced/socialmedia_instagram/40; type=string; label= Instagram-Link CSS class
+			cssClass = fa fa-instagram
+		}
+		# customsubcategory=socialmedia_linkedin=LinkedIn
+		linkedIn {
+			# cat=socialmedia,advanced/socialmedia_linkedin/10; type=options[0,1]; label= LinkedIn-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_linkedin/20; type=string; label= LinkedIn-Link URL
+			link = https://www.linkedin.com/company/typo3-association
+			# cat=socialmedia,advanced/socialmedia_linkedin/30; type=string; label= LinkedIn-Link title
+			title = LinkedIn
+			# cat=socialmedia,advanced/socialmedia_linkedin/40; type=string; label= LinkedIn-Link CSS class
+			cssClass = fa fa-linkedin
+		}
+		# customsubcategory=socialmedia_bitbucket=Bitbucket
+		bitbucket {
+			# cat=socialmedia,advanced/socialmedia_bitbucket/10; type=options[0,1]; label= Bitbucket-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_bitbucket/20; type=string; label= Bitbucket-Link URL
+			link = https://bitbucket.typo3.com/
+			# cat=socialmedia,advanced/socialmedia_bitbucket/30; type=string; label= Bitbucket-Link title
+			title = Bit Bucket
+			# cat=socialmedia,advanced/socialmedia_bitbucket/40; type=string; label= Bitbucket-Link CSS class
+			cssClass = fa fa-bitbucket
+		}
+		# customsubcategory=socialmedia_github=Github
+		github {
+			# cat=socialmedia,advanced/socialmedia_github/10; type=options[0,1]; label= Github-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_github/20; type=string; label= Github-Link URL
+			link = https://github.com/TYPO3
+			# cat=socialmedia,advanced/socialmedia_github/30; type=string; label= Github-Link title
+			title = Github
+			# cat=socialmedia,advanced/socialmedia_github/40; type=string; label= Github-Link CSS class
+			cssClass = fa fa-github
+		}
+		# customsubcategory=socialmedia_typo3=TYPO3
+		typo3 {
+			# cat=socialmedia,advanced/socialmedia_typo3/10; type=options[0,1]; label= TYPO3-Link active?
+			active = 0
+			# cat=socialmedia,advanced/socialmedia_typo3/20; type=string; label= TYPO3-Link URL
+			link = https://www.typo3.org
+			# cat=socialmedia,advanced/socialmedia_typo3/30; type=string; label= TYPO3-Link title
+			title = TYPO3
+			# cat=socialmedia,advanced/socialmedia_typo3/40; type=string; label= TYPO3-Link CSS class
+			cssClass = fa fa-typo3
+		}
+	}
+}

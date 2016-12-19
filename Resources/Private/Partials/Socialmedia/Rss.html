@@ -1,0 +1,16 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap4: Partials/Socialmedia/Rss.html [begin] -->
+		
+		<f:if condition="{settings.socialmedia.rss.active}">
+			<li class="partial-socialmedia-rss list-inline-item">
+				<a href="{settings.socialmedia.rss.link}" target="_blank" 
+				   title="{settings.socialmedia.rss.title}" 
+				   class="{settings.socialmedia.rss.cssClass}"></a>
+			</li>
+		</f:if>
+
+		<!-- theme_bootstrap4: Partials/Socialmedia/Rss.html [end] -->
+	</f:section>
+</div>

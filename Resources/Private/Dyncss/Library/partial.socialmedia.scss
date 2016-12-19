@@ -18,29 +18,66 @@
 			}
 		}
 		// Twitter style
-		.partial-socialmedia-followTwitter a {
+		.partial-socialmedia-twitter a {
 			background-color: #5ea9dd;
 		}
 		// RSS style
-		.partial-socialmedia-followRss a {
+		.partial-socialmedia-rss a {
 			background-color: #FF6600;
 		}
-		// Faacebook style
-		.partial-socialmedia-followFacebook a {
+		// Facebook style
+		.partial-socialmedia-facebook a {
 			background-color: #4c69ba;
 		}
 		// Google+ style
-		.partial-socialmedia-followGooglePlus a {
+		.partial-socialmedia-googleplus a {
 			background-color: #d34836;
 		}
 		// Xing style
-		.partial-socialmedia-followXing a {
+		.partial-socialmedia-xing a {
 			background-color: #006464;
 		}
 		// Youtube style
-		.partial-socialmedia-followYoutube a {
+		.partial-socialmedia-youtube a {
 			background-color: #E62117;
 		}
-
+		// Instagram style
+		.partial-socialmedia-instagram a {
+			// http://codepen.io/brycesnyder/pen/jqREyp
+			//border-radius: 4px;
+			height: 40px;
+			width: 40px;
+			background: radial-gradient(#ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
+			background-size: 175% 175%;
+			background-position: right top;
+		}
+		// LinkedIn style
+		.partial-socialmedia-linkedin a {
+			background-color: #0077b5;
+		}
+		// Github style
+		.partial-socialmedia-github a {
+			background-color: #000;
+		}
+		// Bitbucket style
+		.partial-socialmedia-bitbucket a {
+			background-color: #205081;
+		}
+		// TYPO3 style
+		.partial-socialmedia-typo3 a {
+			background-color: #FF8700;
+			background-image: url("#{$baseurlIcon}TYPO3/typo3-white.svg");
+			background-size: auto 40px;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 40px;
+				width: 9px;
+				background-color: #FF8700;
+			}
+		}
 	}
 }
