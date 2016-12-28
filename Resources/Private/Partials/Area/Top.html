@@ -18,13 +18,12 @@
 					</div>
 					
 					<div class="col-lg-3">
-						<nav id="menu-language" class="pull-right">
-							<theme:widget.languageMenu
-									availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
-									currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
-									defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
-									defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
-									defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
+						<nav class="menu-language-wrapper pull-right">
+							<theme:widget.languageMenu availableLanguages="{settings.languages.available}"
+													   currentLanguageUid="{settings.languages.current.uid}"
+													   defaultLanguageIsoCodeShort="{settings.languages.default.isoCodeShort}"
+													   defaultLanguageLabel="{settings.languages.default.label}"
+													   defaultLanguageFlag="{settings.languages.default.flag}"
 							/>
 						</nav>
 					</div>

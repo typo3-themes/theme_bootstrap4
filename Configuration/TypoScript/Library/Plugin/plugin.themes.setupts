@@ -18,6 +18,26 @@ plugin.tx_themes {
 	settings {
 		baseurlImage = {$themes.configuration.baseurlImage}
 
+		languages {
+			available = {$themes.languages.available}
+			mode = {$themes.languages.mode}
+			default {
+				label = {$themes.languages.default.label}
+				isoCode = {$themes.languages.default.isoCode}
+				isoCodeShort = {$themes.languages.default.isoCodeShort}
+				isoCodeHtml = {$themes.languages.default.isoCodeHtml}
+				flag = {$themes.languages.default.flag}
+			}
+			current {
+				uid = {$themes.languages.current.uid}
+				label = {$themes.languages.current.label}
+				isoCode = {$themes.languages.current.isoCode}
+				isoCodeShort = {$themes.languages.current.isoCodeShort}
+				isoCodeHtml = {$themes.languages.current.isoCodeHtml}
+				flag = {$themes.languages.current.flag}
+			}
+		}
+		
 		content {
 			elements {
 				carousel {

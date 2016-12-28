@@ -69,6 +69,7 @@
 			background-image: url("#{$baseurlIcon}TYPO3/typo3-white.svg");
 			background-size: auto 40px;
 			position: relative;
+			margin-bottom: -10px;
 			&::after {
 				content: "";
 				position: absolute;
