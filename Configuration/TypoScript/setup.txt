@@ -3,6 +3,7 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/Elements/TypoScript/" extensions="setupts">
 
 # Extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/Felogin/TypoScript/setup.txt">
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')]
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/News/TypoScript/setup.txt">
 [global]
