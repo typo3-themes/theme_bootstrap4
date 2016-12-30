@@ -37,7 +37,22 @@ plugin.tx_themes {
 				flag = {$themes.languages.current.flag}
 			}
 		}
-		
+		pages {
+			startsite = {$themes.configuration.pages.startsite}
+			legal = {$themes.configuration.pages.legal}
+			privacy = {$themes.configuration.pages.privacy}
+			imprint = {$themes.configuration.pages.imprint}
+			contact = {$themes.configuration.pages.contact}
+			sitemap = {$themes.configuration.pages.sitemap}
+			search = {$themes.configuration.pages.search}
+			directions = {$themes.configuration.pages.directions}
+			login = {$themes.configuration.pages.login}
+			logout = {$themes.configuration.pages.logout}
+			intro = {$themes.configuration.pages.intro}
+			cookie = {$themes.configuration.pages.cookie}
+			references = {$themes.configuration.pages.references}
+			registration = {$themes.configuration.pages.registration}
+		}
 		content {
 			elements {
 				carousel {

@@ -11,7 +11,8 @@ plugin.tx_themes {
 			# Indexed search / quick search
 			indexed_search_quick_search_headline = Just enter a search word…
 			indexed_search_quick_search_button_title = Submit search
-			indexed_search_quick_search_button_label = 
+			indexed_search_quick_search_button_label =
+			indexed_search_quick_search_placeholder = Search for...
 
 			# Uploads -->
 			uploads_table_type = 
@@ -23,6 +24,9 @@ plugin.tx_themes {
 			carousel_empty_label = Please add one or more images to the slider
 			carousel_previous_label = Next
 			carousel_next_label = Previous
+
+			# Custom translations for child theme
+			# ...
 		}
 	}
 }
