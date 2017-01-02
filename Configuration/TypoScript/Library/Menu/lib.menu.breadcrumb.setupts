@@ -29,7 +29,7 @@ lib.menu.breadcrumb {
 				ATagParams.insertData = 1
 				stdWrap.wrap = <span itemprop="title">|</span>
 			}
-			wrap = <div class="prefix"><span>{$themes.configuration.menu.breadcrumb.prefix}</span></div><ol id="menuBreadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
+			wrap = <div class="prefix"><span>{$themes.configuration.menu.breadcrumb.prefix}</span></div><ol id="menu-breadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
 		}
 	}
 }
