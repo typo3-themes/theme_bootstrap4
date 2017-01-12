@@ -18,6 +18,9 @@ plugin.tx_themes {
 	settings {
 		baseurlImage = {$themes.configuration.baseurlImage}
 
+		resourcesPrivatePath = {$themes.resourcesPrivatePath}
+		resourcesPublicPath = {$themes.resourcesPublicPath}
+		
 		languages {
 			available = {$themes.languages.available}
 			mode = {$themes.languages.mode}
@@ -53,6 +56,9 @@ plugin.tx_themes {
 			references = {$themes.configuration.pages.references}
 			registration = {$themes.configuration.pages.registration}
 		}
+		image {
+			lazyloading = {$themes.configuration.image.lazyloading}
+		}
 		content {
 			elements {
 				carousel {
@@ -61,6 +67,11 @@ plugin.tx_themes {
 						next = {$themes.configuration.content.elements.carousel.icon.next}
 					}
 				}
+			}
+		}
+		extension {
+			fluidStyledResponsiveImages {
+				loaded = {$themes.configuration.extension.fluidStyledResponsiveImages.loaded}
 			}
 		}
 		socialmedia {
