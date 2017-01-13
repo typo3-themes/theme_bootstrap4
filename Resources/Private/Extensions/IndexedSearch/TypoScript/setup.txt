@@ -138,4 +138,15 @@ plugin.tx_indexedsearch {
 		}
 
 	}
+	_LOCAL_LANG {
+		default {
+			#result.noResult = Es wurden leider keine Treffer gefunden.
+		}
+		de {
+			#result.noResult = Es wurden leider keine Treffer gefunden.
+		}
+		en {
+			#result.noResult = Es wurden leider keine Treffer gefunden.
+		}
+	}
 }
