@@ -92,7 +92,7 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
         // show on all pages after the 1st one
         if ($currentPage > 0) {
             $labelPrevious = LocalizationUtility::translate('displayResults.previous', 'IndexedSearch');
-			$label = '<span aria-hidden="true">&laquo;</span><span class="sr-only">' . $labelPrevious . '</span>';
+            $label = '<span aria-hidden="true">&laquo;</span><span class="sr-only">' . $labelPrevious . '</span>';
             $content .= '<li class="page-item">' . self::makecurrentPageSelector_link($label, $currentPage - 1, $freeIndexUid) . '</li>';
         }
         // Check if $maximumNumberOfResultPages is in range
@@ -121,7 +121,7 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
         // next link
         if ($currentPage < $pageCount - 1) {
             $labelNext = LocalizationUtility::translate('displayResults.next', 'IndexedSearch');
-			$label = '<span aria-hidden="true">&raquo;</span><span class="sr-only">' . $labelNext . '</span>';
+            $label = '<span aria-hidden="true">&raquo;</span><span class="sr-only">' . $labelNext . '</span>';
             $content .= '<li class="page-item">' . self::makecurrentPageSelector_link($label, ($currentPage + 1), $freeIndexUid) . '</li>';
         }
         return '<nav aria-label="Page navigation"><ul class="tx-indexedsearch-browsebox pagination">' . $content . '</ul></nav>';
