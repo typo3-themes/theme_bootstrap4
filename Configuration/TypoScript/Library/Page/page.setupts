@@ -51,6 +51,14 @@ page {
 				ifEmpty = default
 				noTrimWrap = |page-layout-backend-| |
 			}
+			# add a parent page Class
+			50 = TEXT
+			50 {
+				intval = 1
+				# append a Space for other Classes
+				data = field:pid
+				noTrimWrap = |page-parent-| |
+			}
 		}
 	}
 }
