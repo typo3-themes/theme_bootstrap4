@@ -8,8 +8,11 @@ options {
 		# Show 'nav_title' instead of 'title'
 		# showNavTitle = 1
 		
-		# Adventskalender
-		backgroundColor.454 = #59f266
+		# Colored page tree nodes
+		backgroundColor {
+			# Page-Uid = Hex-Color
+			# 123 = #59f266
+		}
 
 	}
 	# Adds a clear-cache button for the system-cache
@@ -22,8 +25,8 @@ admPanel {
 	admPanel = 1
 	
 	# both parts needed for access restricted pages
-    # for non admin and admin BE user 
-    override {
+	# for non admin and admin BE user 
+	override {
     
     
 		preview = 1
@@ -34,7 +37,7 @@ admPanel {
 		
 		# Caching der externen TS-Files deaktivieren
 		tsdebug.forceTemplateParsing = 1
-    }
+	}
     
     
    	enable {
