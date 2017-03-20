@@ -102,9 +102,25 @@ Flash Messages
 </style>
 
 <div class="typo3-message message-error">
-	<div class="message-header">Please select a template</div>
+	<div class="message-header">There is a problem rendering your Frontend.</div>
 	<div class="message-body">
-		Currently you have not selected a template for this page or extended a parent page.
-		Please select one in the page properties.
+		<f:if condition="{layout}">
+			<f:then>
+				<p>
+					You previously selected "{layout}" as backend layout, which is not supported by the currently selected theme.
+				</p>
+				<p>
+					Please select another one in the properties of your page.
+					If you use your own backend-layout, please make sure that you have selected the correct one. 
+					Verify that the identifier in your backend-configuration matches the filename of your theme-template. (case sensitive).
+				</p>
+			</f:then>
+			<f:else>
+				<p>
+					You have not selected a backend layout in your page properties, please do so in the properties of your page.
+				</p>
+			</f:else>
+		</f:if>
 	</div>
+	
 </div>
