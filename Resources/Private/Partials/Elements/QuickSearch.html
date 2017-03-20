@@ -4,7 +4,7 @@
 		<!-- theme_bootstrap4: Partials/QuickSearch.html [begin] -->
 
 		<div class="partial-quickSearch">
-			<f:form pageUid="{settings.pages.search}" action="search"
+			<f:form pageUid="{settings.pages.search}" action="search" noCacheHash="1"
 					fieldNamePrefix="tx_indexedsearch_pi2" controller="Search" extensionName="IndexedSearch" pluginName="Pi2">
 				<f:if condition="{f:translate(key: 'indexed_search_quick_search_headline')}">
 					<p><f:translate key="indexed_search_quick_search_headline" /></p>
