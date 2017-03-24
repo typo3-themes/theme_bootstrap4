@@ -8,6 +8,15 @@ plugin.tx_news.settings.defaultDetailPid = {$themes.configuration.pages.newsDeta
 # pid for news container
 plugin.tx_news.settings.startingpoint = {$themes.configuration.container.news}
 
+plugin.tx_themes {
+	settings {
+		pages {
+			newsList = {$themes.configuration.pages.newsList}
+			newsDetails = {$themes.configuration.pages.newsDetails}
+		}
+	}
+}
+
 # depth of sub container
 plugin.tx_news.settings.recursive = 5
 
@@ -49,6 +58,7 @@ plugin.tx_news {
 		detail {
 			showSocialShareButtons = 0
 		}
+		backPid = {$themes.configuration.pages.newsList}
 	}
 
 	_LOCAL_LANG {
