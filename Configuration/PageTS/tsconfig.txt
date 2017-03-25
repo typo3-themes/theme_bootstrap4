@@ -1,5 +1,4 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:themes_gridelements/Configuration/PageTS">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:themes_gridelements/Configuration/Elements/PageTS/" extensions="pagets">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/BackendLayouts/" extensions="pagets">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/Elements/PageTS/" extensions="pagets">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/PageTS/Library/" extensions="pagets">
