@@ -1,6 +1,6 @@
 mod.web_layout.BackendLayouts {
 	Demo {
-		icon = EXT:themes_gridelements/Resources/Public/Icons/BackendLayouts/Content.png
+		icon = themes-backendlayout-content
 		name = Demo
 		title = Demo
 		config {
