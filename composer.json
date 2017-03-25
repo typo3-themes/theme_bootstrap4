@@ -1,0 +1,20 @@
+{
+	"name": "typo3-themes/theme-bootstrap4",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 THEMES Base-theme using Bootstrap 4",
+	"version": "0.0.2",
+	"homepage": "http://typo3-themes.org",
+	"license": ["GPL-2.0+"],
+	"keywords": ["TYPO3 CMS", "TYPO3 THEMES", "THEMES", "BOOSTRAP", "FLUID", "CUSTOMIZE"],
+	"support": {
+		"issues": "https://github.com/typo3-themes/theme_bootstrap4/issues"
+	},
+	"replace": {
+		"theme_bootstrap4": "self.version",
+		"typo3-ter/theme_bootstrap4": "self.version"
+	},
+	"require": {
+		"typo3-ter/dyncss_scss": "^0.7",
+		"typo3-themes/themes-gridelements": "dev-master"
+	}
+}
