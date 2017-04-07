@@ -9,7 +9,7 @@ description      : |
 
 parentTheme:
   name: themes_gridelements
-  version: 7.0.1-7.0.99
+  version: 7.0.1-8.7.99
 
 # Whether a documentation page is available (optional)
 documentation:
@@ -37,15 +37,15 @@ screenshots:
   -
     file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot.png
     caption        : Super image 1
-  -
-    file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-01.png
-    caption        : Super image 2
-  -
-    file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-02.png
-    caption        : Super image 2
-  -
-    file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-03.png
-    caption        : Super image 2
+  #-
+  #  file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-01.png
+  #  caption        : Super image 2
+  #-
+  #  file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-02.png
+  #  caption        : Super image 2
+  #-
+  #  file           : EXT:theme_bootstrap4/Meta/Screenshots/screenshot-03.png
+  #  caption        : Super image 2
 
 
 # Name of the authors (optional, multiple possible)
