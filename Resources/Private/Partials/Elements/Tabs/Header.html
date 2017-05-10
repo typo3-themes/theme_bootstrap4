@@ -1,6 +1,6 @@
 <f:comment> -- Tabs in card?! -- </f:comment>
 <f:if condition="{tabsInCard}">
-	<f:format.printf arguments="{class: 'card-header'}" value="<div class='%s'>" />
+	<f:format.raw value="<div class=\"card-header\">" />
 </f:if>
 
 <ul class="nav nav-{navigationType} {classCardHeaderTabs}" role="tablist">
@@ -17,5 +17,5 @@
 </ul>
 
 <f:if condition="{tabsInCard}">
-	<f:format.printf arguments="{0: ''}" value="</div>" />
+	<f:format.raw value="</div>" />
 </f:if>

@@ -268,7 +268,25 @@ themes {
 					}
 				}
 				
-				
+				Row {
+					extralarge {
+
+					}
+					large {
+
+					}
+					medium {
+
+					}
+					small {
+
+					}
+					extrasmall {
+
+					}
+				}
+
+
 				extralarge {
 					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
 					rowSettings {

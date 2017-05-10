@@ -22,14 +22,14 @@
 
 	<f:comment> -- Use a background wrapper?! -- </f:comment>
 	<f:if condition="{themes.variants.css.background}">
-		<f:format.printf arguments="{class: themes.variants.css.background}" value="<div class='%s'>" />
+		<f:format.raw value="<div class=\"{themes.variants.css.background}\">" />
 		<theme:variable.popVariant name="background" />
 		<theme:variable.set name="closeBackground" value="1" />
 	</f:if>
 
 	<f:comment> -- Use a container wrapper?! -- </f:comment>
 	<f:if condition="{themes.behaviour.css.container}">
-		<f:format.printf arguments="{class: themes.behaviour.css.container}" value="<div class='%s'>" />
+		<f:format.raw value="<div class=\"{themes.behaviour.css.container}\">" />
 		<theme:variable.popBehaviour name="container" />
 		<theme:variable.set name="closeContainer" value="1" />
 	</f:if>
@@ -41,11 +41,11 @@
 	</div>
 
 	<f:if condition="{closeContainer}">
-		<f:format.printf arguments="{0: ''}" value="</div>" />
+		<f:format.raw value="</div>" />
 	</f:if>
 	
 	<f:if condition="{closeBackground}">
-		<f:format.printf arguments="{0: ''}" value="</div>" />
+		<f:format.raw value="</div>" />
 	</f:if>
 
 </html>

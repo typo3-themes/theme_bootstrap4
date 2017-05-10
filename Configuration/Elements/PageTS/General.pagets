@@ -5,7 +5,7 @@ tx_gridelements.setup.3ColumnGrid.flexformDS >
 tx_gridelements.setup.4ColumnGrid.flexformDS >
 #
 # Remove not implemented grid elements
-tx_gridelements.setup.row >
-tx_gridelements.setup.singleColumn >
-tx_gridelements.setup.singleColumnHeaderFooter >
-tx_gridelements.setup.singleColumnHorizontal >
+#tx_gridelements.setup.row >
+#tx_gridelements.setup.singleColumn >
+#tx_gridelements.setup.singleColumnHeaderFooter >
+#tx_gridelements.setup.singleColumnHorizontal >
