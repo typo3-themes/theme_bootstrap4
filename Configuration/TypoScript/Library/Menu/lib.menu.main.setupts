@@ -5,7 +5,7 @@ lib.menu.main {
 	entryLevel = 0
 	includeNotInMenu = 0
 	excludeUidList = {$themes.configuration.menu.main.excludeUidList}
-	wrap = <ul class="nav navbar-nav"> | </ul>
+	wrap = <ul class="navbar-nav mr-auto"> | </ul>
 	1 = TMENU
 	1 {
 		expAll = 1
