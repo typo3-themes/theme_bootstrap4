@@ -97,7 +97,7 @@ themes.configuration.menu.special.prefixSecondLevel =
 themes.configuration.menu.footer.excludeUidList =
 
 # cat=menu,expert/menu_footer/; type=string; label= Menu footer: Prefix for each menu item (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
-themes.configuration.menu.footer.prefix = 
+themes.configuration.menu.footer.prefix =
 
 # cat=menu,advanced/menu_footer/; type=int+; label= Menu footer: Container pid where the menu items are located
 themes.configuration.menu.footer.containerPid = 0
@@ -116,7 +116,7 @@ themes.configuration.menu.footer.includeNotInMenu = 0
 # Menu breadcrumb
 #############################################
 # cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: Prefix
-themes.configuration.menu.breadcrumb.prefix = :&nbsp;
+themes.configuration.menu.breadcrumb.prefix =
 
 # cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: Divider
 themes.configuration.menu.breadcrumb.divider = >
