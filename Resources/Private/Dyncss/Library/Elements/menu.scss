@@ -41,7 +41,7 @@ ul.ce-menu {
 				align-content: flex-start;
 				text-transform: none;
 				font-weight: normal;
-				font-size: $font-size-root;
+				font-size: $font-size-base;
 				margin: 0;
 				@extend .list-unstyled;
 				> li {
@@ -61,7 +61,7 @@ ul.ce-menu {
 					ul {
 						position: relative;
 						padding-left: 0.5em;
-						font-size: $font-size-root;
+						font-size: $font-size-base;
 						margin-left: 0;
 						@extend .list-unstyled;
 						li {
@@ -69,7 +69,7 @@ ul.ce-menu {
 							margin: 0;
 							padding: 0 1em 6.4px 2.1em;
 							line-height: 1.6em;
-							font-size: $font-size-root;
+							font-size: $font-size-base;
 							&:not(:last-child)::after {
 								content: '';
 								position: absolute;

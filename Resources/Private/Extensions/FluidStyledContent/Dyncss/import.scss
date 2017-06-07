@@ -1,3 +1,12 @@
+.ce-headline-left {
+	text-align: left;
+}
+.ce-headline-center {
+	text-align: center;
+}
+.ce-headline-right {
+	text-align: right;
+}
 .ce-textpic {
 	// Above & Below
 	// get a row
@@ -69,7 +78,7 @@
 	}
 	&.ce-right {
 		.ce-media {
-			@extend .float-xs-right;
+			@extend .float-right;
 		}
 	}
 	&.ce-left {
