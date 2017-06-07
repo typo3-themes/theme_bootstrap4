@@ -1,18 +1,3 @@
-# TYPO3 7.6
-lib.fluidContent {
-	templateRootPaths {
-		300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Templates/
-		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Templates/
-	}
-	partialRootPaths {
-		300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Partials/
-		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Partials/
-	}
-	layoutRootPaths {
-		300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Layouts/
-		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Layouts/
-	}
-}
 # TYPO3 8.7 or higher
 lib.contentElement {
 	templateRootPaths {
@@ -29,40 +14,7 @@ lib.contentElement {
 	}
 }
 
-[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('fluid_styled_responsive_images')]
-	# Bootstrap: $container-max-widths - $grid-gutter-width
-	tt_content.textmedia.settings.responsive_image_rendering {
-		layoutKey = srcset
-		sourceCollection {
-			extraSmall {
-				width = 480
-				srcset = 480w
-			}
-			small {
-				width = 546
-				srcset = 546w
-			}
-			medium {
-				width = 690
-				srcset = 690w
-			}
-			large {
-				width = 910
-				srcset = 910w
-			}
-			extraLarge {
-				width = 1110
-				srcset = 1110w
-			}
-		}
-	}
-[global]
-
 [globalVar = LIT:1 = {$themes.configuration.image.lazyloading}]
-	#Lazy loading images and resize responsive handling
-	tt_content.textmedia.settings.responsive_image_rendering {
-		attributePrefix = data-
-	}
 	# ToDo: Use dev and production mode with local and remote files
 	page {
 		includeJS {
