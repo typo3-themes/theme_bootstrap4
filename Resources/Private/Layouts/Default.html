@@ -10,21 +10,14 @@
 	<f:render partial="Area/Header" section="Default" arguments="{_all}" />
 
 	<div class="container">
-		<section id="area-feature">
-			<f:cObject typoscriptObjectPath="lib.content.feature" />
-		</section>
+		<f:render partial="Area/Feature" section="Default" arguments="{_all}" />
 
 		<main id="area-main" tabindex="-1">
-			<div id="menu-breadcrumb">
-				<span class="breadcrumb-label"><f:translate key="breadcrumb_label" /></span>
-				<f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
-			</div>
+			<f:render partial="Menu/Breadcrumb" section="Default" arguments="{_all}" />
 			<f:render section="Default" />
 		</main>
 
-		<section id="area-extended">
-			<f:cObject typoscriptObjectPath="lib.content.extended" />
-		</section>
+		<f:render partial="Area/Extended" section="Default" arguments="{_all}" />
 	</div>
 
 	<f:render partial="Area/Footer" section="Default" arguments="{_all}" />

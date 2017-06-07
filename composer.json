@@ -2,7 +2,7 @@
 	"name": "typo3-themes/theme-bootstrap4",
 	"type": "typo3-cms-extension",
 	"description": "TYPO3 THEMES Base-theme using Bootstrap 4",
-	"version": "0.0.2",
+	"version": "0.1.2",
 	"homepage": "http://typo3-themes.org",
 	"license": ["GPL-2.0+"],
 	"keywords": ["TYPO3 CMS", "TYPO3 THEMES", "THEMES", "BOOSTRAP", "FLUID", "CUSTOMIZE"],
@@ -15,6 +15,6 @@
 	},
 	"require": {
 		"typo3-ter/dyncss_scss": ">=1.1.0,<2.0.0",
-		"typo3-themes/themes-gridelements": ">=7.0.1,<8.7"
+		"typo3-themes/themes-gridelements": ">=8.7.0,<8.7"
 	}
 }
