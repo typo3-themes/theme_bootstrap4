@@ -4,9 +4,7 @@
 # More information about Constants:
 # http://wiki.typo3.org/TypoScript_Constants
 #############################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:themes_gridelements/Configuration/TypoScript/constants.txt">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/TypoScript/Library" extensions="constantsts">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/Elements/TypoScript" extensions="constantsts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/TypoScript/Constants">
 
 # Extensions
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')]

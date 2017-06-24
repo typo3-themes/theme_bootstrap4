@@ -1,0 +1,19 @@
+tx_gridelements.setup.container {
+	title = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:container
+	description = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:container_description
+	iconIdentifier = new-content-el-container
+	config {
+		colCount = 1
+		rowCount = 1
+		rows {
+			1 {
+				columns {
+					1 {
+						name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:container_content
+						colPos = 0
+					}
+				}
+			}
+		}
+	}
+}

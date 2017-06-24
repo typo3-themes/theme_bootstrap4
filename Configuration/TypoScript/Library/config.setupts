@@ -1,3 +1,35 @@
-config.prefixLocalAnchors = all
-config.tx_realurl_enable = 1
-config.simulateStaticDocuments = 0
+#
+# Dont use the default JavaScript
+removeDefaultJS = 1
+#
+config {
+
+	prefixLocalAnchors = all
+	tx_realurl_enable = 1
+	simulateStaticDocuments = 0
+
+	# Preparing modernizr usage
+	htmlTag_setParams = class="no-js" lang="{$themes.languages.current.isoCodeHtml}"
+
+	# Set the baseurl
+	baseURL = {$themes.configuration.baseurl}
+
+	# Enable spam protection
+	spamProtectEmailAddresses = 2
+	spamProtectEmailAddresses_atSubst = {$themes.configuration.spamProtect.emailAddresses.atSubst}
+	spamProtectEmailAddresses_lastDotSubst = {$themes.configuration.spamProtect.emailAddresses.lastDotSubst}
+
+	# Set values from settings
+	compressCss = {$themes.configuration.css.compress}
+	compressJs = {$themes.configuration.javascript.compress}
+	concatenateCss = {$themes.configuration.css.concatenate}
+	concatenateJs = {$themes.configuration.javascript.concatenate}
+}
+#
+# In case of using development mode, disable compression and concatenation
+[globalVar = LIT:1 = {$themes.mode.isDevelopment}]
+	config.compressCss = 0
+	config.compressJs = 0
+	config.concatenateCss = 0
+	config.concatenateJs = 0
+[global]

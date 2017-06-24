@@ -13,7 +13,7 @@
 lib.menu.breadcrumb = COA
 lib.menu.breadcrumb {
 	10 = TEXT
-	10.value = <ol id="menu-breadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">
+	10.value = <ol class="{$themes.configuration.menu.breadcrumb.cssClasses}">
 	30 = HMENU
 	30 {
 		special = rootline

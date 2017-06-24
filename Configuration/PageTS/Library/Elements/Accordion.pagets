@@ -1,0 +1,19 @@
+tx_gridelements.setup.accordion {
+	title = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:accordion
+	description = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:accordion_description
+	iconIdentifier = new-content-el-accordion
+	config {
+		colCount = 1
+		rowCount = 1
+		rows {
+			1 {
+				columns {
+					1 {
+						name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:accordion_content
+						colPos = 0
+					}
+				}
+			}
+		}
+	}
+}

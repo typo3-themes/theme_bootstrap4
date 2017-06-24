@@ -54,27 +54,25 @@ lib.content.cssMap.behaviour {
 	print-visible-inline = visible-print-inline
 	print-visible-inline-block = visible-print-inline-block
 
-	responsive-embed-21by9 =embed-responsive embed-responsive-16by9
-	responsive-embed-16by9 =embed-responsive embed-responsive-16by9
-	responsive-embed-4by3 =embed-responsive embed-responsive-4by3
-	responsive-embed-1by1 =embed-responsive embed-responsive-1by1
+	responsive-embed-21by9 = embed-responsive embed-responsive-16by9
+	responsive-embed-16by9 = embed-responsive embed-responsive-16by9
+	responsive-embed-4by3 = embed-responsive embed-responsive-4by3
+	responsive-embed-1by1 = embed-responsive embed-responsive-1by1
 
 	fade-in = fade in
 
 	table-responsive = table-responsive
 
 	2ColumnGrid {
-		#pricing-table = pricing
 	}
 	3ColumnGrid {
-		#pricing-table = pricing
 	}
 	4ColumnGrid {
-		#pricing-table = pricing
 	}
-	accordion {
-		accordion-first-open = accordion-first-open
-	}
+
+	# Checkbox: First item open
+	accordion-first-open = accordion-first-open
+	#
 	tabs {
 		navigation {
 			navigation = nav

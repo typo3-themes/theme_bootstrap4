@@ -1,0 +1,20 @@
+tx_gridelements.setup.tabs {
+ 	title = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:tabs
+ 	description = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:tabs_description
+	iconIdentifier = new-content-el-tab
+ 	horizontal = 1
+ 	config {
+ 		colCount = 1
+ 		rowCount = 1
+ 		rows {
+ 			1 {
+ 				columns {
+ 					1 {
+ 						name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:tabs_container
+ 						colPos = 0
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }

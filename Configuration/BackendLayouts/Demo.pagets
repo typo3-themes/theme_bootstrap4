@@ -11,7 +11,7 @@ mod.web_layout.BackendLayouts {
 					1 {
 						columns {
 							1 {
-								name = LLL:EXT:themes_gridelements/Resources/Private/Language/BackendLayouts.xlf:area_feature
+								name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_feature
 								rowspan = 1
 								colPos = 3
 							}
@@ -20,7 +20,7 @@ mod.web_layout.BackendLayouts {
 					2 {
 						columns {
 							1 {
-								name = LLL:EXT:themes_gridelements/Resources/Private/Language/BackendLayouts.xlf:area_content
+								name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_content
 								rowspan = 1
 								colPos = 0
 							}
@@ -29,7 +29,7 @@ mod.web_layout.BackendLayouts {
 					3 {
 						columns {
 							1 {
-								name = LLL:EXT:themes_gridelements/Resources/Private/Language/BackendLayouts.xlf:area_extended
+								name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_extended
 								rowspan = 1
 								colPos = 4
 							}
@@ -38,7 +38,7 @@ mod.web_layout.BackendLayouts {
 					4 {
 						columns {
 							1 {
-								name = LLL:EXT:themes_gridelements/Resources/Private/Language/BackendLayouts.xlf:area_unused
+								name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_unused
 								rowspan = 1
 								colPos = -2
 							}

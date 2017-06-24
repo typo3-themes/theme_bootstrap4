@@ -1,4 +1,6 @@
 page {
+	# set favicon
+	shortcutIcon = {$themes.configuration.favicon}
 	# Overwrite themes_gridelements body-tag
 	# in order to add bootstraps scroll spy
 	bodyTagCObject >
@@ -13,7 +15,7 @@ page {
 		# body class
 		20 = COA 
 		20 {
-			wrap = class="| language-{$themes.languages.current.isoCodeShort}" data-spy="scroll" data-target="{$themes.configuration.bootstrap.javascript.scrollspy.target}" data-offset="{$themes.configuration.bootstrap.javascript.scrollspy.offset}"
+			wrap = class="| language-{$themes.languages.current.isoCodeShort}" data-spy="scroll" data-target="{$themes.configuration.javascript.scrollspy.target}" data-offset="{$themes.configuration.javascript.scrollspy.offset}"
 			# remove last space
 			trim = 1
 			# add a Layout Class

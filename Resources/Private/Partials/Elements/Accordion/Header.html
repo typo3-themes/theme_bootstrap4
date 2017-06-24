@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+
+	<div class="card-header" role="tab" id="{accordionHeaderId}">
+		<h5 class="mb-0">
+			<f:if condition="{first}">
+				<f:then>
+					<a data-toggle="collapse"
+					   data-parent="#{accordionId}"
+					   href="#{accordionItemId}"
+					   aria-expanded="{f:if(condition: firstOpen, then: 'true', else: 'false')}"
+					   aria-controls="{accordionItemId}">{accordionContent.header}</a>
+				</f:then>
+				<f:else>
+					<a data-toggle="collapse"
+					   data-parent="#{accordionId}"
+					   href="#{accordionItemId}"
+					   aria-expanded="false"
+					   aria-controls="{accordionItemId}">{accordionContent.header}</a>
+				</f:else>
+			</f:if>
+		</h5>
+	</div>
+
+</html>

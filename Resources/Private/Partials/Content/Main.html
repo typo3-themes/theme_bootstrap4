@@ -5,30 +5,10 @@
 
 		<div id="partial-content-main" class="content-column">
 			
-			<f:comment>
-			<f:if condition="{0:templateName} == {0:'ContentStartsite'}">
-				<f:then>
-					<!-- Don't use the H1-Headline, because in 
-					Startsite-Layout the H1 wrapped already the logo -->
-				</f:then>
-				<f:else>
-					<div class="page-header">
-						<h1><f:cObject typoscriptObjectPath="lib.page.title" /></h1>
-					</div>
-				</f:else>
-			</f:if>
-			</f:comment>
-
 			<!--TYPO3SEARCH_begin-->
 			<f:cObject typoscriptObjectPath="lib.content.main" />
 			<!--TYPO3SEARCH_end-->
-			
-			<ul class="footline list-inline pull-right">
-				<f:render partial="Elements/TopLink" section="Default" arguments="{_all}" />
-				<li class="divider">|</li>
-				<f:render partial="Elements/PrintLink" section="Default" arguments="{_all}" />
-			</ul>
-			
+
 		</div>
 
 		<!-- theme_bootstrap4: Partials/Content/Main.html [end] -->

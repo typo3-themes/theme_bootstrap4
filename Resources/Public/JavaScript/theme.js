@@ -127,7 +127,7 @@ var theme = {
 	 */
 	onScroll: function() {
 		var scrollTop = jQuery(window).scrollTop();
-		if(theme.body.jo != null) {
+		if(theme.body.jo !== null) {
 			if(scrollTop > theme.body.scrollOffset) {
 				theme.body.jo.addClass(theme.body.scrollToggleClasses[1]).removeClass(theme.body.scrollToggleClasses[0]);
 			}
@@ -135,7 +135,7 @@ var theme = {
 				theme.body.jo.addClass(theme.body.scrollToggleClasses[0]).removeClass(theme.body.scrollToggleClasses[1]);
 			}
 		}
-		if(theme.menu.main.jo != null) {
+		if(theme.menu.main.jo !== null) {
 			if (scrollTop > theme.menu.main.scrollOffset) {
 				theme.menu.main.jo.addClass(theme.menu.main.scrollToggleClasses[1]).removeClass(theme.menu.main.scrollToggleClasses[0]);
 			}
@@ -150,14 +150,7 @@ var theme = {
 	 * @param selector
 	 */
 	scrollTo: function(selector) {
-
 		var element = jQuery(selector);
-		// In case of an unavailable selector
-		if(element.length==0) {
-			// Use the cars wrapper
-			element = cars.wrapper;
-		}
-
 		jQuery('html, body').animate({
 			/**
 			 * @todo scrollto-offset per variable bereitstellen

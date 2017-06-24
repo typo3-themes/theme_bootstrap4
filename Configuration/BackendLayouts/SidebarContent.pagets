@@ -1,0 +1,61 @@
+mod.web_layout.BackendLayouts {
+    SidebarContent {
+        icon = themes-backendlayout-sidebarcontent
+        name = SidebarContent
+        title = SidebarContent
+        config {
+            backend_layout {
+                colCount = 4
+                rowCount = 4
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_feature
+                                rowspan = 1
+                                colspan = 4
+                                colPos = 3
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_sidebar
+                                rowspan = 1
+                                colspan = 1
+                                colPos = 2
+                            }
+                            2 {
+                                name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_content
+                                rowspan = 1
+                                colspan = 3
+                                colPos = 0
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_extended
+                                rowspan = 1
+                                colspan = 4
+                                colPos = 4
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_backendlayouts.xlf:area_unused
+                                rowspan = 1
+                                colspan = 4
+                                colPos = -2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

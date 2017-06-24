@@ -1,1 +1,0 @@
-Define all variants styles in this directory!

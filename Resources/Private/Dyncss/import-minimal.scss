@@ -1,0 +1,43 @@
+// Be sure that all Bootstrap variables are defined!
+@import "../../Public/Contrib/Bootstrap/scss/variables.scss";
+@import "Library/Variables/font-family-sans-serif.scss";
+@import "Library/Variables/font-family-serif.scss";
+@import "Library/Variables/font-family-monospace.scss";
+@import "Library/Variables/theme.scss";
+
+// Mixins
+@import "Library/Mixins/font-include.scss";
+@import "Library/Mixins/breakpoints.scss";
+
+// Scss-Imports
+@import "Library/bootstrap.scss";
+//@import "Library/font.primary.include.scss";
+//@import "Library/font.secondary.include.scss";
+@import "Library/layout.scss";
+@import "Library/partial.socialmedia.scss";
+@import "Library/img-fluid-svg.scss";
+@import "Library/typography.scss";
+
+// Styles for Areas
+@import "Library/Areas/feature.scss";
+@import "Library/Areas/main.scss";
+
+// Styles for Elements
+@import "Library/Elements/uploads.scss";
+@import "Library/Elements/carousel.scss";
+@import "Library/Elements/tabs.scss";
+@import "Library/Elements/menu.scss";
+@import "Library/Elements/button.scss";
+
+// Styles for Menus
+@import "Library/Menus/top.scss";
+@import "Library/Menus/breadcrumb.scss";
+@import "Library/Menus/footer.scss";
+
+// Styles for Behaviour
+@import "Library/Behaviour/equal-height.scss";
+
+// Styles for Extensions
+@import "../Extensions/FluidStyledContent/Dyncss/import.scss";
+
+ 

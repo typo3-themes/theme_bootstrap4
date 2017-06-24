@@ -1,0 +1,19 @@
+# customcategory=tracking=Tracking and analytics
+themes.configuration.tracking {
+	# customsubcategory=googleanalytics=Google-Analytics
+	googleAnalytics {
+		# cat=tracking/googleanalytics/; type=options[0,1]; label= Google-Analytics: Disabled
+		disabled = 1
+		# cat=tracking/googleanalytics/; type=string; label= Google-Analytics: Code
+		code =
+	}
+	# customsubcategory=piwik=Piwik
+	piwik {
+		# cat=tracking/piwik/; type=options[0,1]; label= Piwik: Disabled
+		disabled = 1
+		# cat=tracking/piwik/; type=string; label= Piwik: URL (without http:// or https://)
+		url = www.domain.tdl/piwik/
+		# cat=tracking/piwik/; type=int+; label= Piwik: Site ID
+		siteId =
+	}
+}

@@ -1,0 +1,51 @@
+page.meta {
+	# abstract
+	abstract.data = levelfield :-1, abstract, slide
+	abstract.override.data = page:abstract
+	abstract.ifEmpty = {$themes.configuration.meta.defaults.abstract}
+	abstract.abstract = 1
+
+	# keywords
+	keywords.data = levelfield :-1, keywords, slide
+	keywords.override.data = page:keywords
+	keywords.ifEmpty = {$themes.configuration.meta.defaults.keywords}
+	keywords.keywords = 1
+
+	# description
+	description.data = levelfield :-1, description, slide
+	description.override.data = page:description
+	description.ifEmpty = {$themes.configuration.meta.defaults.description}
+	description.description = 1
+
+	# author
+	author.data = levelfield :-1, author, slide
+	author.override.data = page:author
+	author.attribute = property
+	author.ifEmpty = {$themes.configuration.meta.defaults.author}
+	author.author = 1
+
+	# publisher
+	publisher.data = levelfield :-1, author, slide
+	publisher.override.data = page:author
+	publisher.attribute = property
+	publisher.ifEmpty = {$themes.configuration.meta.defaults.author}
+	publisher.publisher = 1
+
+	# author email
+	author_email.data = levelfield :-1, author_email, slide
+	author_email.override.data = page:author_email
+	author_email.ifEmpty = {$themes.configuration.meta.defaults.authorEmail}
+	author_email.author_email = 1
+
+	# other
+	copyright = {$themes.configuration.meta.copyright}
+	robots = {$themes.configuration.meta.robots}
+	revisit-after = {$themes.configuration.meta.revisitAfter}
+	application-name = {$themes.configuration.meta.applicationName}
+}
+
+
+# In case of using development mode, set noindex, nofollow
+[globalVar = LIT:1 = {$themes.mode.isDevelopment}]
+	page.meta.robots = noindex,nofollow
+[global]

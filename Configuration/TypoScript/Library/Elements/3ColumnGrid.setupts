@@ -1,0 +1,36 @@
+lib.gridelements {
+	3ColumnGrid {
+		cObject = FLUIDTEMPLATE
+		cObject {
+			templateName = Elements/3ColumnGrid
+			templateRootPaths {
+				300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+				400 = {$themes.resourcesPrivatePath}Templates/
+			}
+			partialRootPaths {
+				300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+				400 = {$themes.resourcesPrivatePath}Partials/
+			}
+			layoutRootPaths {
+				300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+				400 = {$themes.resourcesPrivatePath}Layouts/
+			}
+			dataProcessing {
+				30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+				40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+				50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+				#60 = KayStrobach\Themes\DataProcessing\ThemesResponsiveColumnDataProcessor
+			}
+		}
+		columns.0 {
+			renderObj =< tt_content
+		}
+		columns.1 {
+			renderObj =< tt_content
+		}
+		columns.2 {
+			renderObj =< tt_content
+		}
+	}
+}
+tt_content.gridelements_pi1.20.10.setup.3ColumnGrid < lib.gridelements.3ColumnGrid

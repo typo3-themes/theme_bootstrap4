@@ -1,0 +1,46 @@
+themes {
+	# Framework
+	framework = Bootstrap4
+	# customcategory=theme=Basic theme settings
+	configuration {
+		# cat=theme,basic//; type=string; label=LLL:EXT:themes_gridelements/Resources/Private/Language/locallang_constants.xlf:site_name
+		siteName = TYPO3-Theme based on themes_gridelements
+		# cat=theme,basic//; type=string; label=LLL:EXT:themes_gridelements/Resources/Private/Language/locallang_constants.xlf:baseurl
+		baseurl = /
+		# cat=theme,basic//; type=string; label=LLL:EXT:themes_gridelements/Resources/Private/Language/locallang_constants.xlf:baseurl_icon
+		baseurlIcon = http://demo.typo3-themes.org/typo3conf/ext/theme_bootstrap/Resources/Public/Icons/
+		# cat=theme,basic//; type=string; label=LLL:EXT:themes_gridelements/Resources/Private/Language/locallang_constants.xlf:baseurl_image
+		baseurlImage = http://demo.typo3-themes.org/typo3conf/ext/theme_bootstrap/Resources/Public/Images/
+		# cat=theme,basic//; type=string; label=LLL:EXT:themes_gridelements/Resources/Private/Language/locallang_constants.xlf:favicon
+		favicon = typo3conf/ext/theme_bootstrap/Resources/Public/Icons/favicon.ico
+		# cat=theme,basic//; type=string; label=Site slogan
+		siteSlogan = Inspire people to share
+		# customsubcategory=spamProtect=Spam protection
+		spamProtect {
+			emailAddresses {
+			# cat=theme,advanced/spamProtect/a; type=string; label= E-Mail spam protection: @ replacement
+			atSubst = (at)
+			# cat=theme,advanced/spamProtect/advanced/b; type=string; label= E-Mail spam protection: Last dot replacement
+			lastDotSubst = (dot)
+			}
+		}
+		# customsubcategory=javascript=JavaScript
+		javascript {
+			# cat=theme,advanced/javascript/; type=options[0,1]; label= Compress JavaScript files
+			compress = 1
+			# cat=theme,advanced/javascript/; type=options[0,1]; label= Concatenate JavaScript files
+			concatenate = 1
+			# cat=bootstrap,expert/400/gray-base; type=string; label=ScrollSpy: target
+			scrollspy.target = body
+			# cat=bootstrap,expert/400/gray-darker; type=int+; label=ScrollSpy: offset
+			scrollspy.offset = 0
+		}
+		# customsubcategory=css=Stylesheets
+		css {
+			# cat=theme,advanced/css/; type=options[0,1]; label= Compress CSS files
+			compress = 1
+			# cat=theme,advanced/css/; type=options[0,1]; label= Concatenate CSS files
+			concatenate = 1
+		}
+	}
+}

@@ -1,0 +1,32 @@
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='1'] {
+    background: #F4F4E2;
+    border-color: #F4F4E2 !important;
+    border-bottom-color: #E6E68A !important;
+}
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='1'] .t3-page-column-header {
+    border-bottom-color: #E6E68A !important;
+}
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='2'] {
+    background: #F1EDF9;
+    border-color: #F1EDF9 !important;
+    border-bottom-color: #DBBFFF !important;
+}
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='2'] .t3-page-column-header {
+    border-bottom-color: #DBBFFF !important;
+}
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='3'] {
+    background: #F9EDE0;
+    border-color: #F9EDE0 !important;
+    border-bottom-color: #FFB77F !important;
+}
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='3'] .t3-page-column-header {
+    border-bottom-color: #FFB77F !important;
+}
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='4'] {
+    background: #F8E7EF;
+    border-color: #F8E7EF !important;
+    border-bottom-color: #FAA3CA !important;
+}
+form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos='4'] .t3-page-column-header {
+    border-bottom-color: #FAA3CA !important;
+}

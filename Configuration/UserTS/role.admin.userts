@@ -1,10 +1,8 @@
 options {
 	# Page tree options
 	pageTree {
-	
 		# Show page uids in page tree
 		showPageIdWithTitle = 1
-		
 		# Show 'nav_title' instead of 'title'
 		# showNavTitle = 1
 		
@@ -13,7 +11,6 @@ options {
 			# Page-Uid = Hex-Color
 			# 123 = #59f266
 		}
-
 	}
 	# Adds a clear-cache button for the system-cache
 	clearCache.system = 1
@@ -21,38 +18,27 @@ options {
 	clearCache.pages = 1
 }
 admPanel {
-	
 	admPanel = 1
-	
 	# both parts needed for access restricted pages
 	# for non admin and admin BE user 
 	override {
-    
-    
 		preview = 1
-		
 		# Simulate frontend user group
 		# preview.simulateUserGroup = 4  
-		
-		
 		# Caching der externen TS-Files deaktivieren
 		tsdebug.forceTemplateParsing = 1
 	}
-    
-    
-   	enable {
-   		# Enable editing
-   		edit = 1
-   		
-   		cache = 1
-   		# Enable preview
-  		preview = 1
-  		
-  		# Simulate frontend user group
+	enable {
+		# Enable editing
+		edit = 1
+
+		cache = 1
+		# Enable preview
+		preview = 1
+
+		# Simulate frontend user group
 		# preview.simulateUserGroup = 4  
-  	}
-  	
-  	# Hide admin panel
-  	# hide = 1
-	
+	}
+	# Hide admin panel
+	# hide = 1
 }

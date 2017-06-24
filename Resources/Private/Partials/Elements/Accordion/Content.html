@@ -1,0 +1,28 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+
+	<f:if condition="{first}">
+		<f:then>
+			<div id="{accordionItemId}"
+				 class="collapse {f:if(condition: firstOpen, then: 'show')}"
+				 role="tabpanel"
+				 aria-labelledby="{accordionHeaderId}">
+				<div class="card-block">
+					<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{accordionContent.uid}')}</f:format.raw>
+				</div>
+			</div>
+		</f:then>
+		<f:else>
+			<div id="{accordionItemId}"
+				 class="collapse"
+				 role="tabpanel"
+				 aria-labelledby="{accordionHeaderId}">
+				<div class="card-block">
+					<f:format.raw>{theme:arrayIndex(object: data, index: 'tx_gridelements_view_child_{accordionContent.uid}')}</f:format.raw>
+				</div>
+			</div>
+		</f:else>
+	</f:if>
+
+</html>

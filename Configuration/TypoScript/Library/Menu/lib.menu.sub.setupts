@@ -4,6 +4,9 @@ lib.menu.sub = HMENU
 lib.menu.sub.entryLevel = 1
 lib.menu.sub.includeNotInMenu = {$themes.configuration.menu.sub.includeNotInMenu}
 lib.menu.sub.excludeUidList = {$themes.configuration.menu.sub.excludeUidList}
+# Notice:
+# <nav id="menu-sub"> at this place is ok, because it's placed by TypoScript.
+# So we get the same structure around all menus.
 lib.menu.sub.wrap = <nav id="menu-sub"><ul class="{$themes.configuration.menu.sub.cssClasses}"> | </ul></nav>
 lib.menu.sub.1 = TMENU
 lib.menu.sub.1 {
@@ -35,7 +38,6 @@ lib.menu.sub.2 {
 		wrapItemAndSub.insertData = 1
 		wrapItemAndSub = <li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.sub.prefixSecondLevel}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.sub.prefixSecondLevel}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.sub.prefixSecondLevel}|</li>
 	}
-
 	CUR < .NO
 	CUR {
 		ATagParams = class="nav-link active"
@@ -46,5 +48,4 @@ lib.menu.sub.2 {
 		ATagParams = class="nav-link active"
 		wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.sub.prefixFirstLevel}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.sub.prefixFirstLevel}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.sub.prefixFirstLevel}|</li>
 	}
-	
 }

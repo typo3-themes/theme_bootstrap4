@@ -62,7 +62,7 @@ themes.content.behaviour {
 				duration-3000 = Interval: fast (3 sec.)
 				duration-5000 = Interval: slow (5 sec.)
 			}
-			# Don't pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.
+			# Don't pauses the cycling of the carousel on mouse-enter and resumes the cycling of the carousel on mouse-leave.
 			carousel-pause = Pause on mouse over
 			carousel-animation {
 				slide = Animation: slide

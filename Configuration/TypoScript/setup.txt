@@ -1,18 +1,17 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:themes_gridelements/Configuration/TypoScript/setup.txt">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/TypoScript/Library/" extensions="setupts">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/Elements/TypoScript/" extensions="setupts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/TypoScript/Library/">
 
 # Extensions
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/Felogin/TypoScript/setup.txt">
+
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')]
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/News/TypoScript/setup.txt">
 [global]
-[userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('rtehtmlarea')]
-	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/TypoScript/setup.txt">
-[global]
+
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('indexed_search')]
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/IndexedSearch/TypoScript/setup.txt">
 [global]
+
+# @todo muss raus
 [userFunc = TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('fluid_styled_content')]
 	<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/TypoScript/setup.txt">
 [global]
