@@ -15,7 +15,7 @@ plugin.tx_dyncss.overrides {
 	link-hover-color.value = {$themes.configuration.colors.linkHover}
 
 	body-color = TEXT
-	body-color.value = {$themes.configuration.colors.text}
+	body-color.value = {$themes.configuration.colors.bodyColor}
 
 	body-bg = TEXT
 	body-bg.value = {$themes.configuration.colors.bodyBackground}

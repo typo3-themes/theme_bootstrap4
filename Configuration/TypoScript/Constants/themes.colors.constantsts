@@ -24,8 +24,8 @@ themes.configuration.colors.link = #FF8700
 # cat=colors,basic/colors_general/; type=color; label= Link hover color
 themes.configuration.colors.linkHover = #26A345
 
-# cat=colors,basic/colors_general/; type=color; label= Text color
-themes.configuration.colors.text = #000
+# cat=colors,basic/colors_general/; type=color; label= Body color (Text color)
+themes.configuration.colors.bodyColor = #000
 
 # cat=colors,basic/colors_general/; type=color; label= Body background
 themes.configuration.colors.bodyBackground = #fff
