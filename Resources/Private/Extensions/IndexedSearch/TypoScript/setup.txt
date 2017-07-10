@@ -38,10 +38,10 @@ plugin.tx_indexedsearch {
 	settings {
 
 		# show the rules
-		displayRules = 1
+		displayRules = {$themes.configuration.extension.indexed_search.displayRules}
 
 		# show a link to the advanced search
-		displayAdvancedSearchLink = 1
+		displayAdvancedSearchLink = {$themes.configuration.extension.indexed_search.displayAdvancedSearchLink}
 
 		# show the number of results
 		displayResultNumber = 0
