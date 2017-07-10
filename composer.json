@@ -5,7 +5,7 @@
 	"version": "0.1.2",
 	"homepage": "http://typo3-themes.org",
 	"license": ["GPL-2.0+"],
-	"keywords": ["TYPO3 CMS", "TYPO3 THEMES", "THEMES", "BOOSTRAP", "FLUID", "CUSTOMIZE"],
+	"keywords": ["TYPO3 CMS", "TYPO3 THEMES", "THEMES", "BOOTSTRAP", "FLUID", "CUSTOMIZE"],
 	"support": {
 		"issues": "https://github.com/typo3-themes/theme_bootstrap4/issues"
 	},

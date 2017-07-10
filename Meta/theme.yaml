@@ -7,9 +7,9 @@ description      : |
 
   The newlines in this description will be preserved.
 
-parentTheme:
-  name: themes_gridelements
-  version: 7.0.1-8.7.99
+#parentTheme:
+#  name: themes_gridelements
+#  version: 7.0.1-8.7.99
 
 # Whether a documentation page is available (optional)
 documentation:

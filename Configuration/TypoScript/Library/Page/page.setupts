@@ -1,9 +1,7 @@
 page {
 	# set favicon
 	shortcutIcon = {$themes.configuration.favicon}
-	# Overwrite themes_gridelements body-tag
-	# in order to add bootstraps scroll spy
-	bodyTagCObject >
+	# Body tag
 	bodyTagCObject = COA
 	bodyTagCObject {
 		stdWrap.noTrimWrap = |<body |>|
