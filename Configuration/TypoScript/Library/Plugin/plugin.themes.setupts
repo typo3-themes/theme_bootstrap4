@@ -143,7 +143,9 @@ plugin.tx_themes {
 			}
 		}
 		footer {
+			slogan = {$themes.configuration.footer.slogan}
 			address = {$themes.configuration.footer.address}
+			email = {$themes.configuration.footer.email}
 		}
 	}
 }

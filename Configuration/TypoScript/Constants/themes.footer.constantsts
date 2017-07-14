@@ -10,6 +10,9 @@
 # General
 #############################################
 
+# cat=footer,basic//; type=string; label= Footer: slogan
+themes.configuration.footer.slogan = Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem
+
 # cat=footer,basic//; type=string; label= Footer: address
 themes.configuration.footer.address = TYPO3-Themes: Inspiring people to share
 
@@ -25,7 +28,7 @@ themes.configuration.footer.email = info@typo3-themes.org
 themes.configuration.footer.copyright.leftLabel =
 
 # cat=footer,advanced/footer_copyright/; type=string; label= Copyright label in right of year
-themes.configuration.footer.copyright.rightLabel = &nbsp;&copy; TYPO3-Themes Team
+themes.configuration.footer.copyright.rightLabel = &copy; TYPO3-Themes Team
 
 
 
