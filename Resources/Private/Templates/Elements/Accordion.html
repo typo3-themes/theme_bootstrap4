@@ -23,7 +23,7 @@
 	<theme:variable.popBehaviour name="accordion-first-open" />
 </f:if>
 
-<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses} {classCard}" role="tablist" aria-multiselectable="true">
+<div id="c{data.uid}" class="accordion {themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses} {classCard}" role="tablist" aria-multiselectable="true">
 	<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
 		<f:then>
 			<f:for each="{data.tx_gridelements_view_children}" as="accordionContent" iteration="iterator">
