@@ -14,11 +14,6 @@ lib.content.cssMap.variants {
 	framed-small = well well-sm
 	framed-large = well well-lg
 
-	// Headling alignment
-	headline-left = headline-left
-	headline-center = headline-center
-	headline-right = headline-right
-
 	# Backgrounds
 	background {
 		color-primary = bg bg-primary
