@@ -1,0 +1,1 @@
+Define all global variables in this directory!
