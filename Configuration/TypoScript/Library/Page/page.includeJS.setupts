@@ -1,13 +1,19 @@
 #ToDo: Check versions
-#ToDo: Maybe combine with includeJSFooterlibs and includeJSFooter
-
-# Settings for the development system
+#ToDo: Settings for the development system
 
 page {
-	includeJSLibs {
-		#jquery = //cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js
-		jquery = EXT:theme_bootstrap4/Resources/Public/Contrib/jquery/jquery-3.1.0.min.js
+	includeJSFooterlibs {
+		#jquery = https://code.jquery.com/jquery-3.2.1.slim.min.js
+		jquery = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/assets/js/vendor/jquery-slim.min.js
 		jquery {
+			external = 0
+			forceOnTop = 1
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+		#popper = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js
+		popper = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/assets/js/vendor/popper.min.js
+		popper {
 			external = 0
 			forceOnTop = 1
 			disableCompression = 1
@@ -27,16 +33,10 @@ page {
 			excludeFromConcatenation = 0
 		}
 	}
-	includeJS {
+	includeJSFooter {
+		# bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js
 		bootstrap = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/dist/js/bootstrap.min.js
 		bootstrap {
-			external = 0
-			forceOnTop = 1
-			disableCompression = 1
-			excludeFromConcatenation = 0
-		}
-		tether = EXT:theme_bootstrap4/Resources/Public/Contrib/tether/dist/js/tether.min.js
-		tether {
 			external = 0
 			forceOnTop = 1
 			disableCompression = 1
