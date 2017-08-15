@@ -1,11 +1,7 @@
-// Core variables and mixins
+// Core imports from bootstrap
+
 @import "../../../Public/Contrib/Bootstrap/scss/mixins";
-
-// Reset and dependencies
-@import "../../../Public/Contrib/Bootstrap/scss/normalize";
 @import "../../../Public/Contrib/Bootstrap/scss/print";
-
-// Core CSS
 @import "../../../Public/Contrib/Bootstrap/scss/reboot";
 @import "../../../Public/Contrib/Bootstrap/scss/type";
 @import "../../../Public/Contrib/Bootstrap/scss/images";
@@ -14,8 +10,6 @@
 @import "../../../Public/Contrib/Bootstrap/scss/tables";
 @import "../../../Public/Contrib/Bootstrap/scss/forms";
 @import "../../../Public/Contrib/Bootstrap/scss/buttons";
-
-// Components
 @import "../../../Public/Contrib/Bootstrap/scss/transitions";
 @import "../../../Public/Contrib/Bootstrap/scss/dropdown";
 @import "../../../Public/Contrib/Bootstrap/scss/button-group";
@@ -32,15 +26,10 @@
 @import "../../../Public/Contrib/Bootstrap/scss/progress";
 @import "../../../Public/Contrib/Bootstrap/scss/media";
 @import "../../../Public/Contrib/Bootstrap/scss/list-group";
-@import "../../../Public/Contrib/Bootstrap/scss/responsive-embed";
 @import "../../../Public/Contrib/Bootstrap/scss/close";
-
-// Components w/ JavaScript
 @import "../../../Public/Contrib/Bootstrap/scss/modal";
 @import "../../../Public/Contrib/Bootstrap/scss/tooltip";
 @import "../../../Public/Contrib/Bootstrap/scss/popover";
 @import "../../../Public/Contrib/Bootstrap/scss/carousel";
-
-// Utility classes
 @import "../../../Public/Contrib/Bootstrap/scss/utilities";
 @include bg-variant('.bg-secondary', $brand-secondary);
