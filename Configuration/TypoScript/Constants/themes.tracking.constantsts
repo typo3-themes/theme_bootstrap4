@@ -17,7 +17,7 @@ themes.configuration.tracking {
 		siteId =
 	}
 	# customsubcategory=hotjar=Hotjar
-	googleAnalytics {
+	hotjar {
 		# cat=tracking/hotjar/; type=options[0,1]; label= Hotjar: Disabled
 		disabled = 1
 		# cat=tracking/hotjar/; type=string; label= Hotjar: Code
