@@ -16,4 +16,11 @@ themes.configuration.tracking {
 		# cat=tracking/piwik/; type=int+; label= Piwik: Site ID
 		siteId =
 	}
+	# customsubcategory=hotjar=Hotjar
+	googleAnalytics {
+		# cat=tracking/hotjar/; type=options[0,1]; label= Hotjar: Disabled
+		disabled = 1
+		# cat=tracking/hotjar/; type=string; label= Hotjar: Code
+		code =
+	}
 }
