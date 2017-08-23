@@ -31,7 +31,7 @@ themes {
 			# cat=theme,advanced/javascript/; type=options[0,1]; label= Concatenate JavaScript files
 			concatenate = 1
 			# cat=bootstrap,expert/400/gray-base; type=string; label=ScrollSpy: target
-			scrollspy.target = body
+			scrollspy.target = #menu-main
 			# cat=bootstrap,expert/400/gray-darker; type=int+; label=ScrollSpy: offset
 			scrollspy.offset = 0
 		}
