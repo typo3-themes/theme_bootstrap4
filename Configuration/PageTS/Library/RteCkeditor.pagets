@@ -1,0 +1,6 @@
+#############
+#### RTE ####
+#############
+RTE {
+    default.preset = Default
+}
