@@ -7,15 +7,20 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 0
 		}
-		popper = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/assets/js/vendor/popper.min.js
-		popper {
+		modernizr = EXT:theme_bootstrap4/Resources/Public/Contrib/Modernizr/modernizr.min.js
+		modernizr {
 			external = 0
-			forceOnTop = 1
 			disableCompression = 1
 			excludeFromConcatenation = 0
 		}
-		modernizr = EXT:theme_bootstrap4/Resources/Public/Contrib/Modernizr/modernizr.min.js
-		modernizr {
+		popper = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/assets/js/vendor/popper.min.js
+		popper {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+		bootstrap = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/dist/js/bootstrap.min.js
+		bootstrap {
 			external = 0
 			disableCompression = 1
 			excludeFromConcatenation = 0
@@ -28,13 +33,6 @@ page {
 		}
 	}
 	includeJSFooter {
-		bootstrap = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/dist/js/bootstrap.min.js
-		bootstrap {
-			external = 0
-			forceOnTop = 1
-			disableCompression = 1
-			excludeFromConcatenation = 0
-		}
 		initialize = EXT:theme_bootstrap4/Resources/Public/JavaScript/initialize.js
 		initialize {
 			external = 0

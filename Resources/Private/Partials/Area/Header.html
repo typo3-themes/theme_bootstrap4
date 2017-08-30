@@ -4,10 +4,6 @@
 	<f:section name="Default">
 		<!-- theme_bootstrap4: Partials/Area/Header.html [begin] -->
 
-		<!--
- 			@todo: navbar-toggler aria-label in language file / configuration
-		-->
-
 		<header id="area-header">
 			<nav id="menu-main" class="navbar navbar-expand-md navbar-dark bg-dark">
 				<div class="container">
@@ -16,7 +12,8 @@
 					</div>
 					<button class="navbar-toggler" type="button"
 							data-toggle="collapse" data-target="#navbar-main"
-							aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+							aria-controls="navbar-main" aria-expanded="false"
+							aria-label="{f:translate(key: 'toggleNavigation_label')}">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div id="navbar-main" class="collapse navbar-collapse">
