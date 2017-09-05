@@ -15,6 +15,7 @@
 	},
 	"require": {
 		"typo3-ter/dyncss_scss": ">=1.1.0,<2.0.0",
-		"typo3-themes/gridelements": ">=8.0.0,<8.7"
+        "typo3-themes/themes": ">=8.7.0,<8.8",
+        "gridelementsteam/gridelements": ">=8.0.0,<8.8"
 	}
 }

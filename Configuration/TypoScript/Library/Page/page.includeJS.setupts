@@ -1,31 +1,24 @@
-#ToDo: Check versions
-#ToDo: Settings for the development system
-
 page {
 	includeJSFooterlibs {
-		# jquery = https://code.jquery.com/jquery-3.2.1.slim.min.js
-		jquery = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/assets/js/vendor/jquery-slim.min.js
+		jquery = EXT:theme_bootstrap4/Resources/Public/Contrib/jquery/jquery-3.2.1.min.js
 		jquery {
 			external = 0
 			forceOnTop = 1
 			disableCompression = 1
 			excludeFromConcatenation = 0
 		}
-		# modernizr = //cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
 		modernizr = EXT:theme_bootstrap4/Resources/Public/Contrib/Modernizr/modernizr.min.js
 		modernizr {
 			external = 0
 			disableCompression = 1
 			excludeFromConcatenation = 0
 		}
-		# popper = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js
 		popper = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/assets/js/vendor/popper.min.js
 		popper {
 			external = 0
 			disableCompression = 1
 			excludeFromConcatenation = 0
 		}
-		# bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js
 		bootstrap = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/dist/js/bootstrap.min.js
 		bootstrap {
 			external = 0
