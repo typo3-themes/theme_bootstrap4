@@ -14,7 +14,7 @@
 		"typo3-ter/theme_bootstrap4": "self.version"
 	},
 	"require": {
-		"typo3-ter/dyncss_scss": ">=1.1.0,<2.0.0",
+		"typo3-ter/dyncss-scss": ">=1.1.0,<2.0.0",
 		"typo3-themes/themes-gridelements": ">=7.0.1,<8.7"
 	}
 }
