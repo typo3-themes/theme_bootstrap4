@@ -4,7 +4,7 @@
 		datatype="plaintext"
 		original="messages"
 		date="2014-04-13T18:20:51Z"
-		product-name="theme_bootstrap4">
+		product-name="theme_paperclip">
 		<header/>
 		<body>
 
@@ -13,19 +13,19 @@
 				<source>Large Desktops</source>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.large" xml:space="preserve">
-				<source>Desktop</source>
+				<source>Desktop (and above)</source>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.medium" xml:space="preserve">
-				<source>Tablett</source>
+				<source>Tablett (and above)</source>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.small" xml:space="preserve">
-				<source>Landscape phones</source>
+				<source>Landscape phones (and above)</source>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.extrasmall" xml:space="preserve">
-				<source>Portrait phones</source>
+				<source>Portrait phones (and above)</source>
 			</trans-unit>
 
-			
+
 			<!-- Responsive visibility labels -->
 			<trans-unit id="content.responsive.visibility.default" xml:space="preserve">
 				<source>Default</source>

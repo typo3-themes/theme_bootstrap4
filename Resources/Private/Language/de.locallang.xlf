@@ -4,7 +4,7 @@
 		datatype="plaintext"
 		original="messages"
 		date="2014-04-13T18:20:51Z"
-		product-name="theme_bootstrap4">
+		product-name="theme_paperclip">
 		<header/>
 		<body>
 			<trans-unit id="toggleNavigation_label" xml:space="preserve">
@@ -36,20 +36,20 @@
 				<target>Large Desktops</target>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.large" xml:space="preserve">
-				<source>Desktop</source>
-				<target>Desktop</target>
+				<source>Desktop (and above)</source>
+				<target>Desktop (and above)</target>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.medium" xml:space="preserve">
-				<source>Tablett</source>
-				<target>Tablett</target>
+				<source>Tablett (and above)</source>
+				<target>Tablett (and above)</target>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.small" xml:space="preserve">
-				<source>Landscape phones</source>
-				<target>Landscape phones</target>
+				<source>Landscape phones (and above)</source>
+				<target>Landscape phones (and above)</target>
 			</trans-unit>
 			<trans-unit id="content.responsive.devices.extrasmall" xml:space="preserve">
-				<source>Portrait phones</source>
-				<target>Portrait phones</target>
+				<source>Portrait phones (and above)</source>
+				<target>Portrait phones (and above)</target>
 			</trans-unit>
 
 			<!-- Responsive visibility labels -->

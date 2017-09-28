@@ -2,7 +2,7 @@ themes {
 	content {
 		# Responsive content element settings
 		responsive {
-			
+
 			settings {
 				sizes {
 					extralarge = extralarge
@@ -12,52 +12,83 @@ themes {
 					extrasmall = extrasmall
 				}
 			}
-			
+
 			default {
 				extralarge {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
+					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
-						# hidden-up = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.hidden
-						hidden-up = Hidden up
-						hidden-down = Hidden down
+						# hidden-up = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.hidden
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
+
 					}
 				}
 				large {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.large
+					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.large
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
-						hidden-up = Hidden up
-                        hidden-down = Hidden down
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
 					}
 				}
 				medium {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.medium
+					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.medium
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
-						hidden-up = Hidden up
-                        hidden-down = Hidden down
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
 					}
 				}
 				small {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.small
+					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.small
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
-						hidden-up = Hidden up
-                        hidden-down = Hidden down
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
 					}
 				}
 				extrasmall {
-					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extrasmall
+					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extrasmall
 					visibility {
-						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
-						hidden-up = Hidden up
-                        hidden-down = Hidden down
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
 					}
 				}
 			}
@@ -80,8 +111,8 @@ themes {
 							12-12 = 12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					large {
@@ -94,8 +125,8 @@ themes {
 							12-12 = 12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					medium {
@@ -108,8 +139,8 @@ themes {
 							12-12 = 12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					small {
@@ -122,8 +153,8 @@ themes {
 							12-12 = 12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					extrasmall {
@@ -136,8 +167,8 @@ themes {
 							12-12 = 12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 				}
@@ -151,8 +182,8 @@ themes {
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					large {
@@ -163,8 +194,8 @@ themes {
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					medium {
@@ -175,8 +206,8 @@ themes {
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					small {
@@ -187,8 +218,8 @@ themes {
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					extrasmall {
@@ -199,8 +230,8 @@ themes {
 							12-12-12 = 12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 				}
@@ -214,8 +245,8 @@ themes {
 							12-12-12-12 = 12:12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					large {
@@ -226,8 +257,8 @@ themes {
 							12-12-12-12 = 12:12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					medium {
@@ -238,8 +269,8 @@ themes {
 							12-12-12-12 = 12:12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					small {
@@ -250,8 +281,8 @@ themes {
 							12-12-12-12 = 12:12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 					extrasmall {
@@ -262,12 +293,12 @@ themes {
 							12-12-12-12 = 12:12:12:12
 						}
 						column-equal-height {
-							true = Column: equal height
 							false = Column: no equal height
+							true = Column: equal height
 						}
 					}
 				}
-				
+
 				Row {
 					extralarge {
 
@@ -348,7 +379,7 @@ themes {
 					}
 				}
 			}
-			
+
 		}
 	}
 }

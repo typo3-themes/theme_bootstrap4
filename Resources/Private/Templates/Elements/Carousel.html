@@ -14,12 +14,12 @@
 </f:if>
 <theme:variable.set name="carouselHideIndicators" value="" />
 <f:if condition="{themes.variants.css.carousel-hide-indicators} == 'carousel-hide-indicators'">
-	<theme:variable.set name="carouselHideIndicators" value="hidden-xs-up" />
+	<theme:variable.set name="carouselHideIndicators" value="d-none" />
 	<theme:variable.popVariant name="carousel-hide-indicators" />
 </f:if>
 <theme:variable.set name="carouselHideArrows" value="" />
 <f:if condition="{themes.variants.css.carousel-hide-arrows} == 'carousel-hide-arrows'">
-	<theme:variable.set name="carouselHideArrows" value="hidden-xs-up" />
+	<theme:variable.set name="carouselHideArrows" value="d-none" />
 	<theme:variable.popVariant name="carousel-hide-arrows" />
 </f:if>
 
@@ -67,11 +67,11 @@
 						</div>
 					</f:for>
 				</div>
-				<a class="left carousel-control {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="prev">
+				<a class="carousel-control-prev {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="prev">
 					<span class="{iconPrevious}" aria-hidden="true"></span>
 					<span class="sr-only"><f:translate key="carousel_previous_label" /></span>
 				</a>
-				<a class="right carousel-control {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="next">
+				<a class="carousel-control-next {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="next">
 					<span class="{iconNext}" aria-hidden="true"></span>
 					<span class="sr-only"><f:translate key="carousel_next_label" /></span>
 				</a>
