@@ -52,7 +52,9 @@
 						</table>
 					</div>
 				</f:if>
-				<theme:indexedSearch.pageBrowsing maximumNumberOfResultPages="{settings.page_links}" numberOfResults="{result.count}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
+				<f:format.raw>
+					<theme:indexedSearch.pageBrowsing maximumNumberOfResultPages="{settings.page_links}" numberOfResults="{result.count}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
+				</f:format.raw>
 			</div>
 			<f:for each="{result.rows}" as="row">
 				<f:if condition="{row.isSectionHeader}">
@@ -67,7 +69,9 @@
 				</f:if>
 			</f:for>
 			<div class="tx-indexedsearch-browsebox">
-				<theme:indexedSearch.pageBrowsing numberOfResults="{result.count}" maximumNumberOfResultPages="{settings.page_links}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
+				<f:format.raw>
+					<theme:indexedSearch.pageBrowsing numberOfResults="{result.count}" maximumNumberOfResultPages="{settings.page_links}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
+				</f:format.raw>
 			</div>
 		</f:then>
 		<f:else>
