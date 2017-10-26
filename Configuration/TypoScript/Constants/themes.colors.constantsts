@@ -35,23 +35,32 @@ themes.configuration.colors.bodyBackground = #FFFFFF
 # Gray colors
 #############################################
 
-# cat=colors,advanced/colors_gray/; type=color; label= Gray color
-themes.configuration.colors.gray = #55595C
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-100 color (light)
+themes.configuration.colors.gray100 = #F8F9FA
 
-# cat=colors,advanced/colors_gray/; type=color; label= Gray dark color
-themes.configuration.colors.grayDark = #373A3C
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-200 color
+themes.configuration.colors.gray200 = #E9ECEF
 
-# cat=colors,advanced/colors_gray/; type=color; label= Gray darker color - lighten(#000, 13.5%)
-#themes.configuration.colors.grayDarker = #222222
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-300 color
+themes.configuration.colors.gray300 = #DEE2E6
 
-# cat=colors,advanced/colors_gray/; type=color; label= Gray light color
-themes.configuration.colors.grayLight = #818A91
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-400 color
+themes.configuration.colors.gray400 = #CED4DA
 
-# cat=colors,advanced/colors_gray/; type=color; label= Gray lighter color
-themes.configuration.colors.grayLighter = #ECEEEF
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-500 color
+themes.configuration.colors.gray500 = #ADB5BD
 
-# cat=colors,advanced/colors_gray/; type=color; label= Gray lightest color
-themes.configuration.colors.grayLightest = #F7F7F9
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-600 color
+themes.configuration.colors.gray600 = #868E96
+
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-700 color
+themes.configuration.colors.gray700 = #495057
+
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-800 color
+themes.configuration.colors.gray800 = #343A40
+
+# cat=colors,advanced/colors_gray/; type=color; label= Gray-900 color (dark)
+themes.configuration.colors.gray900 = #212529
 
 
 

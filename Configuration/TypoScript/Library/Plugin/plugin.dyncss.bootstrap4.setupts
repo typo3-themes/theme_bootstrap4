@@ -2,11 +2,11 @@
 
 plugin.tx_dyncss.overrides {
 
-	brand-primary = TEXT
-	brand-primary.value = {$themes.configuration.colors.primary}
+	primary = TEXT
+	primary.value = {$themes.configuration.colors.primary}
 
-	brand-secondary = TEXT
-	brand-secondary.value = {$themes.configuration.colors.secondary}
+	secondary = TEXT
+	secondary.value = {$themes.configuration.colors.secondary}
 
 	link-color = TEXT
 	link-color.value = {$themes.configuration.colors.link}
@@ -21,27 +21,33 @@ plugin.tx_dyncss.overrides {
 	body-bg.value = {$themes.configuration.colors.bodyBackground}
 
 	#	@ToDo dbruening
-	gray = TEXT
-	gray.value = {$themes.configuration.colors.gray}
-	gray-dark = TEXT
-	gray-dark.value = {$themes.configuration.colors.grayDark}
-	#gray-darker = TEXT
-	#gray-darker.value = {$themes.configuration.colors.grayDarker}
-	gray-light = TEXT
-	gray-light.value = {$themes.configuration.colors.grayLight}
-	gray-lighter = TEXT
-	gray-lighter.value = {$themes.configuration.colors.grayLighter}
-	gray-lightest = TEXT
-	gray-lightest.value = {$themes.configuration.colors.grayLightest}
+	gray-100 = TEXT
+	gray-100.value = {$themes.configuration.colors.gray100}
+	gray-200 = TEXT
+	gray-200.value = {$themes.configuration.colors.gray200}
+	gray-300 = TEXT
+	gray-300.value = {$themes.configuration.colors.gray300}
+	gray-400 = TEXT
+	gray-400.value = {$themes.configuration.colors.gray400}
+	gray-500 = TEXT
+	gray-500.value = {$themes.configuration.colors.gray500}
+	gray-600 = TEXT
+	gray-600.value = {$themes.configuration.colors.gray600}
+	gray-700 = TEXT
+	gray-700.value = {$themes.configuration.colors.gray700}
+	gray-800 = TEXT
+	gray-800.value = {$themes.configuration.colors.gray800}
+	gray-900 = TEXT
+	gray-900.value = {$themes.configuration.colors.gray900}
 
-	#brand-danger = TEXT
-	#brand-danger.value = {$themes.configuration.colors.error}
-	#brand-info = TEXT
-	#brand-info.value = {$themes.configuration.colors.information}
-	#brand-success = TEXT
-	#brand-success.value = {$themes.configuration.colors.success}
-	#brand-warning = TEXT
-	#brand-warning.value = {$themes.configuration.colors.warning}
+	danger = TEXT
+	danger.value = {$themes.configuration.colors.error}
+	info = TEXT
+	info.value = {$themes.configuration.colors.information}
+	success = TEXT
+	success.value = {$themes.configuration.colors.success}
+	warning = TEXT
+	warning.value = {$themes.configuration.colors.warning}
 
 	#icon-font-path = TEXT
 	#icon-font-path.value = '{$themes.configuration.font.icon.fontFilePath}'
