@@ -70,6 +70,12 @@
 			<trans-unit id="content.variants.background_inverse" xml:space="preserve">
 				<source>Inverse color</source>
 			</trans-unit>
+			<trans-unit id="content.variants.background_light" xml:space="preserve">
+				<source>Light color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_dark" xml:space="preserve">
+				<source>Dark color</source>
+			</trans-unit>
 
 			<!-- Alerts -->
 			<trans-unit id="content.variants.alert_success" xml:space="preserve">
@@ -84,7 +90,7 @@
 			<trans-unit id="content.variants.alert_danger" xml:space="preserve">
 				<source>Alert-Error</source>
 			</trans-unit>
-			
+
 			<!-- Button/Button group -->
 			<trans-unit id="content.buttons.primary" xml:space="preserve">
 				<source>Color: Primary Button</source>
@@ -122,7 +128,7 @@
 			<trans-unit id="content.buttons.block" xml:space="preserve">
 				<source>Block Button</source>
 			</trans-unit>
-			
+
 
 			<!-- Panel -->
 			<!-- @todo panels gibt es nicht mehr!? -->
@@ -141,7 +147,7 @@
 			<trans-unit id="content.variants.panel_danger" xml:space="preserve">
 				<source>Danger Panel</source>
 			</trans-unit>
-			
+
 			<!-- Grid layout: tabs -->
 			<trans-unit id="content.variants.tabs_in_card" xml:space="preserve">
 				<source>Tabs in card</source>

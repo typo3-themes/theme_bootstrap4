@@ -7,7 +7,7 @@ lib.content.cssMap.variants {
 	alert-info = alert alert-info
 	alert-warning = alert alert-warning
 	alert-danger = alert alert-danger
-	
+
 	wide-screen = jumbotron
 
 	framed-default = well
@@ -23,6 +23,8 @@ lib.content.cssMap.variants {
 		color-warning = bg bg-warning
 		color-danger = bg bg-danger
 		color-inverse = bg bg-inverse
+		color-light = bg bg-light
+		color-dark = bg bg-dark
 	}
 
 	# Image
@@ -52,18 +54,18 @@ lib.content.cssMap.variants {
 	uploads-table-inverse = table-inverse
 	uploads-table-hover = table-hover
 	uploads-table-small = table-sm
-	
+
 	# Grid layout: carousel
 	carousel-hide-indicators = carousel-hide-indicators
 	carousel-hide-arrows = carousel-hide-arrows
-	
+
 	# Grid layout: tabs
 	tabs-in-card = tabs-in-card
 	tabs-navigation {
 		tabs = tabs
-		pills = pills 
+		pills = pills
 	}
-	
+
 	# Buttons/Button groups
 	button-color {
 		primary = btn btn-primary
@@ -76,10 +78,10 @@ lib.content.cssMap.variants {
 	}
 	button-outline = btn-outline
 	button-size {
-		default = 
+		default =
 		large = btn-lg
 		small = btn-sm
 	}
 	button-block = btn-block
-	
+
 }

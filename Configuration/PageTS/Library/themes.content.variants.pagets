@@ -22,6 +22,8 @@ themes {
 					color-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_warning
 					color-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_danger
 					color-inverse = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_inverse
+					color-light = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_light
+					color-dark = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_dark
 				}
 			}
 			# Special variant for Header
@@ -67,7 +69,7 @@ themes {
 				uploads-table-small = Table small
 				uploads-table-responsive = Responsive table
 			}
-			# ctype themes_buttoncontent_pi1 
+			# ctype themes_buttoncontent_pi1
 			themes_buttoncontent_pi1 {
 				button-color {
 					primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.buttons.primary
@@ -89,7 +91,7 @@ themes {
 			# ctype: gridelements_pi1
 			gridelements_pi1 {
 				accordion {
-					
+
 				}
 				carousel {
 					carousel-hide-indicators = Hide indicators
@@ -102,7 +104,7 @@ themes {
 						pills = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.tabs_navigation_pills
 					}
 				}
-				
+
 				container {
 					wide-screen = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.wide_screen
 					alert {
