@@ -77,6 +77,50 @@
 				<source>Dark color</source>
 			</trans-unit>
 
+			<!-- Space -->
+			<trans-unit id="content.variants.space.top_label" xml:space="preserve">
+				<source>Choose space top</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_eliminate" xml:space="preserve">
+				<source>Space top: eliminate</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_xs" xml:space="preserve">
+				<source>Space top: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_s" xml:space="preserve">
+				<source>Space top: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_m" xml:space="preserve">
+				<source>Space top: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_l" xml:space="preserve">
+				<source>Space top: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_xl" xml:space="preserve">
+				<source>Space top: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_label" xml:space="preserve">
+				<source>Choose space bottom</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_eliminate" xml:space="preserve">
+				<source>Space bottom: eliminate</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_xs" xml:space="preserve">
+				<source>Space bottom: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_s" xml:space="preserve">
+				<source>Space bottom: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_m" xml:space="preserve">
+				<source>Space bottom: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_l" xml:space="preserve">
+				<source>Space bottom: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_xl" xml:space="preserve">
+				<source>Space bottom: XL</source>
+			</trans-unit>
+
 			<!-- Alerts -->
 			<trans-unit id="content.variants.alert_success" xml:space="preserve">
 				<source>Alert-Success</source>

@@ -26,6 +26,23 @@ lib.content.cssMap.variants {
 		color-light = bg bg-light
 		color-dark = bg bg-dark
 	}
+	# Spaces
+	space-top {
+		none = mt-0 pt-0
+		xs = mt-1
+		s = mt-2
+		m = mt-3
+		l = mt-4
+		xl = mt-5
+	}
+	space-bottom {
+		none = mb-0 pb-0
+		xs = mb-1
+		s = mb-2
+		m = mb-3
+		l = mb-4
+		xl = mb-5
+	}
 
 	# Image
 	image {
