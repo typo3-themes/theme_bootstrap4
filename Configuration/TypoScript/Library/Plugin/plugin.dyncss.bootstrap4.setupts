@@ -20,7 +20,40 @@ plugin.tx_dyncss.overrides {
 	body-bg = TEXT
 	body-bg.value = {$themes.configuration.colors.bodyBackground}
 
+	blue = TEXT
+	blue.value = {$themes.configuration.colors.blue}
+
+	indigo = TEXT
+	indigo.value = {$themes.configuration.colors.indigo}
+
+	purple = TEXT
+	purple.value = {$themes.configuration.colors.purple}
+
+	pink = TEXT
+	pink.value = {$themes.configuration.colors.pink}
+
+	red = TEXT
+	red.value = {$themes.configuration.colors.red}
+
+	orange = TEXT
+	orange.value = {$themes.configuration.colors.orange}
+
+	yellow = TEXT
+	yellow.value = {$themes.configuration.colors.yellow}
+
+	green = TEXT
+	green.value = {$themes.configuration.colors.green}
+
+	teal = TEXT
+	teal.value = {$themes.configuration.colors.teal}
+
+	cyan = TEXT
+	cyan.value = {$themes.configuration.colors.cyan}
+
+
 	#	@ToDo dbruening
+	white = TEXT
+	white.value = {$themes.configuration.colors.white}
 	gray-100 = TEXT
 	gray-100.value = {$themes.configuration.colors.gray100}
 	gray-200 = TEXT
@@ -39,6 +72,8 @@ plugin.tx_dyncss.overrides {
 	gray-800.value = {$themes.configuration.colors.gray800}
 	gray-900 = TEXT
 	gray-900.value = {$themes.configuration.colors.gray900}
+	black = TEXT
+	black.value = {$themes.configuration.colors.black}
 
 	danger = TEXT
 	danger.value = {$themes.configuration.colors.error}

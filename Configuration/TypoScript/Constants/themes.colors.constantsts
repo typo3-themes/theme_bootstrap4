@@ -30,10 +30,43 @@ themes.configuration.colors.bodyColor = #000000
 # cat=colors,basic/colors_general/; type=color; label= Body background
 themes.configuration.colors.bodyBackground = #FFFFFF
 
+# cat=colors,expert/colors_general/; type=color; label= Color blue
+#themes.configuration.colors.blue = #007BFF
+
+# cat=colors,expert/colors_general/; type=color; label= Color indigo
+#themes.configuration.colors.indigo = #6610F2
+
+# cat=colors,expert/colors_general/; type=color; label= Color purple
+#themes.configuration.colors.purple = #6f42C1
+
+# cat=colors,expert/colors_general/; type=color; label= Color pink
+#themes.configuration.colors.pink = #E83E8C
+
+# cat=colors,expert/colors_general/; type=color; label= Color red
+#themes.configuration.colors.red = #DC3545
+
+# cat=colors,expert/colors_general/; type=color; label= Color orange
+#themes.configuration.colors.orange = #FD7E14
+
+# cat=colors,expert/colors_general/; type=color; label= Color yellow
+#themes.configuration.colors.yellow = #FFC107
+
+# cat=colors,expert/colors_general/; type=color; label= Color green
+#themes.configuration.colors.green = #28A745
+
+# cat=colors,expert/colors_general/; type=color; label= Color teal
+#themes.configuration.colors.teal = #20C997
+
+# cat=colors,expert/colors_general/; type=color; label= Color cyan
+#themes.configuration.colors.cyan = #17A2B8
+
 
 
 # Gray colors
 #############################################
+
+# cat=colors,expert/colors_gray/; type=color; label= White
+themes.configuration.colors.white = #FFFFFF
 
 # cat=colors,advanced/colors_gray/; type=color; label= Gray-100 color (light)
 themes.configuration.colors.gray100 = #F8F9FA
@@ -61,6 +94,9 @@ themes.configuration.colors.gray800 = #343A40
 
 # cat=colors,advanced/colors_gray/; type=color; label= Gray-900 color (dark)
 themes.configuration.colors.gray900 = #212529
+
+# cat=colors,expert/colors_gray/; type=color; label= Black
+themes.configuration.colors.black = #000000
 
 
 
