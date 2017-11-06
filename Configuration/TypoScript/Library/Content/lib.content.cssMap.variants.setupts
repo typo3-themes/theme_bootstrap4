@@ -28,7 +28,7 @@ lib.content.cssMap.variants {
 	}
 	# Spaces
 	space-top {
-		none = mt-0 pt-0
+		eliminate = mt-0 pt-0
 		xs = mt-1
 		s = mt-2
 		m = mt-3
@@ -36,7 +36,7 @@ lib.content.cssMap.variants {
 		xl = mt-5
 	}
 	space-bottom {
-		none = mb-0 pb-0
+		eliminate = mb-0 pb-0
 		xs = mb-1
 		s = mb-2
 		m = mb-3
