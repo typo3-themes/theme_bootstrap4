@@ -20,7 +20,7 @@ plugin.tx_themes {
 
 		resourcesPrivatePath = {$themes.resourcesPrivatePath}
 		resourcesPublicPath = {$themes.resourcesPublicPath}
-		
+
 		languages {
 			available = {$themes.languages.available}
 			mode = {$themes.languages.mode}
@@ -141,6 +141,10 @@ plugin.tx_themes {
 				title = {$themes.configuration.socialmedia.typo3.title}
 				cssClass = {$themes.configuration.socialmedia.typo3.cssClass}
 			}
+		}
+		header {
+			phone = {$themes.configuration.header.phone}
+			email = {$themes.configuration.header.email}
 		}
 		footer {
 			slogan = {$themes.configuration.footer.slogan}
