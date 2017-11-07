@@ -1,6 +1,6 @@
 # theme_bootstrap4
 will contain the theme_bootstrap version 4 base
-(you don't neeed themes_gridelements further)
+(you don't need themes_gridelements further)
 
 Current bootstrap-4.0.0-beta.2
 * https://getbootstrap.com
@@ -8,7 +8,7 @@ Current bootstrap-4.0.0-beta.2
 
 Attention
 =========
-This theme is still alpah. We are working on the integration of Bootstrap 4.
+This theme is still alpha. We are working on the integration of Bootstrap 4.
 
 
 
