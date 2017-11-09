@@ -15,11 +15,11 @@ themes {
 
 			default {
 				extralarge {
-					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
 					visibility {
-						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
-						# hidden-up = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.hidden
+						# hidden-up = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.hidden
 						none = Display none
 						inline = Display inline
 						inline-block = Display inline-block
@@ -32,9 +32,9 @@ themes {
 					}
 				}
 				large {
-					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.large
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.large
 					visibility {
-						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						none = Display none
 						inline = Display inline
@@ -47,9 +47,9 @@ themes {
 					}
 				}
 				medium {
-					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.medium
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.medium
 					visibility {
-						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						none = Display none
 						inline = Display inline
@@ -62,9 +62,9 @@ themes {
 					}
 				}
 				small {
-					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.small
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.small
 					visibility {
-						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						none = Display none
 						inline = Display inline
@@ -77,9 +77,9 @@ themes {
 					}
 				}
 				extrasmall {
-					label = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extrasmall
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extrasmall
 					visibility {
-						default = LLL:EXT:theme_paperclip/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
 						#ToDo: Label in language file
 						none = Display none
 						inline = Display inline
