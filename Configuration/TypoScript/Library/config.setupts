@@ -1,12 +1,15 @@
-#
-# Dont use the default JavaScript
-removeDefaultJS = 1
-#
 config {
 
 	prefixLocalAnchors = all
 	tx_realurl_enable = 1
 	simulateStaticDocuments = 0
+
+	# Dont use the default JavaScript
+	# We move into our own file, so that we've in the end one file less
+	removeDefaultJS = 1
+
+	# Remove default stylesheets
+	removeDefaultCSS = 1
 
 	# Preparing modernizr usage
 	htmlTag_setParams = class="no-js" lang="{$themes.languages.current.isoCodeHtml}"
