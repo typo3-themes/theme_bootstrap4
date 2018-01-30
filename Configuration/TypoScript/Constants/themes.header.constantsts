@@ -6,9 +6,9 @@ themes.configuration {
 	# customcategory=header=Theme: Header settings
 	header {
 		# cat=header,basic//; type=string; label= Header phonenumber
-        phone = +49 1234 56789
-        # cat=header,basic//; type=string; label= Header E-Mailaddress
-        email = demo@typo3-themes.org
+		phone = +49 1234 56789
+		# cat=header,basic//; type=string; label= Header E-Mailaddress
+		email = demo@typo3-themes.org
 		logo {
 			# customsubcategory=header_logo_main=Main Logo of the header
 			main {
@@ -19,6 +19,7 @@ themes.configuration {
 				# cat=header,expert/header_logo_main/; type=int+; label= Header-Logo: Height
 				height =
 			}
+
 			# customsubcategory=header_logo_special=Special Logo of the header
 			special {
 				# cat=header,advanced/header_logo_special/; type=string; label= Special-Logo: Path and filename (fileadmin/.../logo.png)

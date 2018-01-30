@@ -2,33 +2,25 @@
 # Font Family: sans serif constants
 #############################################
 # customsubcategory=fontfamily.sansSerif=Font family: sans serif
-
-# cat=font,advanced/fontfamily.sansSerif/; type=options[Local,CDN,Webserver]; label= Font-family sans-serif: Use from Local (for example: Arial), CDN (for example: Google-webfonts) or Webserver (for example: font provided by theme extension)
-themes.configuration.font.family.sansSerif.useFontFrom = Local
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: CDN-Fonts URL (Google-Webfonts, ...)
-themes.configuration.font.family.sansSerif.fontCdnUrl = https://fonts.googleapis.com/css?family=Roboto
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Font Name
-themes.configuration.font.family.sansSerif.fontName = Roboto
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Font Fallback
-themes.configuration.font.family.sansSerif.fontFallback = -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Path for local Fonts
-themes.configuration.font.family.sansSerif.fontFilePath =
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of EOT-Font
-themes.configuration.font.family.sansSerif.fontFileEot =
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of SVG-Font
-themes.configuration.font.family.sansSerif.fontFileSvg =
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of TTF-Font
-themes.configuration.font.family.sansSerif.fontFileTtf =
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of WOFF-Font
-themes.configuration.font.family.sansSerif.fontFileWoff =
-
-# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of WOFF2-Font
-themes.configuration.font.family.sansSerif.fontFileWoff2 =
+themes.configuration.font.family.sansSerif {
+	# cat=font,advanced/fontfamily.sansSerif/; type=options[Local,CDN,Webserver]; label= Font-family sans-serif: Use from Local (for example: Arial), CDN (for example: Google-webfonts) or Webserver (for example: font provided by theme extension)
+	useFontFrom = Local
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: CDN-Fonts URL (Google-Webfonts, ...)
+	fontCdnUrl = https://fonts.googleapis.com/css?family=Roboto
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Font Name
+	fontName = Roboto
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Font Fallback
+	fontFallback = -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Path for local Fonts
+	fontFilePath =
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of EOT-Font
+	fontFileEot =
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of SVG-Font
+	fontFileSvg =
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of TTF-Font
+	fontFileTtf =
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of WOFF-Font
+	fontFileWoff =
+	# cat=font,advanced/fontfamily.sansSerif/; type=string; label= Font-family sans-serif: Filename of WOFF2-Font
+	fontFileWoff2 =
+}
