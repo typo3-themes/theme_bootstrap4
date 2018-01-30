@@ -6,49 +6,35 @@
 # customsubcategory=footer_copyright=Copyright settings
 # customsubcategory=footer_logo_main=Main Logo of the footer
 
+themes.configuration.footer {
+	# General
+	#############################################
+	# cat=footer,basic//; type=string; label= Footer: slogan
+	slogan = Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem
+	# cat=footer,basic//; type=string; label= Footer: address
+	address = TYPO3-Themes: Inspiring people to share
+	# cat=footer,basic//; type=string; label= Footer: E-Mail address
+	email = info@typo3-themes.org
 
-# General
-#############################################
+	# Copyright
+	#############################################
+	# cat=footer,advanced/footer_copyright/; type=string; label= Copyright label in left of year
+	copyright.leftLabel =
+	# cat=footer,advanced/footer_copyright/; type=string; label= Copyright label in right of year
+	copyright.rightLabel = &copy; TYPO3-Themes Team
 
-# cat=footer,basic//; type=string; label= Footer: slogan
-themes.configuration.footer.slogan = Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem
-
-# cat=footer,basic//; type=string; label= Footer: address
-themes.configuration.footer.address = TYPO3-Themes: Inspiring people to share
-
-# cat=footer,basic//; type=string; label= Footer: E-Mail address
-themes.configuration.footer.email = info@typo3-themes.org
-
-
-
-# Copyright
-#############################################
-
-# cat=footer,advanced/footer_copyright/; type=string; label= Copyright label in left of year
-themes.configuration.footer.copyright.leftLabel =
-
-# cat=footer,advanced/footer_copyright/; type=string; label= Copyright label in right of year
-themes.configuration.footer.copyright.rightLabel = &copy; TYPO3-Themes Team
-
-
-
-# Logo main
-#############################################
-
-# cat=footer,advanced/footer_logo_main/; type=string; label= Footer logo: Path and filename (fileadmin/.../logo.png)
-themes.configuration.footer.logo.main.file = EXT:theme_bootstrap4/Resources/Public/Images/logo.png
-
-# cat=footer,expert/footer_logo_main/; type=int+; label= Footer logo: Width
-themes.configuration.footer.logo.main.width = 110
-
-# cat=footer,expert/footer_logo_main/; type=int+; label= Footer logo: Height
-themes.configuration.footer.logo.main.height = 89
-
-# cat=footer,advanced/footer_logo_main/; type=int+; label= Footer logo: Link UID footer logo
-themes.configuration.footer.logo.main.linkUid = {$themes.configuration.pages.startsite}
-
-# cat=footer,advanced/footer_logo_main/; type=options[_blank,_self]; label= Footer logo: Link target footer logo
-themes.configuration.footer.logo.main.linkTarget = _self
-
-# cat=footer,advanced/footer_logo_main/; type=string; label= Footer logo: Title footer logo
-themes.configuration.footer.logo.main.title = {$themes.configuration.siteName}
+	# Logo main
+	#############################################
+	# cat=footer,advanced/footer_logo_main/; type=string; label= Footer logo: Path and filename (fileadmin/.../logo.png)
+	logo.main.file = EXT:theme_bootstrap4/Resources/Public/Images/logo.png
+	# cat=footer,expert/footer_logo_main/; type=int+; label= Footer logo: Width
+	logo.main.width = 110
+	# cat=footer,expert/footer_logo_main/; type=int+; label= Footer logo: Height
+	logo.main.height = 89
+	# cat=footer,advanced/footer_logo_main/; type=int+; label= Footer logo: Link UID footer logo
+	logo.main.linkUid = {$themes.configuration.pages.startsite}
+	# cat=footer,advanced/footer_logo_main/; type=options[_blank,_self]; label= Footer logo: Link target footer logo
+	logo.main.linkTarget = _self
+	# cat=footer,advanced/footer_logo_main/; type=string; label= Footer logo: Title footer logo
+	logo.main.title = {$themes.configuration.siteName}
+}
