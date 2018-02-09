@@ -26,9 +26,6 @@ plugin.tx_indexedsearch {
 			400 = {$themes.resourcesPrivatePath}Extensions/IndexedSearch/Layouts/
 		}
 	}
-	_DEFAULT_PI_VARS {
-		lang = {$themes.languages.current.uid}
-	}
 	features {
 		# uncomment the following line to enable the new Property Mapper.
 		# rewrittenPropertyMapper = 1
@@ -93,7 +90,7 @@ plugin.tx_indexedsearch {
 			mediaType = 0
 			sortOrder = 0
 			group = 0
-			languageUid = 0
+			languageUid = {$themes.languages.current.uid}
 			desc = 0
 			numberOfResults = 0
 			# defaultOperand.1 = 1
