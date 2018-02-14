@@ -97,12 +97,12 @@ lib.content.cssMap.responsive {
 	small-column-equal-height-true = sm-eq-height
 	small-column-equal-height-false =
 
-	extrasmall-column-width-6-6 = col-xs-%s
-	extrasmall-column-width-4-8 = col-xs-%s
-	extrasmall-column-width-8-4 = col-xs-%s
-	extrasmall-column-width-3-9 = col-xs-%s
-	extrasmall-column-width-9-3 = col-xs-%s
-	extrasmall-column-width-12-12 = col-xs-%s
+	extrasmall-column-width-6-6 = col-%s
+	extrasmall-column-width-4-8 = col-%s
+	extrasmall-column-width-8-4 = col-%s
+	extrasmall-column-width-3-9 = col-%s
+	extrasmall-column-width-9-3 = col-%s
+	extrasmall-column-width-12-12 = col-%s
 	extrasmall-column-equal-height-true = xs-eq-height
 	extrasmall-column-equal-height-false =
 
@@ -136,10 +136,10 @@ lib.content.cssMap.responsive {
 	small-column-equal-height-true = sm-eq-height
 	small-column-equal-height-false =
 
-	extrasmall-column-width-4-4-4 = col-xs-%s
-	extrasmall-column-width-6-6-12 = col-xs-%s
-	extrasmall-column-width-12-6-6 = col-xs-%s
-	extrasmall-column-width-12-12-12 = col-xs-%s
+	extrasmall-column-width-4-4-4 = col-%s
+	extrasmall-column-width-6-6-12 = col-%s
+	extrasmall-column-width-12-6-6 = col-%s
+	extrasmall-column-width-12-12-12 = col-%s
 	extrasmall-column-equal-height-true = xs-eq-height
 	extrasmall-column-equal-height-false =
 
@@ -173,10 +173,10 @@ lib.content.cssMap.responsive {
 	small-column-equal-height-true = sm-eq-height
 	small-column-equal-height-false =
 
-	extrasmall-column-width-3-3-3-3 = col-xs-%s
-	extrasmall-column-width-6-6-6-6 = col-xs-%s
-	extrasmall-column-width-3-4-5-12 = col-xs-%s
-	extrasmall-column-width-12-12-12-12 = col-xs-%s
+	extrasmall-column-width-3-3-3-3 = col-%s
+	extrasmall-column-width-6-6-6-6 = col-%s
+	extrasmall-column-width-3-4-5-12 = col-%s
+	extrasmall-column-width-12-12-12-12 = col-%s
 	extrasmall-column-equal-height-true = xs-eq-height
 	extrasmall-column-equal-height-false =
 
