@@ -1,9 +1,6 @@
 /* Use CDN font primary */
 @mixin font-include($family) {
 	@if map-has-key($font-map, #{$family}-name) {
-		@if map-get($font-map, #{$family}-use-font-from) == 'CDN' {
-			@import url("#{map-get($font-map, #{$family}-cdn-url)}");
-		}
 		@if map-get($font-map, #{$family}-use-font-from) == 'Webserver' {
 			@font-face {
 				font-family: "#{map-get($font-map, #{$family}-name)}" #{map-get($font-map, #{$family}-fallback)};

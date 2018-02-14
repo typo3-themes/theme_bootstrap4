@@ -3,10 +3,8 @@
 #############################################
 # customsubcategory=fontfamily.monospace=Font family: sans monospace
 themes.configuration.font.family.monospace{
-	# cat=font,advanced/fontfamily.monospace/; type=options[Local,CDN,Webserver]; label= Font-family monospace: Use from Local (for example: Arial), CDN (for example: Google-webfonts) or Webserver (for example: font provided by theme extension)
-	useFontFrom = Local
-	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: CDN-Fonts URL (Google-Webfonts, ...)
-	fontCdnUrl =
+	# cat=font,advanced/fontfamily.monospace/; type=options[Local/CDN,Webserver]; label= Font-family monospace: Use from Local (for example: Arial), CDN (for example: Google-webfonts) or Webserver (for example: font provided by theme extension)
+	useFontFrom = Local/CDN
 	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Font Name
 	fontName =
 	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Font Fallback

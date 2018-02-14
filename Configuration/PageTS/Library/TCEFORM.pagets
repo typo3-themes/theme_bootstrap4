@@ -29,6 +29,7 @@ TCEFORM {
 		tx_themes_features.addItems {
 			Development = Development
 			GoogleAnalytics = Google-Analytics
+			GoogleFonts = GoogleFonts
 			Hotjar = Hotjar
 			LazyLoading = Lazy loading
 			Piwik = Piwik
