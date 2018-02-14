@@ -84,20 +84,50 @@
 			<trans-unit id="content.variants.space.top_eliminate" xml:space="preserve">
 				<source>Space top: eliminate</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.top_xs" xml:space="preserve">
-				<source>Space top: XS</source>
+			<trans-unit id="content.variants.space.top_inside_xs" xml:space="preserve">
+				<source>Space top - Inside: XS</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.top_s" xml:space="preserve">
-				<source>Space top: S</source>
+			<trans-unit id="content.variants.space.top_inside_s" xml:space="preserve">
+				<source>Space top - Inside: S</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.top_m" xml:space="preserve">
-				<source>Space top: M</source>
+			<trans-unit id="content.variants.space.top_inside_m" xml:space="preserve">
+				<source>Space top - Inside: M</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.top_l" xml:space="preserve">
-				<source>Space top: L</source>
+			<trans-unit id="content.variants.space.top_inside_l" xml:space="preserve">
+				<source>Space top - Inside: L</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.top_xl" xml:space="preserve">
-				<source>Space top: XL</source>
+			<trans-unit id="content.variants.space.top_inside_xl" xml:space="preserve">
+				<source>Space top - Inside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_xs" xml:space="preserve">
+				<source>Space top - Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_s" xml:space="preserve">
+				<source>Space top - Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_m" xml:space="preserve">
+				<source>Space top - Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_l" xml:space="preserve">
+				<source>Space top - Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_xl" xml:space="preserve">
+				<source>Space top - Outside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_xs" xml:space="preserve">
+				<source>Space top - In/-Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_s" xml:space="preserve">
+				<source>Space top - In-/Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_m" xml:space="preserve">
+				<source>Space top - In-/Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_l" xml:space="preserve">
+				<source>Space top - In-/Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_xl" xml:space="preserve">
+				<source>Space top - In-/Outside: XL</source>
 			</trans-unit>
 			<trans-unit id="content.variants.space.bottom_label" xml:space="preserve">
 				<source>Choose space bottom</source>
@@ -105,20 +135,50 @@
 			<trans-unit id="content.variants.space.bottom_eliminate" xml:space="preserve">
 				<source>Space bottom: eliminate</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.bottom_xs" xml:space="preserve">
-				<source>Space bottom: XS</source>
+			<trans-unit id="content.variants.space.bottom_inside_xs" xml:space="preserve">
+				<source>Space bottom - Inside: XS</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.bottom_s" xml:space="preserve">
-				<source>Space bottom: S</source>
+			<trans-unit id="content.variants.space.bottom_inside_s" xml:space="preserve">
+				<source>Space bottom - Inside: S</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.bottom_m" xml:space="preserve">
-				<source>Space bottom: M</source>
+			<trans-unit id="content.variants.space.bottom_inside_m" xml:space="preserve">
+				<source>Space bottom - Inside: M</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.bottom_l" xml:space="preserve">
-				<source>Space bottom: L</source>
+			<trans-unit id="content.variants.space.bottom_inside_l" xml:space="preserve">
+				<source>Space bottom - Inside: L</source>
 			</trans-unit>
-			<trans-unit id="content.variants.space.bottom_xl" xml:space="preserve">
-				<source>Space bottom: XL</source>
+			<trans-unit id="content.variants.space.bottom_inside_xl" xml:space="preserve">
+				<source>Space bottom - Inside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_xs" xml:space="preserve">
+				<source>Space bottom - Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_s" xml:space="preserve">
+				<source>Space bottom - Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_m" xml:space="preserve">
+				<source>Space bottom - Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_l" xml:space="preserve">
+				<source>Space bottom - Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_xl" xml:space="preserve">
+				<source>Space bottom - Outside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_xs" xml:space="preserve">
+				<source>Space bottom - In-/Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_s" xml:space="preserve">
+				<source>Space bottom - In-/Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_m" xml:space="preserve">
+				<source>Space bottom - In-/Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_l" xml:space="preserve">
+				<source>Space bottom - In-/Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_xl" xml:space="preserve">
+				<source>Space bottom - In-/Outside: XL</source>
 			</trans-unit>
 
 			<!-- Alerts -->

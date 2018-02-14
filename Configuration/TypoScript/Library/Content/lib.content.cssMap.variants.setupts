@@ -26,22 +26,44 @@ lib.content.cssMap.variants {
 		color-light = bg bg-light
 		color-dark = bg bg-dark
 	}
+
 	# Spaces
 	space-top {
 		eliminate = mt-0 pt-0
-		xs = mt-1
-		s = mt-2
-		m = mt-3
-		l = mt-4
-		xl = mt-5
+		inside-xs = pt-1
+		inside-s = pt-2
+		inside-m = pt-3
+		inside-l = pt-4
+		inside-xl = pt-5
+		outside-xs = mt-1
+		outside-s = mt-2
+		outside-m = mt-3
+		outside-l = mt-4
+		outside-xl = mt-5
+		in-out-side-xs = mt-1 pt-1
+		in-out-side-s = mt-2 pt-2
+		in-out-side-m = mt-3 pt-3
+		in-out-side-l = mt-4 pt-4
+		in-out-side-xl = mt-5 pt-5
 	}
+
 	space-bottom {
 		eliminate = mb-0 pb-0
-		xs = mb-1
-		s = mb-2
-		m = mb-3
-		l = mb-4
-		xl = mb-5
+		inside-xs = pb-1
+		inside-s = pb-2
+		inside-m = pb-3
+		inside-l = pb-4
+		inside-xl = pb-5
+		outside-xs = mb-1
+		outside-s = mb-2
+		outside-m = mb-3
+		outside-l = mb-4
+		outside-xl = mb-5
+		in-out-side-xs = mb-1 pb-1
+		in-out-side-s = mb-2 pb-2
+		in-out-side-m = mb-3 pb-3
+		in-out-side-l = mb-4 pb-4
+		in-out-side-xl = mb-5 pb-5
 	}
 
 	# Image
