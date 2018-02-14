@@ -15,18 +15,6 @@ call_user_func(
             $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_pagerenderer.php']['render-preProcess'][]
                 = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($extKey) . 'Classes/Hooks/PageRenderer.php:KayStrobach\\ThemeBootstrap4\\Hooks\\PageRenderer->addJSCSS';
             //
-            // register static templates for extensions
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Resources/Private/Extensions/Felogin/TypoScript', 'Theme-Bootstrap4 - EXT:felogin');
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Resources/Private/Extensions/IndexedSearch/TypoScript', 'Theme-Bootstrap4 - EXT:indexed_search');
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Resources/Private/Extensions/News/TypoScript', 'Theme-Bootstrap4 - EXT:news');
-            //
-            // register static templates for features
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Features/Development', 'Theme-Bootstrap4 - Feature: Development');
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Features/GoogleAnalytics', 'Theme-Bootstrap4 - Feature: GoogleAnalytics');
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Features/Hotjar', 'Theme-Bootstrap4 - Feature: Hotjar');
-            //\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Features/LazyLoading', 'Theme-Bootstrap4 - Feature: LazyLoading');
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Features/Piwik', 'Theme-Bootstrap4 - Feature: Piwik');
-            //
             // register svg icons: identifier and filename
             $iconsSvg = [
                 'themes-backendlayout-content' => 'BackendLayouts/Content.svg',
