@@ -1,8 +1,15 @@
+# Disable caching
+config.no_cache = 1
+page.config.no_cache = 1
+
 # Disable compression and concatenation
 config.compressCss = 0
 config.compressJs = 0
 config.concatenateCss = 0
 config.concatenateJs = 0
-#
+
 # Set noindex, nofollow
 page.meta.robots = noindex,nofollow
+
+# Exception handling - show detailed messages
+config.contentObjectExceptionHandler = 1
