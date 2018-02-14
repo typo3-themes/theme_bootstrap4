@@ -3,7 +3,6 @@
 # Breadcrumb with itemscope and Bootstrap classes
 #
 # Constants:
-# {$themes.configuration.menu.breadcrumb.prefix}
 # {$themes.configuration.menu.breadcrumb.divider}
 # {$themes.configuration.menu.breadcrumb.cssClasses}
 #
@@ -31,15 +30,8 @@ lib.menu.breadcrumb {
 				ATagParams.insertData = 1
 				stdWrap.wrap = <span itemprop="title">|</span>
 			}
-			#wrap = <div class="prefix"><span>{$themes.configuration.menu.breadcrumb.prefix}</span></div>|</ol>
 		}
 	}
 	90 = TEXT
 	90.value = </ol>
 }
-[globalVar = LIT:0 = {$themes.configuration.menu.breadcrumb.prefix}]
-	# No prefix
-[ELSE]
-	lib.menu.breadcrumb.20 = TEXT
-	lib.menu.breadcrumb.20.value = {$themes.configuration.menu.breadcrumb.prefix}
-[END]

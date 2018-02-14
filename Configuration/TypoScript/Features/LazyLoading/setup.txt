@@ -1,0 +1,30 @@
+#Lazy loading images and resize responsive handling
+tt_content.textmedia.settings.responsive_image_rendering {
+	attributePrefix = data-
+}
+# ToDo: Use dev and production mode with local and remote files
+page {
+	includeJS {
+		# lazysizes polyfill extension for older browsers: https://github.com/aFarkas/lazysizes/tree/master/plugins/respimg
+		lazysizesPluginRespimg = //cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.2/plugins/respimg/ls.respimg.min.js
+		lazysizesPluginRespimg {
+			external = 1
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		# lazysizes print extension: https://github.com/aFarkas/lazysizes/tree/master/plugins/print
+		lazysizesPluginPrint = //cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.2/plugins/print/ls.print.min.js
+		lazysizesPluginPrint {
+			external = 1
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		# Lazysizes Main Script https://github.com/aFarkas/lazysizes/tree/master
+		lazysizes = //cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.2/lazysizes-umd.min.js
+		lazysizes {
+			external = 1
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+	}
+}

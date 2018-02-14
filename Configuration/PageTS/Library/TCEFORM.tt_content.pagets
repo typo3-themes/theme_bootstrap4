@@ -17,9 +17,6 @@ TCEFORM.tt_content {
 	space_after_class.disabled = 1
 }
 
-# Set default Image Columns to 1
-mod.wizards.newContentElement.wizardItems.common.elements.textmedia.tt_content_defValues.imagecols = 1
-
 # Remove unused gallery settings for position and alignment
 TCEFORM.tt_content.imageorient.removeItems = 17,18,25,26
 

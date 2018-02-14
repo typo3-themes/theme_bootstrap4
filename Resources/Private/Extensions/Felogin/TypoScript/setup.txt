@@ -2,7 +2,7 @@ plugin.tx_felogin_pi1 {
 
 	# Storage page uid of frontend user container. Use a single value or a comma separated list
 	storagePid = {$themes.configuration.container.frontendUser}
-	
+
 	# Location of the template file, it is EXT:felogin/Resources/Private/Templates/FrontendLogin.html by default
 	templateFile = EXT:theme_bootstrap4/Resources/Private/Extensions/Felogin/Templates/FrontendLogin.html
 
@@ -14,7 +14,7 @@ plugin.tx_felogin_pi1 {
 
 	# Show logout form direct after login
 	showLogoutFormAfterLogin = 1
-	
+
 	welcomeHeader_stdWrap {
 		wrap = <h3 class="card-title">|</h3>
 		htmlSpecialChars = 1
@@ -97,5 +97,6 @@ plugin.tx_felogin_pi1 {
 		wrap = <p class="alert alert-danger">|</p>
 		htmlSpecialChars = 1
 	}
-	
+	# Remove default stylesheets
+	_CSS_DEFAULT_STYLE >
 }

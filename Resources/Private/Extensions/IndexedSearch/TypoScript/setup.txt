@@ -146,4 +146,6 @@ plugin.tx_indexedsearch {
 			#result.noResult = Es wurden leider keine Treffer gefunden.
 		}
 	}
+	# Remove default stylesheets
+	_CSS_DEFAULT_STYLE >
 }

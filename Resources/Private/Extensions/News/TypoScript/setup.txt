@@ -92,6 +92,6 @@ plugin.tx_news {
 			conf.tx_news_domain_model_news.htmlSpecialChars = 1
 			wrap = <li class="breadcrumb-item active news" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">|</span></li>
 		}
-		wrap = <div class="prefix"><span>{$themes.configuration.menu.breadcrumb.prefix}</span></div><ol id="menuBreadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
+		wrap = <ol id="menuBreadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
 	}
 [end]

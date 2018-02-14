@@ -1,7 +1,3 @@
-# Required constants:
-# * themes.configuration.tracking.hotjar.code
-# * $themes.configuration.tracking.hotjar.disable
-#
 page.headerData.1503062508 = TEXT
 page.headerData.1503062508.value (
 	<script>
@@ -15,7 +11,3 @@ page.headerData.1503062508.value (
 		})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
 )
-# Disable Google Analytics code
-[globalVar = LIT:1 = {$themes.configuration.tracking.hotjar.disabled}]
-	page.headerData.1503062508 >
-[GLOBAL]

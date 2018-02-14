@@ -28,11 +28,3 @@ config {
 	concatenateCss = {$themes.configuration.css.concatenate}
 	concatenateJs = {$themes.configuration.javascript.concatenate}
 }
-#
-# In case of using development mode, disable compression and concatenation
-[globalVar = LIT:1 = {$themes.mode.isDevelopment}]
-	config.compressCss = 0
-	config.compressJs = 0
-	config.concatenateCss = 0
-	config.concatenateJs = 0
-[global]

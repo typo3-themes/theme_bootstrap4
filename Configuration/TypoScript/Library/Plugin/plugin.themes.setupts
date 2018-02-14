@@ -167,16 +167,16 @@ config.tx_extbase {
 # TYPO3 8.7 or higher
 lib.contentElement {
 	templateRootPaths {
-		#300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Templates/
-		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Templates/
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/Content/
+		400 = {$themes.resourcesPrivatePath}Templates/Content/
 	}
 	partialRootPaths {
-		#300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Partials/
-		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Partials/
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/Content/
+		400 = {$themes.resourcesPrivatePath}Partials/Content/
 	}
 	layoutRootPaths {
-		#300 = EXT:theme_bootstrap4/Resources/Private/Extensions/FluidStyledContent/Layouts/
-		400 = {$themes.resourcesPrivatePath}Extensions/FluidStyledContent/Layouts/
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/Content/
+		400 = {$themes.resourcesPrivatePath}Layouts/Content/
 	}
 }
 

@@ -19,7 +19,7 @@
 themes.configuration.menu.top.excludeUidList =
 
 # cat=menu,expert/menu_top/; type=string; label= Menu top: Prefix for each menu item (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
-themes.configuration.menu.top.prefix = 
+themes.configuration.menu.top.prefix =
 
 # cat=menu,advanced/menu_top/; type=int+; label= Menu top: Container pid where the menu items are located
 themes.configuration.menu.top.containerPid = 0
@@ -65,10 +65,10 @@ themes.configuration.menu.sub.includeNotInMenu = 0
 themes.configuration.menu.sub.cssClasses = nav nav-pills nav-stacked
 
 # cat=menu,expert/menu_sub/; type=string; label= Menu sub: Prefix for each menu item in first entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
-themes.configuration.menu.sub.prefixFirstLevel = 
+themes.configuration.menu.sub.prefixFirstLevel =
 
 # cat=menu,expert/menu_sub/; type=string; label= Menu sub: Prefix for each menu item in second entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
-themes.configuration.menu.sub.prefixSecondLevel = 
+themes.configuration.menu.sub.prefixSecondLevel =
 
 
 
@@ -84,10 +84,10 @@ themes.configuration.menu.special.includeNotInMenu = 0
 themes.configuration.menu.special.cssClasses = nav navbar-nav
 
 # cat=menu,expert/menu_special/; type=string; label= Menu special: Prefix for each menu item in first entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
-themes.configuration.menu.special.prefixFirstLevel = 
+themes.configuration.menu.special.prefixFirstLevel =
 
 # cat=menu,expert/menu_special/; type=string; label= Menu special: Prefix for each menu item in second entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
-themes.configuration.menu.special.prefixSecondLevel = 
+themes.configuration.menu.special.prefixSecondLevel =
 
 
 
@@ -115,8 +115,6 @@ themes.configuration.menu.footer.includeNotInMenu = 0
 
 # Menu breadcrumb
 #############################################
-# cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: Prefix
-themes.configuration.menu.breadcrumb.prefix =
 
 # cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: Divider
 themes.configuration.menu.breadcrumb.divider = >

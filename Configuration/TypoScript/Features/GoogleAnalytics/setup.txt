@@ -1,9 +1,5 @@
-# Required constants:
-# * themes.configuration.tracking.googleAnalytics.code
-# * $themes.configuration.tracking.googleAnalytics.disable
-#
-page.headerData.1812 = TEXT
-page.headerData.1812.value (
+page.headerData.1518601080 = TEXT
+page.headerData.1518601080.value (
 	<script>
 		// If condition for invoid a google insight message like:
 		// Use browser caching
@@ -19,7 +15,3 @@ page.headerData.1812.value (
 		}
 	</script>
 )
-# Disable Google Analytics code
-[globalVar = LIT:1 = {$themes.configuration.tracking.googleAnalytics.disabled}]
-	page.headerData.1812 >
-[GLOBAL]

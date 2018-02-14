@@ -1,10 +1,5 @@
-# Required constants:
-# * themes.configuration.tracking.piwik.url
-# * $themes.configuration.tracking.piwik.siteId
-# * $themes.configuration.tracking.piwik.disable
-#
-page.headerData.1813 = TEXT
-page.headerData.1813.value (
+page.headerData.1518601081 = TEXT
+page.headerData.1518601081.value (
 <!-- Piwik -->
 <script type="text/javascript">
 	var _paq = _paq || [];
@@ -19,7 +14,3 @@ page.headerData.1813.value (
 <noscript><p><img src="http://{$themes.configuration.tracking.piwik.url}piwik.php?idsite={$themes.configuration.tracking.piwik.siteId}" style="border:0" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 )
-# Disable Piwik code
-[globalVar = LIT:1 = {$themes.configuration.tracking.piwik.disabled}]
-	page.headerData.1813 >
-[GLOBAL]

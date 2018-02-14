@@ -27,6 +27,7 @@
 @import "Library/Elements/tabs.scss";
 @import "Library/Elements/menu.scss";
 @import "Library/Elements/button.scss";
+@import "Library/Elements/fluid-styled-content.scss";
 
 // Styles for Menus
 @import "Library/Menus/top.scss";
@@ -40,6 +41,5 @@
 @import "Library/Variants/...";
 
 // Styles for Extensions
-@import "../Extensions/FluidStyledContent/Dyncss/import.scss";
 @import "../Extensions/Rtehtmlarea/Dyncss/frontend.scss";
  */

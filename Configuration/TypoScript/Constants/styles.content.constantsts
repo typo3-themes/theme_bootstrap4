@@ -1,0 +1,5 @@
+styles.content.textmedia.maxW = 1140
+styles.content.textmedia.maxWInText = 1140
+styles.content.textmedia.columnSpacing = 10
+styles.content.textmedia.borderWidth = 2
+styles.content.textmedia.borderPadding = 0
