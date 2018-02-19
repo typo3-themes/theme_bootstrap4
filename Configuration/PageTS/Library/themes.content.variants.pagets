@@ -169,6 +169,30 @@ themes {
 						danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.alert_danger
 					}
 				}
+				2ColumnGrid {
+					gutters {
+						none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_none
+						without = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_without
+						sm = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_sm
+						lg = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_lg
+					}
+				}
+				3ColumnGrid {
+					gutters {
+						none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_none
+						without = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_without
+						sm = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_sm
+						lg = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_lg
+					}
+				}
+				4ColumnGrid {
+					gutters {
+						none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_none
+						without = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_without
+						sm = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_sm
+						lg = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.gutters_lg
+					}
+				}
 			}
 		}
 	}

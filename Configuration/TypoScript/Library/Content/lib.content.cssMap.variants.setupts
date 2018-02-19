@@ -94,6 +94,13 @@ lib.content.cssMap.variants {
 	uploads-table-hover = table-hover
 	uploads-table-small = table-sm
 
+	# Grid columns
+	gutters {
+		without = no-gutters
+		sm = gutters-sm
+		lg = gutters-lg
+	}
+
 	# Grid layout: carousel
 	carousel-hide-indicators = carousel-hide-indicators
 	carousel-hide-arrows = carousel-hide-arrows

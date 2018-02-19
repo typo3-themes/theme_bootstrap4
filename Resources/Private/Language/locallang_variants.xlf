@@ -195,6 +195,20 @@
 				<source>Alert-Error</source>
 			</trans-unit>
 
+			<!-- Gutters -->
+			<trans-unit id="content.variants.gutters_none" xml:space="preserve">
+				<source>Gutter width: default</source>
+			</trans-unit>
+			<trans-unit id="content.variants.gutters_without" xml:space="preserve">
+				<source>Gutter width: no gutters</source>
+			</trans-unit>
+			<trans-unit id="content.variants.gutters_sm" xml:space="preserve">
+				<source>Gutter width: sm</source>
+			</trans-unit>
+			<trans-unit id="content.variants.gutters_lg" xml:space="preserve">
+				<source>Gutter width: lg</source>
+			</trans-unit>
+
 			<!-- Button/Button group -->
 			<trans-unit id="content.buttons.primary" xml:space="preserve">
 				<source>Color: Primary Button</source>
