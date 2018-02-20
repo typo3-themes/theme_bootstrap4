@@ -1,14 +1,14 @@
 #ToDo: Check / integrate equal height
 
 lib.content.cssMap.responsive.column {
-	
+
 	equalHeight {
 		medium-equalHeight = col-md-height
 		small-equalHeight = col-sm-height
-		extrasmall-equalHeight = col-xs-height
+		extrasmall-equalHeight = col-height
 		large-equalHeight = col-lg-height
 	}
-	
+
 	#Medium Size Width
 	medium-width-1 = col-md-1
 	medium-width-2 = col-md-2
@@ -128,63 +128,63 @@ lib.content.cssMap.responsive.column {
 	small-push-12 = col-sm-push-12
 
 	#Extra Small Size Width
-	extrasmall-width-1 = col-xs-1
-	extrasmall-width-2 = col-xs-2
-	extrasmall-width-3 = col-xs-3
-	extrasmall-width-4 = col-xs-4
-	extrasmall-width-5 = col-xs-5
-	extrasmall-width-6 = col-xs-6
-	extrasmall-width-7 = col-xs-7
-	extrasmall-width-8 = col-xs-8
-	extrasmall-width-9 = col-xs-9
-	extrasmall-width-10 = col-xs-10
-	extrasmall-width-11 = col-xs-11
-	extrasmall-width-12 = col-xs-12
+	extrasmall-width-1 = col-1
+	extrasmall-width-2 = col-2
+	extrasmall-width-3 = col-3
+	extrasmall-width-4 = col-4
+	extrasmall-width-5 = col-5
+	extrasmall-width-6 = col-6
+	extrasmall-width-7 = col-7
+	extrasmall-width-8 = col-8
+	extrasmall-width-9 = col-9
+	extrasmall-width-10 = col-10
+	extrasmall-width-11 = col-11
+	extrasmall-width-12 = col-12
 
 	#Extra Small Offset
-	extrasmall-offset-0 = col-xs-offset-0
-	extrasmall-offset-1 = col-xs-offset-1
-	extrasmall-offset-2 = col-xs-offset-2
-	extrasmall-offset-3 = col-xs-offset-3
-	extrasmall-offset-4 = col-xs-offset-4
-	extrasmall-offset-5 = col-xs-offset-5
-	extrasmall-offset-6 = col-xs-offset-6
-	extrasmall-offset-7 = col-xs-offset-7
-	extrasmall-offset-8 = col-xs-offset-8
-	extrasmall-offset-9 = col-xs-offset-9
-	extrasmall-offset-10 = col-xs-offset-10
-	extrasmall-offset-11 = col-xs-offset-11
-	extrasmall-offset-12 = col-xs-offset-12
+	extrasmall-offset-0 = col-offset-0
+	extrasmall-offset-1 = col-offset-1
+	extrasmall-offset-2 = col-offset-2
+	extrasmall-offset-3 = col-offset-3
+	extrasmall-offset-4 = col-offset-4
+	extrasmall-offset-5 = col-offset-5
+	extrasmall-offset-6 = col-offset-6
+	extrasmall-offset-7 = col-offset-7
+	extrasmall-offset-8 = col-offset-8
+	extrasmall-offset-9 = col-offset-9
+	extrasmall-offset-10 = col-offset-10
+	extrasmall-offset-11 = col-offset-11
+	extrasmall-offset-12 = col-offset-12
 
 	#Extra Small Move Left
-	extrasmall-pull-0 = col-xs-pull-0
-	extrasmall-pull-1 = col-xs-pull-1
-	extrasmall-pull-2 = col-xs-pull-2
-	extrasmall-pull-3 = col-xs-pull-3
-	extrasmall-pull-4 = col-xs-pull-4
-	extrasmall-pull-5 = col-xs-pull-5
-	extrasmall-pull-6 = col-xs-pull-6
-	extrasmall-pull-7 = col-xs-pull-7
-	extrasmall-pull-8 = col-xs-pull-8
-	extrasmall-pull-9 = col-xs-pull-9
-	extrasmall-pull-10 = col-xs-pull-10
-	extrasmall-pull-11 = col-xs-pull-11
-	extrasmall-pull-12 = col-xs-pull-12
+	extrasmall-pull-0 = col-pull-0
+	extrasmall-pull-1 = col-pull-1
+	extrasmall-pull-2 = col-pull-2
+	extrasmall-pull-3 = col-pull-3
+	extrasmall-pull-4 = col-pull-4
+	extrasmall-pull-5 = col-pull-5
+	extrasmall-pull-6 = col-pull-6
+	extrasmall-pull-7 = col-pull-7
+	extrasmall-pull-8 = col-pull-8
+	extrasmall-pull-9 = col-pull-9
+	extrasmall-pull-10 = col-pull-10
+	extrasmall-pull-11 = col-pull-11
+	extrasmall-pull-12 = col-pull-12
 
 	#Extra Small Move Right
-	extrasmall-push-0 = col-xs-push-0
-	extrasmall-push-1 = col-xs-push-1
-	extrasmall-push-2 = col-xs-push-2
-	extrasmall-push-3 = col-xs-push-3
-	extrasmall-push-4 = col-xs-push-4
-	extrasmall-push-5 = col-xs-push-5
-	extrasmall-push-6 = col-xs-push-6
-	extrasmall-push-7 = col-xs-push-7
-	extrasmall-push-8 = col-xs-push-8
-	extrasmall-push-9 = col-xs-push-9
-	extrasmall-push-10 = col-xs-push-10
-	extrasmall-push-11 = col-xs-push-11
-	extrasmall-push-12 = col-xs-push-12
+	extrasmall-push-0 = col-push-0
+	extrasmall-push-1 = col-push-1
+	extrasmall-push-2 = col-push-2
+	extrasmall-push-3 = col-push-3
+	extrasmall-push-4 = col-push-4
+	extrasmall-push-5 = col-push-5
+	extrasmall-push-6 = col-push-6
+	extrasmall-push-7 = col-push-7
+	extrasmall-push-8 = col-push-8
+	extrasmall-push-9 = col-push-9
+	extrasmall-push-10 = col-push-10
+	extrasmall-push-11 = col-push-11
+	extrasmall-push-12 = col-push-12
 
 	#Large Size Width
 	large-width-1 = col-lg-1
