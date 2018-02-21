@@ -27,18 +27,18 @@ TCEFORM {
 	sys_template {
 		# Define some supported extensions
 		tx_themes_features.addItems {
-			Development = Development
-			GoogleAnalytics = Google-Analytics
-			GoogleFonts = GoogleFonts
-			Hotjar = Hotjar
-			LazyLoading = Lazy loading
-			Piwik = Piwik
+			ThemeBootstrap4_Development = Development
+			ThemeBootstrap4_GoogleAnalytics = Google-Analytics
+			ThemeBootstrap4_GoogleFonts = GoogleFonts
+			ThemeBootstrap4_Hotjar = Hotjar
+			ThemeBootstrap4_LazyLoading = Lazy loading
+			ThemeBootstrap4_Piwik = Piwik
 		}
 		# Define some features
 		tx_themes_extensions.addItems {
-			Felogin = Frontend-Login
-			IndexedSearch = Indexed search
-			News = News
+			ThemeBootstrap4_Felogin = Frontend-Login
+			ThemeBootstrap4_IndexedSearch = Indexed search
+			ThemeBootstrap4_News = News
 		}
 	}
 }
