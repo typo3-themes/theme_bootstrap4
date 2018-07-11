@@ -34,6 +34,8 @@ TCEFORM {
 			ThemeBootstrap4_LazyLoading = Lazy loading
 			ThemeBootstrap4_Piwik = Piwik
 
+			ThemeBootstrap4_IconsFontAwesome4 = Icons: FontAwesome 4
+
 			ThemeBootstrap4_ContentPlugin = Content: Plugin
 
 			ThemeBootstrap4_MenuBreadcrumb = Menu: Breadcrumb

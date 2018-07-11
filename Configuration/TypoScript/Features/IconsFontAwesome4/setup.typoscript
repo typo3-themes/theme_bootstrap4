@@ -1,5 +1,15 @@
 #ToDo: update list: have a look at: http://v4-alpha.getbootstrap.com/migration/#components
 
+page {
+	includeCSSLibs {
+		fontawesome = EXT:theme_bootstrap4/Resources/Public/Contrib/font-awesome-4.6.3/css/font-awesome.min.css
+		fontawesome {
+			excludeFromConcatenation = 1
+			disableCompression = 1
+		}
+	}
+}
+
 lib.icons.cssMap {
 
 	# This is the list of available icons in this theme
