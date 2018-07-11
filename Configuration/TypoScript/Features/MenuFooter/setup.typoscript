@@ -23,3 +23,13 @@ lib.menu.footer.1 {
 		wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.footer.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.footer.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.footer.prefix}|</li>
 	}
 }
+
+plugin.tx_themes {
+	settings {
+		menu {
+			footer {
+				active = 1
+			}
+		}
+	}
+}

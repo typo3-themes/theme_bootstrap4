@@ -2,7 +2,7 @@
 
 # Breadcrumb with itemscope and Bootstrap classes
 #
-# Constants:
+# Constants:top
 # {$themes.configuration.menu.breadcrumb.divider}
 # {$themes.configuration.menu.breadcrumb.cssClasses}
 #
@@ -34,4 +34,14 @@ lib.menu.breadcrumb {
 	}
 	90 = TEXT
 	90.value = </ol>
+}
+
+plugin.tx_themes {
+	settings {
+		menu {
+			breadcrumb {
+				active = 1
+			}
+		}
+	}
 }

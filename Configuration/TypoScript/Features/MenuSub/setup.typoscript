@@ -49,3 +49,13 @@ lib.menu.sub.2 {
 		wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.sub.prefixFirstLevel}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.sub.prefixFirstLevel}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.sub.prefixFirstLevel}|</li>
 	}
 }
+
+plugin.tx_themes {
+	settings {
+		menu {
+			sub {
+				active = 1
+			}
+		}
+	}
+}

@@ -7,12 +7,14 @@
 		<footer id="area-footer">
 			<!--
 			@todo class container // optionally fluid-container!!
-			--> 
+			-->
 			<div class="container">
 				<div class="row">
 
 					<div class="menu-special-wrapper col-lg-12">
-						<f:cObject typoscriptObjectPath="lib.menu.special" />
+						<f:if condition="{settings.menu.special.active}">
+							<f:cObject typoscriptObjectPath="lib.menu.special" />
+						</f:if>
 					</div>
 
 					<div class="col-lg-6">
@@ -22,9 +24,11 @@
 					</div>
 
 					<div class="col-lg-6">
-						<div id="menu-footer">
-							<f:cObject typoscriptObjectPath="lib.menu.footer" />
-						</div>
+						<f:if condition="{settings.menu.footer.active}">
+							<div id="menu-footer">
+								<f:cObject typoscriptObjectPath="lib.menu.footer" />
+							</div>
+						</f:if>
 					</div>
 
 

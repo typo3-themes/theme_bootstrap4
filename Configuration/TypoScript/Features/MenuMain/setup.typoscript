@@ -59,3 +59,12 @@ lib.menu.main {
 	}
 }
 
+plugin.tx_themes {
+	settings {
+		menu {
+			main {
+				active = 1
+			}
+		}
+	}
+}

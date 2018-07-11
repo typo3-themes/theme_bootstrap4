@@ -22,3 +22,13 @@ lib.menu.top.1 {
 		ACT.wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.top.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.top.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.top.prefix}|</li>
 	}
 }
+
+plugin.tx_themes {
+	settings {
+		menu {
+			top {
+				active = 1
+			}
+		}
+	}
+}

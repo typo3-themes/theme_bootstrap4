@@ -1,0 +1,16 @@
+# customsubcategory=menu_sub=Menu-Sub
+
+# cat=menu,advanced/menu_sub/; type=string; label= Menu sub: Exclude uid list (12,13,...)
+themes.configuration.menu.sub.excludeUidList =
+
+# cat=menu,advanced/menu_sub/; type=options[0,1]; label= Menu sub: Include also items which are marked as 'include not in menu'
+themes.configuration.menu.sub.includeNotInMenu = 0
+
+# cat=menu,expert/menu_sub/; type=string; label= Menu sub: CSS classes
+themes.configuration.menu.sub.cssClasses = nav nav-pills nav-stacked
+
+# cat=menu,expert/menu_sub/; type=string; label= Menu sub: Prefix for each menu item in first entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
+themes.configuration.menu.sub.prefixFirstLevel =
+
+# cat=menu,expert/menu_sub/; type=string; label= Menu sub: Prefix for each menu item in second entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
+themes.configuration.menu.sub.prefixSecondLevel =

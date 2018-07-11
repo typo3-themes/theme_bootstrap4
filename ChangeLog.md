@@ -1,6 +1,13 @@
-## theme_bootstrap4 Change-Log
+# Theme-Bootstrap4 Change-Log
 
-### 0.5.0 (2018-02-19 / 2018-02-20)
+
+## 2018-07-11  Release of version 0.6.0
+
+### 2018-07-11  Thomas Deuling  <typo3@coding.ms>
+
+*   [TASK] Moving menus into features.
+
+### 2018-02-19  Dieter Bruening <dbruening@coding.ms>
 
 *   [TASK] Adding variants for grid gutter
 *   [TASK] Update styles for menu divider

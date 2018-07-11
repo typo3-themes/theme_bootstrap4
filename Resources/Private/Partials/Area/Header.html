@@ -10,15 +10,17 @@
 					<div id="header-logo-main" class="navbar-brand">
 						<f:cObject typoscriptObjectPath="lib.header.logo.main" />
 					</div>
-					<button class="navbar-toggler" type="button"
-							data-toggle="collapse" data-target="#navbar-main"
-							aria-controls="navbar-main" aria-expanded="false"
-							aria-label="{f:translate(key: 'toggleNavigation_label')}">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div id="navbar-main" class="collapse navbar-collapse">
-						<f:cObject typoscriptObjectPath="lib.menu.main" />
-					</div>
+					<f:if condition="{settings.menu.main.active}">
+						<button class="navbar-toggler" type="button"
+								data-toggle="collapse" data-target="#navbar-main"
+								aria-controls="navbar-main" aria-expanded="false"
+								aria-label="{f:translate(key: 'toggleNavigation_label')}">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div id="navbar-main" class="collapse navbar-collapse">
+							<f:cObject typoscriptObjectPath="lib.menu.main" />
+						</div>
+					</f:if>
 				</div>
 			</nav>
 		</header>

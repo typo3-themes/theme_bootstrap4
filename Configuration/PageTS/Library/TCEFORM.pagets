@@ -33,6 +33,15 @@ TCEFORM {
 			ThemeBootstrap4_Hotjar = Hotjar
 			ThemeBootstrap4_LazyLoading = Lazy loading
 			ThemeBootstrap4_Piwik = Piwik
+
+			ThemeBootstrap4_ContentPlugin = Content: Plugin
+
+			ThemeBootstrap4_MenuBreadcrumb = Menu: Breadcrumb
+			ThemeBootstrap4_MenuFooter = Menu: Footer
+			ThemeBootstrap4_MenuMain = Menu: Main
+			ThemeBootstrap4_MenuSpecial = Menu: Special
+			ThemeBootstrap4_MenuSub = Menu: Sub
+			ThemeBootstrap4_MenuTop = Menu: Top
 		}
 		# Define some features
 		tx_themes_extensions.addItems {

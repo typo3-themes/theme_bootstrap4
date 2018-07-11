@@ -1,0 +1,13 @@
+# customsubcategory=menu_breadcrumb=Menu-Breadcrumb
+
+# cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: Divider
+themes.configuration.menu.breadcrumb.divider = >
+
+# cat=menu,expert/menu_breadcrumb/; type=string; label= Menu breadcrumb: CSS classes
+themes.configuration.menu.breadcrumb.cssClasses = breadcrumb
+
+# cat=menu,advanced/menu_breadcrumb/; type=options[0,1]; label= Menu breadcrumb: Include also items which are marked as 'include not in menu'
+themes.configuration.menu.breadcrumb.includeNotInMenu = 0
+
+# cat=menu,advanced/menu_breadcrumb/; type=string; label= Menu breadcrumb: Exclude uid list (12,13,...)
+themes.configuration.menu.breadcrumb.excludeUidList =

@@ -51,3 +51,13 @@ lib.menu.special.2 {
 		wrapItemAndSub = <li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.special.prefixSecondLevel}|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.special.prefixSecondLevel}|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.special.prefixSecondLevel}|</li>
 	}
 }
+
+plugin.tx_themes {
+	settings {
+		menu {
+			speical {
+				active = 1
+			}
+		}
+	}
+}

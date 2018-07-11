@@ -1,0 +1,13 @@
+# customsubcategory=menu_main=Menu-Main
+
+# cat=menu,advanced/menu_main/; type=string; label= Menu main: Exclude uid list (12,13,...)
+themes.configuration.menu.main.excludeUidList =
+
+# cat=menu,expert/menu_main/; type=string; label= Menu main: Prefix for each menu item in first entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
+themes.configuration.menu.main.prefixFirstLevel =
+
+# cat=menu,expert/menu_main/; type=string; label= Menu main: Prefix for each menu item in second entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
+themes.configuration.menu.main.prefixSecondLevel =
+
+# cat=menu,expert/menu_main/; type=options[0,1]; label= Menu top: Do not link first level pages, which have sub-pages
+themes.configuration.menu.main.doNotLinkFirstLevelPagesWithSubPages = 1
