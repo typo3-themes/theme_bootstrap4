@@ -84,10 +84,6 @@ plugin.tx_dyncss.overrides {
 	warning = TEXT
 	warning.value = {$themes.configuration.colors.warning}
 
-	#icon-font-path = TEXT
-	#icon-font-path.value = '{$themes.configuration.font.icon.fontFilePath}'
-
-
 	top-menu-divider = TEXT
 	top-menu-divider.value = '{$themes.configuration.menu.top.divider}'
 

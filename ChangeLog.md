@@ -2,6 +2,7 @@
 
 
 
+*   [TASK] Remove unused constant and dyncss override for themes.configuration.font.icon.fontFilePath 
 *   [TASK] Moving font families into features.
 
 
