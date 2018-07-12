@@ -2,6 +2,8 @@
 
 ### 2018-07-12  Dieter Bruening <dbruening@coding.ms>
 
+*   [TASK] Rename .pagets to .typoscript
+*   [TASK] Remove unused file backendlayouts.default.pagets.
 *   [TASK] Moving BackendLayouts into features.
 *   [TASK] Update Bootstrap v4.1.1
 
