@@ -44,6 +44,22 @@ TCEFORM {
 			ThemeBootstrap4_MenuSpecial = Menu: Special
 			ThemeBootstrap4_MenuSub = Menu: Sub
 			ThemeBootstrap4_MenuTop = Menu: Top
+
+			ThemeBootstrap4_BackendLayoutContent = Backend Layout: Content
+			ThemeBootstrap4_BackendLayoutContentEmpty = Backend Layout: Content Empty
+			ThemeBootstrap4_BackendLayoutContentMenu = Backend Layout: Content Menu
+			ThemeBootstrap4_BackendLayoutContentMenuSidebar = Backend Layout: Content Menu Sidebar
+			ThemeBootstrap4_BackendLayoutContentSidebar = Backend Layout: Content Sidebar
+			ThemeBootstrap4_BackendLayoutContentSidebarMenu = Backend Layout: Content Sidebar Menu
+			ThemeBootstrap4_BackendLayoutContentSpecial = Backend Layout: Content Special
+			ThemeBootstrap4_BackendLayoutContentStartsite = Backend Layout: Content Startsite
+			ThemeBootstrap4_BackendLayoutDemo = Backend Layout: Demo
+			ThemeBootstrap4_BackendLayoutMenuContent = Backend Layout: Menu Content
+			ThemeBootstrap4_BackendLayoutMenuContentSidebar = Backend Layout: Menu Content Sidebar
+			ThemeBootstrap4_BackendLayoutMenuSidebarContent = Backend Layout: Menu Sidebar Content
+			ThemeBootstrap4_BackendLayoutSidebarContent = Backend Layout: Sidebar Content
+			ThemeBootstrap4_BackendLayoutSidebarContentMenu = Backend Layout: Sidebar Content Menu
+			ThemeBootstrap4_BackendLayoutSidebarMenuContent = Backend Layout: Sidebar Menu Content
 		}
 		# Define some features
 		tx_themes_extensions.addItems {

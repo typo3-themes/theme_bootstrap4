@@ -1,4 +1,3 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/BackendLayouts/">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap4/Configuration/PageTS/Library/">
 
 # muss raus
