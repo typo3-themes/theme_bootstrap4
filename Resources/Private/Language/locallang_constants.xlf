@@ -15,6 +15,9 @@
 			<trans-unit id="baseurl_image">
 				<source>Image base URL of the site (http://cdn.domain.tdl/project/Images/; http://www.domain.tld/fileadmin/project/Images/)</source>
 			</trans-unit>
+			<trans-unit id="baseurl_font">
+				<source>Font base URL of the site (http://cdn.domain.tdl/project/Fonts/; http://www.domain.tld/fileadmin/project/Fonts/)</source>
+			</trans-unit>
 			<trans-unit id="favicon">
 				<source>Path and file for favicon (fileadmin/project/Icons/favicon.ico)</source>
 			</trans-unit>

@@ -17,6 +17,8 @@ plugin.tx_themes {
 	}
 	settings {
 		baseurlImage = {$themes.configuration.baseurlImage}
+		baseurlIcon = {$themes.configuration.baseurlIcon}
+		baseurlFont = {$themes.configuration.baseurlFont}
 
 		resourcesPrivatePath = {$themes.resourcesPrivatePath}
 		resourcesPublicPath = {$themes.resourcesPublicPath}
