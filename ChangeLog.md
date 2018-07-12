@@ -1,6 +1,12 @@
 # Theme-Bootstrap4 Change-Log
 
 
+### 2018-07-12  Thomas Deuling  <typo3@coding.ms>
+
+*   [TASK] Removing inline TypoScript files.
+
+
+
 ## 2018-07-11  Release of version 0.6.0
 
 ### 2018-07-11  Thomas Deuling  <typo3@coding.ms>
