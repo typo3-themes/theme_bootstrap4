@@ -1,7 +1,11 @@
 # Theme-Bootstrap4 Change-Log
 
+
+## 2018-07-12  Release of version 0.7.0
+
 ### 2018-07-12  Dieter Bruening <dbruening@coding.ms>
 
+*   [TASK] Update version number
 *   [TASK] Rename features for tracking service
 *   [TASK] Moving elements into features.
 *   [TASK] Rename .pagets to .typoscript
