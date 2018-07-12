@@ -60,6 +60,14 @@ TCEFORM {
 			ThemeBootstrap4_BackendLayoutSidebarContent = Backend Layout: Sidebar Content
 			ThemeBootstrap4_BackendLayoutSidebarContentMenu = Backend Layout: Sidebar Content Menu
 			ThemeBootstrap4_BackendLayoutSidebarMenuContent = Backend Layout: Sidebar Menu Content
+
+			ThemeBootstrap4_Elements2ColumnGrid = Elements:  2 column grid
+			ThemeBootstrap4_Elements3ColumnGrid = Elements: 3 column grid
+			ThemeBootstrap4_Elements4ColumnGrid = Elements: 4 column grid
+			ThemeBootstrap4_ElementsAccordion = Elements: Accordion
+			ThemeBootstrap4_ElementsCarousel = Elements: Carousel
+			ThemeBootstrap4_ElementsContainer = Elements: Container
+			ThemeBootstrap4_ElementsTabs = Elements: Tabs
 		}
 		# Define some features
 		tx_themes_extensions.addItems {
