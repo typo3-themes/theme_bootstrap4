@@ -37,6 +37,8 @@ TCEFORM {
 			ThemeBootstrap4_LazyLoading = Lazy loading
 			# Webfonts
 			ThemeBootstrap4_GoogleFonts = Google Fonts
+			ThemeBootstrap4_FontFamilySansMonospace = Font Family: Sans Monospace
+			ThemeBootstrap4_FontFamilySansSerif = Font Family: Sans Serif
 			# Icons
 			ThemeBootstrap4_IconsFontAwesome4 = Icons: FontAwesome 4
 			# ContentPlugin

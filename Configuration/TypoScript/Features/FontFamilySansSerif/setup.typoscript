@@ -1,9 +1,7 @@
 #############################################
 # Plugin: Dyncss font family sans-serif override
 #############################################
-
 plugin.tx_dyncss.overrides {
-
 	font-family-sans-serif-use-font-from = TEXT
 	font-family-sans-serif-use-font-from.value = {$themes.configuration.font.family.sansSerif.useFontFrom}
 	font-family-sans-serif-cdn-url = TEXT
@@ -24,5 +22,4 @@ plugin.tx_dyncss.overrides {
 	font-family-sans-serif-file-woff.value = '{$themes.configuration.font.family.sansSerif.fontFileWoff}'
 	font-family-sans-serif-file-woff2 = TEXT
 	font-family-sans-serif-file-woff2.value = '{$themes.configuration.font.family.sansSerif.fontFileWoff2}'
-
 }

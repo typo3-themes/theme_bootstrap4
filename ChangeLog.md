@@ -1,6 +1,10 @@
 # Theme-Bootstrap4 Change-Log
 
 
+
+*   [TASK] Moving font families into features.
+
+
 ## 2018-07-12  Release of version 0.7.0
 
 ### 2018-07-12  Dieter Bruening <dbruening@coding.ms>
