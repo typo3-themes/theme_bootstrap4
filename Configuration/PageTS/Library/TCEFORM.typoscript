@@ -1,0 +1,83 @@
+TCEFORM {
+	tt_content {
+		# Remove unimplemented fields or fields we don't need
+		categories.disabled = 1
+		imageborder.disabled = 1
+		imagecols.disabled = 1
+		layout.disabled = 1
+		frame_class.disabled = 1
+		space_before_class.disabled = 1
+		space_after_class.disabled = 1
+		# Remove unused gallery settings for position and alignment
+		imageorient {
+			removeItems = 17,18,25,26
+		}
+		layout {
+			# Remove default layouts
+			removeItems = 1,2,3
+		}
+		CType {
+			# Remove unimplemented C-Types or C-Types we don't need
+			removeItems = text, textpic, image, bullets, themes_buttoncontent_pi1, form_formframework, menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages
+			altLabels {
+				bullets = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.bullets
+			}
+		}
+	}
+	sys_template {
+		# Define some supported extensions
+		tx_themes_features.addItems {
+			#Development
+			ThemeBootstrap4_Development = Development
+			# Tracking
+			ThemeBootstrap4_TrackingGoogleAnalytics = Tracking: Google-Analytics
+			ThemeBootstrap4_TrackingHotjar = Tracking: Hotjar
+			ThemeBootstrap4_TrackingPiwik = Tracking: Piwik
+			# Libarys
+			ThemeBootstrap4_LazyLoading = Lazy loading
+			# Webfonts
+			ThemeBootstrap4_GoogleFonts = Google Fonts
+			# Icons
+			ThemeBootstrap4_IconsFontAwesome4 = Icons: FontAwesome 4
+			# ContentPlugin
+			ThemeBootstrap4_ContentPlugin = Content: Plugin
+			# Menus
+			ThemeBootstrap4_MenuBreadcrumb = Menu: Breadcrumb
+			ThemeBootstrap4_MenuFooter = Menu: Footer
+			ThemeBootstrap4_MenuMain = Menu: Main
+			ThemeBootstrap4_MenuSpecial = Menu: Special
+			ThemeBootstrap4_MenuSub = Menu: Sub
+			ThemeBootstrap4_MenuTop = Menu: Top
+			# Backend Layout
+			ThemeBootstrap4_BackendLayoutContent = Backend Layout: Content
+			ThemeBootstrap4_BackendLayoutContentEmpty = Backend Layout: Content Empty
+			ThemeBootstrap4_BackendLayoutContentMenu = Backend Layout: Content Menu
+			ThemeBootstrap4_BackendLayoutContentMenuSidebar = Backend Layout: Content Menu Sidebar
+			ThemeBootstrap4_BackendLayoutContentSidebar = Backend Layout: Content Sidebar
+			ThemeBootstrap4_BackendLayoutContentSidebarMenu = Backend Layout: Content Sidebar Menu
+			ThemeBootstrap4_BackendLayoutContentSpecial = Backend Layout: Content Special
+			ThemeBootstrap4_BackendLayoutContentStartsite = Backend Layout: Content Startsite
+			ThemeBootstrap4_BackendLayoutDemo = Backend Layout: Demo
+			ThemeBootstrap4_BackendLayoutMenuContent = Backend Layout: Menu Content
+			ThemeBootstrap4_BackendLayoutMenuContentSidebar = Backend Layout: Menu Content Sidebar
+			ThemeBootstrap4_BackendLayoutMenuSidebarContent = Backend Layout: Menu Sidebar Content
+			ThemeBootstrap4_BackendLayoutSidebarContent = Backend Layout: Sidebar Content
+			ThemeBootstrap4_BackendLayoutSidebarContentMenu = Backend Layout: Sidebar Content Menu
+			ThemeBootstrap4_BackendLayoutSidebarMenuContent = Backend Layout: Sidebar Menu Content
+			# Elements
+			ThemeBootstrap4_Elements2ColumnGrid = Elements:  2 column grid
+			ThemeBootstrap4_Elements3ColumnGrid = Elements: 3 column grid
+			ThemeBootstrap4_Elements4ColumnGrid = Elements: 4 column grid
+			ThemeBootstrap4_ElementsAccordion = Elements: Accordion
+			ThemeBootstrap4_ElementsCarousel = Elements: Carousel
+			ThemeBootstrap4_ElementsContainer = Elements: Container
+			ThemeBootstrap4_ElementsTabs = Elements: Tabs
+		}
+		# Define some features
+		tx_themes_extensions.addItems {
+			ThemeBootstrap4_Felogin = Frontend-Login
+			ThemeBootstrap4_IndexedSearch = Indexed search
+			ThemeBootstrap4_News = News
+		}
+	}
+}
