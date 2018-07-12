@@ -1,5 +1,8 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2018-07-12  Dieter Bruening <dbruening@coding.ms>
+
+*   [TASK] Update Bootstrap v4.1.1
 
 ### 2018-07-12  Thomas Deuling  <typo3@coding.ms>
 
