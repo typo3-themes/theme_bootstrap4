@@ -2,6 +2,7 @@
 
 ### 2018-07-12  Dieter Bruening <dbruening@coding.ms>
 
+*   [TASK] Rename features for tracking service
 *   [TASK] Moving elements into features.
 *   [TASK] Rename .pagets to .typoscript
 *   [TASK] Remove unused file backendlayouts.default.pagets.

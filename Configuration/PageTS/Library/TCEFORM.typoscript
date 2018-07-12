@@ -27,24 +27,28 @@ TCEFORM {
 	sys_template {
 		# Define some supported extensions
 		tx_themes_features.addItems {
+			#Development
 			ThemeBootstrap4_Development = Development
-			ThemeBootstrap4_GoogleAnalytics = Google-Analytics
-			ThemeBootstrap4_GoogleFonts = GoogleFonts
-			ThemeBootstrap4_Hotjar = Hotjar
+			# Tracking
+			ThemeBootstrap4_TrackingGoogleAnalytics = Tracking: Google-Analytics
+			ThemeBootstrap4_TrackingHotjar = Tracking: Hotjar
+			ThemeBootstrap4_TrackingPiwik = Tracking: Piwik
+			# Libarys
 			ThemeBootstrap4_LazyLoading = Lazy loading
-			ThemeBootstrap4_Piwik = Piwik
-
+			# Webfonts
+			ThemeBootstrap4_GoogleFonts = Google Fonts
+			# Icons
 			ThemeBootstrap4_IconsFontAwesome4 = Icons: FontAwesome 4
-
+			# ContentPlugin
 			ThemeBootstrap4_ContentPlugin = Content: Plugin
-
+			# Menus
 			ThemeBootstrap4_MenuBreadcrumb = Menu: Breadcrumb
 			ThemeBootstrap4_MenuFooter = Menu: Footer
 			ThemeBootstrap4_MenuMain = Menu: Main
 			ThemeBootstrap4_MenuSpecial = Menu: Special
 			ThemeBootstrap4_MenuSub = Menu: Sub
 			ThemeBootstrap4_MenuTop = Menu: Top
-
+			# Backend Layout
 			ThemeBootstrap4_BackendLayoutContent = Backend Layout: Content
 			ThemeBootstrap4_BackendLayoutContentEmpty = Backend Layout: Content Empty
 			ThemeBootstrap4_BackendLayoutContentMenu = Backend Layout: Content Menu
@@ -60,7 +64,7 @@ TCEFORM {
 			ThemeBootstrap4_BackendLayoutSidebarContent = Backend Layout: Sidebar Content
 			ThemeBootstrap4_BackendLayoutSidebarContentMenu = Backend Layout: Sidebar Content Menu
 			ThemeBootstrap4_BackendLayoutSidebarMenuContent = Backend Layout: Sidebar Menu Content
-
+			# Elements
 			ThemeBootstrap4_Elements2ColumnGrid = Elements:  2 column grid
 			ThemeBootstrap4_Elements3ColumnGrid = Elements: 3 column grid
 			ThemeBootstrap4_Elements4ColumnGrid = Elements: 4 column grid
