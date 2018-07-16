@@ -52,6 +52,7 @@ TCEFORM {
 			ThemeBootstrap4_FontFamilySansSerif = Font Family: Sans Serif
 			# Icons
 			ThemeBootstrap4_IconsFontAwesome4 = Icons: FontAwesome 4
+			ThemeBootstrap4_SocialMediaIcons = Social Media Icons
 			# Content
 			ThemeBootstrap4_ContentPlugin = Content: Plugin
 			ThemeBootstrap4_ContentText = Content: Text

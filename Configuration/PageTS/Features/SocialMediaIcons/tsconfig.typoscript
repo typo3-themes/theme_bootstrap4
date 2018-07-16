@@ -1,0 +1,1 @@
+mod.tx_themes.constantCategoriesToShow := addToList(socialmedia)

@@ -1,5 +1,6 @@
 # Theme-Bootstrap4 Change-Log
 
+*   [TASK] Moving social media icons into features.
 
 *   [FEATURE] Adding a simple, selectable Text content element.
 *   [FEATURE] Adding a configuration structure for AddressManager Extension.
