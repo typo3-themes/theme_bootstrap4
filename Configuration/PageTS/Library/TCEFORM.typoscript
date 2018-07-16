@@ -87,6 +87,9 @@ TCEFORM {
 			ThemeBootstrap4_ElementsCarousel = Elements: Carousel
 			ThemeBootstrap4_ElementsContainer = Elements: Container
 			ThemeBootstrap4_ElementsTabs = Elements: Tabs
+			# Language
+			ThemeBootstrap4_LanguageDefaultDE = Language: Default DE
+			ThemeBootstrap4_LanguageDefaultEN = Language: Default EN
 		}
 		# Define some features
 		tx_themes_extensions.addItems {

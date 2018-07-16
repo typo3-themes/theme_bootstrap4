@@ -1,0 +1,5 @@
+# Default language configuration for german
+mod.SHARED {
+	defaultLanguageFlag = de
+	defaultLanguageLabel = Deutsch
+}

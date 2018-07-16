@@ -1,5 +1,6 @@
 # Theme-Bootstrap4 Change-Log
 
+*   [FEATURE] Adding configuration for default language (EN and DE).
 *   [TASK] Moving social media icons into features.
 
 *   [FEATURE] Adding a simple, selectable Text content element.

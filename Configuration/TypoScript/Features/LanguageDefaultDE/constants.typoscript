@@ -1,0 +1,6 @@
+themes.languages.default {
+	flag = de
+	isoCode = de_DE
+	isoCodeShort = de
+	label = German
+}
