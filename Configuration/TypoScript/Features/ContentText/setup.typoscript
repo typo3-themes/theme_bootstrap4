@@ -1,0 +1,16 @@
+tt_content.themebootstrap4ebm_text = FLUIDTEMPLATE
+tt_content.themebootstrap4ebm_text {
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+    partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
+    templateName = Content/Text
+}
