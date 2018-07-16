@@ -1,103 +1,223 @@
-
-[adminUser = 0]
-	TCEFORM.tx_addressmanager_domain_model_address.name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.gender.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.first_name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.middle_name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.last_name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.birthday.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.title.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.email.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.phone.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.mobile.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.www.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.address.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.building.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.room.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.company.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.city.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.postal_code.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.region.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.country.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.images.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.fax.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.description.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_latitude.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_longitude.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_zoom.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_tooltip.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_link.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.directions.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.groups.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.positions.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.organisations.disabled = 0
-[GLOBAL]
-
-
-[adminUser = 1]
-	TCEFORM.tx_addressmanager_domain_model_address.name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.gender.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.first_name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.middle_name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.last_name.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.birthday.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.title.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.email.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.phone.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.mobile.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.www.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.address.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.building.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.room.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.company.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.city.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.postal_code.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.region.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.country.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.images.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.fax.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.description.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_latitude.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_longitude.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_zoom.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_tooltip.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.map_link.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.directions.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.groups.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.positions.disabled = 0
-	TCEFORM.tx_addressmanager_domain_model_address.organisations.disabled = 0
-[GLOBAL]
-
-# Easy overwriting labels for the backend forms
 #
-#TCEFORM.tx_addressmanager_domain_model_address.name.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.gender.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.first_name.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.middle_name.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.last_name.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.birthday.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.title.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.email.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.phone.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.mobile.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.www.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.address.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.building.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.room.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.company.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.city.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.postal_code.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.region.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.country.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.images.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.fax.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.description.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.map_latitude.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.map_longitude.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.map_zoom.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.map_tooltip.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.map_link.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.directions.label.de = Titel
-#TCEFORM.tx_addressmanager_domain_model_address.groups.label.de = Marke
-#TCEFORM.tx_addressmanager_domain_model_address.positions.label.de = Abteilung
-#TCEFORM.tx_addressmanager_domain_model_address.organisations.label.de = Standort
+# Editor: Visible fields
+[adminUser = 0]
+	TCEFORM.tx_portfolios_domain_model_portfolio {
+		# Tab: General
+		title.disabled = 0
+		sub_title.disabled = 0
+		highlight.disabled = 0
+		teaser.disabled = 0
+		description.disabled = 0
+		finishing_date.disabled = 0
+		working_hours.disabled = 0
+		www.disabled = 0
+		latitude.disabled = 0
+		longitude.disabled = 0
+		attribute1.disabled = 0
+		attribute2.disabled = 0
+		attribute3.disabled = 0
+		attribute4.disabled = 0
+		attribute5.disabled = 0
+		attribute6.disabled = 0
+		attribute7.disabled = 0
+		attribute8.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+		# Tab: SEO
+		html_title.disabled = 0
+		meta_abstract.disabled = 0
+		meta_description.disabled = 0
+		meta_keywords.disabled = 0
+		# Tab: Relations
+		categories.disabled = 0
+		tags.disabled = 0
+		related_portfolios.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: Files
+		files.disabled = 0
+		# Tab: Markdown
+		markdown.disabled = 0
+	}
+[GLOBAL]
+#
+# Admin: Visible fields
+[adminUser = 1]
+	TCEFORM.tx_portfolios_domain_model_portfolio {
+		# Tab: General
+		title.disabled = 0
+		sub_title.disabled = 0
+		highlight.disabled = 0
+		teaser.disabled = 0
+		description.disabled = 0
+		finishing_date.disabled = 0
+		working_hours.disabled = 0
+		www.disabled = 0
+		latitude.disabled = 0
+		longitude.disabled = 0
+		attribute1.disabled = 0
+		attribute2.disabled = 0
+		attribute3.disabled = 0
+		attribute4.disabled = 0
+		attribute5.disabled = 0
+		attribute6.disabled = 0
+		attribute7.disabled = 0
+		attribute8.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+		# Tab: SEO
+		html_title.disabled = 0
+		meta_abstract.disabled = 0
+		meta_description.disabled = 0
+		meta_keywords.disabled = 0
+		# Tab: Relations
+		categories.disabled = 0
+		tags.disabled = 0
+		related_portfolios.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: Files
+		files.disabled = 0
+		# Tab: Markdown
+		markdown.disabled = 0
+	}
+[GLOBAL]
+#
+# Overwriting labels for the backend forms
+TCEFORM.tx_portfolios_domain_model_portfolio {
+	# Tab: General
+	title.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	sub_title.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	highlight.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	teaser.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	description.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	finishing_date.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	working_hours.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	www.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	latitude.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	longitude.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute1.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute2.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute3.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute4.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute5.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute6.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute7.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute8.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Access
+	hidden.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	starttime.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	endtime.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: SEO
+	html_title.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_abstract.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_description.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_keywords.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Relations
+	categories.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	tags.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	related_portfolios.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Images
+	images.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Files
+	files.label {
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Markdown
+	markdown.label {
+		#de = deutsches Label
+		#en = english label
+	}
+}
