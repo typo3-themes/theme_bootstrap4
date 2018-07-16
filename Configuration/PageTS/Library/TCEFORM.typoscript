@@ -90,6 +90,8 @@ TCEFORM {
 			# Language
 			ThemeBootstrap4_LanguageDefaultDE = Language: Default DE
 			ThemeBootstrap4_LanguageDefaultEN = Language: Default EN
+			# SEO
+			ThemeBootstrap4_CanonicalTag = Canonical Tag
 		}
 		# Define some features
 		tx_themes_extensions.addItems {

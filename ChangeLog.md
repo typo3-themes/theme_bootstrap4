@@ -1,5 +1,6 @@
 # Theme-Bootstrap4 Change-Log
 
+*   [FEATURE] Adding configuration for an optional Canonical Tag.
 *   [FEATURE] Adding configuration for default language (EN and DE).
 *   [TASK] Moving social media icons into features.
 

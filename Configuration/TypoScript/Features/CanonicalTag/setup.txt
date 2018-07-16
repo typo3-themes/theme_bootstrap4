@@ -1,0 +1,21 @@
+page.headerData.1531757786 = TEXT
+page.headerData.1531757786 {
+	typolink {
+		# hol die aktuelle Page Id
+		parameter.data = page:uid
+		# prüfe ob die Id wirklich eine Zahl ist
+		parameter.intval = 1
+		useCacheHash = 1
+		# füge zur URL alle Parameter hinzu
+		addQueryString = 1
+		addQueryString.method = GET
+		# entferne folgende nicht erwünschte Parameter aus der URL
+		addQueryString.exclude = id, cHash, tx_ttnews[pointer], tx_indexedsearch[sword], tx_comments_pi1[page], tx_pagebrowse_pi1[page]
+		# gib die reine URL zurück
+		returnLast = url
+		# Enforce absolute URL
+		forceAbsoluteUrl = 1
+	}
+	# bau mir den Meta-Tag zusammen
+	wrap = <link rel="canonical" href="|">
+}
