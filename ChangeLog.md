@@ -1,9 +1,12 @@
 # Theme-Bootstrap4 Change-Log
 
 
+*   [FEATURE] Adding a simple, selectable Text content element.
+*   [FEATURE] Adding a configuration structure for AddressManager Extension.
+*   [FEATURE] Adding a configuration structure for Portfolios Extension.
 
 *   [TASK] Add base url for theme fonts files
-*   [TASK] Remove unused constant and dyncss override for themes.configuration.font.icon.fontFilePath 
+*   [TASK] Remove unused constant and dyncss override for themes.configuration.font.icon.fontFilePath
 *   [TASK] Moving font families into features.
 
 

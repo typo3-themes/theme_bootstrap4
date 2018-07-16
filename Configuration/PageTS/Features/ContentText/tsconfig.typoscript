@@ -1,13 +1,22 @@
 mod.wizards.newContentElement.wizardItems.common {
 	elements {
-		themebootstrap4ebm_text {
-			iconIdentifier = mimetypes-x-content-themebootstrap4ebm-text
+		themebootstrap4_text {
+			iconIdentifier = new-content-el-text
 			title = Einfacher Text
 			description = Einfacher Text mit einer Headline
 			tt_content_defValues {
-				CType = themebootstrap4ebm_text
+				CType = themebootstrap4_text
 			}
 		}
 	}
-	show := addToList(themebootstrap4ebm_text)
+	show := addToList(themebootstrap4_text)
+}
+
+TCEFORM.tt_content {
+	CType {
+		addItems = themebootstrap4_text
+	}
+	layout {
+		disabled = 0
+	}
 }

@@ -1,3 +1,14 @@
+
+
+#
+# Remove all content,
+TCEFORM.tt_content {
+	CType {
+		removeItems = themebootstrap4_text
+	}
+}
+
+
 TCEFORM {
 	tt_content {
 		# Remove unimplemented fields or fields we don't need
@@ -41,8 +52,9 @@ TCEFORM {
 			ThemeBootstrap4_FontFamilySansSerif = Font Family: Sans Serif
 			# Icons
 			ThemeBootstrap4_IconsFontAwesome4 = Icons: FontAwesome 4
-			# ContentPlugin
+			# Content
 			ThemeBootstrap4_ContentPlugin = Content: Plugin
+			ThemeBootstrap4_ContentText = Content: Text
 			# Menus
 			ThemeBootstrap4_MenuBreadcrumb = Menu: Breadcrumb
 			ThemeBootstrap4_MenuFooter = Menu: Footer

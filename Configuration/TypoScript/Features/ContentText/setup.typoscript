@@ -1,5 +1,5 @@
-tt_content.themebootstrap4ebm_text = FLUIDTEMPLATE
-tt_content.themebootstrap4ebm_text {
+tt_content.themebootstrap4_text = FLUIDTEMPLATE
+tt_content.themebootstrap4_text {
 	templateRootPaths {
 		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
 		400 = {$themes.resourcesPrivatePath}Templates/

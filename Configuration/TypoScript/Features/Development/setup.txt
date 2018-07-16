@@ -12,4 +12,4 @@ config.concatenateJs = 0
 page.meta.robots = noindex,nofollow
 
 # Exception handling - show detailed messages
-config.contentObjectExceptionHandler = 1
+config.contentObjectExceptionHandler = 0
