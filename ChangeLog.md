@@ -9,6 +9,7 @@
 *   [TASK] Making Divider content element selectable as feature.
 *   [TASK] Making Shortcut content element selectable as feature.
 *   [TASK] Making Sitemap content elements selectable as feature.
+*   [TASK] Making Uploads/Downloads content elements selectable as feature.
 
 
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
