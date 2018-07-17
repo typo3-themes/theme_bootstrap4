@@ -7,6 +7,7 @@
 *   [TASK] Removing login new content element wizard, when Felogin extension isn't selected.
 *   [TASK] Making HTML content element selectable as feature.
 *   [TASK] Making Divider content element selectable as feature.
+*   [TASK] Making Shortcut content element selectable as feature.
 
 
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
