@@ -55,7 +55,7 @@ TCEFORM {
 			# Content
 			ThemeBootstrap4_ContentPlugin = Content: Plugin
 			ThemeBootstrap4_ContentText = Content: Text
-			ThemeBootstrap4_ContentMedia = Content: Media
+			ThemeBootstrap4_ContentTextImage = Content: Text Image
 			ThemeBootstrap4_ContentHtml = Content: HTML
 			ThemeBootstrap4_ContentDivider = Content: Divider
 			ThemeBootstrap4_ContentShortcut = Content: Shortcut

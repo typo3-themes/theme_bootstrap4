@@ -1,5 +1,5 @@
-tt_content.themebootstrap4_media = FLUIDTEMPLATE
-tt_content.themebootstrap4_media {
+tt_content.themebootstrap4_text_image = FLUIDTEMPLATE
+tt_content.themebootstrap4_text_image {
 	templateRootPaths {
 		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
 		400 = {$themes.resourcesPrivatePath}Templates/
@@ -12,7 +12,7 @@ tt_content.themebootstrap4_media {
 		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
 		400 = {$themes.resourcesPrivatePath}Layouts/
 	}
-	templateName = Content/Media
+	templateName = Content/TextImage
 	dataProcessing {
 		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
 		10 {

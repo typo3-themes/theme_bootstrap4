@@ -1,5 +1,6 @@
 # Theme-Bootstrap4 Change-Log
 
+*   [FEATURE] Change media content element to a simple text-image content element.
 *   [FEATURE] Adding a simple, selectable Media content element.
 *   [BUGFIX] New content element icon path
 *   [BUGFIX] Fixing text content element icon.
