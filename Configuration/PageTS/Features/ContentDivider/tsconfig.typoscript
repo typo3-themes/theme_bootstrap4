@@ -1,1 +1,1 @@
-TCEFORM.tt_content.CType.removeItems := removeFromList(divider)
+TCEFORM.tt_content.CType.removeItems := removeFromList(div)
