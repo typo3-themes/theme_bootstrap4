@@ -4,7 +4,7 @@
 # Remove all content,
 TCEFORM.tt_content {
 	CType {
-		removeItems = themebootstrap4_text
+		removeItems = themebootstrap4_text, text, textpic, image, bullets, themes_buttoncontent_pi1, form_formframework, menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages, login
 	}
 }
 
@@ -29,7 +29,6 @@ TCEFORM {
 		}
 		CType {
 			# Remove unimplemented C-Types or C-Types we don't need
-			removeItems = text, textpic, image, bullets, themes_buttoncontent_pi1, form_formframework, menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages
 			altLabels {
 				bullets = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang.xlf:content.bullets
 			}
