@@ -1,5 +1,6 @@
 # Theme-Bootstrap4 Change-Log
 
+*   [TASK] Customize the configuration for the text-image content element.
 *   [BUGFIX] Change text-image content element template classes.
 *   [FEATURE] Change media content element to a simple text-image content element.
 *   [FEATURE] Adding a simple, selectable Media content element.

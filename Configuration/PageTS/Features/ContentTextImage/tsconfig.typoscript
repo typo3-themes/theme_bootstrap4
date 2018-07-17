@@ -14,7 +14,7 @@ mod.wizards.newContentElement.wizardItems.common {
 
 TCEFORM.tt_content {
 	CType {
-		addItems = themebootstrap4_text_image
+		removeItems := removeFromList(themebootstrap4_text_image)
 	}
 	layout {
 		disabled = 0
