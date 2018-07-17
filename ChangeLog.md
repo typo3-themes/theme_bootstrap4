@@ -1,5 +1,6 @@
 # Theme-Bootstrap4 Change-Log
 
+*   [FEATURE] Adding a simple, selectable Media content element.
 *   [BUGFIX] New content element icon path
 *   [FEATURE] Adding configuration for an optional Canonical Tag.
 *   [FEATURE] Adding configuration for default language (EN and DE).
