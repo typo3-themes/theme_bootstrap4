@@ -100,12 +100,12 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text'] = [
 //
 // Simple media content element
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-    'Media',
-    'themebootstrap4_media',
-    'new-content-el-media',
+    'Text Image',
+    'themebootstrap4_text_image',
+    'new-content-el-text_image',
 ];
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['themebootstrap4_media'] = 'new-content-el-media';
-$GLOBALS['TCA']['tt_content']['types']['themebootstrap4_media'] = [
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['themebootstrap4_text_image'] = 'new-content-el-text-image';
+$GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text_image'] = [
     'showitem' => '
             CType,
             header,
