@@ -10,7 +10,8 @@
 *   [TASK] Making Shortcut content element selectable as feature.
 *   [TASK] Making Sitemap content elements selectable as feature.
 *   [TASK] Making Uploads/Downloads content elements selectable as feature.
-*   [TASK] Making Header content elements selectable as feature.
+*   [TASK] Making Header content element selectable as feature.
+*   [TASK] Disabling old Text Media content element.
 
 
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
