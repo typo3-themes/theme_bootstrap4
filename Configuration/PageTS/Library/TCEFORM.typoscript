@@ -54,6 +54,7 @@ TCEFORM {
 			ThemeBootstrap4_SocialMediaIcons = Social Media Icons
 			# Content
 			ThemeBootstrap4_ContentDivider = Content: Divider
+			ThemeBootstrap4_ContentHeader = Content: Header
 			ThemeBootstrap4_ContentHtml = Content: HTML
 			ThemeBootstrap4_ContentMedia = Content: Media
 			ThemeBootstrap4_ContentMenuSitemap = Content: Menu Sitemap
