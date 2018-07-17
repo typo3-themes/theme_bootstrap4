@@ -1,8 +1,7 @@
 # Theme-Bootstrap4 Change-Log
 
-
-### 2018-07-17  Thomas Deuling  <typo3@coding.ms>
-
+*   [FEATURE] Adding a simple, selectable Media content element.
+*   [BUGFIX] New content element icon path
 *   [BUGFIX] Fixing text content element icon.
 *   [TASK] Removing login new content element wizard, when Felogin extension isn't selected.
 *   [TASK] Making HTML content element selectable as feature.
