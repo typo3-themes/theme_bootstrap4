@@ -43,7 +43,7 @@ call_user_func(
                 'new-content-el-singlecolumnhorizontal' => 'GridElements/new_content_el_SingleColumnHorizontal.svg',
                 'new-content-el-singlecolumnvertical' => 'GridElements/new_content_el_SingleColumnVertical.svg',
                 'new-content-el-tab' => 'GridElements/new_content_el_Tab.svg',
-                'new-content-el-text' => 'Resources/Public/Icons/Content/iconmonstr-text-23.svg',
+                'new-content-el-text' => 'Content/iconmonstr-text-23.svg',
             ];
             $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
             foreach ($iconsSvg as $identifier => $path) {

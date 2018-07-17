@@ -1,16 +1,27 @@
 # Theme-Bootstrap4 Change-Log
 
+
+### 2018-07-17  Thomas Deuling  <typo3@coding.ms>
+
+*   [BUGFIX] Fixing text content element icon.
+
+
+### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
+
 *   [FEATURE] Adding configuration for an optional Canonical Tag.
+
+
+### 2018-07-11  Dieter Bruening <dbruening@coding.ms>
+
 *   [FEATURE] Adding configuration for default language (EN and DE).
 *   [TASK] Moving social media icons into features.
-
 *   [FEATURE] Adding a simple, selectable Text content element.
 *   [FEATURE] Adding a configuration structure for AddressManager Extension.
 *   [FEATURE] Adding a configuration structure for Portfolios Extension.
-
 *   [TASK] Add base url for theme fonts files
 *   [TASK] Remove unused constant and dyncss override for themes.configuration.font.icon.fontFilePath
 *   [TASK] Moving font families into features.
+
 
 
 ## 2018-07-12  Release of version 0.7.0
