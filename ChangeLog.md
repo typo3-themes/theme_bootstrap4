@@ -4,6 +4,7 @@
 ### 2018-07-17  Thomas Deuling  <typo3@coding.ms>
 
 *   [BUGFIX] Fixing text content element icon.
+*   [TASK] Removing login new content element wizard, when Felogin extension isn't selected.
 
 
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
