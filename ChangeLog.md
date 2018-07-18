@@ -1,5 +1,13 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2018-07-17  Thomas Deuling  <typo3@coding.ms>
+
+*   [FEATURE] Adding an simple Icon content element.
+
+
+
+### 2018-07-16  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
+
 *   [TASK] Customize the configuration for the text-image content element.
 *   [BUGFIX] Change text-image content element template classes.
 *   [FEATURE] Change media content element to a simple text-image content element.
@@ -20,6 +28,7 @@
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
 
 *   [FEATURE] Adding configuration for an optional Canonical Tag.
+
 
 
 ### 2018-07-11  Dieter Bruening <dbruening@coding.ms>

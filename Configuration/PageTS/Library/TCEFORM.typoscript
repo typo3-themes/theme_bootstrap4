@@ -4,7 +4,7 @@
 # Remove all content,
 TCEFORM.tt_content {
 	CType {
-		removeItems = themebootstrap4_text_image, themebootstrap4_text, header, text, textmedia, textpic, image, bullets, uploads, div, html, table, shortcut, themes_buttoncontent_pi1, form_formframework, menu_sitemap, menu_sitemap_pages, menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages, login
+		removeItems = themebootstrap4_text_image, themebootstrap4_text, themebootstrap4_icon, header, text, textmedia, textpic, image, bullets, uploads, div, html, table, shortcut, themes_buttoncontent_pi1, form_formframework, menu_sitemap, menu_sitemap_pages, menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_subpages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages, login
 	}
 }
 
@@ -60,6 +60,7 @@ TCEFORM {
 			ThemeBootstrap4_ContentDivider = Content: Divider
 			ThemeBootstrap4_ContentHeader = Content: Header
 			ThemeBootstrap4_ContentHtml = Content: HTML
+			ThemeBootstrap4_ContentIcon = Content: Icon
 			ThemeBootstrap4_ContentMedia = Content: Media
 			ThemeBootstrap4_ContentMenuSitemap = Content: Menu Sitemap
 			ThemeBootstrap4_ContentMenuSitemapPages = Content: Menu Sitemap Pages

@@ -1,0 +1,22 @@
+mod.wizards.newContentElement.wizardItems.common {
+	elements {
+		themebootstrap4_icon {
+			iconIdentifier = new-content-el-icon
+			title = Icon
+			description = Icon element, optionally with label and link
+			tt_content_defValues {
+				CType = themebootstrap4_icon
+			}
+		}
+	}
+	show := addToList(themebootstrap4_icon)
+}
+
+TCEFORM.tt_content {
+	CType {
+		removeItems := removeFromList(themebootstrap4_icon)
+	}
+	layout {
+		disabled = 0
+	}
+}
