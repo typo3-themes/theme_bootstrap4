@@ -2,7 +2,8 @@
 
 	<f:switch expression="{data.layout}">
 		<f:case value="MediaLeft">
-			<div id="c{data.uid}" class="content-text-image content-text-image-left media">
+			<div id="c{data.uid}" class="content-text-image content-text-image-left media"
+			     data-content="text-image" data-layout="left">
 				<f:for each="{files}" as="file">
 					<f:if condition="{file.link}">
 						<f:then>
@@ -34,7 +35,8 @@
 			</div>
 		</f:case>
 		<f:case value="MediaRight">
-			<div id="c{data.uid}" class="content-text-image content-text-image-right media">
+			<div id="c{data.uid}" class="content-text-image content-text-image-left media"
+			     data-content="text-image" data-layout="right">
 				<div class="media-body">
 					<h2>{data.header}</h2>
 					<f:format.raw>{data.bodytext}</f:format.raw>
@@ -66,7 +68,8 @@
 			</div>
 		</f:case>
 		<f:case value="MediaBottom">
-			<div id="c{data.uid}" class="content-text-image content-text-image-default media flex-column">
+			<div id="c{data.uid}" class="content-text-image content-text-image-bottom media flex-column"
+			     data-content="text-image" data-layout="bottom">
 				<div class="media-body">
 					<h2>{data.header}</h2>
 					<f:format.raw>{data.bodytext}</f:format.raw>
@@ -98,7 +101,8 @@
 			</div>
 		</f:case>
 		<f:case default="1">
-			<div id="c{data.uid}" class="content-text-image content-text-image-default media flex-column">
+			<div id="c{data.uid}" class="content-text-image content-text-image-default media flex-column"
+			     data-content="text-image" data-layout="default">
 				<f:for each="{files}" as="file">
 					<f:if condition="{file.link}">
 						<f:then>
