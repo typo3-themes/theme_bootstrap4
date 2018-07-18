@@ -4,6 +4,7 @@
 
 *   [TASK] Rename typoscript-files (.constants .setupts .userts .txt) to .typoscript
 *   [TASK] Add classes and data-attributes to content elements text, text-image and icon.
+*   [TASK] Adding rendering definition for Divider, Header, Html, Shortcut and Table content element.
 
 
 
