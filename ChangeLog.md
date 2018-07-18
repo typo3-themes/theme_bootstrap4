@@ -1,5 +1,12 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2018-07-18  Dieter Bruening <dbruening@coding.ms>
+
+*   [TASK] Rename typoscript-files (.constants .setupts .userts .txt) to .typoscript
+*   [TASK] Add classes and data-attributes to content elements text, text-image and icon.
+
+
+
 ### 2018-07-17  Thomas Deuling  <typo3@coding.ms>
 
 *   [FEATURE] Adding an simple Icon content element.
@@ -23,6 +30,7 @@
 *   [TASK] Making Uploads/Downloads content elements selectable as feature.
 *   [TASK] Making Header content element selectable as feature.
 *   [TASK] Disabling old Text Media content element.
+
 
 
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
