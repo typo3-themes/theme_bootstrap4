@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2018-07-19  Dieter Bruening <dbruening@coding.ms>
+
+*   [TASK] Change template paths for fluid content elements, remove old partials (folder partial/alt).
+
 ### 2018-07-18  Dieter Bruening <dbruening@coding.ms>
 
 *   [TASK] Rename typoscript-files (.constants .setupts .userts .txt) to .typoscript
