@@ -1,9 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:layout name="Default" />
+<f:layout name="Content/Default" />
 <f:section name="Header">
 
 	<f:if condition="{gallery.position.noWrap} != 1">
-		<f:render partial="Header/All" arguments="{_all}" />
+		<f:render partial="Content/Header/All" arguments="{_all}" />
 	</f:if>
 
 </f:section>
@@ -11,14 +11,14 @@
 
 	<div class="ce-textpic ce-{gallery.position.horizontal} ce-{gallery.position.vertical}{f:if(condition: gallery.position.noWrap, then: ' ce-nowrap')}">
 		<f:if condition="{gallery.position.vertical} != 'below'">
-			<f:render partial="Media/Gallery" arguments="{_all}" />
+			<f:render partial="Content/Media/Gallery" arguments="{_all}" />
 		</f:if>
 
 		<f:if condition="{data.bodytext}">
 			<f:then>
 				<div class="ce-bodytext">
 					<f:if condition="{gallery.position.noWrap}">
-						<f:render partial="Header/All" arguments="{_all}" />
+						<f:render partial="Content/Header/All" arguments="{_all}" />
 					</f:if>
 					<f:format.html>{data.bodytext}</f:format.html>
 				</div>
@@ -27,7 +27,7 @@
 				<f:if condition="{gallery.position.noWrap}">
 					<f:if condition="{data.header}">
 						<div class="ce-bodytext">
-							<f:render partial="Header/All" arguments="{_all}" />
+							<f:render partial="Content/Header/All" arguments="{_all}" />
 						</div>
 					</f:if>
 				</f:if>
@@ -35,7 +35,7 @@
 		</f:if>
 
 		<f:if condition="{gallery.position.vertical} == 'below'">
-			<f:render partial="Media/Gallery" arguments="{_all}" />
+			<f:render partial="Content/Media/Gallery" arguments="{_all}" />
 		</f:if>
 	</div>
 

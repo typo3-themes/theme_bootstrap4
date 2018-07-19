@@ -6,7 +6,7 @@
 				<f:for each="{row.columns}" as="column">
 					<f:if condition="{column.media}">
 						<div class="ce-column d-flex {f:if(condition: '{gallery.position.horizontal} == left', then: 'justify-content-start')} {f:if(condition: '{gallery.position.horizontal} == center', then: 'justify-content-center')} {f:if(condition: '{gallery.position.horizontal} == right', then: 'justify-content-end')}">
-							<f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
+							<f:render partial="Content/Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
 						</div>
 					</f:if>
 				</f:for>

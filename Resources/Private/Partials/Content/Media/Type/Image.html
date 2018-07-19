@@ -3,18 +3,18 @@
 	<f:if condition="{file.link}">
 		<f:then>
 			<f:link.typolink parameter="{file.link}" title="{file.title}">
-				<f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
+				<f:render partial="Content/Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
 			</f:link.typolink>
 		</f:then>
 		<f:else>
 			<f:if condition="{data.image_zoom}">
 				<f:then>
 					<ce:link.clickEnlarge image="{file}" configuration="{settings.media.popup}">
-						<f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
+						<f:render partial="Content/Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
 					</ce:link.clickEnlarge>
 				</f:then>
 				<f:else>
-					<f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
+					<f:render partial="Content/Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
 				</f:else>
 			</f:if>
 		</f:else>

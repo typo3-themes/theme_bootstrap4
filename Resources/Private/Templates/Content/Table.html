@@ -2,7 +2,7 @@
 <f:comment>
 	@todo: Check! Is there something to do for structure and styling for Bootstrap4
 </f:comment>
-<f:layout name="Default" />
+<f:layout name="Content/Default" />
 <f:section name="Main">
 
 	<f:if condition="{table}">
@@ -33,7 +33,7 @@
 				</f:if>
 				<tr>
 					<f:for each="{row}" as="cell" iteration="columnIterator">
-						<f:render partial="Table/Columns" arguments="{_all}" />
+						<f:render partial="Content/Table/Columns" arguments="{_all}" />
 					</f:for>
 				</tr>
 				<f:if condition="{rowIterator.isFirst}">
