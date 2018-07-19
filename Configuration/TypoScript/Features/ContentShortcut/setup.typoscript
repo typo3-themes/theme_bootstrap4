@@ -1,17 +1,23 @@
-# Insert records:
-# This element embeds other content elements.
-#
-# CType: shortcut
-
-tt_content.shortcut =< lib.contentElement
+tt_content.shortcut = FLUIDTEMPLATE
 tt_content.shortcut {
-	templateName = Shortcut
-
+	templateName = Content/Shortcut
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
 	# Keep this, since the "conf" option can be used
 	variables.shortcuts = RECORDS
 	variables.shortcuts {
 		source.field = records
-		tables = {$styles.content.shortcut.tables}
+		tables = {$themes.configuration.content.elements.shortcut.tables}
 	}
 
 	stdWrap {

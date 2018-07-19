@@ -1,10 +1,10 @@
 # Theme-Bootstrap4 Change-Log
 
-### 2018-07-19  Dieter Bruening <dbruening@coding.ms>
+### 2018-07-19  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
 
-*   [TASK] Change template paths for fluid content elements, remove old partials (folder partial/alt).
+*   [BUGFIX] Fixing rendering definition for Divider, Header, Html, Shortcut and Table content element.
 
-### 2018-07-18  Dieter Bruening <dbruening@coding.ms>
+### 2018-07-18  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
 
 *   [TASK] Rename typoscript-files (.constants .setupts .userts .txt) to .typoscript
 *   [TASK] Add classes and data-attributes to content elements text, text-image and icon.

@@ -98,35 +98,14 @@ config.tx_extbase {
 	}
 }
 
-# TYPO3 8.7 or higher
-lib.contentElement {
-	templateRootPaths {
-		300 = EXT:theme_bootstrap4/Resources/Private/Templates/Content/
-		400 = {$themes.resourcesPrivatePath}Templates/Content/
-	}
-	partialRootPaths {
-		300 = EXT:theme_bootstrap4/Resources/Private/Partials/Content/
-		400 = {$themes.resourcesPrivatePath}Partials/Content/
-	}
-	layoutRootPaths {
-		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/Content/
-		400 = {$themes.resourcesPrivatePath}Layouts/Content/
-	}
-}
+
 
 tt_content {
 	# Be sure there is no standard inner wrap,
 	# otherwise there is are html-ids used twice
 	stdWrap.innerWrap >
 	# Add themes data processoring
-	div {
-		dataProcessing {
-			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
-			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
-			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
-			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
-		}
-	}
+
 	bullets {
 		dataProcessing {
 			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
@@ -135,31 +114,7 @@ tt_content {
 			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
 		}
 	}
-	header {
-		dataProcessing {
-			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
-			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
-			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
-			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
-		}
-	}
-	list {
-		dataProcessing {
-			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
-			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
-			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
-			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
-		}
-	}
 	menu {
-		dataProcessing {
-			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
-			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
-			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
-			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
-		}
-	}
-	table {
 		dataProcessing {
 			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
 			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor

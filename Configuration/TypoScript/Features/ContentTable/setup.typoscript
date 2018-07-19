@@ -1,11 +1,18 @@
-# Table:
-# A simple table.
-#
-# CType: table
-
-tt_content.table =< lib.contentElement
+tt_content.table = FLUIDTEMPLATE
 tt_content.table {
-	templateName = Table
+	templateName = Content/Table
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
 	dataProcessing {
 		10 = TYPO3\CMS\Frontend\DataProcessing\CommaSeparatedValueProcessor
 		10 {
@@ -21,6 +28,10 @@ tt_content.table {
 			maximumColumns.field = cols
 			as = table
 		}
+		30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+		40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+		50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+		60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
 	}
 	stdWrap {
 		editIcons = tt_content: header [header_layout], bodytext, [table_caption|cols|table_header_position|table_tfoot]

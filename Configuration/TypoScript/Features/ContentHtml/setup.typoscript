@@ -1,11 +1,18 @@
-# Plain HTML:
-# With this element you can output raw HTML code on the page.
-#
-# CType: html
-
-tt_content.html =< lib.contentElement
+tt_content.html = FLUIDTEMPLATE
 tt_content.html {
-	templateName = Html
+	templateName = Content/Html
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
 	stdWrap {
 		editIcons = tt_content: bodytext
 		editIcons {
