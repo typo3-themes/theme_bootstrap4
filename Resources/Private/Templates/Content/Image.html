@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<f:switch expression="{data.layout}">
+		<f:case value="OtherLayout">
+
+		</f:case>
+		<f:case default="1">
+			<div id="c{data.uid}" class="content-image content-image-default" data-content="image" data-layout="default">
+				<f:for each="{files}" as="file" iteration="fileIterator">
+					<f:if condition="{fileIterator.isFirst}">
+						<figure class="figure">
+							<f:link.typolink parameter="{file.link}">
+								<f:image image="{file}" treatIdAsReference="1"
+										 alt="{file.alternative}" title="{file.title}"
+										 class="figure-img img-fluid mr-3"
+										 width="{file.width}" height="{file.height}" />
+							</f:link.typolink>
+							<figcaption class="figure-caption">{file.description}</figcaption>
+						</figure>
+					</f:if>
+				</f:for>
+				<div class="media-body">
+					<h2>{data.header}</h2>
+					<f:format.raw>{data.bodytext}</f:format.raw>
+				</div>
+			</div>
+		</f:case>
+	</f:switch>
+
+</html>

@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2018-07-23  Thomas Deuling  <typo3@coding.ms>
+
+*   [FEATURE] Adding simple image content element.
+
 ### 2018-07-19  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
 
 *   [BUGFIX] Fixing rendering definition for Divider, Header, Html, Shortcut and Table content element.

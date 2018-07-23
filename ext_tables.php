@@ -46,6 +46,7 @@ call_user_func(
                 'new-content-el-text' => 'Content/text.svg',
                 'new-content-el-text-image' => 'Content/text-image.svg',
                 'new-content-el-icon' => 'Content/icon.svg',
+                'new-content-el-image' => 'Content/image.svg',
             ];
             $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
             foreach ($iconsSvg as $identifier => $path) {
