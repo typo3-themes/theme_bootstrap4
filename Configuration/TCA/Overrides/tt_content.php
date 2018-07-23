@@ -187,3 +187,49 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_icon'] = [
         ],
     ],
 ];
+//
+// Simple image content element
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
+    'Image',
+    'themebootstrap4_image',
+    'new-content-el-image',
+];
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['themebootstrap4_image'] = 'new-content-el-image';
+$GLOBALS['TCA']['tt_content']['types']['themebootstrap4_image'] = [
+    'showitem' => '
+            CType,
+            header,
+            bodytext,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
+            assets,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+            --palette--;;hidden,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+        --div--;LLL:EXT:gridelements/Resources/Private/Language/locallang_db.xlf:gridElements,
+            tx_gridelements_container,
+            tx_gridelements_columns,
+            colPos',
+    'columnsOverrides' => [
+        'layout' => [
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'minitems' => 1,
+                'maxitems' => 1,
+                'size' => 1,
+                'items' => [
+                    ['Default', '0'],
+                ],
+                'eval' => 'trim',
+            ],
+        ],
+        'assets' => [
+            'config' => [
+                'minitems' => 1,
+                'maxitems' => 1,
+            ],
+        ],
+    ],
+];
