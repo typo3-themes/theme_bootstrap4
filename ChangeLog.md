@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2018-07-23  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
+
+*   [TASK] Add constants for feature main menu css-classes.
+
 ### 2018-07-19  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
 
 *   [BUGFIX] Fixing rendering definition for Divider, Header, Html, Shortcut and Table content element.

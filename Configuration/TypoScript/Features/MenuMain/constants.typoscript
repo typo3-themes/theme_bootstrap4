@@ -9,5 +9,8 @@ themes.configuration.menu.main.prefixFirstLevel =
 # cat=menu,expert/menu_main/; type=string; label= Menu main: Prefix for each menu item in second entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
 themes.configuration.menu.main.prefixSecondLevel =
 
-# cat=menu,expert/menu_main/; type=options[0,1]; label= Menu top: Do not link first level pages, which have sub-pages
+# cat=menu,expert/menu_main/; type=options[0,1]; label= Menu main: Do not link first level pages, which have sub-pages
 themes.configuration.menu.main.doNotLinkFirstLevelPagesWithSubPages = 1
+
+# cat=menu,expert/menu_main/; type=string; label= Menu main: CSS classes
+themes.configuration.menu.main.cssClasses = navbar-nav mr-auto
