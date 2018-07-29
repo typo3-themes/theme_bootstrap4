@@ -1,0 +1,59 @@
+tt_content.sitemap_xml = FLUIDTEMPLATE
+tt_content.sitemap_xml {
+	templateName = Content/SitemapXml
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+		10 {
+			special = directory
+			special.value = {$themes.configuration.pages.startsite}
+			levels = 7
+			includeNotInMenu = 1
+			dataProcessing {
+				10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+				10 {
+					references.fieldName = media
+				}
+			}
+		}
+	}
+	settings {
+		languages {
+			#de = 1
+			#de-ch = 1
+			#en = 1
+			#zh = 2
+		}
+	}
+}
+
+sitemapXml = PAGE
+sitemapXml {
+	typeNum = 1532793931
+	config {
+		xhtml_cleaning = none
+		noCache = 1
+		disableAllHeaderCode = 1
+		additionalHeaders.10.header = Content-Type: text/xml; charset=utf-8
+		simulateStaticDocuments = 0
+		tx_realurl_enable = 1
+	}
+	10 < tt_content.sitemap_xml
+	wrap (
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+|
+</urlset>
+	)
+}

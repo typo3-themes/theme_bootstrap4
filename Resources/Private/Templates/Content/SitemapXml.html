@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<url>
+	<loc><f:uri.page pageUid="{data.uid}" absolute="1" noCacheHash="1" /></loc>
+	<f:if condition="{settings.languages}">
+		<f:for each="{settings.languages}" as="languageUid" key="languageKey">
+			<f:format.raw><</f:format.raw>xhtml:link rel="alternate" hreflang="{languageKey}" href="{f:uri.page(pageUid: data.uid, absolute: 1, noCacheHash: 1, additionalParams: '{L: languageUid}')}" <f:format.raw>/></f:format.raw>
+		</f:for>
+	</f:if>
+	<lastmod><f:format.date format="Y-m-d">{data.tstamp}</f:format.date></lastmod>
+	<changefreq>{f:if(condition: data.sitemap_xml_change_frequency, then: data.sitemap_xml_change_frequency, else: 'weekly')}</changefreq>
+	<priority>0.{data.sitemap_xml_priority}</priority>
+</url>
+<f:if condition="{menu}">
+	<f:render section="Url" arguments="{pages: menu, settings: settings}" />
+</f:if>
+<f:section name="Url">
+	<f:if condition="{pages}">
+		<f:for each="{pages}" as="page">
+			<f:if condition="{page.data.sitemap_xml_exclude} < 1">
+				<url>
+					<loc><f:uri.page pageUid="{page.data.uid}" absolute="1" noCacheHash="1" /></loc>
+					<f:if condition="{settings.languages}">
+						<f:for each="{settings.languages}" as="languageUid" key="languageKey">
+							<f:format.raw><</f:format.raw>xhtml:link rel="alternate" hreflang="{languageKey}" href="{f:uri.page(pageUid: page.data.uid, absolute: 1, noCacheHash: 1, additionalParams: '{L: languageUid}')}" <f:format.raw>/></f:format.raw>
+						</f:for>
+					</f:if>
+					<lastmod><f:format.date format="Y-m-d">{page.data.tstamp}</f:format.date></lastmod>
+					<changefreq>{f:if(condition: page.data.sitemap_xml_change_frequency, then: page.data.sitemap_xml_change_frequency, else: 'weekly')}</changefreq>
+					<priority>0.{page.data.sitemap_xml_priority}</priority>
+				</url>
+			</f:if>
+			<f:render section="Url" arguments="{pages: page.children, settings: settings}" />
+		</f:for>
+	</f:if>
+</f:section>
+</html>
+

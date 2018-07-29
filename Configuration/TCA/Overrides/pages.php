@@ -1,20 +1,64 @@
 <?php
-//
-// Linkhandler Configuration
-// TYPO3 8.7
-if((int)TYPO3_version>=8) {
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-        'theme_paperclip',
-        'Configuration/PageTS/Linkhandler/tx_news_news_typo3-8.typoscript',
-        'Linkhandler configuration for News (TYPO3 8.7)'
-    );
-}
-// TYPO3 7.6
-else if((int)TYPO3_version>=7 && (int)TYPO3_version<8) {
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-        'theme_paperclip',
-        'Configuration/PageTS/Linkhandler/tx_news_news_typo3-7.typoscript',
-        'Linkhandler configuration for News (TYPO3 7.6)'
-    );
-}
+defined('TYPO3_MODE') or die();
 
+$GLOBALS['TCA']['pages'] = array_merge_recursive(
+    $GLOBALS['TCA']['pages'],
+    [
+        'columns' => [
+            'sitemap_xml_exclude' => [
+                'exclude' => 0,
+                'label' => 'sitemap.xml exclude',
+                'config' => [
+                    'type' => 'check',
+                    'items' => [
+                        ['Exclude this page from sitemap.xml', 1],
+                    ],
+                ],
+            ],
+            'sitemap_xml_priority' => [
+                'exclude' => 0,
+                'label' => 'sitemap.xml priority',
+                'config' => [
+                    'type' => 'select',
+                    'renderType' => 'selectSingle',
+                    'items' => [
+                        ['0.0', 0],
+                        ['0.1', 1],
+                        ['0.2', 2],
+                        ['0.3', 3],
+                        ['0.4', 4],
+                        ['0.5', 5],
+                        ['0.6', 6],
+                        ['0.7', 7],
+                        ['0.8', 8],
+                        ['0.9', 9],
+                        ['1.0', 10],
+                    ]
+                ],
+            ],
+            'sitemap_xml_change_frequency' => [
+                'exclude' => 0,
+                'label' => 'sitemap.xml change frequency',
+                'config' => [
+                    'type' => 'select',
+                    'renderType' => 'selectSingle',
+                    'items' => [
+                        ['Always', 'always'],
+                        ['Hourly', 'hourly'],
+                        ['Daily', 'daily'],
+                        ['Weekly', 'weekly'],
+                        ['Monthly', 'monthly'],
+                        ['Yearly', 'yearly'],
+                        ['Never', 'never'],
+                    ],
+                ],
+            ],
+        ],
+    ]
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'miscellaneous',
+    'sitemap_xml_exclude, sitemap_xml_priority, sitemap_xml_change_frequency'
+);

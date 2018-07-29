@@ -10,6 +10,12 @@ TCEFORM.tt_content {
 
 
 TCEFORM {
+	pages {
+		# Remove sitemap.xml fields, until the feature is selected
+		sitemap_xml_exclude.disabled = 1
+		sitemap_xml_priority.disabled = 1
+		sitemap_xml_change_frequency.disabled = 1
+	}
 	tt_content {
 		# Remove unimplemented fields or fields we don't need
 		categories.disabled = 1
@@ -103,6 +109,7 @@ TCEFORM {
 			ThemeBootstrap4_LanguageDefaultEN = Language: Default EN
 			# SEO
 			ThemeBootstrap4_CanonicalTag = Canonical Tag
+			ThemeBootstrap4_SitemapXml = Sitemap XML
 		}
 		# Define some features
 		tx_themes_extensions.addItems {
