@@ -2,7 +2,7 @@
   "name": "typo3-themes/theme-bootstrap4",
   "type": "typo3-cms-extension",
   "description": "TYPO3 THEMES Base-theme using Bootstrap 4",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "homepage": "http://typo3-themes.org",
   "license": [
     "GPL-2.0+"

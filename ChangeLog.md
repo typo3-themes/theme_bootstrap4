@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+
+
+## 2018-07-29  Release of version 0.8.0
+
 ### 2018-07-29  Thomas Deuling  <typo3@coding.ms>
 
 *   [FEATURE] Adding a sitemap.xml feature.
@@ -9,13 +13,9 @@
 *   [TASK] Add constants for feature main menu css-classes.
 *   [FEATURE] Adding simple image content element.
 
-
-
 ### 2018-07-19  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
 
 *   [BUGFIX] Fixing rendering definition for Divider, Header, Html, Shortcut and Table content element.
-
-
 
 ### 2018-07-18  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
 
@@ -23,13 +23,9 @@
 *   [TASK] Add classes and data-attributes to content elements text, text-image and icon.
 *   [TASK] Adding rendering definition for Divider, Header, Html, Shortcut and Table content element.
 
-
-
 ### 2018-07-17  Thomas Deuling  <typo3@coding.ms>
 
 *   [FEATURE] Adding an simple Icon content element.
-
-
 
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>, Dieter Bruening <dbruening@coding.ms>
 
@@ -49,13 +45,9 @@
 *   [TASK] Making Header content element selectable as feature.
 *   [TASK] Disabling old Text Media content element.
 
-
-
 ### 2018-07-16  Thomas Deuling  <typo3@coding.ms>
 
 *   [FEATURE] Adding configuration for an optional Canonical Tag.
-
-
 
 ### 2018-07-11  Dieter Bruening <dbruening@coding.ms>
 
