@@ -381,7 +381,7 @@ RTE.default {
 # ToDo: Currently it is not possible to use .scss files for the backend.
 	contentCSS {
 		default = typo3/sysext/rtehtmlarea/Resources/Public/Css/ContentCss/Default.css
-		#theme_bootstrap4 = typo3conf/ext/theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Dyncss/backend.scss
+		#theme_bootstrap4 = typo3conf/ext/theme_bootstrap4/Resources/Private/Extensions/Rtehtmlarea/Scss/backend.scss
 		theme_bootstrap4 = typo3conf/ext/theme_bootstrap4/Resources/Public/Extensions/Rtehtmlarea/Stylesheets/backend.css
 		theme_bootstrap4-additional-label = typo3conf/ext/theme_bootstrap4/Resources/Public/Extensions/Rtehtmlarea/Stylesheets/additional-label.css
 	}

@@ -12,7 +12,7 @@ page {
 		}
 	}
 	includeCSS {
-		theme = EXT:theme_bootstrap4/Resources/Private/Dyncss/import.scss
+		theme = EXT:theme_bootstrap4/Resources/Private/Scss/import.scss
 	}
 
 
