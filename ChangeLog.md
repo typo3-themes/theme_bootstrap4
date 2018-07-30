@@ -2,6 +2,10 @@
 
 
 
+### 2018-07-30  Dieter Bruening <dbruening@coding.ms>
+
+*   [TASK] Adding more plugin.tx_themes.settings (baseurl, siteName and Slogan) 
+
 ## 2018-07-29  Release of version 0.8.0
 
 ### 2018-07-29  Thomas Deuling  <typo3@coding.ms>
