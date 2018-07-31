@@ -3,13 +3,17 @@
 	<f:switch expression="{data.layout}">
 		<f:case value="Center">
 			<div id="c{data.uid}" class="content-text content-text-centered" data-content="text" data-layout="centered">
-				<h2>{data.header}</h2>
+				<f:if condition="{data.header}">
+					<h2>{data.header}</h2>
+				</f:if>
 				<f:format.raw>{data.bodytext}</f:format.raw>
 			</div>
 		</f:case>
 		<f:case default="1">
 			<div id="c{data.uid}" class="content-text content-text-default" data-content="text" data-layout="default">
-				<h2>{data.header}</h2>
+				<f:if condition="{data.header}">
+					<h2>{data.header}</h2>
+				</f:if>
 				<f:format.raw>{data.bodytext}</f:format.raw>
 			</div>
 		</f:case>

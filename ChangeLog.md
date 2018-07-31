@@ -2,6 +2,12 @@
 
 
 
+### 2018-07-31  Thomas Deuling  <typo3@coding.ms>
+
+*   [BUGFIX] Removing emtpy h2 tag from text-content, in case of header text is missed.
+
+
+
 ## 2018-07-29  Release of version 0.8.0
 
 ### 2018-07-29  Thomas Deuling  <typo3@coding.ms>
