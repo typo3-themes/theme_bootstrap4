@@ -16,6 +16,10 @@ plugin.tx_themes {
 		}
 	}
 	settings {
+		siteName = {$themes.configuration.siteName}
+		siteSlogan = {$themes.configuration.siteSlogan}
+
+		baseurl = {$themes.configuration.baseurl}
 		baseurlImage = {$themes.configuration.baseurlImage}
 		baseurlIcon = {$themes.configuration.baseurlIcon}
 		baseurlFont = {$themes.configuration.baseurlFont}
