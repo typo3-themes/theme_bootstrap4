@@ -1,4 +1,16 @@
 #
+# Hide some tables in list module
+#mod.web_list.table.tx_portfolios_domain_model_portfolio.hideTable = 1
+#mod.web_list.table.tx_portfolios_domain_model_portfoliocategory.hideTable = 1
+#mod.web_list.table.tx_portfolios_domain_model_portfoliotag.hideTable = 1
+#mod.web_list.table.tx_portfolios_domain_model_portfoliotagcategory.hideTable = 1
+#
+# Hide creation links in list module
+#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfolio)
+#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfoliocategory)
+#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfoliotag)
+#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfoliotagcategory)
+#
 # Editor: Visible fields
 [adminUser = 0]
 	TCEFORM.tx_portfolios_domain_model_portfolio {
@@ -91,132 +103,163 @@
 TCEFORM.tx_portfolios_domain_model_portfolio {
 	# Tab: General
 	title.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	sub_title.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	highlight.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	teaser.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	description.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	finishing_date.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	working_hours.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	www.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	latitude.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	longitude.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute1.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute2.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute3.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute4.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute5.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute6.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute7.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	attribute8.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	# Tab: Access
 	hidden.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	starttime.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	endtime.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	# Tab: SEO
 	html_title.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	meta_abstract.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	meta_description.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	meta_keywords.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	# Tab: Relations
 	categories.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	tags.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	related_portfolios.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	# Tab: Images
 	images.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	# Tab: Files
 	files.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
 	# Tab: Markdown
 	markdown.label {
+		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
