@@ -1,5 +1,5 @@
 # Default language configuration for english
 mod.SHARED {
-	defaultLanguageFlag = en
+	defaultLanguageFlag = gb
 	defaultLanguageLabel = English
 }
