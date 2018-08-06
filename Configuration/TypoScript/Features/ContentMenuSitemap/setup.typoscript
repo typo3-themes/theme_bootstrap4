@@ -1,0 +1,51 @@
+tt_content.menu_sitemap = FLUIDTEMPLATE
+tt_content.menu_sitemap {
+	templateName = Content/MenuSitemap
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+		10 {
+			special = directory
+			special.value.field = pages
+			dataProcessing {
+				10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+				10 {
+					references.fieldName = media
+				}
+				20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+				20 {
+					table = tt_content
+					pidInList.field = uid
+					as = content
+					dataProcessing {
+						10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+						10 {
+							references.fieldName = image
+						}
+					}
+				}
+			}
+		}
+		30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+		40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+		50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+		60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+	}
+	stdWrap {
+		editIcons = tt_content: header [header_layout], pages
+		editIcons {
+			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+		}
+	}
+}

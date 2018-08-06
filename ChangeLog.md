@@ -3,6 +3,7 @@
 
 ### 2018-08-06  Thomas Deuling  <typo3@coding.ms>
 
+*   [TASK] Configuring MenuSitemap content element.
 *   [TASK] Adding preparation for additional extensions.
 
 ### 2018-07-31  Thomas Deuling  <typo3@coding.ms>
