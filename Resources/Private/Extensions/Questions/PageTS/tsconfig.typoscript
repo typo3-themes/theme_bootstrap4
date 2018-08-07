@@ -1,153 +1,84 @@
 #
 # Hide some tables in list module
-#mod.web_list.table.tx_portfolios_domain_model_portfolio.hideTable = 1
-#mod.web_list.table.tx_portfolios_domain_model_portfoliocategory.hideTable = 1
-#mod.web_list.table.tx_portfolios_domain_model_portfoliotag.hideTable = 1
-#mod.web_list.table.tx_portfolios_domain_model_portfoliotagcategory.hideTable = 1
+#mod.web_list.table.tx_questions_domain_model_question.hideTable = 1
+#mod.web_list.table.tx_questions_domain_model_questioncategory.hideTable = 1
 #
 # Hide creation links in list module
-#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfolio)
-#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfoliocategory)
-#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfoliotag)
-#mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfoliotagcategory)
+#mod.web_list.deniedNewTables := addToList(tx_questions_domain_model_question)
+#mod.web_list.deniedNewTables := addToList(tx_questions_domain_model_questioncategory)
 #
 # Editor: Visible fields
 [adminUser = 0]
-	TCEFORM.tx_portfolios_domain_model_portfolio {
+	TCEFORM.tx_questions_domain_model_question {
 		# Tab: General
-		title.disabled = 0
-		sub_title.disabled = 0
-		highlight.disabled = 0
-		teaser.disabled = 0
-		description.disabled = 0
-		finishing_date.disabled = 0
-		working_hours.disabled = 0
-		www.disabled = 0
-		latitude.disabled = 0
-		longitude.disabled = 0
+		question.disabled = 0
+		template.disabled = 0
+		answer.disabled = 0
 		attribute1.disabled = 0
 		attribute2.disabled = 0
 		attribute3.disabled = 0
 		attribute4.disabled = 0
-		attribute5.disabled = 0
-		attribute6.disabled = 0
-		attribute7.disabled = 0
-		attribute8.disabled = 0
-		# Tab: Access
-		hidden.disabled = 0
-		starttime.disabled = 0
-		endtime.disabled = 0
+		# Tab: Category
+		category.disabled = 0
+		# Tab: Images
+		images.disabled = 0
 		# Tab: SEO
 		html_title.disabled = 0
 		meta_abstract.disabled = 0
 		meta_description.disabled = 0
 		meta_keywords.disabled = 0
-		# Tab: Relations
-		categories.disabled = 0
-		tags.disabled = 0
-		related_portfolios.disabled = 0
-		# Tab: Images
-		images.disabled = 0
-		# Tab: Files
-		files.disabled = 0
 		# Tab: Markdown
 		markdown.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
 	}
 [GLOBAL]
 #
 # Admin: Visible fields
 [adminUser = 1]
-	TCEFORM.tx_portfolios_domain_model_portfolio {
+	TCEFORM.tx_questions_domain_model_question {
 		# Tab: General
-		title.disabled = 0
-		sub_title.disabled = 0
-		highlight.disabled = 0
-		teaser.disabled = 0
-		description.disabled = 0
-		finishing_date.disabled = 0
-		working_hours.disabled = 0
-		www.disabled = 0
-		latitude.disabled = 0
-		longitude.disabled = 0
+		question.disabled = 0
+		template.disabled = 0
+		answer.disabled = 0
 		attribute1.disabled = 0
 		attribute2.disabled = 0
 		attribute3.disabled = 0
 		attribute4.disabled = 0
-		attribute5.disabled = 0
-		attribute6.disabled = 0
-		attribute7.disabled = 0
-		attribute8.disabled = 0
-		# Tab: Access
-		hidden.disabled = 0
-		starttime.disabled = 0
-		endtime.disabled = 0
+		# Tab: Category
+		category.disabled = 0
+		# Tab: Images
+		images.disabled = 0
 		# Tab: SEO
 		html_title.disabled = 0
 		meta_abstract.disabled = 0
 		meta_description.disabled = 0
 		meta_keywords.disabled = 0
-		# Tab: Relations
-		categories.disabled = 0
-		tags.disabled = 0
-		related_portfolios.disabled = 0
-		# Tab: Images
-		images.disabled = 0
-		# Tab: Files
-		files.disabled = 0
 		# Tab: Markdown
 		markdown.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
 	}
 [GLOBAL]
 #
 # Overwriting labels for the backend forms
-TCEFORM.tx_portfolios_domain_model_portfolio {
+TCEFORM.tx_questions_domain_model_question {
 	# Tab: General
-	title.label {
+	question.label {
 		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
-	sub_title.label {
+	template.label {
 		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
-	highlight.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	teaser.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	description.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	finishing_date.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	working_hours.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	www.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	latitude.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	longitude.label {
+	answer.label {
 		#default = default Label
 		#de = deutsches Label
 		#en = english label
@@ -172,38 +103,14 @@ TCEFORM.tx_portfolios_domain_model_portfolio {
 		#de = deutsches Label
 		#en = english label
 	}
-	attribute5.label {
+	# Tab: Category
+	category.label {
 		#default = default Label
 		#de = deutsches Label
 		#en = english label
 	}
-	attribute6.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	attribute7.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	attribute8.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	# Tab: Access
-	hidden.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	starttime.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	endtime.label {
+	# Tab: Images
+	images.label {
 		#default = default Label
 		#de = deutsches Label
 		#en = english label
@@ -229,36 +136,24 @@ TCEFORM.tx_portfolios_domain_model_portfolio {
 		#de = deutsches Label
 		#en = english label
 	}
-	# Tab: Relations
-	categories.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	tags.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	related_portfolios.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	# Tab: Images
-	images.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
-	# Tab: Files
-	files.label {
-		#default = default Label
-		#de = deutsches Label
-		#en = english label
-	}
 	# Tab: Markdown
 	markdown.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Access
+	hidden.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	starttime.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	endtime.label {
 		#default = default Label
 		#de = deutsches Label
 		#en = english label
