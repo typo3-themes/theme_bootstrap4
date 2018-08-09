@@ -63,7 +63,7 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['themebootstrap4_text'] = 'mimetypes-x-content-themebootstrap4-text';
 $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text'] = [
     'showitem' => '
-            CType,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             header,
             bodytext,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -73,8 +73,7 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text'] = [
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
         --div--;LLL:EXT:gridelements/Resources/Private/Language/locallang_db.xlf:gridElements,
             tx_gridelements_container,
-            tx_gridelements_columns,
-            colPos',
+            tx_gridelements_columns',
     'columnsOverrides' => [
         'layout' => [
             'config' => [
@@ -107,7 +106,7 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['themebootstrap4_text_image'] = 'new-content-el-text-image';
 $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text_image'] = [
     'showitem' => '
-            CType,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             header,
             bodytext,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
@@ -119,8 +118,7 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text_image'] = [
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
         --div--;LLL:EXT:gridelements/Resources/Private/Language/locallang_db.xlf:gridElements,
             tx_gridelements_container,
-            tx_gridelements_columns,
-            colPos',
+            tx_gridelements_columns',
     'columnsOverrides' => [
         'layout' => [
             'config' => [
@@ -155,7 +153,7 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['themebootstrap4_icon'] = 'new-content-el-icon';
 $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_icon'] = [
     'showitem' => '
-            CType,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             tx_themes_icon,
             header,
             header_link,
@@ -166,8 +164,7 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_icon'] = [
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
         --div--;LLL:EXT:gridelements/Resources/Private/Language/locallang_db.xlf:gridElements,
             tx_gridelements_container,
-            tx_gridelements_columns,
-            colPos',
+            tx_gridelements_columns',
     'columnsOverrides' => [
         'header' => [
             'label' => 'Label',
@@ -197,7 +194,7 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['themebootstrap4_image'] = 'new-content-el-image';
 $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_image'] = [
     'showitem' => '
-            CType,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             header,
             bodytext,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
@@ -209,8 +206,7 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_image'] = [
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
         --div--;LLL:EXT:gridelements/Resources/Private/Language/locallang_db.xlf:gridElements,
             tx_gridelements_container,
-            tx_gridelements_columns,
-            colPos',
+            tx_gridelements_columns',
     'columnsOverrides' => [
         'layout' => [
             'config' => [
