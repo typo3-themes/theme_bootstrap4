@@ -1,6 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
 
+### 2018-08-09  Thomas Deuling  <typo3@coding.ms>
+
+*   [TASK] Adding allowed content types for carousel element.
 
 ### 2018-08-07  Thomas Deuling  <typo3@coding.ms>
 

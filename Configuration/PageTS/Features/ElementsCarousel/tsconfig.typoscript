@@ -11,7 +11,7 @@ tx_gridelements.setup.carousel {
 					1 {
 						name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:carousel_content
 						colPos = 0
-						allowed = textmedia
+						allowed = textmedia,themebootstrap4_image
 					}
 				}
 			}
