@@ -1,0 +1,120 @@
+#
+# Hide some tables in list module
+#mod.web_list.table.tx_news_domain_model_news.hideTable = 1
+#mod.web_list.table.tx_news_domain_model_tag.hideTable = 1
+#
+# Hide creation links in list module
+#mod.web_list.deniedNewTables := addToList(tx_news_domain_model_news)
+#mod.web_list.deniedNewTables := addToList(tx_news_domain_model_tag)
+#
+# Editor: Visible fields
+[adminUser = 0]
+	TCEFORM.tx_news_domain_model_news {
+		# Tab: General
+		type.disabled = 0
+		#type.removeItems = 1,2
+		istopnews.disabled = 0
+		title.disabled = 0
+		path_segment.disabled = 0
+		teaser.disabled = 0
+		datetime.disabled = 0
+		archive.disabled = 0
+		bodytext.disabled = 0
+		# Tab: Content elements
+		content_elements.disabled = 0
+		# Tab: Media
+		fal_media.disabled = 0
+		fal_related_files.disabled = 0
+		# Tab: Categories
+		categories.disabled = 0
+		# Tab Relations
+		related.disabled = 0
+		related_from.disabled = 0
+		related_links.disabled = 0
+		tags.disabled = 0
+		# Metadata
+		author.disabled = 0
+		author_email.disabled = 0
+		keywords.disabled = 0
+		description.disabled = 0
+		alternative_title.disabled = 0
+		# Language
+		sys_language_uid.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+		fe_group.disabled = 0
+		editlock.disabled = 0
+		# Notes
+		notes.disabled = 0
+	}
+	TCEFORM.tx_news_domain_model_tag {
+		# Gerneral
+		title.disabled = 0
+		hidden.disabled = 0
+		# SEO
+		seo_description.disabled = 0
+		seo_headline.disabled = 0
+		seo_text.disabled = 0
+		seo_title.disabled = 0
+		# Notes
+		notes.disabled = 0
+	}
+[GLOBAL]
+#
+# Admin: Visible fields
+[adminUser = 1]
+	TCEFORM.tx_news_domain_model_news {
+		# Tab: General
+		type.disabled = 0
+		#type.removeItems = 1,2
+		istopnews.disabled = 0
+		title.disabled = 0
+		path_segment.disabled = 0
+		teaser.disabled = 0
+		datetime.disabled = 0
+		archive.disabled = 0
+		bodytext.disabled = 0
+		# Tab: Content elements
+		content_elements.disabled = 0
+		# Tab: Media
+		fal_media.disabled = 0
+		fal_related_files.disabled = 0
+		# Tab: Categories
+		categories.disabled = 0
+		# Tab Relations
+		related.disabled = 0
+		related_from.disabled = 0
+		related_links.disabled = 0
+		tags.disabled = 0
+		# Metadata
+		author.disabled = 0
+		author_email.disabled = 0
+		keywords.disabled = 0
+		description.disabled = 0
+		alternative_title.disabled = 0
+		# Language
+		sys_language_uid.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+		fe_group.disabled = 0
+		editlock.disabled = 0
+		# Notes
+		notes.disabled = 0
+	}
+	TCEFORM.tx_news_domain_model_tag {
+		# Gerneral
+		title.disabled = 0
+		hidden.disabled = 0
+		# SEO
+		seo_description.disabled = 0
+		seo_headline.disabled = 0
+		seo_text.disabled = 0
+		seo_title.disabled = 0
+		# Notes
+		notes.disabled = 0
+	}
+[GLOBAL]
