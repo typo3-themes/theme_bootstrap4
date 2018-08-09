@@ -5,6 +5,10 @@
 
 *   [TASK] Adding allowed content types for carousel element.
 *   [TASK] Changing integration of colPos in TCA of tt_content.
+* 
+### 2018-08-09  Dieter Bruening  <dbruening@coding.ms>
+
+*   [TASK] Adding preparation for news extension.
 
 ### 2018-08-07  Thomas Deuling  <typo3@coding.ms>
 
