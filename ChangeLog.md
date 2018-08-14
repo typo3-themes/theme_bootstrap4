@@ -1,6 +1,11 @@
 # Theme-Bootstrap4 Change-Log
 
 
+### 2018-08-14  Dieter Bruening  <dbruening@coding.ms>
+
+*   [TASK] Adding preparation for news extension.
+
+
 ### 2018-08-09  Thomas Deuling  <typo3@coding.ms>
 
 *   [TASK] Adding allowed content types for carousel element.

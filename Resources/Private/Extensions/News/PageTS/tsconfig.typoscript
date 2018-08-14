@@ -49,6 +49,11 @@
 		# Notes
 		notes.disabled = 0
 	}
+	TCEFORM.sys_file_reference {
+		# FAL Media select box
+		showinpreview.disabled = 0
+		#showinpreview.removeItems = 1,2
+	}
 	TCEFORM.tx_news_domain_model_tag {
 		# Gerneral
 		title.disabled = 0
@@ -104,6 +109,11 @@
 		editlock.disabled = 0
 		# Notes
 		notes.disabled = 0
+	}
+	TCEFORM.sys_file_reference {
+		# FAL Media select box
+		showinpreview.disabled = 0
+		#showinpreview.removeItems = 1,2
 	}
 	TCEFORM.tx_news_domain_model_tag {
 		# Gerneral
