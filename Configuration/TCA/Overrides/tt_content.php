@@ -129,9 +129,6 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text_image'] = [
                 'size' => 1,
                 'items' => [
                     ['Default', '0'],
-                    ['Media-Element links', 'MediaLeft'],
-                    ['Media-Element rechts', 'MediaRight'],
-                    ['Media-Element unten', 'MediaBottom'],
                 ],
                 'eval' => 'trim',
             ],
@@ -229,3 +226,9 @@ $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_image'] = [
         ],
     ],
 ];
+
+
+// Add layouts for content-text-image
+// $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text_image']['columnsOverrides']['layout']['config']['items'][] = ['Media-Element links', 'MediaLeft'];
+// $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text_image']['columnsOverrides']['layout']['config']['items'][] = ['Media-Element rechts', 'MediaRight'];
+// $GLOBALS['TCA']['tt_content']['types']['themebootstrap4_text_image']['columnsOverrides']['layout']['config']['items'][] = ['Media-Element unten', 'MediaBottom'];

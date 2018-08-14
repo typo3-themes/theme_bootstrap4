@@ -3,6 +3,7 @@
 
 ### 2018-08-14  Dieter Bruening  <dbruening@coding.ms>
 
+*   [TASK] Changing layouts for text-image, show only default. Adding comment to display more layouts. 
 *   [TASK] Adding preparation for news extension.
 
 
