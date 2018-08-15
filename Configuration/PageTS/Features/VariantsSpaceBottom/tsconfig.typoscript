@@ -1,0 +1,30 @@
+themes {
+	content {
+		variants {
+			default {
+				space-bottom {
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_label
+					eliminate = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_eliminate
+					none-label-inside = Inside
+					inside-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_xs
+					inside-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_s
+					inside-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_m
+					inside-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_l
+					inside-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_xl
+					none-label-outside = Outside
+					outside-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_xs
+					outside-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_s
+					outside-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_m
+					outside-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_l
+					outside-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_xl
+					none-label-inoutside = In/Outside
+					in-out-side-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_xs
+					in-out-side-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_s
+					in-out-side-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_m
+					in-out-side-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_l
+					in-out-side-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_xl
+				}
+			}
+		}
+	}
+}

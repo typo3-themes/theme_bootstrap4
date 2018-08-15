@@ -41,7 +41,7 @@ TCEFORM {
 		}
 	}
 	sys_template {
-		# Define some supported extensions
+		# Define some features
 		tx_themes_features.addItems {
 			# Development
 			ThemeBootstrap4_Development = Development
@@ -110,8 +110,16 @@ TCEFORM {
 			# SEO
 			ThemeBootstrap4_CanonicalTag = Canonical Tag
 			ThemeBootstrap4_SitemapXml = Sitemap XML
+			# Variants
+			ThemeBootstrap4_VariantsBackground = Variants: Background (for Content Elements)
+			ThemeBootstrap4_VariantsFrame = Variants: Frame (for Content Elements)
+			ThemeBootstrap4_VariantsSpaceBottom = Variants: Space Bottom (for Content Elements)
+			ThemeBootstrap4_VariantsSpaceTop = Variants: Space Top (for Content Elements)
+			# Responsive
+			ThemeBootstrap4_RespossiveSettings = Respossive: Settings (for Content Elements)
+
 		}
-		# Define some features
+		# Define some supported extensions
 		tx_themes_extensions.addItems {
 			ThemeBootstrap4_Felogin = Frontend-Login
 			ThemeBootstrap4_IndexedSearch = Indexed search

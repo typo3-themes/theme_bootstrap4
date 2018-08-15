@@ -1,0 +1,14 @@
+themes {
+	content {
+		variants {
+			default {
+				framed {
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_label
+					default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed
+					small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_small
+					large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_large
+				}
+			}
+		}
+	}
+}

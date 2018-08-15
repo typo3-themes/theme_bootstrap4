@@ -1,0 +1,86 @@
+themes {
+	content {
+		# Responsive content element settings
+		responsive {
+			default {
+				extralarge {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extralarge
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						# hidden-up = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.hidden
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
+
+					}
+				}
+				large {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.large
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
+					}
+				}
+				medium {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.medium
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
+					}
+				}
+				small {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.small
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
+					}
+				}
+				extrasmall {
+					label = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.devices.extrasmall
+					visibility {
+						default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_responsive.xlf:content.responsive.visibility.default
+						#ToDo: Label in language file
+						none = Display none
+						inline = Display inline
+						inline-block = Display inline-block
+						block = Display block
+						table = Display table
+						table-cell = Display table-cell
+						flex = Display flex
+						inline-flex = Display inline-flex
+					}
+				}
+			}
+		}
+	}
+}

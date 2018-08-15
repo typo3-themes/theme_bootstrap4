@@ -1,6 +1,10 @@
 # Theme-Bootstrap4 Change-Log
 
 
+### 2018-08-15  Dieter Bruening  <dbruening@coding.ms>
+
+*   [TASK] Moving some variants and responsive settings to features. 
+
 ### 2018-08-14  Dieter Bruening  <dbruening@coding.ms>
 
 *   [TASK] Changing layouts for text-image, show only default. Adding comment to display more layouts. 

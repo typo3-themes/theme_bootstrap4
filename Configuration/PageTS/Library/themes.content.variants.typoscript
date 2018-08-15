@@ -5,70 +5,6 @@ themes {
 		# Variants for content elements
 		variants {
 			default {
-				framed {
-					#ToDo: Label in language file
-					#ToDo: Frame is removed - check Documentation for new variants
-					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_label
-					default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed
-					small = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_small
-					large = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.framed_large
-				}
-				background {
-					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_label
-					color-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_primary
-					color-secondary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_secondary
-					color-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_success
-					color-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_info
-					color-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_warning
-					color-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_danger
-					color-inverse = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_inverse
-					color-light = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_light
-					color-dark = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_dark
-				}
-				space-top {
-					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_label
-					eliminate = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_eliminate
-					none-label-inside = Inside
-					inside-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_inside_xs
-					inside-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_inside_s
-					inside-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_inside_m
-					inside-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_inside_l
-					inside-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_inside_xl
-					none-label-outside = Outside
-					outside-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_outside_xs
-					outside-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_outside_s
-					outside-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_outside_m
-					outside-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_outside_l
-					outside-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_outside_xl
-					none-label-inoutside = In/Outside
-					in-out-side-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_in_out_side_xs
-					in-out-side-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_in_out_side_s
-					in-out-side-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_in_out_side_m
-					in-out-side-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_in_out_side_l
-					in-out-side-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.top_in_out_side_xl
-				}
-				space-bottom {
-					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_label
-					eliminate = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_eliminate
-					none-label-inside = Inside
-					inside-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_xs
-					inside-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_s
-					inside-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_m
-					inside-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_l
-					inside-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_inside_xl
-					none-label-outside = Outside
-					outside-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_xs
-					outside-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_s
-					outside-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_m
-					outside-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_l
-					outside-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_outside_xl
-					none-label-inoutside = In/Outside
-					in-out-side-xs = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_xs
-					in-out-side-s = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_s
-					in-out-side-m = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_m
-					in-out-side-l = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_l
-					in-out-side-xl = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.space.bottom_in_out_side_xl
-				}
 			}
 			# Special variant for Header
 			# Used by ctype header
@@ -136,10 +72,6 @@ themes {
 			gridelements_pi1 {
 				accordion {
 
-				}
-				carousel {
-					carousel-hide-indicators = Hide indicators
-					carousel-hide-arrows = Hide arrows
 				}
 				tabs {
 					tabs-in-card = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.tabs_in_card

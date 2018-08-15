@@ -18,3 +18,17 @@ tx_gridelements.setup.carousel {
 		}
 	}
 }
+
+#Add variants
+themes {
+	content {
+		variants {
+			gridelements_pi1 {
+				carousel {
+					carousel-hide-indicators = Hide indicators
+					carousel-hide-arrows = Hide arrows
+				}
+			}
+		}
+	}
+}
