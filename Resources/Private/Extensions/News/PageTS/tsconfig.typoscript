@@ -49,6 +49,11 @@
 		# Notes
 		notes.disabled = 0
 	}
+	TCEFORM.sys_file_reference {
+		# FAL Media select box
+		showinpreview.disabled = 0
+		#showinpreview.removeItems = 1,2
+	}
 	TCEFORM.tx_news_domain_model_tag {
 		# General
 		title.disabled = 0
@@ -105,6 +110,11 @@
 		# Notes
 		notes.disabled = 0
 	}
+	TCEFORM.sys_file_reference {
+		# FAL Media select box
+		showinpreview.disabled = 0
+		#showinpreview.removeItems = 1,2
+	}
 	TCEFORM.tx_news_domain_model_tag {
 		# General
 		title.disabled = 0
@@ -118,9 +128,12 @@
 		notes.disabled = 0
 	}
 [GLOBAL]
+<<<<<<< HEAD
 #
 # Template layouts
 tx_news.templateLayouts {
 	#news = News
 	#blog = Blog
 }
+=======
+>>>>>>> d39bf1364b6f3fe7184236b76a93be0aa6f05bd0

@@ -1,0 +1,13 @@
+lib.content.cssMap.variants {
+	background {
+		color-primary = bg bg-primary
+		color-secondary = bg bg-secondary
+		color-success = bg bg-success
+		color-info = bg bg-info
+		color-warning = bg bg-warning
+		color-danger = bg bg-danger
+		color-inverse = bg bg-inverse
+		color-light = bg bg-light
+		color-dark = bg bg-dark
+	}
+}
