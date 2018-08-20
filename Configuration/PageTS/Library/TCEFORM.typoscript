@@ -116,7 +116,7 @@ TCEFORM {
 			ThemeBootstrap4_VariantsSpaceBottom = Variants: Space Bottom (for Content Elements)
 			ThemeBootstrap4_VariantsSpaceTop = Variants: Space Top (for Content Elements)
 			# Responsive
-			ThemeBootstrap4_RespossiveSettings = Respossive: Settings (for Content Elements)
+			ThemeBootstrap4_ResponsiveSettings = Responsive: Settings (for Content Elements)
 
 		}
 		# Define some supported extensions

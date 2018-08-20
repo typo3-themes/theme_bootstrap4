@@ -5,6 +5,7 @@
 ### 2018-08-20  Thomas Deuling  <typo3@coding.ms>
 
 *   [TASK] Adding preparation for additional extensions.
+*   [BUGFIX] Fixing typo in responsive settings feature.
 
 ### 2018-08-15  Dieter Bruening  <dbruening@coding.ms>
 
