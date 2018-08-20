@@ -1,13 +1,4 @@
 
-# pid for list view
-plugin.tx_news.settings.listPid = {$themes.configuration.pages.newsList}
-
-# pid for single view
-plugin.tx_news.settings.defaultDetailPid = {$themes.configuration.pages.newsDetails}
-
-# pid for news container
-plugin.tx_news.settings.startingpoint = {$themes.configuration.container.news}
-
 plugin.tx_themes {
 	settings {
 		pages {
@@ -16,9 +7,6 @@ plugin.tx_themes {
 		}
 	}
 }
-
-# depth of sub container
-plugin.tx_news.settings.recursive = 5
 
 plugin.tx_news {
 	view {
@@ -45,6 +33,14 @@ plugin.tx_news {
 		skipDefaultArguments = 1
 	}
 	settings {
+		# pid for list view
+		listPid = {$themes.configuration.pages.newsList}
+		# pid for single view
+		defaultDetailPid = {$themes.configuration.pages.newsDetails}
+		# pid for news container
+		startingpoint = {$themes.configuration.container.new
+		# depth of sub container
+		recursive = 5
 		list {
 			# media configuration
 			media {

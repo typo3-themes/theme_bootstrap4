@@ -1,6 +1,10 @@
 # Theme-Bootstrap4 Change-Log
 
 
+### 2018-08-20  Thomas Deuling  <typo3@coding.ms>
+
+*   [TASK] Adding preparation for additional extensions.
+
 ### 2018-08-09  Thomas Deuling  <typo3@coding.ms>
 
 *   [TASK] Adding allowed content types for carousel element.

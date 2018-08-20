@@ -1,5 +1,5 @@
 # @todo: Dropdown
-# @todo do wie need a aria-labelledby for the dropdowns?
+# @todo do we need a aria-labelledby for the dropdowns?
 
 lib.menu.main = HMENU
 lib.menu.main {
