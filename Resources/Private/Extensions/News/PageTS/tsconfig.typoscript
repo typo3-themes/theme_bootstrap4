@@ -128,12 +128,9 @@
 		notes.disabled = 0
 	}
 [GLOBAL]
-<<<<<<< HEAD
 #
 # Template layouts
 tx_news.templateLayouts {
 	#news = News
 	#blog = Blog
 }
-=======
->>>>>>> d39bf1364b6f3fe7184236b76a93be0aa6f05bd0
