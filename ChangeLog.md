@@ -1,6 +1,11 @@
 # Theme-Bootstrap4 Change-Log
 
 
+
+### 2018-08-23  Thomas Deuling  <typo3@coding.ms>
+
+*   [FEATURE] Adding content element preview in page module of backend.
+
 ### 2018-08-21  Thomas Deuling  <typo3@coding.ms>
 
 *   [BUGFIX] Adding missed TypoScript constants for lib.parseFunc.
