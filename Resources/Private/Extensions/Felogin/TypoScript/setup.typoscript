@@ -1,3 +1,35 @@
+tt_content.login = FLUIDTEMPLATE
+tt_content.login {
+	templateName = Content/Generic
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
+	stdWrap {
+		editIcons = tt_content: header [header_layout], list_type, layout, pages [recursive]
+		editIcons {
+			iconTitle.data = Change/configure plugin
+		}
+	}
+	variables {
+		content =< plugin.tx_felogin_pi1
+	}
+	#dataProcessing {
+	#	30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+	#	40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+	#	50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+	#	60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+	#}
+}
+
 plugin.tx_felogin_pi1 {
 
 	# Storage page uid of frontend user container. Use a single value or a comma separated list

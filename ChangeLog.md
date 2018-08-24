@@ -1,6 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
 
+### 2018-08-24  Thomas Deuling  <typo3@coding.ms>
+
+*   [TASK] Finalizing Frontend login as selectable extension without FluidStyledContent requirement.
 
 ### 2018-08-23  Thomas Deuling  <typo3@coding.ms>
 
