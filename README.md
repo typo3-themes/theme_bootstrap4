@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0b9e9e208dc94e1393fc4519a424eb28)](https://www.codacy.com/project/github_130/theme_bootstrap4/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=typo3-themes/theme_bootstrap4&amp;utm_campaign=Badge_Grade_Dashboard)
+
 # theme_bootstrap4
 will contain the theme_bootstrap version 4 base
 
