@@ -1,0 +1,43 @@
+page {
+	includeJSFooterlibs {
+		jquery = EXT:theme_bootstrap4/Resources/Public/Contrib/jquery/jquery-3.2.1.min.js
+		jquery {
+			external = 0
+			forceOnTop = 1
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+		modernizr = EXT:theme_bootstrap4/Resources/Public/Contrib/Modernizr/modernizr.min.js
+		modernizr {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+		popper = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/assets/js/vendor/popper.min.js
+		popper {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+		bootstrap = EXT:theme_bootstrap4/Resources/Public/Contrib/Bootstrap/dist/js/bootstrap.min.js
+		bootstrap {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+		theme = EXT:theme_bootstrap4/Resources/Public/JavaScript/theme.js
+		theme {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 0
+		}
+	}
+	includeJSFooter {
+		initialize = EXT:theme_bootstrap4/Resources/Public/JavaScript/initialize.js
+		initialize {
+			external = 0
+			disableCompression = 0
+			excludeFromConcatenation = 0
+		}
+	}
+}

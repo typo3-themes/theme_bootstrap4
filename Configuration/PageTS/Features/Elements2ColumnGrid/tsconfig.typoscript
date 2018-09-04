@@ -1,0 +1,23 @@
+tx_gridelements.setup.2ColumnGrid {
+	title = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:two_column_grid
+	description = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:two_column_grid_description
+	iconIdentifier = new-content-el-2-column
+	config {
+		colCount = 2
+		rowCount = 1
+		rows {
+			1 {
+				columns {
+					1 {
+						name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:left
+						colPos = 0
+					}
+					2 {
+						name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:right
+						colPos = 1
+					}
+				}
+			}
+		}
+	}
+}

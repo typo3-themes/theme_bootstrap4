@@ -1,0 +1,71 @@
+#############
+#### RTE ####
+#############
+RTE {
+	default {
+		preset = default
+		classesAnchor {
+			page {
+				class =
+				type = page
+				titleText =
+				target =
+				image =
+				#params =
+				rel =
+			}
+			file {
+				class = download
+				type = file
+				titleText =
+				target = _blank
+				image =
+				#params =
+				rel =
+			}
+			folder {
+				class = folder
+				type = folder
+				titleText =
+				target = _blank
+				image =
+				#params =
+				rel =
+			}
+			mail {
+				class = email
+				type = mail
+				titleText =
+				image =
+				#params =
+				rel =
+			}
+			url {
+				class = external-link
+				type = url
+				titleText =
+				target = _blank
+				image =
+				#params =
+				rel =
+			}
+		}
+		buttons.link {
+			options.removeItems = folder
+			file.properties {
+				class.default = download
+			}
+			folder.properties{
+				class.default = folder
+			}
+			url.properties {
+				class.default = external-link
+			}
+			mail.properties {
+				class.default = email
+			}
+			properties.class.allowedClasses = external-link,folder,email,download,btn btn-primary
+			queryParametersSelector.enabled = 0
+		}
+	}
+}

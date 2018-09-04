@@ -1,0 +1,8 @@
+TCEFORM {
+	pages {
+		# Add sitemap.xml fields
+		sitemap_xml_exclude.disabled = 0
+		sitemap_xml_priority.disabled = 0
+		sitemap_xml_change_frequency.disabled = 0
+	}
+}

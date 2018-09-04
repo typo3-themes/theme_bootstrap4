@@ -1,6 +1,6 @@
 ul.ce-menu {
 	&.ce-menu-2 {
-		color: $brand-primary;
+		color: $primary;
 		@extend .list-unstyled;
 		// Base style
 		li {
@@ -26,7 +26,7 @@ ul.ce-menu {
 			display: block;
 			font-weight: bold;
 			text-transform: uppercase;
-			font-size: $font-size-h2;
+			font-size: $h2-font-size;
 			&::before {
 				content: '\f015';
 			}
@@ -41,12 +41,12 @@ ul.ce-menu {
 				align-content: flex-start;
 				text-transform: none;
 				font-weight: normal;
-				font-size: $font-size-root;
+				//font-size: $font-size-root;
 				margin: 0;
 				@extend .list-unstyled;
 				> li {
 					width: 100%;
-					font-size: $font-size-h3;
+					font-size: $h3-font-size;
 					margin-top: 1rem;
 					@include media-breakpoint-up(md) {
 						width: 50%;
@@ -61,7 +61,7 @@ ul.ce-menu {
 					ul {
 						position: relative;
 						padding-left: 0.5em;
-						font-size: $font-size-root;
+						//font-size: $font-size-root;
 						margin-left: 0;
 						@extend .list-unstyled;
 						li {
@@ -69,14 +69,14 @@ ul.ce-menu {
 							margin: 0;
 							padding: 0 1em 6.4px 2.1em;
 							line-height: 1.6em;
-							font-size: $font-size-root;
+							//font-size: $font-size-root;
 							&:not(:last-child)::after {
 								content: '';
 								position: absolute;
 								top: 0;
 								left: 0;
 								width: 1px;
-								background-color: $brand-primary;
+								background-color: $primary;
 								height: 100%;
 							}
 							&::before {
@@ -106,7 +106,7 @@ ul.ce-menu {
 									content: "";
 									display: block;
 									height: 1px;
-									background-color: $brand-primary;
+									background-color: $primary;
 									margin-top: -1px;
 									width: 10px;
 								}
@@ -116,7 +116,7 @@ ul.ce-menu {
 									top: 0;
 									left: 0;
 									width: 1px;
-									background-color: $brand-primary;
+									background-color: $primary;
 									height: 0.8em;
 								}
 							}

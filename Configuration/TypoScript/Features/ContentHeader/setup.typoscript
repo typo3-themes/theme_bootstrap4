@@ -1,0 +1,29 @@
+tt_content.header = FLUIDTEMPLATE
+tt_content.header {
+	templateName = Content/Header
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
+	stdWrap {
+		editIcons = tt_content: header [header_layout|header_link], subheader, date
+		editIcons {
+			beforeLastTag = 1
+			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.header
+		}
+	}
+	dataProcessing {
+		30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+		40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+		50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+		60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+	}
+}

@@ -1,0 +1,19 @@
+# customsubcategory=menu_footer=Menu-Footer
+
+# cat=menu,advanced/menu_footer/; type=string; label= Menu footer: Exclude uid list (12,13,...)
+themes.configuration.menu.footer.excludeUidList =
+
+# cat=menu,expert/menu_footer/; type=string; label= Menu footer: Prefix for each menu item (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
+themes.configuration.menu.footer.prefix =
+
+# cat=menu,advanced/menu_footer/; type=int+; label= Menu footer: Container pid where the menu items are located
+themes.configuration.menu.footer.containerPid = 0
+
+# cat=menu,expert/menu_footer/; type=string; label= Menu footer: CSS classes
+themes.configuration.menu.footer.cssClasses = nav nav-inline
+
+# cat=menu,expert/menu_footer/; type=string; label= Menu footer: Divider (for example: a | pipe)
+themes.configuration.menu.footer.divider = |
+
+# cat=menu,advanced/menu_footer/; type=options[0,1]; label= Menu footer: Include also items which are marked as 'include not in menu'
+themes.configuration.menu.footer.includeNotInMenu = 0

@@ -1,0 +1,9 @@
+# Include stylesheet files
+page {
+	includeCSSLibs {
+
+	}
+	includeCSS {
+		theme = EXT:theme_bootstrap4/Resources/Private/Dyncss/import.scss
+	}
+}

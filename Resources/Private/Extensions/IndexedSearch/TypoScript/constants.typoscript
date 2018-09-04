@@ -1,0 +1,11 @@
+# customcategory=indexedsearch=Indexed Search
+themes.configuration {
+	extension {
+		indexed_search {
+			# cat=indexedsearch,advanced//10; type=options[0,1]; label=Show the rules
+			displayRules = 1
+			# cat=indexedsearch,advanced//20; type=options[0,1]; label=Show a link to the advanced search
+			displayAdvancedSearchLink = 1
+		}
+	}
+}

@@ -1,0 +1,161 @@
+#
+# Hide some tables in list module
+#mod.web_list.table.tx_questions_domain_model_question.hideTable = 1
+#mod.web_list.table.tx_questions_domain_model_questioncategory.hideTable = 1
+#
+# Hide creation links in list module
+#mod.web_list.deniedNewTables := addToList(tx_questions_domain_model_question)
+#mod.web_list.deniedNewTables := addToList(tx_questions_domain_model_questioncategory)
+#
+# Editor: Visible fields
+[adminUser = 0]
+	TCEFORM.tx_questions_domain_model_question {
+		# Tab: General
+		question.disabled = 0
+		template.disabled = 0
+		answer.disabled = 0
+		attribute1.disabled = 0
+		attribute2.disabled = 0
+		attribute3.disabled = 0
+		attribute4.disabled = 0
+		# Tab: Category
+		category.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: SEO
+		html_title.disabled = 0
+		meta_abstract.disabled = 0
+		meta_description.disabled = 0
+		meta_keywords.disabled = 0
+		# Tab: Markdown
+		markdown.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+[GLOBAL]
+#
+# Admin: Visible fields
+[adminUser = 1]
+	TCEFORM.tx_questions_domain_model_question {
+		# Tab: General
+		question.disabled = 0
+		template.disabled = 0
+		answer.disabled = 0
+		attribute1.disabled = 0
+		attribute2.disabled = 0
+		attribute3.disabled = 0
+		attribute4.disabled = 0
+		# Tab: Category
+		category.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: SEO
+		html_title.disabled = 0
+		meta_abstract.disabled = 0
+		meta_description.disabled = 0
+		meta_keywords.disabled = 0
+		# Tab: Markdown
+		markdown.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+[GLOBAL]
+#
+# Overwriting labels for the backend forms
+TCEFORM.tx_questions_domain_model_question {
+	# Tab: General
+	question.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	template.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	answer.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute1.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute2.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute3.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute4.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Category
+	category.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Images
+	images.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: SEO
+	html_title.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_abstract.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_description.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_keywords.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Markdown
+	markdown.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Access
+	hidden.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	starttime.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	endtime.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+}

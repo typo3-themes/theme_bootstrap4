@@ -1,0 +1,16 @@
+page.headerData.1518601081 = TEXT
+page.headerData.1518601081.value (
+<!-- Piwik -->
+<script type="text/javascript">
+	var _paq = _paq || [];
+	(function(){ var u=(("https:" == document.location.protocol) ? "https://{$themes.configuration.tracking.piwik.url}" : "http://{$themes.configuration.tracking.piwik.url}");
+		_paq.push(['setSiteId', {$themes.configuration.tracking.piwik.siteId}]);
+		_paq.push(['setTrackerUrl', u+'js/']);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.defer=true; g.async=true; g.src=u+'js/';
+		s.parentNode.insertBefore(g,s); })();
+</script>
+<noscript><p><img src="http://{$themes.configuration.tracking.piwik.url}piwik.php?idsite={$themes.configuration.tracking.piwik.siteId}" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+)

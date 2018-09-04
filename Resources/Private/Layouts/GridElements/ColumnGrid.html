@@ -27,6 +27,13 @@
 		<theme:variable.set name="closeBackground" value="1" />
 	</f:if>
 
+
+	<f:comment> -- Use a gutter variant?! -- </f:comment>
+	<f:if condition="{themes.variants.css.gutters}">
+		<theme:variable.set name="gutters" value="{themes.variants.css.gutters}" />
+		<theme:variable.popVariant name="gutters" />
+	</f:if>
+
 	<f:comment> -- Use a container wrapper?! -- </f:comment>
 	<f:if condition="{themes.behaviour.css.container}">
 		<f:format.raw value="<div class=\"{themes.behaviour.css.container}\">" />
@@ -35,7 +42,7 @@
 	</f:if>
 
 	<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
-		<div class="row">
+		<div class="row {gutters}">
 			<f:render section="content" />
 		</div>
 	</div>
@@ -43,7 +50,7 @@
 	<f:if condition="{closeContainer}">
 		<f:format.raw value="</div>" />
 	</f:if>
-	
+
 	<f:if condition="{closeBackground}">
 		<f:format.raw value="</div>" />
 	</f:if>

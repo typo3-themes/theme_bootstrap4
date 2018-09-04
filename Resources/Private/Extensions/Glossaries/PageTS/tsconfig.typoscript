@@ -1,0 +1,133 @@
+#
+# Hide some tables in list module
+#mod.web_list.table.tx_glossaries_domain_model_glossary.hideTable = 1
+#mod.web_list.table.tx_glossaries_domain_model_glossarycategory.hideTable = 1
+#
+# Hide creation links in list module
+#mod.web_list.deniedNewTables := addToList(tx_glossaries_domain_model_glossary)
+#mod.web_list.deniedNewTables := addToList(tx_glossaries_domain_model_glossarycategory)
+#
+# Editor: Visible fields
+[adminUser = 0]
+	TCEFORM.tx_glossaries_domain_model_glossary {
+		# Tab: General
+		title.disabled = 0
+		sub_title.disabled = 0
+		teaser.disabled = 0
+		description.disabled = 0
+		use_detail_view.disabled = 0
+		# Tab: SEO
+		html_title.disabled = 0
+		meta_abstract.disabled = 0
+		meta_description.disabled = 0
+		meta_keywords.disabled = 0
+		# Tab: Relations
+		categories.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+	TCEFORM.tx_glossaries_domain_model_glossarycategory {
+		description.disabled = 0
+	}
+[GLOBAL]
+#
+# Admin: Visible fields
+[adminUser = 1]
+	TCEFORM.tx_glossaries_domain_model_glossary {
+		# Tab: General
+		title.disabled = 0
+		sub_title.disabled = 0
+		teaser.disabled = 0
+		description.disabled = 0
+		use_detail_view.disabled = 0
+		# Tab: SEO
+		html_title.disabled = 0
+		meta_abstract.disabled = 0
+		meta_description.disabled = 0
+		meta_keywords.disabled = 0
+		# Tab: Relations
+		categories.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+	TCEFORM.tx_glossaries_domain_model_glossarycategory {
+		description.disabled = 0
+	}
+[GLOBAL]
+#
+# Overwriting labels for the backend forms
+TCEFORM.tx_glossaries_domain_model_glossary {
+	# Tab: General
+	title.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	sub_title.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	teaser.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	description.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	use_detail_view.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: SEO
+	html_title.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_abstract.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_description.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	meta_keywords.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Relations
+	categories.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Access
+	hidden.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	starttime.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	endtime.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+}

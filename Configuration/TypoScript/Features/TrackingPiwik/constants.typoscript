@@ -1,0 +1,10 @@
+# customcategory=tracking=Tracking and analytics
+themes.configuration.tracking {
+	# customsubcategory=piwik=Piwik
+	piwik {
+		# cat=tracking/piwik/; type=string; label= Piwik: URL (without http:// or https://)
+		url = www.domain.tdl/piwik/
+		# cat=tracking/piwik/; type=int+; label= Piwik: Site ID
+		siteId =
+	}
+}

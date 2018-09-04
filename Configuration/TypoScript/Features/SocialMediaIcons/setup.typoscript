@@ -1,0 +1,72 @@
+plugin.tx_themes {
+	settings {
+		socialmedia {
+			twitter {
+				active = {$themes.configuration.socialmedia.twitter.active}
+				username = {$themes.configuration.socialmedia.twitter.username}
+				title = {$themes.configuration.socialmedia.twitter.title}
+				cssClass = {$themes.configuration.socialmedia.twitter.cssClass}
+			}
+			facebook {
+				active = {$themes.configuration.socialmedia.facebook.active}
+				link = {$themes.configuration.socialmedia.facebook.link}
+				title = {$themes.configuration.socialmedia.facebook.title}
+				cssClass = {$themes.configuration.socialmedia.facebook.cssClass}
+			}
+			rss {
+				active = {$themes.configuration.socialmedia.rss.active}
+				link = {$themes.configuration.socialmedia.rss.link}
+				title = {$themes.configuration.socialmedia.rss.title}
+				cssClass = {$themes.configuration.socialmedia.rss.cssClass}
+			}
+			googlePlus {
+				active = {$themes.configuration.socialmedia.googlePlus.active}
+				link = {$themes.configuration.socialmedia.googlePlus.link}
+				title = {$themes.configuration.socialmedia.googlePlus.title}
+				cssClass = {$themes.configuration.socialmedia.googlePlus.cssClass}
+			}
+			xing {
+				active = {$themes.configuration.socialmedia.xing.active}
+				link = {$themes.configuration.socialmedia.xing.link}
+				title = {$themes.configuration.socialmedia.xing.title}
+				cssClass = {$themes.configuration.socialmedia.xing.cssClass}
+			}
+			youtube {
+				active = {$themes.configuration.socialmedia.youtube.active}
+				link = {$themes.configuration.socialmedia.youtube.link}
+				title = {$themes.configuration.socialmedia.youtube.title}
+				cssClass = {$themes.configuration.socialmedia.youtube.cssClass}
+			}
+			instagram {
+				active = {$themes.configuration.socialmedia.instagram.active}
+				link = {$themes.configuration.socialmedia.instagram.link}
+				title = {$themes.configuration.socialmedia.instagram.title}
+				cssClass = {$themes.configuration.socialmedia.instagram.cssClass}
+			}
+			linkedIn {
+				active = {$themes.configuration.socialmedia.linkedIn.active}
+				link = {$themes.configuration.socialmedia.linkedIn.link}
+				title = {$themes.configuration.socialmedia.linkedIn.title}
+				cssClass = {$themes.configuration.socialmedia.linkedIn.cssClass}
+			}
+			github {
+				active = {$themes.configuration.socialmedia.github.active}
+				link = {$themes.configuration.socialmedia.github.link}
+				title = {$themes.configuration.socialmedia.github.title}
+				cssClass = {$themes.configuration.socialmedia.github.cssClass}
+			}
+			bitbucket {
+				active = {$themes.configuration.socialmedia.bitbucket.active}
+				link = {$themes.configuration.socialmedia.bitbucket.link}
+				title = {$themes.configuration.socialmedia.bitbucket.title}
+				cssClass = {$themes.configuration.socialmedia.bitbucket.cssClass}
+			}
+			typo3 {
+				active = {$themes.configuration.socialmedia.typo3.active}
+				link = {$themes.configuration.socialmedia.typo3.link}
+				title = {$themes.configuration.socialmedia.typo3.title}
+				cssClass = {$themes.configuration.socialmedia.typo3.cssClass}
+			}
+		}
+	}
+}

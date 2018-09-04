@@ -1,0 +1,29 @@
+tt_content.shortcut = FLUIDTEMPLATE
+tt_content.shortcut {
+	templateName = Content/Shortcut
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
+	# Keep this, since the "conf" option can be used
+	variables.shortcuts = RECORDS
+	variables.shortcuts {
+		source.field = records
+		tables = {$themes.configuration.content.elements.shortcut.tables}
+	}
+
+	stdWrap {
+		editIcons = tt_content: header [header_layout], records
+		editIcons {
+			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.shortcut
+		}
+	}
+}

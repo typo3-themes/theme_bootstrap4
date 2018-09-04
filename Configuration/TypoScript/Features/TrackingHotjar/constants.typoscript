@@ -1,0 +1,8 @@
+# customcategory=tracking=Tracking and analytics
+themes.configuration.tracking {
+	# customsubcategory=hotjar=Hotjar
+	hotjar {
+		# cat=tracking/hotjar/; type=string; label= Hotjar: Code
+		code =
+	}
+}

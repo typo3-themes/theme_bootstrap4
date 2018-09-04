@@ -1,0 +1,35 @@
+#ToDo: Check structure and classes have a look at the documentation
+
+lib.menu.footer = HMENU
+lib.menu.footer.special = directory
+lib.menu.footer.special.value = {$themes.configuration.menu.footer.containerPid}
+lib.menu.footer.includeNotInMenu = {$themes.configuration.menu.footer.includeNotInMenu}
+lib.menu.footer.excludeUidList = {$themes.configuration.menu.footer.excludeUidList}
+lib.menu.footer.stdWrap.wrap    = <ul class="{$themes.configuration.menu.footer.cssClasses}"> | </ul>
+lib.menu.footer.stdWrap.required = 1
+lib.menu.footer.1 = TMENU
+lib.menu.footer.1 {
+	expAll = 1
+	NO = 1
+	NO {
+		ATagParams = class="nav-link"
+		wrapItemAndSub.insertData = 1
+		wrapItemAndSub = <li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.footer.prefix}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.footer.prefix}|</li>|*|<li class="nav-item state-no uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.footer.prefix}|</li>
+	}
+	ACT < .NO
+	ACT {
+		ATagParams = class="nav-link active"
+		wrapItemAndSub.insertData = 1
+		wrapItemAndSub = <li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} first">{$themes.configuration.menu.footer.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle">{$themes.configuration.menu.footer.prefix}|</li>|*|<li class="nav-item state-act active uid-{field:uid} point-{register:count_MENUOBJ} last">{$themes.configuration.menu.footer.prefix}|</li>
+	}
+}
+
+plugin.tx_themes {
+	settings {
+		menu {
+			footer {
+				active = 1
+			}
+		}
+	}
+}

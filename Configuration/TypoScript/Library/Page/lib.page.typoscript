@@ -1,0 +1,45 @@
+# set some page-data markers
+lib.page {
+	uid = TEXT
+	uid {
+		data = page:uid
+	}
+	pid = TEXT
+	pid {
+		data = page:pid
+	}
+	title = TEXT
+	title {
+		data = page:titleprepend = TEXT
+		prepend {
+			if.isTrue.data = page:tx_themes_icon
+			data = page:tx_themes_icon
+			stdWrap.postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
+			stdWrap.postUserFunc {
+				iconMapping =< lib.icons.cssMap
+			}
+			required = 1
+			noTrimWrap = |<i class="|" aria-hidden="true"></i> |
+		}
+	}
+	subTitle = TEXT
+	subTitle {
+		data = page:subtitle
+	}
+	navTitle = TEXT
+	navTitle {
+		data = page:nav_title
+	}
+	author = TEXT
+	author {
+		data = page:author
+	}
+	authorEmail = TEXT
+	authorEmail {
+		data = page:author_email
+	}
+	lastUpdated = TEXT
+	lastUpdated {
+		data = page:lastUpdated
+	}
+}

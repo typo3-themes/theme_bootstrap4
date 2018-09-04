@@ -1,0 +1,10 @@
+.gutters-sm {
+	margin-right: -($grid-gutter-width-sm / 2);
+	margin-left: -($grid-gutter-width-sm / 2);
+
+	> .col,
+	> [class*="col-"] {
+		padding-right: ($grid-gutter-width-sm / 2);
+		padding-left: ($grid-gutter-width-sm / 2);
+	}
+}

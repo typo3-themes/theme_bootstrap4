@@ -1,7 +1,0 @@
-# customsubcategory=carousel=Carousel
-
-# cat=content/carousel/; type=string; label=Carousel: CSS classes for previous icon
-themes.configuration.content.elements.carousel.icon.previous = icon-prev
-
-# cat=content/carousel/; type=string; label=Carousel: CSS classes for previous icon
-themes.configuration.content.elements.carousel.icon.next = icon-next

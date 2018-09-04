@@ -1,0 +1,93 @@
+
+plugin.tx_themes {
+	settings {
+		pages {
+			newsList = {$themes.configuration.pages.newsList}
+			newsDetails = {$themes.configuration.pages.newsDetails}
+		}
+	}
+}
+
+plugin.tx_news {
+	view {
+		templateRootPaths {
+			100 = EXT:news/Resources/Private/Templates/
+			300 = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Templates/
+			500 = {$themes.resourcesPrivatePath}Extensions/News/Templates/
+		}
+		partialRootPaths {
+			100 = EXT:news/Resources/Private/Partials/
+			300 = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Partials/
+			500 = {$themes.resourcesPrivatePath}Extensions/News/Partials/
+		}
+		layoutRootPaths {
+			100 = EXT:news/Resources/Private/Layouts/
+			300 = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Layouts/
+			500 = {$themes.resourcesPrivatePath}Extensions/News/Layouts/
+		}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+		# Skip default arguments from urls
+		skipDefaultArguments = 1
+	}
+	settings {
+		# pid for list view
+		listPid = {$themes.configuration.pages.newsList}
+		# pid for single view
+		defaultDetailPid = {$themes.configuration.pages.newsDetails}
+		# pid for news container
+		startingpoint = {$themes.configuration.container.new
+		# depth of sub container
+		recursive = 5
+		list {
+			# media configuration
+			media {
+				dummyImage = {$themes.resourcesPublicPath}Extensions/News/Images/no-image.png
+			}
+			# Paginate
+			paginate {
+				templatePath = EXT:theme_bootstrap4/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
+			}
+		}
+		detail {
+			showSocialShareButtons = 0
+		}
+		backPid = {$themes.configuration.pages.newsList}
+	}
+
+	_LOCAL_LANG {
+		default {
+			more-link = more >>
+		}
+		de {
+			more-link = mehr >>
+		}
+	}
+}
+
+# Breadcrumb settings for news
+[globalVar = GP:tx_news_pi1|news > 0]
+	lib.menu.breadcrumb {
+		10.1 {
+			NO {
+				doNotLinkIt = 0
+				linkWrap = <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>
+			}
+			wrap >
+		}
+		20 = RECORDS
+		20 {
+			dontCheckPid = 1
+			tables = tx_news_domain_model_news
+			source.data = GP:tx_news_pi1|news
+			source.intval = 1
+			conf.tx_news_domain_model_news = TEXT
+			conf.tx_news_domain_model_news.field = title
+			conf.tx_news_domain_model_news.htmlSpecialChars = 1
+			wrap = <li class="breadcrumb-item active news" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">|</span></li>
+		}
+		wrap = <ol id="menuBreadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
+	}
+[end]

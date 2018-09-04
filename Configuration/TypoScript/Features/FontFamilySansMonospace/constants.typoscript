@@ -1,0 +1,24 @@
+#############################################
+# Font Family: monospace constants
+#############################################
+# customsubcategory=fontfamily.monospace=Font family: sans monospace
+themes.configuration.font.family.monospace{
+	# cat=font,advanced/fontfamily.monospace/; type=options[Local/CDN,Webserver]; label= Font-family monospace: Use from Local (for example: Arial), CDN (for example: Google-webfonts) or Webserver (for example: font provided by theme extension)
+	useFontFrom = Local/CDN
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Font Name
+	fontName =
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Font Fallback
+	fontFallback = Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Path for local Fonts
+	fontFilePath =
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Filename of EOT-Font
+	fontFileEot =
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Filename of SVG-Font
+	fontFileSvg =
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Filename of TTF-Font
+	fontFileTtf =
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Filename of WOFF-Font
+	fontFileWoff =
+	# cat=font,advanced/fontfamily.monospace/; type=string; label= Font-family monospace: Filename of WOFF2-Font
+	fontFileWoff2 =
+}

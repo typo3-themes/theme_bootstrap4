@@ -1,0 +1,66 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+
+<f:comment> -- Use a background wrapper?! -- </f:comment>
+<f:if condition="{themes.variants.css.background}">
+	<f:format.raw value="<div class=\"{themes.variants.css.background}\">" />
+	<theme:variable.popVariant name="background" />
+	<theme:variable.set name="closeBackground" value="1" />
+</f:if>
+
+<f:comment> -- Use a container wrapper?! -- </f:comment>
+<f:if condition="{themes.behaviour.css.container}">
+	<f:format.raw value="<div class=\"{themes.behaviour.css.container}\">" />
+	<theme:variable.popBehaviour name="container" />
+	<theme:variable.set name="closeContainer" value="1" />
+</f:if>
+
+<f:comment> -- First accordion item open? -- </f:comment>
+<theme:variable.set name="firstOpen" value="" />
+<f:if condition="{themes.behaviour.key2css.accordion-first-open}">
+	<theme:variable.set name="firstOpen" value="{themes.behaviour.key2css.accordion-first-open}" />
+	<theme:variable.popBehaviour name="accordion-first-open" />
+</f:if>
+
+<div id="c{data.uid}" class="accordion {themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses} {classCard}" role="tablist" aria-multiselectable="true">
+	<f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 0">
+		<f:then>
+			<f:for each="{data.tx_gridelements_view_children}" as="accordionContent" iteration="iterator">
+				<theme:variable.set name="accordionId" value="c{data.uid}" />
+				<theme:variable.set name="accordionItemId" value="c{data.uid}-{iterator.cycle}" />
+				<theme:variable.set name="accordionHeaderId" value="c{data.uid}-{iterator.cycle}-header" />
+				<div class="card">
+					<f:if condition="{iterator.isFirst}">
+						<f:then>
+							<theme:variable.set name="first" value="1" />
+							<f:render partial="Elements/Accordion/Header.html" arguments="{_all}" />
+							<f:render partial="Elements/Accordion/Content.html" arguments="{_all}" />
+						</f:then>
+						<f:else>
+							<theme:variable.set name="first" value="0" />
+							<f:render partial="Elements/Accordion/Header.html" arguments="{_all}" />
+							<f:render partial="Elements/Accordion/Content.html" arguments="{_all}" />
+						</f:else>
+					</f:if>
+				</div>
+			</f:for>
+		</f:then>
+		<f:else>
+			<div class="alert alert-danger" role="alert">
+				<!-- @todo: translation value -->
+				Please add at least one accordion content!
+				<f:translate key="carousel_empty_label" />
+			</div>
+		</f:else>
+	</f:if>
+</div>
+
+<f:if condition="{closeContainer}">
+	<f:format.raw value="</div>" />
+</f:if>
+<f:if condition="{closeBackground}">
+	<f:format.raw value="</div>" />
+</f:if>
+
+</html>

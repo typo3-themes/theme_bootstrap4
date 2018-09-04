@@ -1,0 +1,154 @@
+plugin.tx_themes {
+	view {
+		templateRootPaths {
+			300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		}
+		partialRootPaths {
+			300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		}
+		widget {
+			KayStrobach\Themes\ViewHelpers\Widget\LanguageMenuViewHelper {
+				templateRootPath = EXT:theme_bootstrap4/Resources/Private/Templates/
+			}
+		}
+	}
+	settings {
+		siteName = {$themes.configuration.siteName}
+		siteSlogan = {$themes.configuration.siteSlogan}
+
+		baseurl = {$themes.configuration.baseurl}
+		baseurlImage = {$themes.configuration.baseurlImage}
+		baseurlIcon = {$themes.configuration.baseurlIcon}
+		baseurlFont = {$themes.configuration.baseurlFont}
+
+		resourcesPrivatePath = {$themes.resourcesPrivatePath}
+		resourcesPublicPath = {$themes.resourcesPublicPath}
+
+		languages {
+			available = {$themes.languages.available}
+			mode = {$themes.languages.mode}
+			default {
+				label = {$themes.languages.default.label}
+				isoCode = {$themes.languages.default.isoCode}
+				isoCodeShort = {$themes.languages.default.isoCodeShort}
+				isoCodeHtml = {$themes.languages.default.isoCodeHtml}
+				flag = {$themes.languages.default.flag}
+			}
+			current {
+				uid = {$themes.languages.current.uid}
+				label = {$themes.languages.current.label}
+				isoCode = {$themes.languages.current.isoCode}
+				isoCodeShort = {$themes.languages.current.isoCodeShort}
+				isoCodeHtml = {$themes.languages.current.isoCodeHtml}
+				flag = {$themes.languages.current.flag}
+			}
+		}
+		pages {
+			startsite = {$themes.configuration.pages.startsite}
+			legal = {$themes.configuration.pages.legal}
+			privacy = {$themes.configuration.pages.privacy}
+			imprint = {$themes.configuration.pages.imprint}
+			contact = {$themes.configuration.pages.contact}
+			sitemap = {$themes.configuration.pages.sitemap}
+			search = {$themes.configuration.pages.search}
+			directions = {$themes.configuration.pages.directions}
+			login = {$themes.configuration.pages.login}
+			logout = {$themes.configuration.pages.logout}
+			intro = {$themes.configuration.pages.intro}
+			cookie = {$themes.configuration.pages.cookie}
+			references = {$themes.configuration.pages.references}
+			registration = {$themes.configuration.pages.registration}
+		}
+		image {
+			lazyloading = {$themes.configuration.image.lazyloading}
+		}
+		content {
+			elements {
+				carousel {
+					icon {
+						previous = {$themes.configuration.content.elements.carousel.icon.previous}
+						next = {$themes.configuration.content.elements.carousel.icon.next}
+					}
+				}
+			}
+		}
+		extension {
+			fluidStyledResponsiveImages {
+				loaded = {$themes.configuration.extension.fluidStyledResponsiveImages.loaded}
+			}
+		}
+		header {
+			phone = {$themes.configuration.header.phone}
+			email = {$themes.configuration.header.email}
+		}
+		footer {
+			slogan = {$themes.configuration.footer.slogan}
+			address = {$themes.configuration.footer.address}
+			email = {$themes.configuration.footer.email}
+		}
+	}
+}
+
+config.tx_extbase {
+	view {
+		widget {
+			KayStrobach\Themes\ViewHelpers\Widget\LanguageMenuViewHelper {
+				templateRootPath = EXT:theme_bootstrap4/Resources/Private/Templates/
+			}
+		}
+	}
+}
+
+
+
+tt_content {
+	# Be sure there is no standard inner wrap,
+	# otherwise there is are html-ids used twice
+	stdWrap.innerWrap >
+	# Add themes data processoring
+
+	bullets {
+		dataProcessing {
+			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+		}
+	}
+	menu {
+		dataProcessing {
+			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+		}
+	}
+	textmedia {
+		dataProcessing {
+			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+		}
+	}
+	uploads {
+		dataProcessing {
+			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+		}
+	}
+	themes_buttoncontent_pi1 {
+		dataProcessing {
+			30 = KayStrobach\Themes\DataProcessing\ThemesVariantsDataProcessor
+			40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
+			50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
+			60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+			70 = KayStrobach\Themes\DataProcessing\ThemesButtonDataProcessor
+		}
+	}
+}

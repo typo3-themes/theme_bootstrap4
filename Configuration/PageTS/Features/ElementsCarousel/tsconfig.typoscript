@@ -1,0 +1,34 @@
+tx_gridelements.setup.carousel {
+	title = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:carousel
+	description = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:carousel_description
+	iconIdentifier = new-content-el-carousel
+	config {
+		colCount = 1
+		rowCount = 1
+		rows {
+			1 {
+				columns {
+					1 {
+						name = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_elements.xlf:carousel_content
+						colPos = 0
+						allowed = textmedia,themebootstrap4_image
+					}
+				}
+			}
+		}
+	}
+}
+
+#Add variants
+themes {
+	content {
+		variants {
+			gridelements_pi1 {
+				carousel {
+					carousel-hide-indicators = Hide indicators
+					carousel-hide-arrows = Hide arrows
+				}
+			}
+		}
+	}
+}

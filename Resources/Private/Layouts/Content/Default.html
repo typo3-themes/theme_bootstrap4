@@ -1,6 +1,8 @@
-<html data-namespace-typo3-fluid="true"
-	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
-	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<f:spaceless>
 
 	<f:comment> -- Use a background wrapper?! -- </f:comment>
 	<f:if condition="{themes.variants.css.background}">
@@ -16,15 +18,42 @@
 		<theme:variable.set name="closeContainer" value="1" />
 	</f:if>
 
-	<div id="c{data.uid}" class="{themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
-		<f:render section="content" />
+	<f:comment> -- Use a image class?! -- </f:comment>
+	<f:if condition="{themes.variants.css.image}">
+		<theme:variable.set name="imageClass" value="{class: themes.variants.css.image}" />
+		<theme:variable.popVariant name="image" />
+	</f:if>
+
+	<f:comment>
+		@todo: Do we need here the following content-{data.CType} ???
+	</f:comment>
+
+	<div id="c{data.uid}" class="content-{data.CType} {themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+		<f:if condition="{data._LOCALIZED_UID}">
+			<a id="c{data._LOCALIZED_UID}"></a>
+		</f:if>
+		<f:render section="Before" optional="true">
+			<f:render partial="Content/DropIn/Before/All" arguments="{_all}" />
+		</f:render>
+		<f:render section="Header" optional="true">
+			<f:render partial="Content/Header/All" arguments="{_all}" />
+		</f:render>
+		<f:render section="Main" optional="true" />
+		<f:render section="Footer" optional="true">
+			<f:render partial="Content/Footer/All" arguments="{_all}" />
+		</f:render>
+		<f:render section="After" optional="true">
+			<f:render partial="Content/DropIn/After/All" arguments="{_all}" />
+		</f:render>
 	</div>
-	
+
 	<f:if condition="{closeContainer}">
 		<f:format.raw value="</div>" />
 	</f:if>
 	<f:if condition="{closeBackground}">
 		<f:format.raw value="</div>" />
 	</f:if>
+
+</f:spaceless>
 
 </html>

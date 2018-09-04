@@ -5,17 +5,22 @@
 		<!-- theme_bootstrap4: Partials/Area/Header.html [begin] -->
 
 		<header id="area-header">
-			<nav id="menu-main" class="navbar navbar-dark bg-inverse navbar-fixed-top">
+			<nav id="menu-main" class="navbar navbar-expand-md navbar-dark bg-dark">
 				<div class="container">
 					<div id="header-logo-main" class="navbar-brand">
 						<f:cObject typoscriptObjectPath="lib.header.logo.main" />
 					</div>
-					<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-main">
-						&#9776;
-					</button>
-					<div id="navbar-main" class="collapse navbar-toggleable-xs">
-						<f:cObject typoscriptObjectPath="lib.menu.main" />
-					</div>
+					<f:if condition="{settings.menu.main.active}">
+						<button class="navbar-toggler" type="button"
+								data-toggle="collapse" data-target="#navbar-main"
+								aria-controls="navbar-main" aria-expanded="false"
+								aria-label="{f:translate(key: 'toggleNavigation_label')}">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div id="navbar-main" class="collapse navbar-collapse">
+							<f:cObject typoscriptObjectPath="lib.menu.main" />
+						</div>
+					</f:if>
 				</div>
 			</nav>
 		</header>

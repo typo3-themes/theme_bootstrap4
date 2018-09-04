@@ -1,0 +1,22 @@
+mod.wizards.newContentElement.wizardItems.common {
+	elements {
+		themebootstrap4_text_image {
+			iconIdentifier = new-content-el-text-image
+			title = Einfacher Text mit Bild
+			description = Einfacher Text mit Headline und Bild
+			tt_content_defValues {
+				CType = themebootstrap4_text_image
+			}
+		}
+	}
+	show := addToList(themebootstrap4_text_image)
+}
+
+TCEFORM.tt_content {
+	CType {
+		removeItems := removeFromList(themebootstrap4_text_image)
+	}
+	layout {
+		disabled = 0
+	}
+}

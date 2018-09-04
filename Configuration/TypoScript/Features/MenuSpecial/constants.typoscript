@@ -1,0 +1,16 @@
+# customsubcategory=menu_special=Menu-Special
+
+# cat=menu,advanced/menu_special/; type=string; label= Menu special: Exclude uid list (12,13,...)
+themes.configuration.menu.special.excludeUidList = 69
+
+# cat=menu,advanced/menu_special/; type=options[0,1]; label= Menu special: Include also items which are marked as 'include not in menu'
+themes.configuration.menu.special.includeNotInMenu = 0
+
+# cat=menu,expert/menu_special/; type=string; label= Menu special: CSS classes
+themes.configuration.menu.special.cssClasses = nav navbar-nav
+
+# cat=menu,expert/menu_special/; type=string; label= Menu special: Prefix for each menu item in first entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
+themes.configuration.menu.special.prefixFirstLevel =
+
+# cat=menu,expert/menu_special/; type=string; label= Menu special: Prefix for each menu item in second entry level (for example: <span class="glyphicon glyphicon-chevron-right"></span>)
+themes.configuration.menu.special.prefixSecondLevel =

@@ -1,0 +1,11 @@
+page {
+	includeCSSLibs {
+		googleFonts = {$themes.configuration.font.googleFonts.fontCdnUrl}
+		googleFonts {
+			disableCompression = 1
+			excludeFromConcatenation = 1
+			external = 1
+			forceOnTop = 1
+		}
+	}
+}

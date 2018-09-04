@@ -1,8 +1,12 @@
 @if $footer-menu-divider != '' {
 	#menu-footer {
-		ul.nav li + li::before {
-			content: "#{$footer-menu-divider}";
-			margin-right: 1rem;
+		.nav .nav-item + .nav-item {
+			display: flex;
+			&::before {
+				content: "#{$footer-menu-divider}";
+				padding-top: $nav-link-padding-y;
+				padding-bottom: $nav-link-padding-y;
+			}
 		}
 	}
 }

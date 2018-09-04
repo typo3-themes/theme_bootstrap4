@@ -7,16 +7,18 @@
 		<div id="area-top">
 			<!--
 			@todo class container // optionally fluid-container!!
-			--> 
+			-->
 			<div class="container">
 				<div class="row">
 
 					<div class="col-lg-6">
-						<nav id="menu-top">
-							<f:cObject typoscriptObjectPath="lib.menu.top" />
-						</nav>
+						<f:if condition="{settings.menu.top.active}">
+							<nav id="menu-top">
+								<f:cObject typoscriptObjectPath="lib.menu.top" />
+							</nav>
+						</f:if>
 					</div>
-					
+
 					<div class="col-lg-3">
 						<nav class="menu-language-wrapper pull-right">
 							<theme:widget.languageMenu availableLanguages="{settings.languages.available}"

@@ -1,0 +1,73 @@
+<?php
+
+namespace KayStrobach\ThemeBootstrap4\Hooks\PageLayoutView;
+
+/*
+ * This file is part of the TYPO3 CMS project.
+ *
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ * The TYPO3 project - inspiring people to share!
+ */
+use TYPO3\CMS\Backend\Utility\BackendUtility;
+use \TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
+use \TYPO3\CMS\Backend\View\PageLayoutView;
+
+/**
+ * Contains a preview rendering for the page module of CType="themebootstrap4_image"
+ * See typo3/sysext/frontend/Classes/Hooks/PageLayoutView/ImagePreviewRenderer.php
+ */
+class ImagePreviewRenderer implements PageLayoutViewDrawItemHookInterface
+{
+    /**
+     * Preprocesses the preview rendering of the content element "themebootstrap4_image".
+     *
+     * @param \TYPO3\CMS\Backend\View\PageLayoutView $parentObject Calling parent object
+     * @param bool $drawItem Whether to draw the item using the default functionalities
+     * @param string $headerContent Header content
+     * @param string $itemContent Item content
+     * @param array $row Record row of tt_content
+     */
+    public function preProcess(
+        PageLayoutView &$parentObject,
+        &$drawItem,
+        &$headerContent,
+        &$itemContent,
+        array &$row
+    ) {
+        if ($row['CType'] === 'themebootstrap4_image') {
+            if ($row['bodytext']) {
+                $itemContent .= $parentObject->linkEditContent($parentObject->renderText($row['bodytext']),
+                        $row) . '<br />';
+            }
+            if ($row['assets']) {
+                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content',
+                        'assets'), $row) . '<br />';
+
+                $fileReferences = BackendUtility::resolveFileReferences('tt_content', 'assets', $row);
+
+                if (!empty($fileReferences)) {
+                    $linkedContent = '';
+
+                    foreach ($fileReferences as $fileReference) {
+                        $description = $fileReference->getDescription();
+                        if ($description !== null && $description !== '') {
+                            $linkedContent .= htmlspecialchars($description) . '<br />';
+                        }
+                    }
+
+                    $itemContent .= $parentObject->linkEditContent($linkedContent, $row);
+
+                    unset($linkedContent);
+                }
+            }
+
+            $drawItem = false;
+        }
+    }
+}

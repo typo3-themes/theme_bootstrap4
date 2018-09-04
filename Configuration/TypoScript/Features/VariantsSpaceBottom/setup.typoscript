@@ -1,0 +1,20 @@
+lib.content.cssMap.variants {
+	space-bottom {
+		eliminate = mb-0 pb-0
+		inside-xs = pb-1
+		inside-s = pb-2
+		inside-m = pb-3
+		inside-l = pb-4
+		inside-xl = pb-5
+		outside-xs = mb-1
+		outside-s = mb-2
+		outside-m = mb-3
+		outside-l = mb-4
+		outside-xl = mb-5
+		in-out-side-xs = mb-1 pb-1
+		in-out-side-s = mb-2 pb-2
+		in-out-side-m = mb-3 pb-3
+		in-out-side-l = mb-4 pb-4
+		in-out-side-xl = mb-5 pb-5
+	}
+}

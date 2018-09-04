@@ -1,0 +1,91 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:theme="http://typo3.org/ns/KayStrobach/Themes/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<f:layout name="Content/Default" />
+<f:section name="Main">
+
+	<f:comment> -- Show table header?! -- </f:comment>
+	<theme:variable.set name="tableHeader" value="0" />
+	<f:if condition="{themes.variants.css.table-header}">
+		<theme:variable.popVariant name="table-header" />
+		<theme:variable.set name="tableHeader" value="1" />
+	</f:if>
+
+	<f:comment> -- Use a responsive wrapper?! -- </f:comment>
+	<f:if condition="{themes.behaviour.css.table-responsive}">
+		<f:format.printf arguments="{class: themes.behaviour.css.table-responsive}" value="<div class='%s'>" />
+		<theme:variable.popBehaviour name="table-responsive" />
+		<theme:variable.set name="closeResponsive" value="1" />
+	</f:if>
+
+	<f:if condition="{files}">
+
+		<f:comment> -- Download target frame -- </f:comment>
+		<theme:variable.set name="target" value="" />
+		<f:if condition="{data.target}">
+			<theme:variable.set name="target"> target="{data.target}"</theme:variable.set>
+		</f:if>
+
+		<table id="c{data.uid}" class="ce-uploads table {themes.variants.cssClasses} {themes.behaviour.cssClasses} {themes.responsive.cssClasses}">
+			<f:if condition="{tableHeader}">
+				<thead>
+				<tr>
+					<f:if condition="{data.uploads_type} == 0">
+						<f:then></f:then>
+						<f:else><th><f:translate key="uploads_table_type" extensionName="themes" /></th></f:else>
+					</f:if>
+					<th><f:translate key="uploads_table_file" extensionName="themes" /></th>
+					<f:if condition="{data.uploads_description}">
+						<th><f:translate key="uploads_table_description" extensionName="themes" /></th>
+					</f:if>
+					<f:if condition="{data.filelink_size}">
+						<th><f:translate key="uploads_table_size" extensionName="themes" /></th>
+					</f:if>
+				</tr>
+				</thead>
+			</f:if>
+			<tbody>
+
+			<f:for each="{files}" as="file" iteration="fileIterator">
+				<tr>
+					<f:if condition="{data.uploads_type} == 1">
+						<td><span class="file-icon file-icon-{file.extension}"></span></td>
+					</f:if>
+					<f:if condition="{data.uploads_type} == 2">
+						<f:if condition="{f:uri.image(src: 'file:{f:if(condition: file.originalFile, then: \'file:{file.originalFile.uid}\', else: \'file:{file.uid}\')}')} != '/'">
+							<f:then>
+								<td><a href="{file.publicUrl}" {target}><f:media file="{file}" width="150" alt="{file.properties.alternative}" title="{file.properties.title}" /></a></td>
+							</f:then>
+							<f:else>
+								<td><span class="file-icon file-icon-{file.extension}"></span></td>
+							</f:else>
+						</f:if>
+					</f:if>
+
+					<f:if condition="{file.name}">
+						<td class="ce-uploads-fileName"><a href="{file.publicUrl}" {target}><f:if condition="{file.properties.title}">
+							<f:then>{file.properties.title}</f:then>
+							<f:else>{file.name}</f:else>
+						</f:if></a></td>
+					</f:if>
+
+					<f:if condition="{data.uploads_description}">
+						<td class="ce-uploads-description"><f:if condition="{file.properties.description}">{file.properties.description}</f:if></td>
+					</f:if>
+
+					<f:if condition="{data.filelink_size}">
+						<td class="ce-uploads-filesize"><f:format.bytes value="{file.properties.size}" /></td>
+					</f:if>
+				</tr>
+			</f:for>
+
+			</tbody>
+		</table>
+	</f:if>
+
+	<f:if condition="{closeResponsive}">
+		<f:format.printf arguments="{0: ''}" value="</div>" />
+	</f:if>
+
+</f:section>
+</html>

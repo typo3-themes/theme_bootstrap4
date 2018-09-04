@@ -1,0 +1,267 @@
+#
+# Hide some tables in list module
+#mod.web_list.table.tx_addressmanager_domain_model_address.hideTable = 1
+#mod.web_list.table.tx_addressmanager_domain_model_addressgroup.hideTable = 1
+#mod.web_list.table.tx_addressmanager_domain_model_addressposition.hideTable = 1
+#mod.web_list.table.tx_addressmanager_domain_model_addressorganisation.hideTable = 1
+#
+# Hide creation links in list module
+#mod.web_list.deniedNewTables := addToList(tx_addressmanager_domain_model_address)
+#mod.web_list.deniedNewTables := addToList(tx_addressmanager_domain_model_addressgroup)
+#mod.web_list.deniedNewTables := addToList(tx_addressmanager_domain_model_addressposition)
+#mod.web_list.deniedNewTables := addToList(tx_addressmanager_domain_model_addressorganisation)
+#
+# Editor: Visible fields
+[adminUser = 0]
+	TCEFORM.tx_addressmanager_domain_model_address {
+		# Tab: General
+		name.disabled = 0
+		gender.disabled = 0
+		first_name.disabled = 0
+		middle_name.disabled = 0
+		last_name.disabled = 0
+		birthday.disabled = 0
+		title.disabled = 0
+		email.disabled = 0
+		phone.disabled = 0
+		mobile.disabled = 0
+		www.disabled = 0
+		address.disabled = 0
+		building.disabled = 0
+		room.disabled = 0
+		company.disabled = 0
+		city.disabled = 0
+		postal_code.disabled = 0
+		region.disabled = 0
+		country.disabled = 0
+		fax.disabled = 0
+		description.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: Location
+		map_latitude.disabled = 0
+		map_longitude.disabled = 0
+		map_wizard.disabled = 0
+		map_zoom.disabled = 0
+		map_tooltip.disabled = 0
+		map_link.disabled = 0
+		directions.disabled = 0
+		# Tab: Relations
+		groups.disabled = 0
+		positions.disabled = 0
+		organisations.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+[GLOBAL]
+#
+# Admin: Visible fields
+[adminUser = 1]
+	TCEFORM.tx_addressmanager_domain_model_address {
+		# Tab: General
+		name.disabled = 0
+		gender.disabled = 0
+		first_name.disabled = 0
+		middle_name.disabled = 0
+		last_name.disabled = 0
+		birthday.disabled = 0
+		title.disabled = 0
+		email.disabled = 0
+		phone.disabled = 0
+		mobile.disabled = 0
+		www.disabled = 0
+		address.disabled = 0
+		building.disabled = 0
+		room.disabled = 0
+		company.disabled = 0
+		city.disabled = 0
+		postal_code.disabled = 0
+		region.disabled = 0
+		country.disabled = 0
+		fax.disabled = 0
+		description.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: Location
+		map_latitude.disabled = 0
+		map_longitude.disabled = 0
+		map_wizard.disabled = 0
+		map_zoom.disabled = 0
+		map_tooltip.disabled = 0
+		map_link.disabled = 0
+		directions.disabled = 0
+		# Tab: Relations
+		groups.disabled = 0
+		positions.disabled = 0
+		organisations.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+[GLOBAL]
+#
+# Overwriting labels for the backend forms
+TCEFORM.tx_addressmanager_domain_model_address {
+	# Tab: General
+	name.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	gender.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	first_name.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	middle_name.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	last_name.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	birthday.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	title.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	email.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	phone.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	mobile.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	www.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	address.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	building.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	room.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	company.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	city.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	postal_code.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	region.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	country.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	fax.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	description.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Images
+	images.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Location
+	map_latitude.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	map_longitude.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	map_zoom.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	map_tooltip.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	map_link.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	directions.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Relations
+	groups.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	positions.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	organisations.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+}

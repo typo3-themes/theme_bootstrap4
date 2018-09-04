@@ -1,0 +1,77 @@
+#ToDo: check all variants / check documentation for removed and new classes
+
+lib.content.cssMap.variants {
+
+	# Alerts
+	alert-success = alert alert-success
+	alert-info = alert alert-info
+	alert-warning = alert alert-warning
+	alert-danger = alert alert-danger
+
+	wide-screen = jumbotron
+
+	# Image
+	image {
+		rounded = rounded
+		rounded-top = rounded-top
+		rounded-right = rounded-right
+		rounded-bottom = rounded-bottom
+		rounded-left = rounded-left
+		rounded-circle = rounded-circle
+	}
+
+	# Variants only for header content elements
+	page-header = page-header
+
+	navigation-pills-color1 = nav-pills-color1
+	navigation-pills-color2 = nav-pills-color2
+	navigation-pills-color3 = nav-pills-color3
+	navigation-pills-color4 = nav-pills-color4
+	navigation-pills-color5 = nav-pills-color5
+	navigation-pills-color6 = nav-pills-color6
+
+	# Variants for uploads/download content element
+	uploads-table-header = table-header
+	uploads-table-striped = table-striped
+	uploads-table-bordered = table-bordered
+	uploads-table-inverse = table-inverse
+	uploads-table-hover = table-hover
+	uploads-table-small = table-sm
+
+	# Grid columns
+	gutters {
+		without = no-gutters
+		sm = gutters-sm
+		lg = gutters-lg
+	}
+
+	# Grid layout: carousel
+	carousel-hide-indicators = carousel-hide-indicators
+	carousel-hide-arrows = carousel-hide-arrows
+
+	# Grid layout: tabs
+	tabs-in-card = tabs-in-card
+	tabs-navigation {
+		tabs = tabs
+		pills = pills
+	}
+
+	# Buttons/Button groups
+	button-color {
+		primary = btn btn-primary
+		secondary = btn btn-secondary
+		success = btn btn-success
+		info = btn btn-info
+		warning = btn btn-warning
+		danger = btn btn-danger
+		link = btn btn-link
+	}
+	button-outline = btn-outline
+	button-size {
+		default =
+		large = btn-lg
+		small = btn-sm
+	}
+	button-block = btn-block
+
+}

@@ -70,6 +70,116 @@
 			<trans-unit id="content.variants.background_inverse" xml:space="preserve">
 				<source>Inverse color</source>
 			</trans-unit>
+			<trans-unit id="content.variants.background_light" xml:space="preserve">
+				<source>Light color</source>
+			</trans-unit>
+			<trans-unit id="content.variants.background_dark" xml:space="preserve">
+				<source>Dark color</source>
+			</trans-unit>
+
+			<!-- Space -->
+			<trans-unit id="content.variants.space.top_label" xml:space="preserve">
+				<source>Choose space top</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_eliminate" xml:space="preserve">
+				<source>Space top: eliminate</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_inside_xs" xml:space="preserve">
+				<source>Space top - Inside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_inside_s" xml:space="preserve">
+				<source>Space top - Inside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_inside_m" xml:space="preserve">
+				<source>Space top - Inside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_inside_l" xml:space="preserve">
+				<source>Space top - Inside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_inside_xl" xml:space="preserve">
+				<source>Space top - Inside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_xs" xml:space="preserve">
+				<source>Space top - Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_s" xml:space="preserve">
+				<source>Space top - Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_m" xml:space="preserve">
+				<source>Space top - Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_l" xml:space="preserve">
+				<source>Space top - Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_outside_xl" xml:space="preserve">
+				<source>Space top - Outside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_xs" xml:space="preserve">
+				<source>Space top - In/-Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_s" xml:space="preserve">
+				<source>Space top - In-/Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_m" xml:space="preserve">
+				<source>Space top - In-/Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_l" xml:space="preserve">
+				<source>Space top - In-/Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.top_in_out_side_xl" xml:space="preserve">
+				<source>Space top - In-/Outside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_label" xml:space="preserve">
+				<source>Choose space bottom</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_eliminate" xml:space="preserve">
+				<source>Space bottom: eliminate</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_inside_xs" xml:space="preserve">
+				<source>Space bottom - Inside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_inside_s" xml:space="preserve">
+				<source>Space bottom - Inside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_inside_m" xml:space="preserve">
+				<source>Space bottom - Inside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_inside_l" xml:space="preserve">
+				<source>Space bottom - Inside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_inside_xl" xml:space="preserve">
+				<source>Space bottom - Inside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_xs" xml:space="preserve">
+				<source>Space bottom - Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_s" xml:space="preserve">
+				<source>Space bottom - Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_m" xml:space="preserve">
+				<source>Space bottom - Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_l" xml:space="preserve">
+				<source>Space bottom - Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_outside_xl" xml:space="preserve">
+				<source>Space bottom - Outside: XL</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_xs" xml:space="preserve">
+				<source>Space bottom - In-/Outside: XS</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_s" xml:space="preserve">
+				<source>Space bottom - In-/Outside: S</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_m" xml:space="preserve">
+				<source>Space bottom - In-/Outside: M</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_l" xml:space="preserve">
+				<source>Space bottom - In-/Outside: L</source>
+			</trans-unit>
+			<trans-unit id="content.variants.space.bottom_in_out_side_xl" xml:space="preserve">
+				<source>Space bottom - In-/Outside: XL</source>
+			</trans-unit>
 
 			<!-- Alerts -->
 			<trans-unit id="content.variants.alert_success" xml:space="preserve">
@@ -84,7 +194,21 @@
 			<trans-unit id="content.variants.alert_danger" xml:space="preserve">
 				<source>Alert-Error</source>
 			</trans-unit>
-			
+
+			<!-- Gutters -->
+			<trans-unit id="content.variants.gutters_none" xml:space="preserve">
+				<source>Gutter width: default</source>
+			</trans-unit>
+			<trans-unit id="content.variants.gutters_without" xml:space="preserve">
+				<source>Gutter width: no gutters</source>
+			</trans-unit>
+			<trans-unit id="content.variants.gutters_sm" xml:space="preserve">
+				<source>Gutter width: sm</source>
+			</trans-unit>
+			<trans-unit id="content.variants.gutters_lg" xml:space="preserve">
+				<source>Gutter width: lg</source>
+			</trans-unit>
+
 			<!-- Button/Button group -->
 			<trans-unit id="content.buttons.primary" xml:space="preserve">
 				<source>Color: Primary Button</source>
@@ -122,7 +246,7 @@
 			<trans-unit id="content.buttons.block" xml:space="preserve">
 				<source>Block Button</source>
 			</trans-unit>
-			
+
 
 			<!-- Panel -->
 			<!-- @todo panels gibt es nicht mehr!? -->
@@ -141,7 +265,7 @@
 			<trans-unit id="content.variants.panel_danger" xml:space="preserve">
 				<source>Danger Panel</source>
 			</trans-unit>
-			
+
 			<!-- Grid layout: tabs -->
 			<trans-unit id="content.variants.tabs_in_card" xml:space="preserve">
 				<source>Tabs in card</source>

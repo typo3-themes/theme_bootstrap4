@@ -1,0 +1,79 @@
+
+# Behaviour for content elements
+themes.content.behaviour {
+	default {
+		container {
+			#ToDo: Label in language file
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.container_label
+			default = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.container
+			fluid = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.container_fluid
+		}
+		screenreader {
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.screenreader_label
+			only = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.screenreader_only
+			only-focusable = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.screenreader_only_focusable
+		}
+		print {
+			#ToDo: Label in language file
+			none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_label
+			hidden = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_hidden
+			visible-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_visible_block
+			visible-inline = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_visible_inline
+			visible-inline-block = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.print_visible_inline_block
+		}
+		fade-in = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.fade_in
+	}
+	textmedia {
+		responsive-embed {
+			#ToDo: Label in language file
+			label = Chose responsive video behaviour
+			21by9 = Responsive Video: 21:9
+			16by9 = Responsive Video: 16:9
+			4by3 = Responsive Video: 4:3
+			1by1 = Responsive Video: 1:1
+		}
+	}
+	# ctype uploads
+	uploads {
+		uploads-table-responsive = Responsive table
+	}
+	table {
+		#ToDo: New integrate classes
+		table-responsive = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.table_responsive
+	}
+	gridelements_pi1 {
+		#ToDo Have a look in the Documentation: Navigation, panels are changed
+		#accordion-first-open = Open first accordion panel
+		#navigation-pills = Pills navigation
+		#navigation-tabs = Tabs navigation
+		
+		2ColumnGrid {
+		}
+		3ColumnGrid {
+		}
+		4ColumnGrid {
+		}
+		accordion {
+			accordion-first-open = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_behaviour.xlf:content.behaviour.accordion_first_open
+		}
+		carousel {
+			carousel-interval {
+				none = Interval: No automatic cycle
+				duration-3000 = Interval: fast (3 sec.)
+				duration-5000 = Interval: slow (5 sec.)
+			}
+			# Don't pauses the cycling of the carousel on mouse-enter and resumes the cycling of the carousel on mouse-leave.
+			carousel-pause = Pause on mouse over
+			carousel-animation {
+				slide = Animation: slide
+				fade = Animation: fade
+			}
+			# Whether the carousel should cycle continuously or have hard stops.
+			carousel-wrap = Wrap continuously
+		}
+		tabs {
+			
+		}
+		
+	}
+}

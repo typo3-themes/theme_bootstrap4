@@ -1,0 +1,5 @@
+lib.content.cssMap.variants {
+	framed-default = well
+	framed-small = well well-sm
+	framed-large = well well-lg
+}

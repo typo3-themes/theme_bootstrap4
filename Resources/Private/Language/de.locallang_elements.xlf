@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="theme_bootstrap4">
+        <header/>
+        <body>
+            <trans-unit id="two_column_grid">
+                <source>2 column grid</source>
+                <target>2 spaltiges Raster</target>
+            </trans-unit>
+            <trans-unit id="two_column_grid_description">
+                <source>Preset row with two columns. Column width can be adjusted. Columns will always have an overall width of 12 grid columns.</source>
+                <target>Vorbelegte Zeile mit zwei Spalten. Die Spaltenbreiten sind einstellbar. Beide Spalten haben zusammen immer eine Breite von 12 Rasterspalten</target>
+            </trans-unit>
+
+            <trans-unit id="three_column_grid">
+                <source>3 column grid</source>
+                <target>3 spaltiges Raster</target>
+            </trans-unit>
+            <trans-unit id="three_column_grid_description">
+                <source>Preset row with three columns. Column width can be adjusted. Columns will always have an overall width of 12 grid columns.</source>
+                <target>Vorbelegte Zeile mit drei Spalten. Die Spaltenbreiten sind einstellbar. Alle Spalten haben zusammen immer eine Breite von 12 Rasterspalten</target>
+            </trans-unit>
+
+            <trans-unit id="four_column_grid">
+                <source>4 column grid</source>
+                <target>4 spaltiges Raster</target>
+            </trans-unit>
+            <trans-unit id="four_column_grid_description">
+                <source>Preset row with four columns. Column width can be adjusted. Columns will always have an overall width of 12 grid columns.</source>
+                <target>Vorbelegte Zeile mit vier Spalten. Die Spaltenbreiten sind einstellbar. Alle Spalten haben zusammen immer eine Breite von 12 Rasterspalten</target>
+            </trans-unit>
+
+            <trans-unit id="outer_left">
+                <source>Outer left</source>
+                <target>Links aussen</target>
+            </trans-unit>
+            <trans-unit id="middle_left">
+                <source>Middle left</source>
+                <target>Mitte links</target>
+            </trans-unit>
+            <trans-unit id="left">
+                <source>Left</source>
+                <target>Links</target>
+            </trans-unit>
+            <trans-unit id="middle">
+                <source>Middle</source>
+                <target>Mitte</target>
+            </trans-unit>
+            <trans-unit id="outer_right">
+                <source>Outer right</source>
+                <target>Rechts aussen</target>
+            </trans-unit>
+            <trans-unit id="middle_right">
+                <source>Middle right</source>
+                <target>Mitte rechts</target>
+            </trans-unit>
+            <trans-unit id="right">
+                <source>Right</source>
+                <target>Rechts</target>
+            </trans-unit>
+
+            <trans-unit id="accordion">
+                <source>Accordion</source>
+                <target>Akkordeon</target>
+            </trans-unit>
+            <trans-unit id="accordion_description">
+                <source>Container with collapsible child elements, which can either be single elements or containers as well</source>
+                <target>Behälter mit zusammenklappbaren Kind-Elementen, die ihrerseits entweder einzelne Elemente oder ebenfalls Behälter sein können</target>
+            </trans-unit>
+            <trans-unit id="accordion_content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="accordion_active">
+                <source>Accordion active</source>
+                <target>Akkordeon aktiv</target>
+            </trans-unit>
+            <trans-unit id="accordion_settings">
+                <source>Accordion settings</source>
+                <target>Akkordeon-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="accordion_settings_all_closed">
+                <source>All elements closed</source>
+                <target>Alle Elemente geschlossen</target>
+            </trans-unit>
+            <trans-unit id="accordion_settings_first_open">
+                <source>First element open</source>
+                <target>Erstes Element geöffnet</target>
+            </trans-unit>
+            <trans-unit id="accordion_settings_all_open">
+                <source>All elements open</source>
+                <target>Alle Elemente geöffnet</target>
+            </trans-unit>
+            <trans-unit id="accordion_toggle">
+                <source>Accordion show/hide all</source>
+                <target>Alle Akkordeons öffnen/schliessen</target>
+            </trans-unit>
+            <trans-unit id="accordion_toggle_show">
+                <source>Show toggle</source>
+                <target>Schalter anzeigen</target>
+            </trans-unit>
+            <trans-unit id="accordion_toggle_hide">
+                <source>Hide toggle</source>
+                <target>Schalter verbergen</target>
+            </trans-unit>
+
+            <trans-unit id="carousel">
+                <source>Carousel</source>
+                <target>Karussell</target>
+            </trans-unit>
+            <trans-unit id="carousel_description">
+                <source>Carousel/Slider</source>
+                <target>Karussell/Bildwechsler</target>
+            </trans-unit>
+            <trans-unit id="carousel_content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+
+            <trans-unit id="column">
+                <source>Column</source>
+                <target>Spalte</target>
+            </trans-unit>
+            <trans-unit id="column_content">
+                <source>Column content</source>
+                <target>Spalten-Inhalt</target>
+            </trans-unit>
+            <trans-unit id="column_footer">
+                <source>Footer content</source>
+                <target>Fußzeilen-Inhalt</target>
+            </trans-unit>
+            <trans-unit id="column_widths_medium">
+                <source>Desktops</source>
+                <target>Desktops</target>
+            </trans-unit>
+            <trans-unit id="column_widths_small">
+                <source>Tablets</source>
+                <target>Tablets</target>
+            </trans-unit>
+            <trans-unit id="column_widths_extrasmall">
+                <source>Mobile devices</source>
+                <target>Mobile Geräte</target>
+            </trans-unit>
+            <trans-unit id="column_widths_large">
+                <source>Large devices</source>
+                <target>Große Geräte</target>
+            </trans-unit>
+            <trans-unit id="column_width_distribution">
+                <source>Column width distribution</source>
+                <target>Verteilung der Spaltenbreiten</target>
+            </trans-unit>
+            <trans-unit id="column_width">
+                <source>Column width</source>
+                <target>Spaltenbreite</target>
+            </trans-unit>
+            <trans-unit id="column_offset">
+                <source>Column offset</source>
+                <target>Einrückung</target>
+            </trans-unit>
+            <trans-unit id="column_push">
+                <source>Column push</source>
+                <target>Nach rechts verschieben</target>
+            </trans-unit>
+            <trans-unit id="column_pull">
+                <source>Column pull</source>
+                <target>Nach links verschieben</target>
+            </trans-unit>
+            <trans-unit id="column_undefined">
+                <source>Undefined</source>
+                <target>Nicht definiert</target>
+            </trans-unit>
+            <trans-unit id="column_width_undefined">
+                <source>Undefined - Using definition for medium size</source>
+                <target>Nicht definiert - Wert für mittlere Anzeige wird genutzt</target>
+            </trans-unit>
+            <trans-unit id="extended_settings">
+                <source>Extended Settings</source>
+                <target>Erweiterte Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="equalheight">
+                <source>Force equal column height</source>
+                <target>Gleiche Spaltenhöhe erzwingen</target>
+            </trans-unit>
+            <trans-unit id="equalheight_off">
+                <source>Default column height</source>
+                <target>Spaltenhöhe beibehalten</target>
+            </trans-unit>
+            <trans-unit id="visible">
+                <source>Element is visible</source>
+                <target>Element ist sichtbar</target>
+            </trans-unit>
+            <trans-unit id="visible_block">
+                <source>Element is visible as block</source>
+                <target>Element ist sichtbar als Block</target>
+            </trans-unit>
+            <trans-unit id="visible_inline">
+                <source>Element is visible inline</source>
+                <target>Element ist sichtbar als Inline-Element</target>
+            </trans-unit>
+            <trans-unit id="visible_inline_block">
+                <source>Element is visible as inline block</source>
+                <target>Element ist sichtbar als Inline-Block</target>
+            </trans-unit>
+            <trans-unit id="invisible">
+                <source>Element is hidden</source>
+                <target>Element ist unsichtbar</target>
+            </trans-unit>
+
+            <trans-unit id="container">
+                <source>Container</source>
+                <target>Container</target>
+            </trans-unit>
+            <trans-unit id="container_description">
+                <source>Containers can be used to breakup default structures and have elements use the whole viewport width instead of the limited grid.</source>
+                <target>Container werden verwendet, um die Standard-Strukturen aufzubrechen und z.B. Elemente über die Gesamte Bildschirmbreite anzuzeigen und nicht begrenzt auf das bestehende Raster.</target>
+            </trans-unit>
+            <trans-unit id="container_content">
+                <source>Container content</source>
+                <target>Container-Inhalt</target>
+            </trans-unit>
+
+
+            <trans-unit id="row">
+                <source>Row</source>
+                <target>Zeile</target>
+            </trans-unit>
+            <trans-unit id="row_description">
+                <source>Rows can be used as containers to group elements horizontally without additional functionality</source>
+                <target>Zeilen dienen als Behälter, um Elemente ohne zusätzliche Funktionalität horizontal angeordnet zu gruppieren</target>
+            </trans-unit>
+            <trans-unit id="row_content">
+                <source>Row content</source>
+                <target>Zeilen-Inhalt</target>
+            </trans-unit>
+
+            <trans-unit id="single_column">
+                <source>Column / Panel (Vertical)</source>
+                <target>Spalte / Paneel (Vertikal)</target>
+            </trans-unit>
+            <trans-unit id="single_column_header_footer">
+                <source>Panel with header and footer</source>
+                <target>Paneel mit Kopf- und Fußzeile</target>
+            </trans-unit>
+            <trans-unit id="single_column_horizontal">
+                <source>Column / Panel (Horizontal)</source>
+                <target>Spalte / Paneel (Horizontal)</target>
+            </trans-unit>
+            <trans-unit id="single_column_description">
+                <source>Panels can be used as subcontainers within rows, accordions, tabs or carousels to group elements vertically or horizontally without additional functionality</source>
+                <target>Paneele können innerhalb von Zeilen, Akkordeons, Reitern (Tabs) oder Karussels eingesetzt werden, um Elemente ohne zusätzliche Funktionalität vertikal oder horizontal zu gruppieren</target>
+            </trans-unit>
+            <trans-unit id="single_column_header_footer_description">
+                <source>Panels can be used as subcontainers within rows, accordions, tabs or carousels to group elements vertically or horizontally without additional functionality. This panel uses the headline as header and has an optional footer section for content.</source>
+                <target>Paneele können innerhalb von Zeilen, Akkordeons, Reitern (Tabs) oder Karussels eingesetzt werden, um Elemente ohne zusätzliche Funktionalität vertikal oder horizontal zu gruppieren. Dieses Paneel nutzt die Überschrift als Kopfzeile und liefert eine optionale Fußzeile für Inhalte.</target>
+            </trans-unit>
+
+            <trans-unit id="tabs">
+                <source>Tabs</source>
+                <target>Reiter (Tabs)</target>
+            </trans-unit>
+            <trans-unit id="tabs_description">
+                <source>A container to switch with tabs between child elements, which can either be single elements or containers as well</source>
+                <target>Ein Behälter, um mithilfe von Reitern (Tabs) zwischen einzelnen Kind-Elementen zu wechseln, die ihrerseits entweder einzelne Elemente oder ebenfalls Behälter sein können</target>
+            </trans-unit>
+            <trans-unit id="tabs_container">
+                <source>Tab container</source>
+                <target>Tab-Behälter</target>
+            </trans-unit>
+            <trans-unit id="tabs_appearance">
+                <source>Appearance</source>
+                <target>Erscheinungsbild</target>
+            </trans-unit>
+            <trans-unit id="tabs_appearance_tabs">
+                <source>Tabs</source>
+                <target>Reiter</target>
+            </trans-unit>
+            <trans-unit id="tabs_appearance_pills">
+                <source>Pills</source>
+                <target>Schaltflächen</target>
+            </trans-unit>
+            <trans-unit id="tabs_transition">
+                <source>Transition</source>
+                <target>Übergangseffekt</target>
+            </trans-unit>
+            <trans-unit id="tabs_transition_none">
+                <source>None</source>
+                <target>Keiner</target>
+            </trans-unit>
+            <trans-unit id="tabs_transition_fade">
+                <source>Fade in</source>
+                <target>Einblenden</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

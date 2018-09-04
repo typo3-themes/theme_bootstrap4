@@ -1,0 +1,138 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<f:switch expression="{data.layout}">
+		<f:case value="MediaLeft">
+			<div id="c{data.uid}" class="content-text-image content-text-image-left media"
+			     data-content="text-image" data-layout="left">
+				<f:for each="{files}" as="file">
+					<f:if condition="{file.link}">
+						<f:then>
+							<figure class="figure">
+								<f:link.typolink parameter="{file.link}">
+									<f:image image="{file}" treatIdAsReference="1"
+									         alt="{file.alternative}" title="{file.title}"
+									         class="figure-img img-fluid mr-3"
+									         width="{file.width}" height="{file.height}" />
+								</f:link.typolink>
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:then>
+						<f:else>
+							<figure class="figure">
+								<f:image image="{file}" treatIdAsReference="1"
+								         alt="{file.alternative}" title="{file.title}"
+								         class="figure-img img-fluid mr-3"
+								         width="{file.width}" height="{file.height}" />
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:else>
+					</f:if>
+				</f:for>
+				<div class="media-body">
+					<h2>{data.header}</h2>
+					<f:format.raw>{data.bodytext}</f:format.raw>
+				</div>
+			</div>
+		</f:case>
+		<f:case value="MediaRight">
+			<div id="c{data.uid}" class="content-text-image content-text-image-left media"
+			     data-content="text-image" data-layout="right">
+				<div class="media-body">
+					<h2>{data.header}</h2>
+					<f:format.raw>{data.bodytext}</f:format.raw>
+				</div>
+				<f:for each="{files}" as="file">
+					<f:if condition="{file.link}">
+						<f:then>
+							<figure class="figure">
+								<f:link.typolink parameter="{file.link}">
+									<f:image image="{file}" treatIdAsReference="1"
+									         alt="{file.alternative}" title="{file.title}"
+									         class="figure-img img-fluid mr-3"
+									         width="{file.width}" height="{file.height}" />
+								</f:link.typolink>
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:then>
+						<f:else>
+							<figure class="figure">
+								<f:image image="{file}" treatIdAsReference="1"
+								         alt="{file.alternative}" title="{file.title}"
+								         class="figure-img img-fluid mr-3"
+								         width="{file.width}" height="{file.height}" />
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:else>
+					</f:if>
+				</f:for>
+			</div>
+		</f:case>
+		<f:case value="MediaBottom">
+			<div id="c{data.uid}" class="content-text-image content-text-image-bottom media flex-column"
+			     data-content="text-image" data-layout="bottom">
+				<div class="media-body">
+					<h2>{data.header}</h2>
+					<f:format.raw>{data.bodytext}</f:format.raw>
+				</div>
+				<f:for each="{files}" as="file">
+					<f:if condition="{file.link}">
+						<f:then>
+							<figure class="figure">
+								<f:link.typolink parameter="{file.link}">
+									<f:image image="{file}" treatIdAsReference="1"
+									         alt="{file.alternative}" title="{file.title}"
+									         class="figure-img img-fluid mr-3"
+									         width="{file.width}" height="{file.height}" />
+								</f:link.typolink>
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:then>
+						<f:else>
+							<figure class="figure">
+								<f:image image="{file}" treatIdAsReference="1"
+								         alt="{file.alternative}" title="{file.title}"
+								         class="figure-img img-fluid mr-3"
+								         width="{file.width}" height="{file.height}" />
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:else>
+					</f:if>
+				</f:for>
+			</div>
+		</f:case>
+		<f:case default="1">
+			<div id="c{data.uid}" class="content-text-image content-text-image-default media flex-column"
+			     data-content="text-image" data-layout="default">
+				<f:for each="{files}" as="file">
+					<f:if condition="{file.link}">
+						<f:then>
+							<figure class="figure">
+								<f:link.typolink parameter="{file.link}">
+									<f:image image="{file}" treatIdAsReference="1"
+									         alt="{file.alternative}" title="{file.title}"
+									         class="figure-img img-fluid mr-3"
+									         width="{file.width}" height="{file.height}" />
+								</f:link.typolink>
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:then>
+						<f:else>
+							<figure class="figure">
+								<f:image image="{file}" treatIdAsReference="1"
+								         alt="{file.alternative}" title="{file.title}"
+								         class="figure-img img-fluid mr-3"
+								         width="{file.width}" height="{file.height}" />
+								<figcaption class="figure-caption">{file.description}</figcaption>
+							</figure>
+						</f:else>
+					</f:if>
+				</f:for>
+				<div class="media-body">
+					<h2>{data.header}</h2>
+					<f:format.raw>{data.bodytext}</f:format.raw>
+				</div>
+			</div>
+		</f:case>
+	</f:switch>
+
+</html>

@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
     'description' => 'Theme to use Twitter Bootstrap4',
     'category' => 'templates',
     'shy' => 0,
-    'version' => '0.1.2',
+    'version' => '0.8.0',
     'dependencies' => '',
     'conflicts' => '',
     'priority' => '',
@@ -34,15 +34,17 @@ $EM_CONF[$_EXTKEY] = array(
     'CGLcompliance_note' => '',
     'constraints' => array(
         'depends' => array(
-            'typo3'  => '8.7.0-8.7.99',
-            'themes_gridelements' => '7.0.1-8.7.99',
-            'dyncss_scss' => '1.1.0-1.99.99',
+            'typo3'  => '8.7.1-8.7.99',
+            'gridelements' => '8.0.0-8.7.99',
+            'themes' => '8.7.2-8.7.99',
+            'dyncss_scss' => '1.2.0-1.99.99',
         ),
         'conflicts' => array(
         ),
         'suggests' => array(
             'fluid_styled_responsive_images' => '1.2.0-1.99.99',
             'linkhandler' => '3.1.1-3.1.1',
+            'indexed_search' => '8.7.0-8.7.99',
         ),
     ),
     '_md5_values_when_last_written' => 'a:0:{}',

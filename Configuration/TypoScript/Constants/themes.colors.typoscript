@@ -1,0 +1,86 @@
+#ToDo: Check
+
+#############################################
+# Colors: Color constants
+#############################################
+
+# #customcategory=colors=Theme: Color settings
+# customsubcategory=colors_general=General colors
+# customsubcategory=colors_gray=Gray colors
+# customsubcategory=colors_message=Message colors
+
+# General colors
+#############################################
+
+themes.configuration.colors {
+	# cat=colors,basic/colors_general/; type=color; label= Primary color
+	primary = #FF8700
+	# cat=colors,basic/colors_general/; type=color; label= Secondary color
+	secondary = #26A345
+	# cat=colors,basic/colors_general/; type=color; label= Link color
+	link = #FF8700
+	# cat=colors,basic/colors_general/; type=color; label= Link hover color
+	linkHover = #26A345
+	# cat=colors,basic/colors_general/; type=color; label= Body color (Text color)
+	bodyColor = #000000
+	# cat=colors,basic/colors_general/; type=color; label= Body background
+	bodyBackground = #FFFFFF
+
+	# cat=colors,expert/colors_general/; type=color; label= Color blue
+	#blue = #007BFF
+	# cat=colors,expert/colors_general/; type=color; label= Color indigo
+	#indigo = #6610F2
+	# cat=colors,expert/colors_general/; type=color; label= Color purple
+	#purple = #6f42C1
+	# cat=colors,expert/colors_general/; type=color; label= Color pink
+	#pink = #E83E8C
+	# cat=colors,expert/colors_general/; type=color; label= Color red
+	#red = #DC3545
+	# cat=colors,expert/colors_general/; type=color; label= Color orange
+	#orange = #FD7E14
+	# cat=colors,expert/colors_general/; type=color; label= Color yellow
+	#yellow = #FFC107
+	# cat=colors,expert/colors_general/; type=color; label= Color green
+	#green = #28A745
+	# cat=colors,expert/colors_general/; type=color; label= Color teal
+	#teal = #20C997
+	# cat=colors,expert/colors_general/; type=color; label= Color cyan
+	#cyan = #17A2B8
+
+	# Gray colors
+	#############################################
+	# cat=colors,expert/colors_gray/; type=color; label= White
+	white = #FFFFFF
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-100 color (light)
+	gray100 = #F8F9FA
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-200 color
+	gray200 = #E9ECEF
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-300 color
+	gray300 = #DEE2E6
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-400 color
+	gray400 = #CED4DA
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-500 color
+	gray500 = #ADB5BD
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-600 color
+	gray600 = #868E96
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-700 color
+	gray700 = #495057
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-800 color
+	gray800 = #343A40
+	# cat=colors,advanced/colors_gray/; type=color; label= Gray-900 color (dark)
+	gray900 = #212529
+	# cat=colors,expert/colors_gray/; type=color; label= Black
+	black = #000000
+
+	# Message colors
+	#############################################
+	# cat=colors,advanced/colors_message/; type=color; label= Message: Success color
+	success = #5CB85C
+	# cat=colors,advanced/colors_message/; type=color; label= Message: Notice and information color
+	information = #5BC0DE
+	# cat=colors,advanced/colors_message/; type=color; label= Message: Warning color
+	warning = #F0AD4E
+	# cat=colors,advanced/colors_message/; type=color; label= Message: Error color
+	error = #D9534F
+
+}

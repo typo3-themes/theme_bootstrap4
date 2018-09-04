@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="theme_bootstrap4">
+		<header/>
+		<body>
+			<trans-unit id="site_name">
+				<source>Name of the site</source>
+			</trans-unit>
+			<trans-unit id="baseurl">
+				<source>Base URL of the site</source>
+			</trans-unit>
+			<trans-unit id="baseurl_icon">
+				<source>Icon base URL of the site (http://cdn.domain.tdl/project/Icons/; http://www.domain.tld/fileadmin/project/Icons/)</source>
+			</trans-unit>
+			<trans-unit id="baseurl_image">
+				<source>Image base URL of the site (http://cdn.domain.tdl/project/Images/; http://www.domain.tld/fileadmin/project/Images/)</source>
+			</trans-unit>
+			<trans-unit id="baseurl_font">
+				<source>Font base URL of the site (http://cdn.domain.tdl/project/Fonts/; http://www.domain.tld/fileadmin/project/Fonts/)</source>
+			</trans-unit>
+			<trans-unit id="favicon">
+				<source>Path and file for favicon (fileadmin/project/Icons/favicon.ico)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

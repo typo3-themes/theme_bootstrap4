@@ -1,0 +1,88 @@
+#ToDo Have a look in the Documentation: Navigation, panels are changed
+
+lib.content.cssMap.behaviour {
+
+	# Behaviour for uploads/download content element
+	uploads-table-responsive = table-responsive
+
+	# Carousel behaviour
+	carousel-interval {
+		none = false
+		duration-3000 = 3000
+		duration-5000 = 5000
+	}
+	carousel-pause = hover
+	carousel-animation {
+		slide = slide
+		fade = slide carousel-fade
+	}
+	carousel-wrap = wrap
+	#
+	# Container behaviour
+	container {
+		default = container
+		fluid = container-fluid
+
+	}
+	
+	
+	#behaviour-container = container
+	#behaviour-table-responsive = table-responsive
+	#accordion {
+	#	behaviour-accordion-first-open = accordion-first-open
+	#}
+	#tabs {
+	#	navigation {
+	#		behaviour-navigation = nav
+	#		behaviour-navigation-pills = nav-pills
+	#		behaviour-navigation-tabs = nav-tabs
+	#	}
+	#	panes {
+	#		behaviour-tab-pane = tab-pane
+	#		behaviour-fade-in = fade in
+	#		behaviour-active = active
+	#	}
+	#}
+
+
+	screenreader-label =
+	screenreader-only = sr-only
+	screenreader-only-focusable = sr-only sr-only-focusable
+
+	print-hidden = hidden-print
+	print-visible-block = visible-print-block
+	print-visible-inline = visible-print-inline
+	print-visible-inline-block = visible-print-inline-block
+
+	responsive-embed-21by9 = embed-responsive embed-responsive-16by9
+	responsive-embed-16by9 = embed-responsive embed-responsive-16by9
+	responsive-embed-4by3 = embed-responsive embed-responsive-4by3
+	responsive-embed-1by1 = embed-responsive embed-responsive-1by1
+
+	fade-in = fade in
+
+	table-responsive = table-responsive
+
+	2ColumnGrid {
+	}
+	3ColumnGrid {
+	}
+	4ColumnGrid {
+	}
+
+	# Checkbox: First item open
+	accordion-first-open = accordion-first-open
+	#
+	tabs {
+		navigation {
+			navigation = nav
+			navigation-pills = nav-pills
+			navigation-tabs = nav-tabs
+		}
+		panes {
+			tab-pane = tab-pane
+			fade-in = fade in
+			active = active
+		}
+	}
+}

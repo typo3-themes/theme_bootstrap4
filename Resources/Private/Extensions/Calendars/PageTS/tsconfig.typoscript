@@ -1,0 +1,218 @@
+#
+# Hide some tables in list module
+#mod.web_list.table.tx_calendars_domain_model_calendarevent.hideTable = 1
+#mod.web_list.table.tx_calendars_domain_model_calendareventcategory.hideTable = 1
+#
+# Hide creation links in list module
+#mod.web_list.deniedNewTables := addToList(tx_calendars_domain_model_calendarevent)
+#mod.web_list.deniedNewTables := addToList(tx_calendars_domain_model_calendareventcategory)
+#
+# Editor: Visible fields
+[adminUser = 0]
+	TCEFORM.tx_calendars_domain_model_calendarevent {
+		# Tab: General
+		title.disabled = 0
+		subtitle.disabled = 0
+		start_date.disabled = 0
+		end_date.disabled = 0
+		teaser.disabled = 0
+		description.disabled = 0
+		external_link.disabled = 0
+		attribute1.disabled = 0
+		attribute2.disabled = 0
+		attribute3.disabled = 0
+		attribute4.disabled = 0
+		# Tab: Relations
+		calendar_event_category.disabled = 0
+		address.disabled = 0
+		# Tab: Registration
+		registration_pid.disabled = 0
+		ticket_amount.disabled = 0
+		tickets_available.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+	TCEFORM.tx_calendars_domain_model_calendareventcategory {
+		variant.disabled = 0
+	}
+	# Plugin: Calendar event list
+	TCEFORM.tt_content.pi_flexform {
+		calendars_calendarlist.sDEF. {
+			settings\.template.disabled = 0
+			settings\.detail\.pageUid.disabled = 0
+			settings\.calendarEventCategoryUids.disabled = 0
+			settings\.filterFields.disabled = 0
+			settings\.list\.offset.disabled = 0
+			settings\.list\.limit.disabled = 0
+		}
+	}
+[GLOBAL]
+#
+# Admin: Visible fields
+[adminUser = 1]
+	TCEFORM.tx_calendars_domain_model_calendarevent {
+		# Tab: General
+		title.disabled = 0
+		subtitle.disabled = 0
+		start_date.disabled = 0
+		end_date.disabled = 0
+		teaser.disabled = 0
+		description.disabled = 0
+		external_link.disabled = 0
+		attribute1.disabled = 0
+		attribute2.disabled = 0
+		attribute3.disabled = 0
+		attribute4.disabled = 0
+		# Tab: Relations
+		calendar_event_category.disabled = 0
+		address.disabled = 0
+		# Tab: Registration
+		registration_pid.disabled = 0
+		ticket_amount.disabled = 0
+		tickets_available.disabled = 0
+		# Tab: Images
+		images.disabled = 0
+		# Tab: Access
+		hidden.disabled = 0
+		starttime.disabled = 0
+		endtime.disabled = 0
+	}
+	TCEFORM.tx_calendars_domain_model_calendareventcategory {
+		variant.disabled = 0
+	}
+	# Plugin: Calendar event list
+	TCEFORM.tt_content.pi_flexform {
+		calendars_calendarlist.sDEF. {
+			settings\.template.disabled = 0
+			settings\.detail\.pageUid.disabled = 0
+			settings\.calendarEventCategoryUids.disabled = 0
+			settings\.filterFields.disabled = 0
+			settings\.list\.offset.disabled = 0
+			settings\.list\.limit.disabled = 0
+		}
+	}
+[GLOBAL]
+#
+# Plugin: Calendar event list
+TCEFORM.tt_content.pi_flexform {
+	calendars_calendarlist.sDEF. {
+		#settings\.template.removeItems = Default
+		#settings\.template.addItems {
+		#	Webinare = Webinar-Template
+		#	Schulungen = Schulungen-Template
+		#}
+	}
+}
+#
+# Overwriting labels for the backend forms
+TCEFORM.tx_calendars_domain_model_calendarevent {
+	# Tab: General
+	title.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	subtitle.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	start_date.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	end_date.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	teaser.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	description.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	external_link.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute1.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute2.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute3.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	attribute4.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Relations
+	calendar_event_category.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	address.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Registration
+	registration_pid.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	ticket_amount.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	tickets_available.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Images
+	images.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	# Tab: Access
+	hidden.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	starttime.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+	endtime.label {
+		#default = default Label
+		#de = deutsches Label
+		#en = english label
+	}
+}

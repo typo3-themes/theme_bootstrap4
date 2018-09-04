@@ -1,0 +1,96 @@
+#ToDo integrate useful variables
+
+plugin.tx_dyncss.overrides {
+
+	primary = TEXT
+	primary.value = {$themes.configuration.colors.primary}
+
+	secondary = TEXT
+	secondary.value = {$themes.configuration.colors.secondary}
+
+	link-color = TEXT
+	link-color.value = {$themes.configuration.colors.link}
+
+	link-hover-color = TEXT
+	link-hover-color.value = {$themes.configuration.colors.linkHover}
+
+	body-color = TEXT
+	body-color.value = {$themes.configuration.colors.bodyColor}
+
+	body-bg = TEXT
+	body-bg.value = {$themes.configuration.colors.bodyBackground}
+
+	blue = TEXT
+	blue.value = {$themes.configuration.colors.blue}
+
+	indigo = TEXT
+	indigo.value = {$themes.configuration.colors.indigo}
+
+	purple = TEXT
+	purple.value = {$themes.configuration.colors.purple}
+
+	pink = TEXT
+	pink.value = {$themes.configuration.colors.pink}
+
+	red = TEXT
+	red.value = {$themes.configuration.colors.red}
+
+	orange = TEXT
+	orange.value = {$themes.configuration.colors.orange}
+
+	yellow = TEXT
+	yellow.value = {$themes.configuration.colors.yellow}
+
+	green = TEXT
+	green.value = {$themes.configuration.colors.green}
+
+	teal = TEXT
+	teal.value = {$themes.configuration.colors.teal}
+
+	cyan = TEXT
+	cyan.value = {$themes.configuration.colors.cyan}
+
+
+	#	@ToDo dbruening
+	white = TEXT
+	white.value = {$themes.configuration.colors.white}
+	gray-100 = TEXT
+	gray-100.value = {$themes.configuration.colors.gray100}
+	gray-200 = TEXT
+	gray-200.value = {$themes.configuration.colors.gray200}
+	gray-300 = TEXT
+	gray-300.value = {$themes.configuration.colors.gray300}
+	gray-400 = TEXT
+	gray-400.value = {$themes.configuration.colors.gray400}
+	gray-500 = TEXT
+	gray-500.value = {$themes.configuration.colors.gray500}
+	gray-600 = TEXT
+	gray-600.value = {$themes.configuration.colors.gray600}
+	gray-700 = TEXT
+	gray-700.value = {$themes.configuration.colors.gray700}
+	gray-800 = TEXT
+	gray-800.value = {$themes.configuration.colors.gray800}
+	gray-900 = TEXT
+	gray-900.value = {$themes.configuration.colors.gray900}
+	black = TEXT
+	black.value = {$themes.configuration.colors.black}
+
+	danger = TEXT
+	danger.value = {$themes.configuration.colors.error}
+	info = TEXT
+	info.value = {$themes.configuration.colors.information}
+	success = TEXT
+	success.value = {$themes.configuration.colors.success}
+	warning = TEXT
+	warning.value = {$themes.configuration.colors.warning}
+
+	top-menu-divider = TEXT
+	top-menu-divider.value = '{$themes.configuration.menu.top.divider}'
+
+	breadcrumb-divider = TEXT
+	breadcrumb-divider.value = '{$themes.configuration.menu.breadcrumb.divider}'
+
+	footer-menu-divider = TEXT
+	footer-menu-divider.value = '{$themes.configuration.menu.footer.divider}'
+
+}

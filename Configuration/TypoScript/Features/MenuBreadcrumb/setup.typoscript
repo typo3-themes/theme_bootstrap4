@@ -1,0 +1,47 @@
+#ToDo: Check structure and classes have a look at the documentation
+
+# Breadcrumb with itemscope and Bootstrap classes
+#
+# Constants:top
+# {$themes.configuration.menu.breadcrumb.divider}
+# {$themes.configuration.menu.breadcrumb.cssClasses}
+#
+# Usage:
+# <f:cObject typoscriptObjectPath="lib.menu.breadcrumb"/>
+#
+lib.menu.breadcrumb = COA
+lib.menu.breadcrumb {
+	10 = TEXT
+	10.value = <ol class="{$themes.configuration.menu.breadcrumb.cssClasses}">
+	30 = HMENU
+	30 {
+		special = rootline
+		special.range = 0|-1
+		includeNotInMenu = {$themes.configuration.menu.breadcrumb.includeNotInMenu}
+		excludeUidList = {$themes.configuration.menu.breadcrumb.excludeUidList}
+		1 = TMENU
+		1 {
+			noBlur = 1
+			NO {
+				stdWrap.htmlSpecialChars = 1
+				doNotLinkIt = |*| 0 |*| 1
+				linkWrap = <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item active" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>
+				ATagParams = itemprop="url" title="{field:subtitle//field:title}"
+				ATagParams.insertData = 1
+				stdWrap.wrap = <span itemprop="title">|</span>
+			}
+		}
+	}
+	90 = TEXT
+	90.value = </ol>
+}
+
+plugin.tx_themes {
+	settings {
+		menu {
+			breadcrumb {
+				active = 1
+			}
+		}
+	}
+}

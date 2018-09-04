@@ -1,0 +1,20 @@
+themes {
+	content {
+		variants {
+			default {
+				background {
+					none = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_label
+					color-primary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_primary
+					color-secondary = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_secondary
+					color-success = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_success
+					color-info = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_info
+					color-warning = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_warning
+					color-danger = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_danger
+					color-inverse = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_inverse
+					color-light = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_light
+					color-dark = LLL:EXT:theme_bootstrap4/Resources/Private/Language/locallang_variants.xlf:content.variants.background_dark
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+# customsubcategory=font.googleFonts=Google Fonts
+themes.configuration.font.googleFonts {
+	# cat=font,advanced/font.googleFonts/; type=string; label= Google Fonts: CDN-Fonts URL (Google-Webfonts, ...)
+	fontCdnUrl = https://fonts.googleapis.com/css?family=Roboto
+}

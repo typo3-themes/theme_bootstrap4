@@ -1,0 +1,34 @@
+# Set the page identifier
+themes.page = default
+
+# #customcategory=pages=Theme: Page settings
+themes.configuration.pages {
+	# cat=pages,advanced//; type=int+; label= Startsite page uid
+	startsite = 0
+	# cat=pages,advanced//; type=int+; label= Page for the terms and conditions
+	legal = 0
+	# cat=pages,advanced//; type=int+; label= Privacy policy page
+	privacy = 0
+	# cat=pages,advanced//; type=int+; label= Imprint page
+	imprint = 0
+	# cat=pages,advanced//; type=int+; label= Contact page
+	contact = 0
+	# cat=pages,advanced//; type=int+; label= Page with the sitemap
+	sitemap = 0
+	# cat=pages,advanced//; type=int+; label= Search page
+	search = 0
+	# cat=pages,advanced//; type=int+; label= Directions page
+	directions = 0
+	# cat=pages,advanced//; type=int+; label= Login page
+	login = 0
+	# cat=pages,advanced//; type=int+; label= Logout page
+	logout = 0
+	# cat=pages,advanced//; type=int+; label= Intro / landing page of a website
+	intro = 0
+	# cat=pages,advanced//; type=int+; label= Cookie confirmation page
+	cookie = 0
+	# cat=pages,advanced//; type=int+; label= References
+	references = 0
+	# cat=pages,advanced//; type=int+; label= Registration page
+	registration = 0
+}
