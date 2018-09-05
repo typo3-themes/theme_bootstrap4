@@ -1,20 +1,17 @@
 # theme_bootstrap4
-will contain the theme_bootstrap version 4 base
-(you don't need themes_gridelements further)
+Contains a Theme base package for Bootstrap 4.
+This package doesn'T need fluid_styled_content or themes_gridelements.
 
-Current bootstrap-4.0.0 stable
+Bootstrap 4
+
 * https://getbootstrap.com
-
 
 Attention
 =========
-This theme is still alpha. We are working on the integration of Bootstrap 4.
-
-
+This theme is in beta state.
 
 Include static hierarchy
 ------------------------
 1. Themes
-3. Fluid Contend Elements
-4. Gridelements 
-5. what you want
+2. Gridelements 
+3. other extensions
