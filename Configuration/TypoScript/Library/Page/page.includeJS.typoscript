@@ -33,6 +33,7 @@ page {
 		}
 	}
 	includeJSFooter {
+		defaults = EXT:theme_bootstrap4/Resources/Public/JavaScript/Defaults.js
 		initialize = EXT:theme_bootstrap4/Resources/Public/JavaScript/initialize.js
 		initialize {
 			external = 0
