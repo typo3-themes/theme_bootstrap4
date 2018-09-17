@@ -13,4 +13,7 @@ tt_content.themebootstrap4_text {
 		400 = {$themes.resourcesPrivatePath}Layouts/
 	}
     templateName = Content/Text
+	dataProcessing {
+		70 = KayStrobach\Themes\DataProcessing\HeaderLinkDataProcessor
+	}
 }

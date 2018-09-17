@@ -1,5 +1,8 @@
 # Theme-Bootstrap4 Change-Log
 
+
+## 2018-09-17  Release of version 0.9.0
+
 ### 2018-09-17  Thomas Deuling  <typo3@coding.ms>
 
 *   [FEATURE] Adding default.js for encrypting mail addresses.

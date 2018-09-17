@@ -25,5 +25,6 @@ tt_content.header {
 		40 = KayStrobach\Themes\DataProcessing\ThemesBehaviourDataProcessor
 		50 = KayStrobach\Themes\DataProcessing\ThemesResponsiveDataProcessor
 		60 = KayStrobach\Themes\DataProcessing\ThemesIconDataProcessor
+		70 = KayStrobach\Themes\DataProcessing\HeaderLinkDataProcessor
 	}
 }

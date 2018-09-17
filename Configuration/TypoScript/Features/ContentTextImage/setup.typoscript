@@ -18,5 +18,6 @@ tt_content.themebootstrap4_text_image {
 		10 {
 			references.fieldName = assets
 		}
+		70 = KayStrobach\Themes\DataProcessing\HeaderLinkDataProcessor
 	}
 }

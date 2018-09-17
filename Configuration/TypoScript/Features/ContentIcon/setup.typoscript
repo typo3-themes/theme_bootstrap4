@@ -13,4 +13,7 @@ tt_content.themebootstrap4_icon {
 		400 = {$themes.resourcesPrivatePath}Layouts/
 	}
     templateName = Content/Icon
+	dataProcessing {
+		70 = KayStrobach\Themes\DataProcessing\HeaderLinkDataProcessor
+	}
 }
