@@ -1,0 +1,31 @@
+tt_content.uploads = FLUIDTEMPLATE
+tt_content.uploads {
+	templateName = Content/Uploads
+	templateRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Templates/
+		400 = {$themes.resourcesPrivatePath}Templates/
+	}
+	partialRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Partials/
+		400 = {$themes.resourcesPrivatePath}Partials/
+	}
+	layoutRootPaths {
+		300 = EXT:theme_bootstrap4/Resources/Private/Layouts/
+		400 = {$themes.resourcesPrivatePath}Layouts/
+	}
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10 {
+			references.fieldName = media
+			collections.field = file_collections
+			sorting.field = filelink_sorting
+
+		}
+	}
+	stdWrap {
+		editIcons = tt_content: header [header_layout], media, file_collections, filelink_sorting, [filelink_size|uploads_description|uploads_type]
+		editIcons {
+			iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.uploads
+		}
+	}
+}

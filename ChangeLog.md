@@ -6,6 +6,7 @@
 ### 2018-09-17  Thomas Deuling  <typo3@coding.ms>
 
 *   [FEATURE] Adding default.js for encrypting mail addresses.
+*   [FEATURE] Adding rendering configuration for uploads content element.
 
 ### 2018-08-24  Thomas Deuling  <typo3@coding.ms>
 
