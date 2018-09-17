@@ -23,7 +23,7 @@ use \TYPO3\CMS\Backend\View\PageLayoutView;
  * Contains a preview rendering for the page module of CType="themebootstrap4_text_image"
  * See typo3/sysext/frontend/Classes/Hooks/PageLayoutView/TextmediaPreviewRenderer.php
  */
-class TextImagePreviewRenderer implements PageLayoutViewDrawItemHookInterface
+class TextmediaPreviewRenderer implements PageLayoutViewDrawItemHookInterface
 {
 
     /**
