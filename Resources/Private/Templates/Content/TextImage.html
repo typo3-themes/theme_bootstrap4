@@ -30,7 +30,7 @@
 				</f:for>
 				<div class="media-body">
 					<h2>{data.header}</h2>
-					<f:format.raw>{data.bodytext}</f:format.raw>
+					<f:format.html>{data.bodytext}</f:format.html>
 				</div>
 			</div>
 		</f:case>
@@ -39,7 +39,7 @@
 			     data-content="text-image" data-layout="right">
 				<div class="media-body">
 					<h2>{data.header}</h2>
-					<f:format.raw>{data.bodytext}</f:format.raw>
+					<f:format.html>{data.bodytext}</f:format.html>
 				</div>
 				<f:for each="{files}" as="file">
 					<f:if condition="{file.link}">
@@ -72,7 +72,7 @@
 			     data-content="text-image" data-layout="bottom">
 				<div class="media-body">
 					<h2>{data.header}</h2>
-					<f:format.raw>{data.bodytext}</f:format.raw>
+					<f:format.html>{data.bodytext}</f:format.html>
 				</div>
 				<f:for each="{files}" as="file">
 					<f:if condition="{file.link}">
@@ -129,7 +129,7 @@
 				</f:for>
 				<div class="media-body">
 					<h2>{data.header}</h2>
-					<f:format.raw>{data.bodytext}</f:format.raw>
+					<f:format.html>{data.bodytext}</f:format.html>
 				</div>
 			</div>
 		</f:case>

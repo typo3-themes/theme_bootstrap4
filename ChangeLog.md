@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2018-11-07  Dieter Bruening  <dbruening@coding.ms>
+
+*   [BUGFIX] Changing f:format.raw to format.html in Text & TextImage Template
+*   [TASK] Updating .editorconfig file
 
 ## 2018-09-17  Release of version 0.9.0
 
