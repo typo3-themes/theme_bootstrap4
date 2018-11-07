@@ -2,6 +2,7 @@
 
 ### 2018-11-07  Dieter Bruening  <dbruening@coding.ms>
 
+*   [TASK] Removing .mr-3 (space right) in TextImage & Image Template
 *   [BUGFIX] Changing f:format.raw to format.html in Text & TextImage Template
 *   [TASK] Updating .editorconfig file
 
