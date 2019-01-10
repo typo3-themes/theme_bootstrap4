@@ -2,6 +2,7 @@
 
 ### 2019-01-10  Dieter Bruening  <dbruening@coding.ms>
 
+*   [BUGIFX] Fixing content header icon output.
 *   [BUGIFX] Fixing content header css class.
 
 ### 2018-11-07  Dieter Bruening  <dbruening@coding.ms>

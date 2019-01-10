@@ -8,9 +8,11 @@
 				positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
 				link: data.header_link,
 				default: settings.defaultHeaderType}" />
-			<div class="icon {f:if(condition: data.header_position, then: 'text-{data.header_position}')}">
-				<i class="{themes.icon}"></i>
-			</div>
+			<f:if condition="{themes.icon}">
+				<div class="icon {f:if(condition: data.header_position, then: 'text-{data.header_position}')}">
+					<i class="{themes.icon}"></i>
+				</div>
+			</f:if>
 			<f:render partial="Content/Header/SubHeader" arguments="{
 				subheader: data.subheader,
 				layout: data.header_layout,
