@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2019-01-10  Dieter Bruening  <dbruening@coding.ms>
+
+*   [BUGIFX] Fixing content header css class.
+
 ### 2018-11-07  Dieter Bruening  <dbruening@coding.ms>
 
 *   [TASK] Removing .mr-3 (space right) in TextImage & Image Template

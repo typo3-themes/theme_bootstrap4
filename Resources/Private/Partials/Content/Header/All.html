@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{data.header_layout} != 100">
 	<f:if condition="{data.header} || {data.subheader} || {data.date}">
-		<header class="{f:if(condition: '{data.subheader}', then: 'has-subheader')} {f:if(condition: '{data.date}', then: 'has-has-date')}">
+		<header class="{f:if(condition: '{data.subheader}', then: 'has-subheader')} {f:if(condition: '{data.date}', then: 'has-date')}">
 			<f:render partial="Content/Header/Header" arguments="{
 				header: data.header,
 				layout: data.header_layout,
