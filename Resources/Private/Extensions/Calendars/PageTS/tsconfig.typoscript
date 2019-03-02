@@ -27,6 +27,7 @@
 		address.disabled = 0
 		# Tab: Registration
 		registration_pid.disabled = 0
+		registration_address.disabled = 1
 		ticket_amount.disabled = 0
 		tickets_available.disabled = 0
 		# Tab: Images
@@ -72,6 +73,7 @@
 		address.disabled = 0
 		# Tab: Registration
 		registration_pid.disabled = 0
+		registration_address.disabled = 1
 		ticket_amount.disabled = 0
 		tickets_available.disabled = 0
 		# Tab: Images
