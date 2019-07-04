@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2019-07-04  Thomas Deuling  <typo3@coding.ms>
+
+*   [BUGIFX] Fix PageRenderer usage for TYPO3 9.5.
+
 ### 2019-01-10  Dieter Bruening  <dbruening@coding.ms>
 
 *   [BUGIFX] Fixing content header icon output.
