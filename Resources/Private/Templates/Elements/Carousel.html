@@ -23,9 +23,6 @@
 	<theme:variable.popVariant name="carousel-hide-arrows" />
 </f:if>
 
-<theme:variable.set name="iconPrevious" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.previous')}" />
-<theme:variable.set name="iconNext" value="{theme:constant(constant: 'themes.configuration.content.elements.carousel.icon.next')}" />
-
 <f:comment> -- Use a background wrapper?! -- </f:comment>
 <f:if condition="{themes.variants.css.background}">
 	<f:format.raw value="<div class=\"{themes.variants.css.background}\">" />
@@ -68,11 +65,11 @@
 					</f:for>
 				</div>
 				<a class="carousel-control-prev {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="prev">
-					<span class="{iconPrevious}" aria-hidden="true"></span>
+					<span class="{settings.content.elements.carousel.icon.previous}" aria-hidden="true"></span>
 					<span class="sr-only"><f:translate key="carousel_previous_label" /></span>
 				</a>
 				<a class="carousel-control-next {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="next">
-					<span class="{iconNext}" aria-hidden="true"></span>
+					<span class="{settings.content.elements.carousel.icon.next}" aria-hidden="true"></span>
 					<span class="sr-only"><f:translate key="carousel_next_label" /></span>
 				</a>
 			</div>
