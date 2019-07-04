@@ -6,7 +6,7 @@
 			<!-- Another layout -->
 
 		</f:case>
-		<f:case default="1">
+		<f:defaultCase>
 			<div id="c{data.uid}" class="content-image content-image-default" data-content="image" data-layout="default">
 				<f:for each="{files}" as="file" iteration="fileIterator">
 					<f:if condition="{fileIterator.isFirst}">
@@ -26,7 +26,7 @@
 					<f:format.raw>{data.bodytext}</f:format.raw>
 				</div>
 			</div>
-		</f:case>
+		</f:defaultCase>
 	</f:switch>
 
 </html>

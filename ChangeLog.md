@@ -3,6 +3,7 @@
 ### 2019-07-04  Thomas Deuling  <typo3@coding.ms>
 
 *   [BUGFIX] Fix PageRenderer usage for TYPO3 9.5.
+*   [BUGFIX] Fix default case ViewHelper usage for TYPO3 9.5.
 *   [TASK] Remove usage of deprecated Constants ViewHelper and demo page.
 
 ### 2019-01-10  Dieter Bruening  <dbruening@coding.ms>

@@ -9,14 +9,14 @@
 				<f:format.raw>{data.bodytext}</f:format.raw>
 			</div>
 		</f:case>
-		<f:case default="1">
+		<f:defaultCase>
 			<div id="c{data.uid}" class="content-text content-text-default" data-content="text" data-layout="default">
 				<f:if condition="{data.header}">
 					<h2>{data.header}</h2>
 				</f:if>
 				<f:format.html>{data.bodytext}</f:format.html>
 			</div>
-		</f:case>
+		</f:defaultCase>
 	</f:switch>
 
 </html>
