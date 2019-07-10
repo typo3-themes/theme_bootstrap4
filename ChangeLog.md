@@ -1,5 +1,9 @@
 # Theme-Bootstrap4 Change-Log
 
+### 2019-07-10  Dieter Bruening  <dbruening@coding.ms>
+
+*   [TASK] Add pagets for hiding backend fields in categories and plugin for EXT:Questions. 
+
 ### 2019-07-04  Thomas Deuling  <typo3@coding.ms>
 
 *   [BUGFIX] Fix PageRenderer usage for TYPO3 9.5.

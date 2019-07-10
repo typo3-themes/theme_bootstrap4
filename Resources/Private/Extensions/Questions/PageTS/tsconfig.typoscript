@@ -34,6 +34,22 @@
 		starttime.disabled = 0
 		endtime.disabled = 0
 	}
+	TCEFORM.tx_questions_domain_model_questioncategory {
+		# Tab: General
+		hidden.disabled = 0
+		title.disabled = 0
+		description.disabled = 0
+	}
+	TCEFORM.tt_content.pi_flexform {
+		questions_questions.sDEF. {
+			settings\.list\.filter.disabled = 0
+			settings\.list\.categories.disabled = 0
+			settings\.list\.sortBy.disabled = 0
+			settings\.list\.sortOrder.disabled = 0
+			settings\.list\.limit.disabled = 0
+			settings\.list\.pagination.disabled = 0
+		}
+	}
 [GLOBAL]
 #
 # Admin: Visible fields
@@ -62,6 +78,22 @@
 		hidden.disabled = 0
 		starttime.disabled = 0
 		endtime.disabled = 0
+	}
+	TCEFORM.tx_questions_domain_model_questioncategory {
+		# Tab: General
+		hidden.disabled = 0
+		title.disabled = 0
+		description.disabled = 0
+	}
+	TCEFORM.tt_content.pi_flexform {
+		questions_questions.sDEF. {
+			settings\.list\.filter.disabled = 0
+			settings\.list\.categories.disabled = 0
+			settings\.list\.sortBy.disabled = 0
+			settings\.list\.sortOrder.disabled = 0
+			settings\.list\.limit.disabled = 0
+			settings\.list\.pagination.disabled = 0
+		}
 	}
 [GLOBAL]
 #
