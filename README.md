@@ -13,5 +13,5 @@ This theme is in beta state.
 Include static hierarchy
 ------------------------
 1. Themes
-2. Gridelements 
+2. Gridelements
 3. other extensions
