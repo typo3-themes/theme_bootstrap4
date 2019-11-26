@@ -14,12 +14,13 @@ namespace KayStrobach\ThemeBootstrap4\ViewHelpers\IndexedSearch;
  * The TYPO3 project - inspiring people to share!
  */
 
+
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\MathUtility;
-use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
-use TYPO3\CMS\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
+use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3\CMS\Fluid\Core\ViewHelper\Facets\CompilableInterface;
+use TYPO3\CMS\Core\Utility\MathUtility;
 
 /**
  * Page browser for indexed search, and only useful here, as the
@@ -36,24 +37,33 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
     protected static $prefixId = 'tx_indexedsearch';
 
     /**
+     * Initialize
+     *
+     * @return void
+     */
+    public function initializeArguments()
+    {
+        $this->registerArgument('maximumNumberOfResultPages', 'int', 'The number of page links shown');
+        $this->registerArgument('numberOfResults', 'int', 'Total number of results');
+        $this->registerArgument('resultsPerPage', 'int', 'Number of results per page');
+        $this->registerArgument('currentPage', 'int', 'The current page starting with 0', false, 0);
+        $this->registerArgument('freeIndexUid', 'mixed', 'List of integers pointing to free indexing configurations to search. -1 represents no filtering, 0 represents TYPO3 pages only, any number above zero is a uid of an indexing configuration!', false, null);
+    }
+
+    /**
      * Main render function
      *
-     * @param int $maximumNumberOfResultPages The number of page links shown
-     * @param int $numberOfResults Total number of results
-     * @param int $resultsPerPage Number of results per page
-     * @param int $currentPage The current page starting with 0
-     * @param string|NULL $freeIndexUid List of integers pointing to free indexing configurations to search. -1 represents no filtering, 0 represents TYPO3 pages only, any number above zero is a uid of an indexing configuration!
      * @return string The content
      */
-    public function render($maximumNumberOfResultPages, $numberOfResults, $resultsPerPage, $currentPage = 0, $freeIndexUid = null)
+    public function render()
     {
         return static::renderStatic(
             [
-                'maximumNumberOfResultPages' => $maximumNumberOfResultPages,
-                'numberOfResults' => $numberOfResults,
-                'resultsPerPage' => $resultsPerPage,
-                'currentPage' => $currentPage,
-                'freeIndexUid' => $freeIndexUid,
+                'maximumNumberOfResultPages' => $this->arguments['maximumNumberOfResultPages'],
+                'numberOfResults' => $this->arguments['numberOfResults'],
+                'resultsPerPage' => $this->arguments['resultsPerPage'],
+                'currentPage' => $this->arguments['currentPage'],
+                'freeIndexUid' => $this->arguments['freeIndexUid'],
             ],
             $this->buildRenderChildrenClosure(),
             $this->renderingContext
@@ -62,7 +72,7 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
 
     /**
      * @param array $arguments
-     * @param callable $renderChildrenClosure
+     * @param \Closure $renderChildrenClosure
      * @param RenderingContextInterface $renderingContext
      *
      * @return string
@@ -93,7 +103,7 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
         if ($currentPage > 0) {
             $labelPrevious = LocalizationUtility::translate('displayResults.previous', 'IndexedSearch');
             $label = '<span aria-hidden="true">&laquo;</span><span class="sr-only">' . $labelPrevious . '</span>';
-            $content .= '<li class="page-item">' . self::makecurrentPageSelector_link($label, $currentPage - 1, $freeIndexUid) . '</li>';
+            $content .= '<li class="page-item prev">' . self::makeCurrentPageSelectorLink($label, $currentPage - 1, $freeIndexUid) . '</li>';
         }
         // Check if $maximumNumberOfResultPages is in range
         $maximumNumberOfResultPages = MathUtility::forceIntegerInRange($maximumNumberOfResultPages, 1, $pageCount, 10);
@@ -111,7 +121,7 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
         $pageLabel = ''; //LocalizationUtility::translate('displayResults.page', 'IndexedSearch');
         for ($a = $minPage; $a <= $maxPage; $a++) {
             $label = trim($pageLabel . ' ' . ($a + 1));
-            $label = self::makecurrentPageSelector_link($label, $a, $freeIndexUid);
+            $label = self::makeCurrentPageSelectorLink($label, $a, $freeIndexUid);
             if ($a === $currentPage) {
                 $content .= '<li class="tx-indexedsearch-browselist-currentPage page-item active">' . $label . '</li>';
             } else {
@@ -122,7 +132,7 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
         if ($currentPage < $pageCount - 1) {
             $labelNext = LocalizationUtility::translate('displayResults.next', 'IndexedSearch');
             $label = '<span aria-hidden="true">&raquo;</span><span class="sr-only">' . $labelNext . '</span>';
-            $content .= '<li class="page-item">' . self::makecurrentPageSelector_link($label, ($currentPage + 1), $freeIndexUid) . '</li>';
+            $content .= '<li class="page-item next">' . self::makeCurrentPageSelectorLink($label, ($currentPage + 1), $freeIndexUid) . '</li>';
         }
         return '<nav aria-label="Page navigation"><ul class="tx-indexedsearch-browsebox pagination">' . $content . '</ul></nav>';
     }
@@ -136,7 +146,7 @@ class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInt
      * @param string $freeIndexUid List of integers pointing to free indexing configurations to search. -1 represents no filtering, 0 represents TYPO3 pages only, any number above zero is a uid of an indexing configuration!
      * @return string Input string wrapped in <a> tag with onclick event attribute set.
      */
-    protected static function makecurrentPageSelector_link($str, $p, $freeIndexUid)
+    protected static function makeCurrentPageSelectorLink($str, $p, $freeIndexUid)
     {
         $onclick = 'document.getElementById(' . GeneralUtility::quoteJSvalue(self::$prefixId . '_pointer') . ').value=' . GeneralUtility::quoteJSvalue($p) . ';';
         if ($freeIndexUid !== null) {
