@@ -22,8 +22,13 @@
     "typo3-ter/theme_bootstrap4": "self.version"
   },
   "require": {
-    "typo3-ter/dyncss-scss": ">=1.1.0,<2.0.0",
-    "typo3-themes/themes": ">=8.7.6,<8.8",
-    "gridelementsteam/gridelements": ">=8.0.0,<8.8"
+    "kaystrobach/dyncss_scss": ">=1.2.0",
+    "typo3-themes/themes": ">=8.7.6",
+    "gridelementsteam/gridelements": ">=8.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KayStrobach\\ThemeBootstrap4\\": "Classes/"
+    }
   }
 }
