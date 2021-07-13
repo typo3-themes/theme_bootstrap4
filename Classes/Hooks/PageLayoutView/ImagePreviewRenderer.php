@@ -42,12 +42,17 @@ class ImagePreviewRenderer implements PageLayoutViewDrawItemHookInterface
     ) {
         if ($row['CType'] === 'themebootstrap4_image') {
             if ($row['bodytext']) {
-                $itemContent .= $parentObject->linkEditContent($parentObject->renderText($row['bodytext']),
-                        $row) . '<br />';
+                $itemContent .= $parentObject->linkEditContent(
+                    $parentObject->renderText($row['bodytext']),
+                    $row
+                ) . '<br />';
             }
             if ($row['assets']) {
-                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content',
-                        'assets'), $row) . '<br />';
+                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked(
+                    $row,
+                    'tt_content',
+                    'assets'
+                ), $row) . '<br />';
 
                 $fileReferences = BackendUtility::resolveFileReferences('tt_content', 'assets', $row);
 
