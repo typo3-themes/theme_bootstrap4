@@ -23,7 +23,7 @@
   },
   "require": {
     "kaystrobach/dyncss_scss": ">=1.2.0 || dev-typo3-11-compatibility",
-    "typo3-themes/themes": ">=8.7.6 || dev-typo3-11-compatiblity",
+    "typo3-themes/themes": ">=8.7.6 || dev-typo3-11-compatibility",
     "gridelementsteam/gridelements": ">=8.0.0 || dev-master"
   },
   "autoload": {
