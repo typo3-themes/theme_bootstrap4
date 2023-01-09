@@ -24,7 +24,7 @@
   "require": {
     "kaystrobach/dyncss_scss": ">=1.2.0",
     "typo3-themes/themes": ">=8.7.6",
-    "gridelementsteam/gridelements": ">=8.0.0"
+    "gridelementsteam/gridelements": ">=8.0.0 || dev-master"
   },
   "autoload": {
     "psr-4": {
