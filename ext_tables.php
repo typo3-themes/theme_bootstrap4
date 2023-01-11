@@ -7,9 +7,9 @@ call_user_func(
 
         // Add/register icons
         // Add Rootline fields for default meta-tags
-        $TYPO3_CONF_VARS['FE']['addRootLineFields'] = 'layout,abstract,keywords,description,author,author_email,';
-        $TYPO3_CONF_VARS['FE']['addRootLineFields'] .= $TYPO3_CONF_VARS['FE']['addRootLineFields'];
-        $TYPO3_CONF_VARS['FE']['addRootLineFields'] = implode(',', array_unique(explode(',', $TYPO3_CONF_VARS['FE']['addRootLineFields'])));
+        $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] = 'layout,abstract,keywords,description,author,author_email,';
+        $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'];
+        $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] = implode(',', array_unique(explode(',', $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'])));
         // TYPO3 skin css overrides
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_pagerenderer.php']['render-preProcess'][] = \KayStrobach\ThemeBootstrap4\Hooks\PageRenderer::class . '->addJSCSS';
         //
@@ -55,5 +55,5 @@ call_user_func(
             );
         }
     },
-    $_EXTKEY
+    'theme_bootstrap4'
 );

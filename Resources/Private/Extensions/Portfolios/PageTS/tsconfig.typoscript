@@ -12,92 +12,94 @@
 #mod.web_list.deniedNewTables := addToList(tx_portfolios_domain_model_portfoliotagcategory)
 #
 # Editor: Visible fields
+
 [adminUser = 0]
-	TCEFORM.tx_portfolios_domain_model_portfolio {
-		# Tab: General
-		title.disabled = 0
-		sub_title.disabled = 0
-		highlight.disabled = 0
-		teaser.disabled = 0
-		description.disabled = 0
-		finishing_date.disabled = 0
-		working_hours.disabled = 0
-		www.disabled = 0
-		latitude.disabled = 0
-		longitude.disabled = 0
-		attribute1.disabled = 0
-		attribute2.disabled = 0
-		attribute3.disabled = 0
-		attribute4.disabled = 0
-		attribute5.disabled = 0
-		attribute6.disabled = 0
-		attribute7.disabled = 0
-		attribute8.disabled = 0
-		# Tab: Access
-		hidden.disabled = 0
-		starttime.disabled = 0
-		endtime.disabled = 0
-		# Tab: SEO
-		html_title.disabled = 0
-		meta_abstract.disabled = 0
-		meta_description.disabled = 0
-		meta_keywords.disabled = 0
-		# Tab: Relations
-		categories.disabled = 0
-		tags.disabled = 0
-		related_portfolios.disabled = 0
-		# Tab: Images
-		images.disabled = 0
-		# Tab: Files
-		files.disabled = 0
-		# Tab: Markdown
-		markdown.disabled = 0
-	}
-[GLOBAL]
+TCEFORM.tx_portfolios_domain_model_portfolio {
+	# Tab: General
+	title.disabled = 0
+	sub_title.disabled = 0
+	highlight.disabled = 0
+	teaser.disabled = 0
+	description.disabled = 0
+	finishing_date.disabled = 0
+	working_hours.disabled = 0
+	www.disabled = 0
+	latitude.disabled = 0
+	longitude.disabled = 0
+	attribute1.disabled = 0
+	attribute2.disabled = 0
+	attribute3.disabled = 0
+	attribute4.disabled = 0
+	attribute5.disabled = 0
+	attribute6.disabled = 0
+	attribute7.disabled = 0
+	attribute8.disabled = 0
+	# Tab: Access
+	hidden.disabled = 0
+	starttime.disabled = 0
+	endtime.disabled = 0
+	# Tab: SEO
+	html_title.disabled = 0
+	meta_abstract.disabled = 0
+	meta_description.disabled = 0
+	meta_keywords.disabled = 0
+	# Tab: Relations
+	categories.disabled = 0
+	tags.disabled = 0
+	related_portfolios.disabled = 0
+	# Tab: Images
+	images.disabled = 0
+	# Tab: Files
+	files.disabled = 0
+	# Tab: Markdown
+	markdown.disabled = 0
+}
+[global]
 #
 # Admin: Visible fields
+
 [adminUser = 1]
-	TCEFORM.tx_portfolios_domain_model_portfolio {
-		# Tab: General
-		title.disabled = 0
-		sub_title.disabled = 0
-		highlight.disabled = 0
-		teaser.disabled = 0
-		description.disabled = 0
-		finishing_date.disabled = 0
-		working_hours.disabled = 0
-		www.disabled = 0
-		latitude.disabled = 0
-		longitude.disabled = 0
-		attribute1.disabled = 0
-		attribute2.disabled = 0
-		attribute3.disabled = 0
-		attribute4.disabled = 0
-		attribute5.disabled = 0
-		attribute6.disabled = 0
-		attribute7.disabled = 0
-		attribute8.disabled = 0
-		# Tab: Access
-		hidden.disabled = 0
-		starttime.disabled = 0
-		endtime.disabled = 0
-		# Tab: SEO
-		html_title.disabled = 0
-		meta_abstract.disabled = 0
-		meta_description.disabled = 0
-		meta_keywords.disabled = 0
-		# Tab: Relations
-		categories.disabled = 0
-		tags.disabled = 0
-		related_portfolios.disabled = 0
-		# Tab: Images
-		images.disabled = 0
-		# Tab: Files
-		files.disabled = 0
-		# Tab: Markdown
-		markdown.disabled = 0
-	}
-[GLOBAL]
+TCEFORM.tx_portfolios_domain_model_portfolio {
+	# Tab: General
+	title.disabled = 0
+	sub_title.disabled = 0
+	highlight.disabled = 0
+	teaser.disabled = 0
+	description.disabled = 0
+	finishing_date.disabled = 0
+	working_hours.disabled = 0
+	www.disabled = 0
+	latitude.disabled = 0
+	longitude.disabled = 0
+	attribute1.disabled = 0
+	attribute2.disabled = 0
+	attribute3.disabled = 0
+	attribute4.disabled = 0
+	attribute5.disabled = 0
+	attribute6.disabled = 0
+	attribute7.disabled = 0
+	attribute8.disabled = 0
+	# Tab: Access
+	hidden.disabled = 0
+	starttime.disabled = 0
+	endtime.disabled = 0
+	# Tab: SEO
+	html_title.disabled = 0
+	meta_abstract.disabled = 0
+	meta_description.disabled = 0
+	meta_keywords.disabled = 0
+	# Tab: Relations
+	categories.disabled = 0
+	tags.disabled = 0
+	related_portfolios.disabled = 0
+	# Tab: Images
+	images.disabled = 0
+	# Tab: Files
+	files.disabled = 0
+	# Tab: Markdown
+	markdown.disabled = 0
+}
+[global]
 #
 # Overwriting labels for the backend forms
 TCEFORM.tx_portfolios_domain_model_portfolio {

@@ -22,114 +22,116 @@
 #mod.web_list.deniedNewTables := addToList(tx_shop_domain_model_producttagcategory)
 #
 # Editor: Visible fields
+
 [adminUser = 0]
-	TCEFORM.tx_shop_domain_model_product {
-		# Tab: General
-		title.disabled = 0
-		subtitle.disabled = 0
-		product_no.disabled = 0
-		price.disabled = 0
-		teaser.disabled = 0
-		description.disabled = 0
-		unit.disabled = 0
-		unit_factor.disabled = 0
-		data_sheet.disabled = 0
-		www.disabled = 0
-		in_stock.disabled = 0
-		tax.disabled = 0
-		weight.disabled = 0
-		offer.disabled = 0
-		offer_rebate_value.disabled = 0
-		highlight.disabled = 0
-		first_in_list.disabled = 0
-		color.disabled = 0
-		size.disabled = 0
-		# Tab: Relations
-		categories.disabled = 0
-		tags.disabled = 0
-		related_products.disabled = 0
-		downloads.disabled = 0
-		question_categories.disabled = 0
-		# Tab: Images
-		images.disabled = 0
-		feature_icons.disabled = 0
-		other_images.disabled = 0
-		# Tab: Attributes
-		attributes.disabled = 0
-		attribute1.disabled = 0
-		attribute2.disabled = 0
-		attribute3.disabled = 0
-		attribute4.disabled = 0
-		attribute5.disabled = 0
-		attribute6.disabled = 0
-		attribute7.disabled = 0
-		attribute8.disabled = 0
-		# Tab: Access
-		hidden.disabled = 0
-		starttime.disabled = 0
-		endtime.disabled = 0
-	}
-	TCEFORM.tx_shop_domain_model_productcategory {
-		title.disabled = 0
-		description.disabled = 0
-		image.disabled = 0
-	}
-[GLOBAL]
+TCEFORM.tx_shop_domain_model_product {
+	# Tab: General
+	title.disabled = 0
+	subtitle.disabled = 0
+	product_no.disabled = 0
+	price.disabled = 0
+	teaser.disabled = 0
+	description.disabled = 0
+	unit.disabled = 0
+	unit_factor.disabled = 0
+	data_sheet.disabled = 0
+	www.disabled = 0
+	in_stock.disabled = 0
+	tax.disabled = 0
+	weight.disabled = 0
+	offer.disabled = 0
+	offer_rebate_value.disabled = 0
+	highlight.disabled = 0
+	first_in_list.disabled = 0
+	color.disabled = 0
+	size.disabled = 0
+	# Tab: Relations
+	categories.disabled = 0
+	tags.disabled = 0
+	related_products.disabled = 0
+	downloads.disabled = 0
+	question_categories.disabled = 0
+	# Tab: Images
+	images.disabled = 0
+	feature_icons.disabled = 0
+	other_images.disabled = 0
+	# Tab: Attributes
+	attributes.disabled = 0
+	attribute1.disabled = 0
+	attribute2.disabled = 0
+	attribute3.disabled = 0
+	attribute4.disabled = 0
+	attribute5.disabled = 0
+	attribute6.disabled = 0
+	attribute7.disabled = 0
+	attribute8.disabled = 0
+	# Tab: Access
+	hidden.disabled = 0
+	starttime.disabled = 0
+	endtime.disabled = 0
+}
+TCEFORM.tx_shop_domain_model_productcategory {
+	title.disabled = 0
+	description.disabled = 0
+	image.disabled = 0
+}
+[global]
 #
 # Admin: Visible fields
+
 [adminUser = 1]
-	TCEFORM.tx_shop_domain_model_product {
-		# Tab: General
-		title.disabled = 0
-		subtitle.disabled = 0
-		product_no.disabled = 0
-		price.disabled = 0
-		teaser.disabled = 0
-		description.disabled = 0
-		unit.disabled = 0
-		unit_factor.disabled = 0
-		data_sheet.disabled = 0
-		www.disabled = 0
-		in_stock.disabled = 0
-		tax.disabled = 0
-		weight.disabled = 0
-		offer.disabled = 0
-		offer_rebate_value.disabled = 0
-		highlight.disabled = 0
-		first_in_list.disabled = 0
-		color.disabled = 0
-		size.disabled = 0
-		# Tab: Relations
-		categories.disabled = 0
-		tags.disabled = 0
-		related_products.disabled = 0
-		downloads.disabled = 0
-		question_categories.disabled = 0
-		# Tab: Images
-		images.disabled = 0
-		feature_icons.disabled = 0
-		other_images.disabled = 0
-		# Tab: Attributes
-		attributes.disabled = 0
-		attribute1.disabled = 0
-		attribute2.disabled = 0
-		attribute3.disabled = 0
-		attribute4.disabled = 0
-		attribute5.disabled = 0
-		attribute6.disabled = 0
-		attribute7.disabled = 0
-		attribute8.disabled = 0
-		# Tab: Access
-		hidden.disabled = 0
-		starttime.disabled = 0
-		endtime.disabled = 0
-	}
-	TCEFORM.tx_shop_domain_model_productcategory {
-		title.disabled = 0
-		description.disabled = 0
-		image.disabled = 0
-	}
-[GLOBAL]
+TCEFORM.tx_shop_domain_model_product {
+	# Tab: General
+	title.disabled = 0
+	subtitle.disabled = 0
+	product_no.disabled = 0
+	price.disabled = 0
+	teaser.disabled = 0
+	description.disabled = 0
+	unit.disabled = 0
+	unit_factor.disabled = 0
+	data_sheet.disabled = 0
+	www.disabled = 0
+	in_stock.disabled = 0
+	tax.disabled = 0
+	weight.disabled = 0
+	offer.disabled = 0
+	offer_rebate_value.disabled = 0
+	highlight.disabled = 0
+	first_in_list.disabled = 0
+	color.disabled = 0
+	size.disabled = 0
+	# Tab: Relations
+	categories.disabled = 0
+	tags.disabled = 0
+	related_products.disabled = 0
+	downloads.disabled = 0
+	question_categories.disabled = 0
+	# Tab: Images
+	images.disabled = 0
+	feature_icons.disabled = 0
+	other_images.disabled = 0
+	# Tab: Attributes
+	attributes.disabled = 0
+	attribute1.disabled = 0
+	attribute2.disabled = 0
+	attribute3.disabled = 0
+	attribute4.disabled = 0
+	attribute5.disabled = 0
+	attribute6.disabled = 0
+	attribute7.disabled = 0
+	attribute8.disabled = 0
+	# Tab: Access
+	hidden.disabled = 0
+	starttime.disabled = 0
+	endtime.disabled = 0
+}
+TCEFORM.tx_shop_domain_model_productcategory {
+	title.disabled = 0
+	description.disabled = 0
+	image.disabled = 0
+}
+[global]
 #
 # Overwriting labels for the backend forms
 TCEFORM.tx_shop_domain_model_product {

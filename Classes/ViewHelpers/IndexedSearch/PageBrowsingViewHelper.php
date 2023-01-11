@@ -16,11 +16,10 @@ namespace KayStrobach\ThemeBootstrap4\ViewHelpers\IndexedSearch;
 
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
-use TYPO3\CMS\Fluid\Core\ViewHelper\Facets\CompilableInterface;
 use TYPO3\CMS\Core\Utility\MathUtility;
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
  * Page browser for indexed search, and only useful here, as the
@@ -29,7 +28,7 @@ use TYPO3\CMS\Core\Utility\MathUtility;
  * functionality
  * @internal
  */
-class PageBrowsingViewHelper extends AbstractViewHelper implements CompilableInterface
+class PageBrowsingViewHelper extends AbstractViewHelper
 {
     /**
      * @var string

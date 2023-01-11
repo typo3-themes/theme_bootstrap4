@@ -56,7 +56,6 @@ plugin.tx_news {
 		}
 		backPid = {$themes.configuration.pages.newsList}
 	}
-
 	_LOCAL_LANG {
 		default {
 			more-link = more >>
@@ -68,26 +67,27 @@ plugin.tx_news {
 }
 
 # Breadcrumb settings for news
-[globalVar = GP:tx_news_pi1|news > 0]
-	lib.menu.breadcrumb {
-		10.1 {
-			NO {
-				doNotLinkIt = 0
-				linkWrap = <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>
-			}
-			wrap >
+
+[traverse(request.getQueryParams(), 'tx_news_pi1/news') > 0 || traverse(request.getParsedBody(), 'tx_news_pi1/news') > 0]
+lib.menu.breadcrumb {
+	10.1 {
+		NO {
+			doNotLinkIt = 0
+			linkWrap = <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li> |*| <li class="breadcrumb-item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">|</li>
 		}
-		20 = RECORDS
-		20 {
-			dontCheckPid = 1
-			tables = tx_news_domain_model_news
-			source.data = GP:tx_news_pi1|news
-			source.intval = 1
-			conf.tx_news_domain_model_news = TEXT
-			conf.tx_news_domain_model_news.field = title
-			conf.tx_news_domain_model_news.htmlSpecialChars = 1
-			wrap = <li class="breadcrumb-item active news" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">|</span></li>
-		}
-		wrap = <ol id="menuBreadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
+		wrap >
 	}
-[end]
+	20 = RECORDS
+	20 {
+		dontCheckPid = 1
+		tables = tx_news_domain_model_news
+		source.data = GP:tx_news_pi1|news
+		source.intval = 1
+		conf.tx_news_domain_model_news = TEXT
+		conf.tx_news_domain_model_news.field = title
+		conf.tx_news_domain_model_news.htmlSpecialChars = 1
+		wrap = <li class="breadcrumb-item active news" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">|</span></li>
+	}
+	wrap = <ol id="menuBreadcrumb" class="{$themes.configuration.menu.breadcrumb.cssClasses}">|</ol>
+}
+[global]
