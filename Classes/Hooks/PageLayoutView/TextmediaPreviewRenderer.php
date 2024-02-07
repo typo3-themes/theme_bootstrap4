@@ -25,7 +25,6 @@ use \TYPO3\CMS\Backend\View\PageLayoutView;
  */
 class TextmediaPreviewRenderer implements PageLayoutViewDrawItemHookInterface
 {
-
     /**
      * Preprocesses the preview rendering of a content element of type "themebootstrap4_text_image"
      *
