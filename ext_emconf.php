@@ -10,7 +10,7 @@
 # writing. "version" and "dependencies" must not be touched!
 ########################################################################
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'Bootstrap4 Theme',
     'description' => 'Theme to use Twitter Bootstrap4',
     'category' => 'templates',
@@ -19,20 +19,15 @@ $EM_CONF[$_EXTKEY] = array(
     'author' => 'Themes-Team (Kay Strobach, Jo Hasenau, Thomas Deuling, Dieter Bruening)',
     'author_email' => 'team@typo3-themes.org',
     'author_company' => '',
-    'constraints' => array(
-        'depends' => array(
-            'typo3'  => '8.7.1-8.7.99',
-            'gridelements' => '8.0.0-8.7.99',
-            'themes' => '8.7.6-8.7.99',
+    'constraints' => [
+        'depends' => [
+            'typo3' => '12.4.0-12.4.99',
+            'gridelements' => '12.0.0-12.99.99',
+            'themes' => '10.0.0-10.99.99',
             'dyncss_scss' => '1.2.0-1.99.99',
-        ),
-        'conflicts' => array(
-        ),
-        'suggests' => array(
-            'fluid_styled_responsive_images' => '1.2.0-1.99.99',
-            'linkhandler' => '3.1.1-3.1.1',
-            'indexed_search' => '8.7.0-8.7.99',
-        ),
-    ),
+        ],
+        'conflicts' => [],
+        'suggests' => [],
+    ],
     '_md5_values_when_last_written' => 'a:0:{}',
-);
+];
