@@ -15,7 +15,6 @@
     "CUSTOMIZE"
   ],
   "require": {
-    "kaystrobach/dyncss_scss": ">=1.2.0 || dev-typo3-12",
     "typo3-themes/themes": ">=10.0.0 || dev-typo3-12-compatibility",
     "gridelementsteam/gridelements": ">=12.0.0 || dev-master || dev-ea_12-0"
   },

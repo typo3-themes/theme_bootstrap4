@@ -24,7 +24,6 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '12.4.0-12.4.99',
             'gridelements' => '12.0.0-12.99.99',
             'themes' => '10.0.0-10.99.99',
-            'dyncss_scss' => '1.2.0-1.99.99',
         ],
         'conflicts' => [],
         'suggests' => [],
