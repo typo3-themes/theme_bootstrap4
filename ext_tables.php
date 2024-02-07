@@ -4,7 +4,6 @@ defined('TYPO3') or die();
 
 call_user_func(
     function ($extKey) {
-
         // Add/register icons
         // Add Rootline fields for default meta-tags
         $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] = 'layout,abstract,keywords,description,author,author_email,';

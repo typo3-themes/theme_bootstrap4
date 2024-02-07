@@ -18,6 +18,6 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:theme_bootstrap4
  */
 // @todo The TextImagePreviewRenderer does not exist anymore, there's now a TextMediaPreviewRenderer, this should be registered and the function should be tested
 //$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['themebootstrap4_text_image'] =
-    //\KayStrobach\ThemeBootstrap4\Hooks\PageLayoutView\TextImagePreviewRenderer::class;
+//\KayStrobach\ThemeBootstrap4\Hooks\PageLayoutView\TextImagePreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['themebootstrap4_image'] =
     \KayStrobach\ThemeBootstrap4\Hooks\PageLayoutView\ImagePreviewRenderer::class;
