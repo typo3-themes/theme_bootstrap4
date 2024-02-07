@@ -30,7 +30,7 @@
 
 		<nav class="page-navigation" aria-label="Page navigation">
 			<p>
-				<f:translate key="paginate_overall" arguments="{0:pagination.current,1:pagination.numberOfPages}" />
+				<f:translate key="paginate_overall" arguments="{0:pagination.current,1:pagination.numberOfPages}" extensionName="news" />
 			</p>
 			<ul class="pagination">
 				<f:if condition="{pagination.previousPage}">
@@ -39,13 +39,13 @@
 							<f:then>
 								<f:widget.link arguments="{currentPage: pagination.previousPage}" class="page-link" tabindex="-1">
 									<span aria-hidden="true">&laquo;</span>
-									<f:translate key="paginate_previous" />
+									<f:translate key="paginate_previous" extensionName="news" />
 								</f:widget.link>
 							</f:then>
 							<f:else>
 								<f:widget.link class="page-link" tabindex="-1">
 									<span aria-hidden="true">&laquo;</span>
-									<span class="sr-only"><f:translate key="paginate_previous" /></span>
+									<span class="sr-only"><f:translate key="paginate_previous" extensionName="news" /></span>
 								</f:widget.link>
 							</f:else>
 						</f:if>
@@ -92,7 +92,7 @@
 					<li class="page-item last next">
 						<f:widget.link arguments="{currentPage: pagination.nextPage}" class="page-link">
 							<span aria-hidden="true">&raquo;</span>
-							<span class="sr-only"><f:translate key="paginate_next" /></span>
+							<span class="sr-only"><f:translate key="paginate_next" extensionName="news" /></span>
 						</f:widget.link>
 					</li>
 				</f:if>

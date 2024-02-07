@@ -1,9 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <url>
-	<loc><f:uri.page pageUid="{data.uid}" absolute="1" noCacheHash="1" /></loc>
+	<loc><f:uri.page pageUid="{data.uid}" absolute="1" /></loc>
 	<f:if condition="{settings.languages}">
 		<f:for each="{settings.languages}" as="languageUid" key="languageKey">
-			<f:format.raw><</f:format.raw>xhtml:link rel="alternate" hreflang="{languageKey}" href="{f:uri.page(pageUid: data.uid, absolute: 1, noCacheHash: 1, additionalParams: '{L: languageUid}')}" <f:format.raw>/></f:format.raw>
+			<f:format.raw><</f:format.raw>xhtml:link rel="alternate" hreflang="{languageKey}" href="{f:uri.page(pageUid: data.uid, absolute: 1, additionalParams: '{L: languageUid}')}" <f:format.raw>/></f:format.raw>
 		</f:for>
 	</f:if>
 	<lastmod><f:format.date format="Y-m-d">{data.tstamp}</f:format.date></lastmod>
@@ -18,10 +18,10 @@
 		<f:for each="{pages}" as="page">
 			<f:if condition="{page.data.sitemap_xml_exclude} < 1">
 				<url>
-					<loc><f:uri.page pageUid="{page.data.uid}" absolute="1" noCacheHash="1" /></loc>
+					<loc><f:uri.page pageUid="{page.data.uid}" absolute="1" /></loc>
 					<f:if condition="{settings.languages}">
 						<f:for each="{settings.languages}" as="languageUid" key="languageKey">
-							<f:format.raw><</f:format.raw>xhtml:link rel="alternate" hreflang="{languageKey}" href="{f:uri.page(pageUid: page.data.uid, absolute: 1, noCacheHash: 1, additionalParams: '{L: languageUid}')}" <f:format.raw>/></f:format.raw>
+							<f:format.raw><</f:format.raw>xhtml:link rel="alternate" hreflang="{languageKey}" href="{f:uri.page(pageUid: page.data.uid, absolute: 1, additionalParams: '{L: languageUid}')}" <f:format.raw>/></f:format.raw>
 						</f:for>
 					</f:if>
 					<lastmod><f:format.date format="Y-m-d">{page.data.tstamp}</f:format.date></lastmod>

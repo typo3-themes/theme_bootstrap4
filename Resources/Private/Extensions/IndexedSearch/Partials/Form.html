@@ -4,7 +4,7 @@
 	<f:section name="Default">
 
 		<div class="tx-indexedsearch-searchbox card">
-			<f:form action="search" method="post" id="tx_indexedsearch" noCacheHash="true">
+			<f:form action="search" method="post" id="tx_indexedsearch">
 				<div class="tx-indexedsearch-hidden-fields">
 					<f:form.hidden name="search[_sections]" value="0" />
 					<f:form.hidden name="search[_freeIndexUid]" id="tx_indexedsearch_freeIndexUid" value="_" />
@@ -20,27 +20,27 @@
 					<f:form.hidden name="search[numberOfResults]" value="{searchParams.numberOfResults}" />
 					<f:form.hidden name="search[extendedSearch]" value="{searchParams.extendedSearch}" />
 				</div>
-					
-				<div class="card-header"><f:translate key="form.legend" /></div>
+
+				<div class="card-header"><f:translate key="form.legend" extensionName="indexed_search" /></div>
 				<div class="card-block">
-			
+
 					<div class="tx-indexedsearch-form form-group row">
-						<label for="tx-indexedsearch-searchbox-sword" class="col-sm-2 col-form-label"><f:translate key="form.searchFor" />:</label>
+						<label for="tx-indexedsearch-searchbox-sword" class="col-sm-2 col-form-label"><f:translate key="form.searchFor" extensionName="indexed_search" />:</label>
 						<div class="col-sm-10">
 							<div class="input-group">
 								<f:form.textfield name="search[sword]" value="{sword}" id="tx-indexedsearch-searchbox-sword" class="tx-indexedsearch-searchbox-sword form-control" />
 								<span class="input-group-btn tx-indexedsearch-search-submit">
-									
+
 									<button class="tx-indexedsearch-searchbox-button btn btn-primary" type="submit" name="search[submitButton]"
-											id="tx-indexedsearch-searchbox-button-submit"><i class="fa fa-search"></i> {f:translate(key: 'form.submit')}</button>
-							
+											id="tx-indexedsearch-searchbox-button-submit"><i class="fa fa-search"></i> {f:translate(key: 'form.submit', extensionName: 'indexed_search')}</button>
+
 								</span>
 							</div>
-							
+
 						</div>
 					</div>
-			
-			
+
+
 					<f:if condition="{showAdditionalKeywordSearch}">
 						<div class="form-group row">
 							<label class="col-sm-2 col-form-label"></label>
@@ -48,107 +48,107 @@
 								<f:form.hidden name="search[sword_prev]" value="{previousSearchWord}" />
 								<div class="form-check">
 									<label for="tx_indexedsearch_sword_prev_include" class="form-check-label">
-										<f:form.checkbox name="search[sword_prev_include]" id="tx_indexedsearch_sword_prev_include" 
+										<f:form.checkbox name="search[sword_prev_include]" id="tx_indexedsearch_sword_prev_include"
 														 value="1" checked="{searchParams.sword_prev}" class="form-check-input" />
-										<f:translate key="form.addToSearch" />.
+										<f:translate key="form.addToSearch" extensionName="indexed_search" />.
 									</label>
 								</div>
 							</div>
 						</div>
 					</f:if>
-					
+
 					<f:if condition="{searchParams.extendedSearch}">
-						
+
 						<f:if condition="{showTypeSearch}">
 							<div class="tx-indexedsearch-search-for form-group row">
-								<label for="tx-indexedsearch-selectbox-searchtype" class="col-sm-2 col-form-label"><f:translate key="form.match" />:</label>
-			
+								<label for="tx-indexedsearch-selectbox-searchtype" class="col-sm-2 col-form-label"><f:translate key="form.match" extensionName="indexed_search" />:</label>
+
 								<f:if condition="{allSearchTypes}">
 									<div class="col-sm-5">
-										<f:form.select name="search[searchType]" options="{allSearchTypes}" value="{searchParams.searchType}" 
+										<f:form.select name="search[searchType]" options="{allSearchTypes}" value="{searchParams.searchType}"
 													   id="tx-indexedsearch-selectbox-searchtype" class="tx-indexedsearch-selectbox-searchtype form-control form-control-sm" />
 									</div>
 								</f:if>
-			
+
 								<f:if condition="{allDefaultOperands}">
 									<div class="col-sm-5">
-										<f:form.select name="search[defaultOperand]" options="{allDefaultOperands}" value="{searchParams.defaultOperand}" 
+										<f:form.select name="search[defaultOperand]" options="{allDefaultOperands}" value="{searchParams.defaultOperand}"
 													   id="tx-indexedsearch-selectbox-defaultoperand" class="tx-indexedsearch-selectbox-defaultoperand form-control form-control-sm" />
 									</div>
 								</f:if>
 							</div>
 						</f:if>
-			
+
 						<f:if condition="{showMediaAndLanguageSearch}">
 							<div class="tx-indexedsearch-search-in form-group row">
-								<label for="tx-indexedsearch-selectbox-media" class="col-sm-2 col-form-label"><f:translate key="form.searchIn" />:</label>
-			
+								<label for="tx-indexedsearch-selectbox-media" class="col-sm-2 col-form-label"><f:translate key="form.searchIn" extensionName="indexed_search" />:</label>
+
 								<f:if condition="{allMediaTypes}">
 									<div class="col-sm-5">
-										<f:form.select name="search[mediaType]" options="{allMediaTypes}" value="{searchParams.mediaType}" 
+										<f:form.select name="search[mediaType]" options="{allMediaTypes}" value="{searchParams.mediaType}"
 													   id="tx-indexedsearch-selectbox-media" class="tx-indexedsearch-selectbox-media media form-control form-control-sm" />
 									</div>
 								</f:if>
-			
+
 								<f:if condition="{allLanguageUids}">
 									<div class="col-sm-5">
-										<f:form.select name="search[languageUid]" options="{allLanguageUids}" value="{searchParams.languageUid}" 
+										<f:form.select name="search[languageUid]" options="{allLanguageUids}" value="{searchParams.languageUid}"
 													   id="tx-indexedsearch-selectbox-lang" class="tx-indexedsearch-selectbox-lang lang form-control form-control-sm" />
 									</div>
 								</f:if>
 							</div>
 						</f:if>
-			
+
 						<f:if condition="{allSections}">
 							<div class="tx-indexedsearch-search-select-section form-group row">
-								<label for="tx-indexedsearch-selectbox-sections" class="col-sm-2 col-form-label"><f:translate key="form.fromSection" />:</label>
+								<label for="tx-indexedsearch-selectbox-sections" class="col-sm-2 col-form-label"><f:translate key="form.fromSection" extensionName="indexed_search" />:</label>
 								<div class="col-sm-10">
-									<f:form.select name="search[sections]" options="{allSections}" value="{searchParams.sections}" 
+									<f:form.select name="search[sections]" options="{allSections}" value="{searchParams.sections}"
 												   id="tx-indexedsearch-selectbox-sections" class="tx-indexedsearch-selectbox-sections form-control form-control-sm" />
 								</div>
 							</div>
 						</f:if>
-			
+
 						<f:if condition="{allIndexConfigurations}">
 							<div class="tx-indexedsearch-search-freeindexuid form-group row">
-								<label for="tx-indexedsearch-selectbox-freeIndexUid" class="col-sm-2 col-form-label"><f:translate key="form.freeIndexUid" />:</label>
+								<label for="tx-indexedsearch-selectbox-freeIndexUid" class="col-sm-2 col-form-label"><f:translate key="form.freeIndexUid" extensionName="indexed_search" />:</label>
 								<div class="col-sm-10">
-									<f:form.select name="search[freeIndexUid]" options="{allIndexConfigurations}" value="{searchParams.freeIndexUid}" 
+									<f:form.select name="search[freeIndexUid]" options="{allIndexConfigurations}" value="{searchParams.freeIndexUid}"
 												   id="tx-indexedsearch-selectbox-freeIndexUid" class="tx-indexedsearch-selectbox-freeIndexUid form-control form-control-sm" />
 								</div>
 							</div>
 						</f:if>
-			
+
 						<f:if condition="{showSortOrders}">
 							<div class="tx-indexedsearch-search-select-order form-group row">
-								<label for="tx-indexedsearch-selectbox-order" class="col-sm-2 col-form-label"><f:translate key="form.orderBy" />:</label>
+								<label for="tx-indexedsearch-selectbox-order" class="col-sm-2 col-form-label"><f:translate key="form.orderBy" extensionName="indexed_search" />:</label>
 								<div class="col-sm-5">
-									<f:form.select name="search[sortOrder]" options="{allSortOrders}" value="{searchParams.sortOrder}" 
+									<f:form.select name="search[sortOrder]" options="{allSortOrders}" value="{searchParams.sortOrder}"
 												   id="tx-indexedsearch-selectbox-order" class="tx-indexedsearch-selectbox-order form-control form-control-sm" />
 								</div>
 								<div class="col-sm-5">
-									<f:form.select name="search[sortDesc]"  options="{allSortDescendings}" value="{searchParams.sortDesc}" 
+									<f:form.select name="search[sortDesc]"  options="{allSortDescendings}" value="{searchParams.sortDesc}"
 												   id="tx-indexedsearch-selectbox-desc" class="tx-indexedsearch-selectbox-desc form-control form-control-sm" />
 								</div>
 							</div>
 						</f:if>
-			
+
 						<f:if condition="{allNumberOfResults}">
 							<div class="tx-indexedsearch-search-select-results form-group row">
-								<label for="tx-indexedsearch-selectbox-results" class="col-sm-2 col-form-label"><f:translate key="form.atATime" /></label>
+								<label for="tx-indexedsearch-selectbox-results" class="col-sm-2 col-form-label"><f:translate key="form.atATime" extensionName="indexed_search" /></label>
 								<div class="col-sm-10">
-									<f:form.select name="search[numberOfResults]" options="{allNumberOfResults}" 
-												   value="{searchParams.numberOfResults}" id="tx-indexedsearch-selectbox-results" 
+									<f:form.select name="search[numberOfResults]" options="{allNumberOfResults}"
+												   value="{searchParams.numberOfResults}" id="tx-indexedsearch-selectbox-results"
 												   class="tx-indexedsearch-selectbox-results form-control form-control-sm" />
 								</div>
 							</div>
 						</f:if>
-			
+
 						<f:if condition="{allGroups}">
 							<div class="tx-indexedsearch-search-select-group form-group row">
-								<label for="tx-indexedsearch-selectbox-group" class="col-sm-2 col-form-label"><f:translate key="form.style" />:</label>
+								<label for="tx-indexedsearch-selectbox-group" class="col-sm-2 col-form-label"><f:translate key="form.style" extensionName="indexed_search" />:</label>
 								<div class="col-sm-5">
-									<f:form.select name="search[group]" options="{allGroups}" value="{searchParams.group}" 
+									<f:form.select name="search[group]" options="{allGroups}" value="{searchParams.group}"
 												   id="tx-indexedsearch-selectbox-group" class="tx-indexedsearch-selectbox-group form-control form-control-sm" />
 								</div>
 								<div class="col-sm-5">
@@ -163,7 +163,7 @@
 							</div>
 						</f:if>
 					</f:if>
-			
+
 					<theme:variable.set name="displaySecondButtonRow" value="0" />
 					<f:if condition="{settings.displayAdvancedSearchLink}">
 						<theme:variable.set name="displaySecondButtonRow" value="1" />
@@ -180,19 +180,19 @@
 										<f:if condition="{searchParams.extendedSearch}">
 											<f:then>
 												<f:link.action action="form" arguments="{search: {extendedSearch: 0}}" class="btn btn-sm btn-outline-primary">
-													<f:translate key="form.linkToRegularSearch" />
+													<f:translate key="form.linkToRegularSearch" extensionName="indexed_search" />
 												</f:link.action>
 											</f:then>
 											<f:else>
 												<f:link.action action="form" arguments="{search: {extendedSearch: 1}}" class="btn btn-sm btn-outline-primary">
-													<f:translate key="form.linkToAdvancedSearch" />
+													<f:translate key="form.linkToAdvancedSearch" extensionName="indexed_search" />
 												</f:link.action>
 											</f:else>
 										</f:if>
 									</f:if>
 									<f:if condition="{settings.displayRules}">
 										<button class="btn btn-sm btn-outline-primary" type="button" data-toggle="collapse" data-target="#indexed-search-rules-collapse" aria-expanded="false" aria-controls="indexed-search-rules-collapse">
-											<f:translate key="rules.headline" />
+											<f:translate key="rules.headline" extensionName="indexed_search" />
 										</button>
 									</f:if>
 								</p>
@@ -202,9 +202,9 @@
 							</div>
 						</div>
 					</f:if>
-			
+
 				</div>
-			
+
 			</f:form>
 		</div>
 	</f:section>

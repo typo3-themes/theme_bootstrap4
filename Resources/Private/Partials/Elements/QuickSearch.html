@@ -4,23 +4,23 @@
 		<!-- theme_bootstrap4: Partials/QuickSearch.html [begin] -->
 
 		<div class="partial-quickSearch">
-			<f:form pageUid="{settings.pages.search}" action="search" noCacheHash="1"
+			<f:form pageUid="{settings.pages.search}" action="search"
 					fieldNamePrefix="tx_indexedsearch_pi2" controller="Search" extensionName="IndexedSearch" pluginName="Pi2">
-				<f:if condition="{f:translate(key: 'indexed_search_quick_search_headline')}">
-					<p><f:translate key="indexed_search_quick_search_headline" /></p>
+				<f:if condition="{f:translate(key: 'indexed_search_quick_search_headline', extensionName: 'theme_bootstrap4')}">
+					<p><f:translate key="indexed_search_quick_search_headline" extensionName="theme_bootstrap4" /></p>
 				</f:if>
 				<div class="input-group">
-					<f:form.textfield name="search[sword]" class="form-control" placeholder="{f:translate(key: 'indexed_search_quick_search_placeholder')}" />
+					<f:form.textfield name="search[sword]" class="form-control" placeholder="{f:translate(key: 'indexed_search_quick_search_placeholder', extensionName: 'theme_bootstrap4')}" />
 					<span class="input-group-btn tx-indexedsearch-search-submit">
-						<button class="btn btn-primary" type="submit" name="search[submitButton]" 
-								title="{f:translate(key: 'indexed_search_quick_search_button_title')}">
-							<i class="fa fa-search"></i> <f:translate key="indexed_search_quick_search_button_label" />
+						<button class="btn btn-primary" type="submit" name="search[submitButton]"
+								title="{f:translate(key: 'indexed_search_quick_search_button_title', extensionName: 'theme_bootstrap4')}">
+							<i class="fa fa-search"></i> <f:translate key="indexed_search_quick_search_button_label" extensionName="theme_bootstrap4" />
 						</button>
 					</span>
 				</div>
 			</f:form>
 		</div>
-		
+
 		<!-- theme_bootstrap4: Partials/QuickSearch.html [end] -->
 	</f:section>
 </div>

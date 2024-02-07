@@ -66,17 +66,17 @@
 				</div>
 				<a class="carousel-control-prev {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="prev">
 					<span class="{settings.content.elements.carousel.icon.previous}" aria-hidden="true"></span>
-					<span class="sr-only"><f:translate key="carousel_previous_label" /></span>
+					<span class="sr-only"><f:translate key="carousel_previous_label" extensionName="theme_bootstrap4" /></span>
 				</a>
 				<a class="carousel-control-next {carouselHideArrows}" href="#slider-{data.uid}" role="button" data-slide="next">
 					<span class="{settings.content.elements.carousel.icon.next}" aria-hidden="true"></span>
-					<span class="sr-only"><f:translate key="carousel_next_label" /></span>
+					<span class="sr-only"><f:translate key="carousel_next_label" extensionName="theme_bootstrap4" /></span>
 				</a>
 			</div>
 		</f:then>
 		<f:else>
 			<div class="alert alert-danger" role="alert">
-				<f:translate key="carousel_empty_label" />
+				<f:translate key="carousel_empty_label" extensionName="theme_bootstrap4" />
 			</div>
 		</f:else>
 	</f:if>

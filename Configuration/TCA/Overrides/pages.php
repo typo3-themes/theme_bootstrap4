@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
 $GLOBALS['TCA']['pages'] = array_merge_recursive(
     $GLOBALS['TCA']['pages'],
