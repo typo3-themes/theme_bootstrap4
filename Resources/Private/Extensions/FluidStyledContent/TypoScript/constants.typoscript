@@ -1,0 +1,24 @@
+# ToDo: is this the best workflow?
+# ToDo: is this the right place?
+
+
+# customsubcategory=image= Images
+
+# Images redering & loading
+#############################################
+# Check if Extension fluid_styled_responsive_images is loaded
+# cat=unused; type=options[0,1]; label=Extension Fluid Styled Responsive Images is loaded
+themes.configuration.extension.fluidStyledResponsiveImages.loaded = 0
+# cat=theme,advanced/image/; type=options[0,1]; label=Use lazyloading (Lazy Sizes)
+themes.configuration.image.lazyloading = 0
+
+# ToDo: lazyloading funktioniert noch nicht. Die Extension fluid_styled_responsive_images 1.2.0 benötigt ein neues Update
+# https://github.com/alexanderschnitzler/fluid-styled-responsive-images/pull/17
+
+
+
+styles.content.textmedia.maxW = 1140
+styles.content.textmedia.maxWInText = 1140
+styles.content.textmedia.columnSpacing = 10
+styles.content.textmedia.borderWidth = 2
+styles.content.textmedia.borderPadding = 0
